@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html ng-app="switcher">
+<html>
 <meta name=viewport content="width=device-width, initial-scale=1">
 <meta name=description content="A Portfolio of Web &amp; Mobile Development by Daniel Dafoe.">
-<meta name=keywords content="mobile, developer, web, website, phonegap, angular, html5, css3, javascript"
 <meta http-equiv=author content="Daniel Dafoe">
 <head>
 	<title>Daniel Dafoe | Mobile &amp; Web Developer in Burlington, Ontario </title>
@@ -10,7 +9,7 @@
   <link href="css/splendid.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.min.css" />
   <link href="css/index.css" rel="stylesheet" />
-  <link href='http://fonts.googleapis.com/css?family=Yellowtail|Playfair+Display|La+Belle+Aurore|Pacifico|Dancing+Script' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display|Pacifico|Dancing+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
   
@@ -90,7 +89,7 @@
           <div class="col-md-4 col-md-pull-0 col-sm-6 col-sm-pull-6">
             <p>
               <span class="emphasis">I'm Daniel Dafoe.</span> Having started my education in Advertising and finished as a Systems Analyst,
-              I've been exposed to some disciplines at the forefront of the digital world.
+              I've been exposed to a fantastic array of disciplines such as creative copywriting, art direction, software development, and systems analysis.
             </p>
           </div>
           <div class="col-md-4 col-sm-12">
@@ -205,105 +204,47 @@
       <div class="bar-in"></div>
       <div class="bar-in"></div>
     </div>
-      <div ng-controller="ProjectController as project" class="container-fluid">
-        <div class="row">
-          <div ng-init="project.projNum = 0" class="project col-md-12">
-            <div class="project-img text-center">
-              <img ng-src="{{project.projects[project.projNum].img}}" alt="Project image example" />
-            </div> <!-- end of project image -->
-            <div class="project-desc text-justify">
-              <h2 class="text-center">{{project.projects[project.projNum].name}}</h2>
-              <ul class="text-center no-dec">
-                <li class="project-skill" ng-repeat="skill in project.projects[project.projNum].skills">{{skill}}</li>
-              </ul>
-              <p>{{project.projects[project.projNum].description}}</p>
-              <div class="proj-arrows text-center hidden-xs">
-                <a title="Previous project" ng-click="project.prevProj()" href=""><i class="fa fa-arrow-circle-left fa-5x"></i></a>
-                <a title="Next project" ng-click="project.nextProj()" href=""><i class="fa fa-arrow-circle-right fa-5x"></i></a>
-              </div> <!-- end of proj-arrows -->
-            </div> <!-- end of project description -->
-          </div> <!-- end of project -->
-        </div> <!-- end of row -->
-
-
-        <!-- Mobile only rows -->
-
-
-        <div class="row visible-xs">
-          <div class="project col-md-12">
-            <div class="project-img text-center">
-              <img ng-src="{{project.projects[1].img}}" alt="Project image example" />
-            </div> <!-- end of project image -->
-            <div class="project-desc text-justify">
-              <h2 class="text-center">{{project.projects[1].name}}</h2>
-              <ul class="text-center no-dec">
-                <li class="project-skill" ng-repeat="skill in project.projects[1].skills">{{skill}}</li>
-              </ul>
-              <p>{{project.projects[1].description}}</p>
-            </div> <!-- end of project description -->
-          </div> <!-- end of project -->
-        </div> <!-- end of row -->
-
-        <div class="row visible-xs">
-          <div class="project col-md-12">
-            <div class="project-img text-center">
-              <img ng-src="{{project.projects[2].img}}" alt="Project image example" />
-            </div> <!-- end of project image -->
-            <div class="project-desc text-justify">
-              <h2 class="text-center">{{project.projects[2].name}}</h2>
-              <ul class="text-center no-dec">
-                <li class="project-skill" ng-repeat="skill in project.projects[2].skills">{{skill}}</li>
-              </ul>
-              <p>{{project.projects[2].description}}</p>
-            </div> <!-- end of project description -->
-          </div> <!-- end of project -->
-        </div> <!-- end of row -->
-
-        <div class="row visible-xs">
-          <div class="project col-md-12">
-            <div class="project-img text-center">
-              <img ng-src="{{project.projects[3].img}}" alt="Project image example" />
-            </div> <!-- end of project image -->
-            <div class="project-desc text-justify">
-              <h2 class="text-center">{{project.projects[3].name}}</h2>
-              <ul class="text-center no-dec">
-                <li class="project-skill" ng-repeat="skill in project.projects[3].skills">{{skill}}</li>
-              </ul>
-              <p>{{project.projects[3].description}}</p>
-            </div> <!-- end of project description -->
-          </div> <!-- end of project -->
-        </div> <!-- end of row -->
-
-        <div class="row visible-xs">
-          <div class="project col-md-12">
-            <div class="project-img text-center">
-              <img ng-src="{{project.projects[4].img}}" alt="Project image example" />
-            </div> <!-- end of project image -->
-            <div class="project-desc text-justify">
-              <h2 class="text-center">{{project.projects[4].name}}</h2>
-              <ul class="text-center no-dec">
-                <li class="project-skill" ng-repeat="skill in project.projects[4].skills">{{skill}}</li>
-              </ul>
-              <p>{{project.projects[4].description}}</p>
-            </div> <!-- end of project description -->
-          </div> <!-- end of project -->
-        </div> <!-- end of row -->
-
-        <div class="row visible-xs">
-          <div class="project col-md-12">
-            <div class="project-img text-center">
-              <img ng-src="{{project.projects[5].img}}" alt="Project image example" />
-            </div> <!-- end of project image -->
-            <div class="project-desc text-justify">
-              <h2 class="text-center">{{project.projects[5].name}}</h2>
-              <ul class="text-center no-dec">
-                <li class="project-skill" ng-repeat="skill in project.projects[5].skills">{{skill}}</li>
-              </ul>
-              <p>{{project.projects[5].description}}</p>
-            </div> <!-- end of project description -->
-          </div> <!-- end of project -->
-        </div> <!-- end of row -->
-      </div> <!-- end of container -->
+    <h1>Work Samples</h1>
+    <div class="container-fluid projects-container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="proj-box">
+            <div class="proj-icon-box">
+              <i class="fa fa-mobile fa-5x"></i>
+            </div>
+            <div class="proj-body">
+              <h2>Mobile Apps</h2>
+              <p><a href="raven5-mobile.html">RAVEN5</a></p>
+              <p><a href="oakville-shops-mobile.html">Oakville Shops</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="proj-box">
+            <div class="proj-icon-box">
+              <i class="fa fa-desktop fa-5x"></i>
+            </div>
+            <div class="proj-body">
+              <h2>Websites</h2>
+              <p><a href="kasty-landscaping-website.html">Kasty Landscaping</a></p>
+              <p><a href="daniel-dafoe-website.html">danieldafoe.com</a></p>
+              <p><a href="nuview-web-application.html">Nuview</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="proj-box">
+            <div class="proj-icon-box">
+              <i class="fa fa-pencil fa-5x"></i>
+            </div>
+            <div class="proj-body">
+              <h2>Content</h2>
+              <p><a href="r5apps-content-writing.html">R5APPS</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of container -->
   </section>
   
   <section id="contact" class="contact">

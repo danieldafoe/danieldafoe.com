@@ -221,7 +221,7 @@ ul {
     @include transition();
   }
   .headline {
-    font-family:"Playfair Display", Roboto, Arial, sans-serif;
+    font-family:"Playfair Display", Georgia, Times, serif;
     letter-spacing: 1px;
     font-weight:200;
     color:$head-text-color;
@@ -261,9 +261,6 @@ ul {
 #resume-btn {
   margin:0 0 -6em 0;
   opacity:0;
-  //background-color:#000;
-  //border:1px solid #000;
-  //color:#f5f5f5;
   visibility: hidden;
 
   animation: enter .5s;
@@ -313,43 +310,7 @@ ul {
 .bar-in:nth-child(2) {
   background-color:$bar-2-color;
 }
-/*
-.logo {
-  height:auto;
-  @include center();
-}
-*/
 
-
-/*
-.mobile-nav {
-  height: 100%;
-  white-space: nowrap;
-  text-align: center;
-  background-color:$bg-color;
-  &:before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 0;
-    margin-right: -.25em;
-    height: 100%;
-  }
-  nav {
-    display: inline-block;
-    vertical-align: middle;
-    white-space: normal;
-    height:100%;
-    a {
-      display:block;
-      height:25%;
-      transform:translateY(40%);
-      font-size:30px;
-      text-decoration: none;
-    }
-  }
-}
-*/
 .slide-in {
   animation: slide-in 200ms;
   animation-fill-mode: forwards;
@@ -522,6 +483,14 @@ ul {
       float:left;
     }
   }
+  h1 {
+    position:absolute;
+    left:0;
+    right:0;
+    top:1.5em;
+    font-weight:300;
+    text-align:center;
+  }
   .bar-in:nth-child(1) {
     background-color:$bar-1-color;
   }
@@ -532,105 +501,12 @@ ul {
   .container-fluid {
     position:absolute;
     top:50%;
+    left:0;
+    right:0;
     transform:translateY(-50%);
     -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
   }
-  
-}
-.project {
-  margin:3em 0 0 0;
-  min-height:520px;
-  max-height:600px;
-}
-.project-img {
-  img {
-    display:block;
-    margin:0 auto;
-    height:auto;
-    max-height:400px;
-    width:200px;
-    max-width:500px;
-    opacity:1;
-    
-    /* This will trigger ngAnimate */
-    /*@include transition();*/
-  }
-  h2 {
-    color:#fff;
-  }
-}
-img[src*="res/logo.png"] {
-  width:450px;
-  padding:8.25em 0 0 0;
-}
-img[src*="res/app-raven5.png"] {
-  width:350px;
-}
-img[src*="res/app-uosc.png"] {
-  width:360px;
-}
-img[src*="res/r5apps-logo.png"] {
-  width:450px;
-  padding:6em 0 0 0;
-}
-img[src*="res/logo-kl.png"] {
-  width:460px;
-}
-img[src*="res/nuview-bg.png"] {
-  width:240px;
-  border-radius:13px;
-}
-.project-desc {
-  h2 {
-    margin-bottom:20px;
-  }
-  p {
-    line-height:24px;
-    padding:2em 1em;
-    width:80%;
-    margin:0 auto;
-  }
-}
-.project-skill {
-  display:inline;
-  text-align:center;
-  padding:10px 17px;
-  background-color:#fff;
-  color:#000;
-  margin:0 .75em 0 .75em;
-  border-radius:6px;
-  font-weight:bold;
-}
-.proj-arrows {
-  /* Old CSS
-  margin:0 auto 2em auto;
-  */
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-
-  a {
-    opacity:.3;
-    color:#fff;
-    margin:0 .85em;
-    position:relative;
-    top:-4em;
-    &:first-child {
-      float:left;
-    }
-    &:last-of-type {
-      float:right;
-    }
-    &:hover {
-      opacity:.8;
-    }
-  }
-  /* Old CSS
-  a:not(:first-child) {
-    margin:0 0 0 1em;
-  }
-  */
 }
 
 
@@ -643,7 +519,62 @@ img[src*="res/nuview-bg.png"] {
 }
 */
 
+/* New Projects layout
+---------------------------------------- */
+.projects-container {
+  margin:1em 0;
+  h1 {
+    font-weight:300;
+  }
+}
+.proj-box {
+  text-align:center;
+  margin:0 auto;
+  border:1px solid #eee;
+  min-height:400px;
+  border-radius:8px;
+  padding:1em;
+  max-width:300px;
 
+  @include transition();
+  &:hover {
+    background-color:#fff;
+    color:$projects-color;
+    .proj-icon-box {
+      border-color:$projects-color;
+    }
+    a {
+      color:inherit;
+      &:hover {
+        border-color:inherit;
+      }
+    }
+  }
+}
+.proj-icon-box {
+  border-radius:50%;
+  background:transparent;
+  border:3px solid #fff;
+  width:200px;
+  height:200px;
+  line-height:16em;
+  margin:0 auto;
+  i {
+    font-size:6em;
+  }
+}
+.proj-body {
+  a {
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+
+    @include transition($dur: 100ms);
+    &:hover {
+      border-bottom:1px solid #fff;
+    }
+  }
+}
 
 
 
@@ -755,17 +686,6 @@ img[src*="res/nuview-bg.png"] {
     }
     &:hover {
       background-color:transparent;
-      /* Handle transforms for each span bar in the nav menu.
-      span:nth-child(2) {
-        transform:rotate(-45deg) translateY(10px);
-      }
-      span:nth-child(3) {
-        display:none;
-      }
-      span:nth-child(4) {
-        transform:rotate(45deg);
-      }
-      */
     }
     &:focus {
       background-color:transparent;
@@ -791,56 +711,17 @@ img[src*="res/nuview-bg.png"] {
   }
 
   /* Projects */
-  .projects .row:nth-child(3) .project {
-    padding:6em 0;
-  }
-  .projects .row:nth-child(5) .project {
-    padding:4em 0 0 0;
-  }
-  .projects .row:nth-child(6) .project {
-    padding:6em 0 0 0;
-  }
-  .project-img img {
-    width:300px;
-  }
-  img[src*="res/logo-kl.png"] {
-    padding-top:0;
-    width:300px;
-  }
-  img[src*="res/nuview-bg.png"] {
-    padding-top:0;
-    width:200px;
-  }
-  img[src*="res/r5apps-logo.png"] {
-    padding-top:0;
-  }
-  img[src*="res/logo.png"] {
-    padding-top:0;
-  }
-  .project-desc h2 {
-    font-size:26px;
-  }
-  .project-desc p {
-    margin-bottom:4em;
-    padding:1em .4em;
-    text-align:center;
-    width:100%;
-  }
-  .proj-arrows {
-    /* Old CSS
-    margin:10em auto 2em auto;
-    */
-    margin:0 auto 3em 0;
-  }
-  .projects {
-    .row:not(:first-child) {
-      .project {
-        margin:0;
-        .project-desc {
-          margin:1em 0;
-        }
-      }
+  .projects-container {
+    margin:1em 0 1em 0;
+    h1 {
+      text-align:center;
     }
+    .col-sm-4:first-child .proj-box {
+      margin-top:8em;
+    }
+  }
+  .proj-box {
+    border:0;
   }
 
   /* Skills */

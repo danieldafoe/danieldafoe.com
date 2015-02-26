@@ -1,0 +1,197 @@
+/* Variables
+---------------------------------------- */
+/* Global
+---------------------------------------- */
+* {
+  box-sizing: border-box; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  color: #555;
+  background-color: #000;
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* Mixins
+---------------------------------------- */
+/* Content
+---------------------------------------- */
+.flex-outer {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  min-height: 100vh; }
+
+.flex-inner-left, .flex-inner-left-uosc, .flex-inner-left-kl, .flex-inner-left-r5apps, .flex-inner-left-nuview, .flex-inner-right, .flex-inner-right-uosc, .flex-inner-right-kl, .flex-inner-right-r5apps, .flex-inner-right-nuview {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center; }
+
+.flex-inner-left, .flex-inner-left-uosc, .flex-inner-left-kl, .flex-inner-left-r5apps, .flex-inner-left-nuview {
+  background-color: #D8272D; }
+
+.flex-inner-right, .flex-inner-right-uosc, .flex-inner-right-kl, .flex-inner-right-r5apps, .flex-inner-right-nuview {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff; }
+  .flex-inner-right .download-icons i, .flex-inner-right-uosc .download-icons i, .flex-inner-right-kl .download-icons i, .flex-inner-right-r5apps .download-icons i, .flex-inner-right-nuview .download-icons i {
+    margin: 0 .5em .5em .5em;
+    color: #fff;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease; }
+    .flex-inner-right .download-icons i:hover, .flex-inner-right-uosc .download-icons i:hover, .flex-inner-right-kl .download-icons i:hover, .flex-inner-right-r5apps .download-icons i:hover, .flex-inner-right-nuview .download-icons i:hover {
+      color: #D8272D; }
+  .flex-inner-right h1, .flex-inner-right-uosc h1, .flex-inner-right-kl h1, .flex-inner-right-r5apps h1, .flex-inner-right-nuview h1 {
+    text-align: center;
+    padding: .5em 0 0 0;
+    font-weight: 300;
+    border-top: 5px solid #D8272D; }
+  .flex-inner-right .visit-link, .flex-inner-right-uosc .visit-link, .flex-inner-right-kl .visit-link, .flex-inner-right-r5apps .visit-link, .flex-inner-right-nuview .visit-link {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    margin: .5em 0;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease; }
+    .flex-inner-right .visit-link:after, .flex-inner-right-uosc .visit-link:after, .flex-inner-right-kl .visit-link:after, .flex-inner-right-r5apps .visit-link:after, .flex-inner-right-nuview .visit-link:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5%;
+      background-color: #fff;
+      width: 0;
+      height: 3%;
+      -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+      -o-transition: all 200ms ease;
+      transition: all 200ms ease; }
+    .flex-inner-right .visit-link:hover, .flex-inner-right-uosc .visit-link:hover, .flex-inner-right-kl .visit-link:hover, .flex-inner-right-r5apps .visit-link:hover, .flex-inner-right-nuview .visit-link:hover {
+      text-decoration: none; }
+      .flex-inner-right .visit-link:hover:after, .flex-inner-right-uosc .visit-link:hover:after, .flex-inner-right-kl .visit-link:hover:after, .flex-inner-right-r5apps .visit-link:hover:after, .flex-inner-right-nuview .visit-link:hover:after {
+        width: 100%; }
+  .flex-inner-right p, .flex-inner-right-uosc p, .flex-inner-right-kl p, .flex-inner-right-r5apps p, .flex-inner-right-nuview p {
+    padding: 0 1.5em;
+    text-align: center; }
+  .flex-inner-right .spl-btn, .flex-inner-right-uosc .spl-btn, .flex-inner-right-kl .spl-btn, .flex-inner-right-r5apps .spl-btn, .flex-inner-right-nuview .spl-btn {
+    margin: 1em 0 0 0;
+    background-color: #D8272D; }
+    .flex-inner-right .spl-btn:hover, .flex-inner-right-uosc .spl-btn:hover, .flex-inner-right-kl .spl-btn:hover, .flex-inner-right-r5apps .spl-btn:hover, .flex-inner-right-nuview .spl-btn:hover {
+      text-decoration: none;
+      color: #D8272D; }
+  .flex-inner-right .spl-grow-bl:before, .flex-inner-right-uosc .spl-grow-bl:before, .flex-inner-right-kl .spl-grow-bl:before, .flex-inner-right-r5apps .spl-grow-bl:before, .flex-inner-right-nuview .spl-grow-bl:before {
+    background-color: #fff; }
+  .flex-inner-right .logo-corner, .flex-inner-right-uosc .logo-corner, .flex-inner-right-kl .logo-corner, .flex-inner-right-r5apps .logo-corner, .flex-inner-right-nuview .logo-corner {
+    font-family: "Pacifico", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 15px; }
+
+.flex-inner-left-uosc {
+  background-color: #3DB642; }
+  .flex-inner-left-uosc .spl-btn {
+    background-color: #3DB642; }
+    .flex-inner-left-uosc .spl-btn:hover {
+      color: #3DB642; }
+
+.flex-inner-right-uosc .spl-btn {
+  background-color: #3DB642; }
+  .flex-inner-right-uosc .spl-btn:hover {
+    color: #3DB642; }
+.flex-inner-right-uosc h1 {
+  border-top: 5px solid #3DB642; }
+.flex-inner-right-uosc .download-icons i:hover {
+  color: #3DB642; }
+
+.flex-inner-left-kl {
+  background-color: #395219; }
+  .flex-inner-left-kl img {
+    margin-top: -4em;
+    height: auto; }
+  .flex-inner-left-kl .spl-btn {
+    background-color: #395219; }
+    .flex-inner-left-kl .spl-btn:hover {
+      color: #395219; }
+
+.flex-inner-right-kl .spl-btn {
+  background-color: #395219; }
+  .flex-inner-right-kl .spl-btn:hover {
+    color: #395219; }
+.flex-inner-right-kl h1 {
+  border-top: 5px solid #395219; }
+.flex-inner-right-kl .download-icons {
+  display: none; }
+
+.flex-inner-left-r5apps {
+  background-color: #0076A2; }
+  .flex-inner-left-r5apps img {
+    height: auto; }
+  .flex-inner-left-r5apps .spl-btn {
+    background-color: #0076A2; }
+    .flex-inner-left-r5apps .spl-btn:hover {
+      color: #0076A2; }
+
+.flex-inner-right-r5apps .spl-btn {
+  background-color: #0076A2; }
+  .flex-inner-right-r5apps .spl-btn:hover {
+    color: #0076A2; }
+.flex-inner-right-r5apps h1 {
+  border-top: 5px solid #0076A2; }
+.flex-inner-right-r5apps .download-icons {
+  display: none; }
+
+.flex-inner-left-nuview {
+  background-color: #00853F; }
+  .flex-inner-left-nuview img {
+    height: auto; }
+  .flex-inner-left-nuview .spl-btn {
+    background-color: #00853F; }
+    .flex-inner-left-nuview .spl-btn:hover {
+      color: #00853F; }
+
+.flex-inner-right-nuview .spl-btn {
+  background-color: #00853F; }
+  .flex-inner-right-nuview .spl-btn:hover {
+    color: #00853F; }
+.flex-inner-right-nuview h1 {
+  border-top: 5px solid #00853F; }
+.flex-inner-right-nuview .download-icons {
+  display: none; }
+
+@media (max-width: 768px) {
+  /* RAVEN5
+  ---------------------------------------- */
+  .flex-inner-left, .flex-inner-left-uosc, .flex-inner-left-kl, .flex-inner-left-r5apps, .flex-inner-left-nuview, .flex-inner-right, .flex-inner-right-uosc, .flex-inner-right-kl, .flex-inner-right-r5apps, .flex-inner-right-nuview {
+    width: 100%; }
+
+  .flex-inner-left, .flex-inner-left-uosc, .flex-inner-left-kl, .flex-inner-left-r5apps, .flex-inner-left-nuview {
+    overflow: hidden;
+    min-height: 200px; }
+    .flex-inner-left img, .flex-inner-left-uosc img, .flex-inner-left-kl img, .flex-inner-left-r5apps img, .flex-inner-left-nuview img {
+      max-width: 300px; }
+
+  .flex-inner-right, .flex-inner-right-uosc, .flex-inner-right-kl, .flex-inner-right-r5apps, .flex-inner-right-nuview {
+    margin: 0 0 1em 0; }
+    .flex-inner-right .logo-corner, .flex-inner-right-uosc .logo-corner, .flex-inner-right-kl .logo-corner, .flex-inner-right-r5apps .logo-corner, .flex-inner-right-nuview .logo-corner {
+      position: relative;
+      right: 0; }
+
+  /* Nuview
+  ---------------------------------------- */
+  .flex-inner-left-nuview img {
+    height: auto;
+    max-width: 300px; }
+
+  /* Kasty Landscaping
+  ---------------------------------------- */
+  .flex-inner-left-kl img {
+    margin-top: -2em; } }
+
+/*# sourceMappingURL=projects.css.map */

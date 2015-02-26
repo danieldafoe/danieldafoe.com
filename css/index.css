@@ -182,7 +182,7 @@ ul {
   -o-transition: all 200ms ease;
   transition: all 200ms ease; }
 .content .headline {
-  font-family: "Playfair Display", Roboto, Arial, sans-serif;
+  font-family: "Playfair Display", Georgia, Times, serif;
   letter-spacing: 1px;
   font-weight: 200;
   color: #fff;
@@ -266,41 +266,6 @@ ul {
 .bar-in:nth-child(2) {
   background-color: #F3825A; }
 
-/*
-.logo {
-  height:auto;
-  @include center();
-}
-*/
-/*
-.mobile-nav {
-  height: 100%;
-  white-space: nowrap;
-  text-align: center;
-  background-color:$bg-color;
-  &:before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 0;
-    margin-right: -.25em;
-    height: 100%;
-  }
-  nav {
-    display: inline-block;
-    vertical-align: middle;
-    white-space: normal;
-    height:100%;
-    a {
-      display:block;
-      height:25%;
-      transform:translateY(40%);
-      font-size:30px;
-      text-decoration: none;
-    }
-  }
-}
-*/
 .slide-in {
   animation: slide-in 200ms;
   animation-fill-mode: forwards;
@@ -457,6 +422,13 @@ ul {
       width: 50%;
       height: 100%;
       float: left; }
+  .projects h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.5em;
+    font-weight: 300;
+    text-align: center; }
   .projects .bar-in:nth-child(1) {
     background-color: #F3825A; }
   .projects .bar-in:nth-child(2) {
@@ -464,91 +436,11 @@ ul {
   .projects .container-fluid {
     position: absolute;
     top: 50%;
+    left: 0;
+    right: 0;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%); }
-
-.project {
-  margin: 3em 0 0 0;
-  min-height: 520px;
-  max-height: 600px; }
-
-.project-img img {
-  display: block;
-  margin: 0 auto;
-  height: auto;
-  max-height: 400px;
-  width: 200px;
-  max-width: 500px;
-  opacity: 1;
-  /* This will trigger ngAnimate */
-  /*@include transition();*/ }
-.project-img h2 {
-  color: #fff; }
-
-img[src*="res/logo.png"] {
-  width: 450px;
-  padding: 8.25em 0 0 0; }
-
-img[src*="res/app-raven5.png"] {
-  width: 350px; }
-
-img[src*="res/app-uosc.png"] {
-  width: 360px; }
-
-img[src*="res/r5apps-logo.png"] {
-  width: 450px;
-  padding: 6em 0 0 0; }
-
-img[src*="res/logo-kl.png"] {
-  width: 460px; }
-
-img[src*="res/nuview-bg.png"] {
-  width: 240px;
-  border-radius: 13px; }
-
-.project-desc h2 {
-  margin-bottom: 20px; }
-.project-desc p {
-  line-height: 24px;
-  padding: 2em 1em;
-  width: 80%;
-  margin: 0 auto; }
-
-.project-skill {
-  display: inline;
-  text-align: center;
-  padding: 10px 17px;
-  background-color: #fff;
-  color: #000;
-  margin: 0 .75em 0 .75em;
-  border-radius: 6px;
-  font-weight: bold; }
-
-.proj-arrows {
-  /* Old CSS
-  margin:0 auto 2em auto;
-  */
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* Old CSS
-  a:not(:first-child) {
-    margin:0 0 0 1em;
-  }
-  */ }
-  .proj-arrows a {
-    opacity: .3;
-    color: #fff;
-    margin: 0 .85em;
-    position: relative;
-    top: -4em; }
-    .proj-arrows a:first-child {
-      float: left; }
-    .proj-arrows a:last-of-type {
-      float: right; }
-    .proj-arrows a:hover {
-      opacity: .8; }
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%); }
 
 /* Enabled for vertical-align of Angular switcher. */
 /*
@@ -558,6 +450,57 @@ img[src*="res/nuview-bg.png"] {
   height:100vh;
 }
 */
+/* New Projects layout
+---------------------------------------- */
+.projects-container {
+  margin: 1em 0; }
+  .projects-container h1 {
+    font-weight: 300; }
+
+.proj-box {
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  min-height: 400px;
+  border-radius: 8px;
+  padding: 1em;
+  max-width: 300px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease; }
+  .proj-box:hover {
+    background-color: #fff;
+    color: #232829; }
+    .proj-box:hover .proj-icon-box {
+      border-color: #232829; }
+    .proj-box:hover a {
+      color: inherit; }
+      .proj-box:hover a:hover {
+        border-color: inherit; }
+
+.proj-icon-box {
+  border-radius: 50%;
+  background: transparent;
+  border: 3px solid #fff;
+  width: 200px;
+  height: 200px;
+  line-height: 16em;
+  margin: 0 auto; }
+  .proj-icon-box i {
+    font-size: 6em; }
+
+.proj-body a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  -webkit-transition: all 100ms ease;
+  -moz-transition: all 100ms ease;
+  -o-transition: all 100ms ease;
+  transition: all 100ms ease; }
+  .proj-body a:hover {
+    border-bottom: 1px solid #fff; }
+
 /* Contact */
 .contact {
   position: relative;
@@ -638,18 +581,7 @@ img[src*="res/nuview-bg.png"] {
       -o-transition: all 200ms ease;
       transition: all 200ms ease; }
     .navbar-default .navbar-toggle:hover {
-      background-color: transparent;
-      /* Handle transforms for each span bar in the nav menu.
-      span:nth-child(2) {
-        transform:rotate(-45deg) translateY(10px);
-      }
-      span:nth-child(3) {
-        display:none;
-      }
-      span:nth-child(4) {
-        transform:rotate(45deg);
-      }
-      */ }
+      background-color: transparent; }
     .navbar-default .navbar-toggle:focus {
       background-color: transparent; }
     .navbar-default .navbar-toggle .icon-bar {
@@ -667,51 +599,15 @@ img[src*="res/nuview-bg.png"] {
     width: 325px; }
 
   /* Projects */
-  .projects .row:nth-child(3) .project {
-    padding: 6em 0; }
+  .projects-container {
+    margin: 1em 0 1em 0; }
+    .projects-container h1 {
+      text-align: center; }
+    .projects-container .col-sm-4:first-child .proj-box {
+      margin-top: 8em; }
 
-  .projects .row:nth-child(5) .project {
-    padding: 4em 0 0 0; }
-
-  .projects .row:nth-child(6) .project {
-    padding: 6em 0 0 0; }
-
-  .project-img img {
-    width: 300px; }
-
-  img[src*="res/logo-kl.png"] {
-    padding-top: 0;
-    width: 300px; }
-
-  img[src*="res/nuview-bg.png"] {
-    padding-top: 0;
-    width: 200px; }
-
-  img[src*="res/r5apps-logo.png"] {
-    padding-top: 0; }
-
-  img[src*="res/logo.png"] {
-    padding-top: 0; }
-
-  .project-desc h2 {
-    font-size: 26px; }
-
-  .project-desc p {
-    margin-bottom: 4em;
-    padding: 1em .4em;
-    text-align: center;
-    width: 100%; }
-
-  .proj-arrows {
-    /* Old CSS
-    margin:10em auto 2em auto;
-    */
-    margin: 0 auto 3em 0; }
-
-  .projects .row:not(:first-child) .project {
-    margin: 0; }
-    .projects .row:not(:first-child) .project .project-desc {
-      margin: 1em 0; }
+  .proj-box {
+    border: 0; }
 
   /* Skills */
   .skill-section p:nth-child(1) {
