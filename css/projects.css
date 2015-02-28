@@ -264,6 +264,8 @@ html, body {
       position: relative;
       right: auto;
       text-align: center; }
+    .flex-inner-right h1, .flex-inner-right-uosc h1, .flex-inner-right-kl h1, .flex-inner-right-r5apps h1, .flex-inner-right-nuview h1, .flex-inner-right-dd h1 {
+      margin-top: 1em; }
 
   /* Nuview
   ---------------------------------------- */
