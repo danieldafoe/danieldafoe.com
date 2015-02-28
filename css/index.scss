@@ -37,6 +37,11 @@ html, body {
   width:100%;
   height:100%;
   color:#feffff;
+  font-family:"Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:200;
+  font-size:16px;
+}
+body {
   //background-color:#f5f5f5;
   background-image:url("../res/lightbulb-on-wood.jpg");
   background-repeat:no-repeat;
@@ -45,9 +50,6 @@ html, body {
   background-size:cover;
   /*background:linear-gradient(45deg, $bg-color, $bottom-color);
   background:-webkit-linear-gradient(45deg, #FEFFFF, #042137);*/
-  font-family:"Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight:200;
-  font-size:16px;
 }
 
 /* Firefox & IE fix */
@@ -660,6 +662,10 @@ ul {
 
 
 @media (max-width:768px) {
+  /* Background */
+  body {
+    background-position:80%;
+  }
   /* Header */
   .header {
     display:none;
