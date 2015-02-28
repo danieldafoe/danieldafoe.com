@@ -247,15 +247,19 @@ html, body {
 
   .flex-inner-right, .flex-inner-right-uosc, .flex-inner-right-kl, .flex-inner-right-r5apps, .flex-inner-right-nuview, .flex-inner-right-dd {
     margin: 0 0 1em 0;
-    min-height: 1px; }
-    .flex-inner-right > div, .flex-inner-right-uosc > div, .flex-inner-right-kl > div, .flex-inner-right-r5apps > div, .flex-inner-right-nuview > div, .flex-inner-right-dd > div {
-      margin: 1em 0 0 0;
-      top: auto;
-      position: relative;
-      transform: none;
-      -webkit-transform: none;
-      -moz-transform: none;
-      -ms-transform: none; }
+    min-height: 1px;
+    		/*
+    		> div {
+    			margin:1em 0 0 0;
+    
+    			top:auto;
+    			position:relative;
+    			transform:none;
+    			-webkit-transform:none;
+    			-moz-transform:none;
+    			-ms-transform:none;
+    		}
+    		*/ }
     .flex-inner-right .logo-corner, .flex-inner-right-uosc .logo-corner, .flex-inner-right-kl .logo-corner, .flex-inner-right-r5apps .logo-corner, .flex-inner-right-nuview .logo-corner, .flex-inner-right-dd .logo-corner {
       position: relative;
       right: auto;
