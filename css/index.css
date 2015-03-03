@@ -1,6 +1,9 @@
-/* Variables */
-/* Mixins */
-/* Global classes */
+/* Variables
+---------------------------------------- */
+/* Mixins
+---------------------------------------- */
+/* Global
+---------------------------------------- */
 html, html a {
   -webkit-font-smoothing: antialiased !important;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
@@ -20,15 +23,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
-  /*background:linear-gradient(45deg, $bg-color, $bottom-color);
-  background:-webkit-linear-gradient(45deg, #FEFFFF, #042137);*/ }
+  background-size: cover; }
 
 /* Firefox & IE fix */
 ul {
   padding: 0; }
 
-/* No underline on links */
+/* No underline
+---------------------------------------- */
 .no-dec {
   list-style-type: none;
   text-decoration: none;
@@ -57,31 +59,9 @@ ul {
   visibility: hidden; }
 
 .main-container {
-  /*
-  position:relative;
-  float:left;
-  background-color:$main-color;
-  color:#000;
-  min-height:100%;
-  width:100%;
-  height:auto;
-  */
   height: 100%;
   white-space: nowrap;
-  text-align: center;
-  /*
-  img {
-    height:auto;
-    width:0;
-
-    animation: grow .3s;
-    animation-delay: .4s;
-    animation-fill-mode: forwards;
-    -webkit-animation: grow .3s;
-    -webkit-animation-delay: .4s;
-    -webkit-animation-fill-mode: forwards;
-  }
-  */ }
+  text-align: center; }
   .main-container:before {
     content: "";
     display: inline-block;
@@ -97,20 +77,6 @@ ul {
     white-space: normal;
     width: 100%; }
 
-/*
-@keyframes grow {
-  from {width:0%;}
-  to {width:450px;}
-}
-@-webkit-keyframes grow {
-  from {width:0%;}
-  to {width:450px;}
-}
-@-moz-keyframes grow {
-  from {width:0%;}
-  to {width:450px;}
-}
-*/
 .header {
   margin: 0 auto;
   display: block;
@@ -467,6 +433,7 @@ ul {
   border-radius: 4px;
   padding: 1em;
   max-width: 300px;
+  min-height: 440px;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -o-transition: all 200ms ease;
@@ -694,5 +661,65 @@ ul {
 
   .contact-icons a i {
     font-size: 4.5em; } }
+/* Test
+---------------------------------------- */
+.icon-bar {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease; }
+
+.rotate-forward {
+  animation: rotate-forward 200ms forwards;
+  -webkit-animation: rotate-forward 200ms forwards;
+  -moz-animation: rotate-forward 200ms forwards; }
+
+@keyframes rotate-forward {
+  to {
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); } }
+@-webkit-keyframes rotate-forward {
+  to {
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); } }
+@-moz-keyframes rotate-forward {
+  to {
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); } }
+.rotate-backward {
+  animation: rotate-backward 200ms forwards;
+  -webkit-animation: rotate-backward 200ms forwards;
+  -moz-animation: rotate-backward 200ms forwards; }
+
+@keyframes rotate-backward {
+  to {
+    transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg); } }
+@-webkit-keyframes rotate-backward {
+  to {
+    transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg); } }
+@-moz-keyframes rotate-backward {
+  to {
+    transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg); } }
 
 /*# sourceMappingURL=index.css.map */

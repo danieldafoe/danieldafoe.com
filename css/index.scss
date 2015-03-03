@@ -1,4 +1,5 @@
-/* Variables */
+/* Variables
+---------------------------------------- */
 $bg-color:#DAEAEF;
 $head-color:#FF3D2E;
 $bottom-color:#252426;
@@ -11,7 +12,8 @@ $head-text-color:#fff;
 $bar-1-color:#F3825A;
 $bar-2-color:#F3825A;
 
-/* Mixins */
+/* Mixins
+---------------------------------------- */
 @mixin center() {
   margin:0 auto;
   display:block;
@@ -25,7 +27,8 @@ $bar-2-color:#F3825A;
   transition:$prop $dur $timing;
 }
 
-/* Global classes */
+/* Global
+---------------------------------------- */
 html, html a {
   -webkit-font-smoothing: antialiased !important;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -42,14 +45,11 @@ html, body {
   font-size:16px;
 }
 body {
-  //background-color:#f5f5f5;
   background-image:url("../res/lightbulb-on-wood.jpg");
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-position:center;
   background-size:cover;
-  /*background:linear-gradient(45deg, $bg-color, $bottom-color);
-  background:-webkit-linear-gradient(45deg, #FEFFFF, #042137);*/
 }
 
 /* Firefox & IE fix */
@@ -57,7 +57,8 @@ ul {
   padding:0;
 }
 
-/* No underline on links */
+/* No underline
+---------------------------------------- */
 .no-dec {
   list-style-type: none;
   text-decoration:none;
@@ -92,15 +93,6 @@ ul {
 }
 
 .main-container {
-  /*
-  position:relative;
-  float:left;
-  background-color:$main-color;
-  color:#000;
-  min-height:100%;
-  width:100%;
-  height:auto;
-  */
   height: 100%;
   white-space: nowrap;
   text-align: center;
@@ -120,35 +112,7 @@ ul {
     white-space: normal;
     width:100%;
   }
-  /*
-  img {
-    height:auto;
-    width:0;
-
-    animation: grow .3s;
-    animation-delay: .4s;
-    animation-fill-mode: forwards;
-    -webkit-animation: grow .3s;
-    -webkit-animation-delay: .4s;
-    -webkit-animation-fill-mode: forwards;
-  }
-  */
 }
-/*
-@keyframes grow {
-  from {width:0%;}
-  to {width:450px;}
-}
-@-webkit-keyframes grow {
-  from {width:0%;}
-  to {width:450px;}
-}
-@-moz-keyframes grow {
-  from {width:0%;}
-  to {width:450px;}
-}
-*/
-
 
 .header {
   @include center();
@@ -537,6 +501,7 @@ ul {
   border-radius:4px;
   padding:1em;
   max-width:300px;
+  min-height:440px;
 
   @include transition();
   &:hover {
@@ -844,4 +809,74 @@ ul {
     }
   }
 }
-  
+
+
+/* Test
+---------------------------------------- */
+.icon-bar {
+  @include transition();
+}
+.rotate-forward {
+  animation:rotate-forward 200ms forwards;
+  -webkit-animation:rotate-forward 200ms forwards;
+  -moz-animation:rotate-forward 200ms forwards;
+}
+@keyframes rotate-forward {
+  to {
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+  }
+}
+@-webkit-keyframes rotate-forward {
+  to {
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+  }
+}
+@-moz-keyframes rotate-forward {
+  to {
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+  }
+}
+.rotate-backward {
+  animation:rotate-backward 200ms forwards;
+  -webkit-animation:rotate-backward 200ms forwards;
+  -moz-animation:rotate-backward 200ms forwards;
+}
+@keyframes rotate-backward {
+  to {
+    transform-origin:right center;
+    -webkit-transform-origin:right center;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+  }
+}
+@-webkit-keyframes rotate-backward {
+  to {
+    transform-origin:right center;
+    -webkit-transform-origin:right center;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+  }
+}
+@-moz-keyframes rotate-backward {
+  to {
+    transform-origin:right center;
+    -webkit-transform-origin:right center;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+  }
+}
