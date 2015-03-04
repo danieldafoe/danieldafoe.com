@@ -184,10 +184,6 @@ html, body {
     color: #fff;
     font-size: 100px;
     font-family: "Pacifico", "Helvetica Neue Light", Roboto, "Helvetica Neue", Helvetica, sans-serif; }
-  .flex-inner-left-dd .spl-btn {
-    background-color: #72432F; }
-    .flex-inner-left-dd .spl-btn:hover {
-      color: #72432F; }
 
 .flex-inner-right-dd .spl-btn {
   background-color: #72432F; }
@@ -204,10 +200,8 @@ html, body {
     color: #fff;
     font-size: 100px;
     font-family: "Pacifico", "Helvetica Neue Light", Roboto, "Helvetica Neue", Helvetica, sans-serif; }
-  .flex-inner-left-rb .spl-btn {
-    background-color: #7F1919; }
-    .flex-inner-left-rb .spl-btn:hover {
-      color: #7F1919; }
+  .flex-inner-left-rb img {
+    max-width: 500px; }
 
 .flex-inner-right-rb .spl-btn {
   background-color: #7F1919; }

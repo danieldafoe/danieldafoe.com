@@ -265,12 +265,6 @@ html, body {
 		font-size:100px;
 		font-family:"Pacifico", "Helvetica Neue Light", Roboto, "Helvetica Neue", Helvetica, sans-serif;
 	}
-	.spl-btn {
-		background-color:$dd-color;
-		&:hover {
-			color:$dd-color;
-		}
-	}
 }
 .flex-inner-right-dd {
 	@extend .flex-inner-right;
@@ -296,11 +290,8 @@ html, body {
 		font-size:100px;
 		font-family:"Pacifico", "Helvetica Neue Light", Roboto, "Helvetica Neue", Helvetica, sans-serif;
 	}
-	.spl-btn {
-		background-color:$rb-color;
-		&:hover {
-			color:$rb-color;
-		}
+	img {
+		max-width:500px;
 	}
 }
 .flex-inner-right-rb {
