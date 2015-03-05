@@ -629,7 +629,20 @@ ul {
 @media (max-width:768px) {
   /* Background */
   body {
-    background-position:80%;
+    //background-position:80%;
+    //background-image:none;
+    background-color: $bar-1-color;
+    background-repeat: repeat-x; 
+    /* Safari 4-5, Chrome 1-9 */ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($skills-color), to($about-color));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, $about-color, $skills-color);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, $about-color, $skills-color);
+    /* IE 10 */
+    background: -ms-linear-gradient(top, $about-color, $skills-color);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, $about-color, $skills-color);
   }
   /* Header */
   .header {
@@ -807,76 +820,5 @@ ul {
         font-size:4.5em;
       }
     }
-  }
-}
-
-
-/* Test
----------------------------------------- */
-.icon-bar {
-  @include transition();
-}
-.rotate-forward {
-  animation:rotate-forward 200ms forwards;
-  -webkit-animation:rotate-forward 200ms forwards;
-  -moz-animation:rotate-forward 200ms forwards;
-}
-@keyframes rotate-forward {
-  to {
-    transform-origin:0 0;
-    -webkit-transform-origin:0 0;
-    transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-  }
-}
-@-webkit-keyframes rotate-forward {
-  to {
-    transform-origin:0 0;
-    -webkit-transform-origin:0 0;
-    transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-  }
-}
-@-moz-keyframes rotate-forward {
-  to {
-    transform-origin:0 0;
-    -webkit-transform-origin:0 0;
-    transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -moz-transform:rotate(45deg);
-  }
-}
-.rotate-backward {
-  animation:rotate-backward 200ms forwards;
-  -webkit-animation:rotate-backward 200ms forwards;
-  -moz-animation:rotate-backward 200ms forwards;
-}
-@keyframes rotate-backward {
-  to {
-    transform-origin:right center;
-    -webkit-transform-origin:right center;
-    transform:rotate(-45deg);
-    -webkit-transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
-  }
-}
-@-webkit-keyframes rotate-backward {
-  to {
-    transform-origin:right center;
-    -webkit-transform-origin:right center;
-    transform:rotate(-45deg);
-    -webkit-transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
-  }
-}
-@-moz-keyframes rotate-backward {
-  to {
-    transform-origin:right center;
-    -webkit-transform-origin:right center;
-    transform:rotate(-45deg);
-    -webkit-transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
   }
 }

@@ -41,11 +41,4 @@ $(document).ready(function () {
     $(this).find('i').css('text-shadow', 'none');
   });
 
-  // Test nav menu morph.
-  $('.navbar-toggle').on('click', function() {
-    $('.icon-bar:nth-child(4)').toggleClass('hide');
-    $('.icon-bar:nth-child(2)').toggleClass('rotate-forward');
-    $('.icon-bar:nth-child(3)').toggleClass('rotate-backward');
-  });
-
 });
