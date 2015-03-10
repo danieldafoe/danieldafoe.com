@@ -261,15 +261,7 @@ ul {
   float: left;
   width: 100%;
   height: 350px;
-  background-color: #232829;
-  /*
-  .col-md-4:nth-child(1) p {
-    margin-top:1em;
-  }
-  .col-md-4:nth-child(3) p {
-    margin-bottom:1em;
-  }
-  */ }
+  background-color: #232829; }
   .about .container {
     position: relative;
     top: 50%;
@@ -277,6 +269,26 @@ ul {
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%); }
+  .about a {
+    position: relative;
+    color: #fff; }
+    .about a:after {
+      content: "";
+      position: absolute;
+      bottom: -10%;
+      left: 0;
+      right: 0;
+      height: 5%;
+      background: rgba(255, 255, 255, 0.55);
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease; }
+    .about a:hover, .about a:focus, .about a:active {
+      text-decoration: none; }
+      .about a:hover:after, .about a:focus:after, .about a:active:after {
+        bottom: 0;
+        height: 100%; }
 
 /* Skills */
 .skills {

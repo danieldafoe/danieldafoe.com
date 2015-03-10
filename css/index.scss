@@ -316,14 +316,28 @@ ul {
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
   }
-  /*
-  .col-md-4:nth-child(1) p {
-    margin-top:1em;
+  a {
+    position:relative;
+    color:#fff;
+    &:after {
+      content:"";
+      position:absolute;
+      bottom:-10%;
+      left:0;
+      right:0;
+      height:5%;
+      background:rgba(255,255,255,.55);
+
+      @include transition($dur: 300ms);
+    }
+    &:hover, &:focus, &:active {
+      text-decoration:none;
+      &:after {
+        bottom:0;
+        height:100%;
+      }
+    }
   }
-  .col-md-4:nth-child(3) p {
-    margin-bottom:1em;
-  }
-  */
 }
 
 
