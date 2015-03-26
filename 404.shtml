@@ -3,28 +3,54 @@
 <head>
 <title>File Not Found</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" >
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
 body {
-  background-color: #020633;
+  background-color:#DAEAEF;
 }
 
 body, h1, p {
-  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Roboto, Arial, sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
+  width:100%;
+  height:100%;
   text-align: center;
-  color:white;
+  color:#000;
+}
+.content-wrap {
+  height:100vh;
+  width:100%;
+  min-height:100%;
+  height:auto;
+  float:left;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.content-wrap:before, .content-wrap:after {
+  display:table;
+  content:" ";
 }
 
 .container {
+  position:absolute;
+  top:45%;
+  left:0;
+  right:0;
+  transform:translateY(-50%);
+  -webkit-transform:translateY(-50%);
+  -moz-transform:translateY(-50%);
   margin-left:  auto;
   margin-right:  auto;
-  margin-top: 100px;
+  /*margin-top: 100px;
   max-width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
+  */
 }
 
 .row:before, .row:after {
@@ -64,24 +90,24 @@ a {
 </head>
 
 <body>
-<div class="container text-center" id="error">
-  <svg height="100" width="100">
-    <polygon points="50,25 17,80 82,80" stroke-linejoin="round" style="fill:none;stroke:#FFF;stroke-width:8" />
-    <text x="42" y="74" fill="#FFF" font-family="sans-serif" font-weight="900" font-size="42px">!</text>
-  </svg>
- <div class="row">
-    <div class="col-md-12">
-      <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
-        <h1>404: No portfolio here.</h1>
+  <div class="content-wrap">
+    <div class="container text-center" id="error">
+      <svg height="100" width="100">
+        <polygon points="50,50 0,50 100, 50 40,90" stroke-linejoin="rect" style="fill:none;stroke:#000;stroke-width:6" />
+      </svg>
+     <div class="row">
+        <div class="col-md-12">
+          <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
+            <h1>You discovered an internet black hole.</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-push-3">
+          <p class="lead">Check the URL you entered and try again, or feel free to email me at <a href="mailto:hello@danieldafoe.com" target="_blank">hello@danieldafoe.com</a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6 col-md-push-3">
-      <p class="lead">If you swear something was here before, feel free to email <a href="mailto:hello@danieldafoe.com" target="_blank">hello@danieldafoe.com</a>
-      </p>
-    </div>
-  </div>
-</div>
-
 </body>
 </html>
