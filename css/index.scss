@@ -74,14 +74,21 @@ ul {
 /* Splendid.css Overrides
 ---------------------------------------- */
 .spl-btn {
-  background-color:$about-color;
+  background-color:transparent;
   padding:.85em 4em;
+  border-radius:8px;
+  border:2px solid #fff;
+
+  font-weight:bold;
+  font-size:18px;
   &:hover {
     color:$about-color;
   }
 }
 .spl-grow-bl:before {
   background-color:#fff;
+  border-radius:5px;
+  @include transition($dur:300ms);
 }
 .content p {
   margin:0;
@@ -507,6 +514,11 @@ ul {
   margin:1em 0;
   h1 {
     font-weight:300;
+  }
+  .col-sm-4:first-child {
+    i {
+      font-size:7em;
+    }
   }
 }
 .proj-box {
