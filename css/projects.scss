@@ -5,7 +5,7 @@ $uosc-color:#3DB642;
 $kl-color:#395219;
 $r5apps-color:#0076A2;
 $nuview-color:#00853F;
-$dd-color:#72432F;
+$dd-color:#52879C;
 $rb-color:#7F1919;
 $blog-color:#eee;
 
@@ -130,7 +130,7 @@ html, body {
 		}
 	}
 	.logo-corner {
-		font-family:"Pacifico", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+		font-family:"Josefin Sans", "Helvetica Neue Light", Arial, sans-serif;
 		position:absolute;
 		bottom:0;
 		right:15px;
@@ -262,8 +262,10 @@ html, body {
 	background-color:$dd-color;
 	h1 {
 		color:#fff;
-		font-size:100px;
-		font-family:"Pacifico", "Helvetica Neue Light", Roboto, "Helvetica Neue", Helvetica, sans-serif;
+		font-size:80px;
+		text-align:center;
+		text-transform:uppercase;
+		font-family:"Josefin Sans", "Helvetica Neue Light", Arial, sans-serif;;
 	}
 }
 .flex-inner-right-dd {
@@ -288,7 +290,7 @@ html, body {
 	h1 {
 		color:#fff;
 		font-size:100px;
-		font-family:"Pacifico", "Helvetica Neue Light", Roboto, "Helvetica Neue", Helvetica, sans-serif;
+		font-family:"Josefin Sans", "Helvetica Neue Light", Arial, sans-serif;
 	}
 	img {
 		max-width:500px;
@@ -369,6 +371,14 @@ html, body {
 		}
 		h1 {
 			margin-top:1em;
+		}
+	}
+
+	/* DD
+	---------------------------------------- */
+	.flex-inner-left-dd {
+		h1 {
+			text-align:center;
 		}
 	}
 

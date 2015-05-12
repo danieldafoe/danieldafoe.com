@@ -4,11 +4,11 @@
 <title>File Not Found</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.min.css" />
 <style type="text/css">
-body {
-  
+* {
+  box-sizing:border-box;
 }
-
 body, h1, p {
   font-family: "Helvetica Neue Light", "Helvetica Neue", Roboto, Arial, sans-serif;
   font-weight: 300;
@@ -18,14 +18,6 @@ body, h1, p {
   height:100%;
   text-align: center;
   color:#fff;
-}
-.line {
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  height:10px;
-  background:#F3825A;
 }
 .content-wrap {
   height:100vh;
@@ -39,13 +31,13 @@ body, h1, p {
   right:0;
   bottom:0;
   background: #72432F; /* Old browsers */
-  background: -moz-linear-gradient(left, #72432F 0%, #232829 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#72432F), color-stop(100%,#232829)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #72432F 0%,#232829 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #72432F 0%,#232829 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #72432F 0%,#232829 100%); /* IE10+ */
-  background: linear-gradient(to right, #72432F 0%,#232829 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72432F', endColorstr='#232829',GradientType=1 ); /* IE6-9 */
+  background: -moz-linear-gradient(left, #52879C 50%, #5992A9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#52879C), color-stop(100%,#5992A9)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #52879C 50%,#5992A9 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #52879C 50%,#5992A9 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #52879C 50%,#5992A9 100%); /* IE10+ */
+  background: linear-gradient(to right, #52879C 50%,#5992A9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52879C', endColorstr='#5992A9',GradientType=1 ); /* IE6-9 */
 }
 .content-wrap:before, .content-wrap:after {
   display:table;
@@ -80,13 +72,21 @@ body, h1, p {
 h1 {
   font-size: 48px;
   font-weight: 300;
-  margin: 0 0 20px 0;
+  margin: 10px auto 30px auto;
 }
 
+.fa {
+  font-size:80px;
+  color:#fff;
+}
 .lead {
+  letter-spacing:1px;
   font-size: 21px;
   font-weight: 200;
   margin-bottom: 20px;
+  padding:1em 0;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
 }
 
 p {
@@ -94,8 +94,19 @@ p {
 }
 
 a {
-  color: #3282e6;
+  letter-spacing:2px;
+  position:relative;
+  color: #fff;
   text-decoration: none;
+}
+a::after {
+  content:"";
+  position:absolute;
+  bottom:-15%;
+  left:0;
+  width:100%;
+  height:2px;
+  background:#fff;
 }
 ul {
   padding:0;
@@ -106,6 +117,22 @@ ul li {
   display:inline-block;
   font-size:1.45em;
 }
+
+@media (max-width:768px) {
+  ul li {
+    display:block;
+    padding:.5em 0;
+  }
+  .col-md-6 {
+    width:100%;
+  }
+  .col-md-push-3 {
+    margin-left:0;
+  }
+  .lead {
+    padding:1em;
+  }
+}
 </style>
 </head>
 
@@ -115,23 +142,25 @@ ul li {
     <div class="container text-center" id="error">
      <div class="row">
         <div class="col-md-12">
-          <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
-            <h1>That page doesn't exist. Sorry about that.</h1>
+          <div class="big"></div>
+            <i class="fa fa-arrows"></i>
+            <h1>You seem to be lost.</h1>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6 col-md-push-3">
           <p class="lead">
-            Check the URL you entered and try again, or use one of the links below to get
-            where you were going.
+            It seems the page you're looking for doesn't exist. 
+            Check the URL you entered and try again, or use 
+            one of the links below to get where you were going.
           </p>
         </div>
       </div>
       <div class="row">
         <ul>
-          <li><a class="btn" href="http://danieldafoe.com">Portfolio</a></li>
-          <li><a class="btn" href="http://danieldafoe.com/blog/">Blog</a></li>
-          <li><a class="btn" href="http://danieldafoe.com/res/resume-daniel-dafoe.pdf">Resume</a></li>
+          <li><a class="btn" href="http://danieldafoe.com" target="_blank">Portfolio</a></li>
+          <li><a class="btn" href="http://danieldafoe.com/blog/" target="_blank">Blog</a></li>
+          <li><a class="btn" href="http://danieldafoe.com/res/resume-daniel-dafoe.pdf" target="_blank">Resume</a></li>
         </ul>
       </div>
     </div>

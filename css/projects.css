@@ -100,7 +100,7 @@ html, body {
   .flex-inner-right .spl-grow-bl:before, .flex-inner-right-uosc .spl-grow-bl:before, .flex-inner-right-kl .spl-grow-bl:before, .flex-inner-right-r5apps .spl-grow-bl:before, .flex-inner-right-nuview .spl-grow-bl:before, .flex-inner-right-dd .spl-grow-bl:before, .flex-inner-right-rb .spl-grow-bl:before, .flex-inner-right-blog .spl-grow-bl:before {
     background-color: #fff; }
   .flex-inner-right .logo-corner, .flex-inner-right-uosc .logo-corner, .flex-inner-right-kl .logo-corner, .flex-inner-right-r5apps .logo-corner, .flex-inner-right-nuview .logo-corner, .flex-inner-right-dd .logo-corner, .flex-inner-right-rb .logo-corner, .flex-inner-right-blog .logo-corner {
-    font-family: "Pacifico", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+    font-family: "Josefin Sans", "Helvetica Neue Light", Arial, sans-serif;
     position: absolute;
     bottom: 0;
     right: 15px; }
@@ -179,18 +179,20 @@ html, body {
   display: none; }
 
 .flex-inner-left-dd {
-  background-color: #72432F; }
+  background-color: #52879C; }
   .flex-inner-left-dd h1 {
     color: #fff;
-    font-size: 100px;
-    font-family: "Pacifico", "Helvetica Neue Light", Roboto, "Helvetica Neue", Helvetica, sans-serif; }
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", "Helvetica Neue Light", Arial, sans-serif; }
 
 .flex-inner-right-dd .spl-btn {
-  background-color: #72432F; }
+  background-color: #52879C; }
   .flex-inner-right-dd .spl-btn:hover {
-    color: #72432F; }
+    color: #52879C; }
 .flex-inner-right-dd h1 {
-  border-top: 5px solid #72432F; }
+  border-top: 5px solid #52879C; }
 .flex-inner-right-dd .download-icons {
   display: none; }
 
@@ -199,7 +201,7 @@ html, body {
   .flex-inner-left-rb h1 {
     color: #fff;
     font-size: 100px;
-    font-family: "Pacifico", "Helvetica Neue Light", Roboto, "Helvetica Neue", Helvetica, sans-serif; }
+    font-family: "Josefin Sans", "Helvetica Neue Light", Arial, sans-serif; }
   .flex-inner-left-rb img {
     max-width: 500px; }
 
@@ -255,6 +257,11 @@ html, body {
       text-align: center; }
     .flex-inner-right h1, .flex-inner-right-uosc h1, .flex-inner-right-kl h1, .flex-inner-right-r5apps h1, .flex-inner-right-nuview h1, .flex-inner-right-dd h1, .flex-inner-right-rb h1, .flex-inner-right-blog h1 {
       margin-top: 1em; }
+
+  /* DD
+  ---------------------------------------- */
+  .flex-inner-left-dd h1 {
+    text-align: center; }
 
   /* Nuview
   ---------------------------------------- */

@@ -1,17 +1,46 @@
 $(document).ready(function () {
-  // Do animations.
-  //$('.logo').addClass('slide-in');
+
+  // Clear the form on page load.
+  clearForm();
+  
+  // Instantiate a wow object
+  // Call its init()
+  wow = new WOW({
+    offset:-20,
+    mobile:false,
+  });
+  wow.init();
+
+  // Animations
+  $('.circle').addClass('drawCircle');
+  $('.hero-l, .hero-r').css('width','50%');
+  $('.logo h1').css({
+                      '-webkit-transform':'translate(0,0)',
+                      '-moz-transform':'translate(0,0)',
+                      '-ms-transform':'translate(0,0)',
+                      '-o-transform':'translate(0,0)',
+                      'transform':'translate(0,0)'
+                    });
+  $('.logo h2').css({
+                      '-webkit-transform':'translate(0,0)',
+                      '-moz-transform':'translate(0,0)',
+                      '-ms-transform':'translate(0,0)',
+                      '-o-transform':'translate(0,0)',
+                      'transform':'translate(0,0)'
+                    });
+
 
   // On nav-item click, scroll to div. //
+  /*
 	$('.header a').on('click', function(e) {
 		var link = $(this).attr('href');
 		$('html, body').animate({
 	            scrollTop: $(link).offset().top
 	        }, 800);
 	});
+  */
 
   // Submit clicks to Google Analytics.
-
   // Send a resume click to GA.
   $('#resume-btn').on('click', function() {
     ga('send', 'event', 'button', 'click', 'resume');
@@ -33,12 +62,10 @@ $(document).ready(function () {
   });
 
 
-  // Change <i> CSS on skill section hover.
-  $('.skill-section').hover(function() {
-    $(this).find('i').css('text-shadow', '0px 10px 10px #000');
-  },
-  function() {
-    $(this).find('i').css('text-shadow', 'none');
-  });
+  function clearForm() {
+    $('input, textarea').each(function(i, el) {
+      el.value = "";
+    });
+  }
 
 });
