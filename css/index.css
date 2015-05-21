@@ -452,18 +452,48 @@ svg:not(:root) {
     .proj-info-img.urban img {
       max-width: 550px;
       padding: 2em 0; }
+    .proj-info-img.urban a {
+      color: #000; }
+    .proj-info-img.urban h2 {
+      padding: 1em 0;
+      font-size: 375%;
+      font-family: "Playfair Display", serif; }
   .proj-info-img img {
     max-width: 100%; }
 
 .proj-info-text h1 {
-  font-size: 30px; }
+  font-size: 30px;
+  color: #365a68; }
 .proj-info-text h3 {
   color: #52879C; }
 .proj-info-text p {
   margin: 1em 0; }
+.proj-info-text a {
+  position: relative;
+  color: #5992A9;
+  text-overflow: hidden; }
+  .proj-info-text a:after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    background: #52879C;
+    height: 2px;
+    -webkit-transition: all 300ms ease 0s;
+    -moz-transition: all 300ms ease 0s;
+    -o-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s; }
+  .proj-info-text a:hover, .proj-info-text a:focus, .proj-info-text a:active {
+    text-decoration: none; }
 
 .proj-info-footer {
-  text-align: center; }
+  text-align: center;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  margin: 2em 0 0 0; }
   .proj-info-footer .dd-btn {
     background: #52879C;
     border: 3px solid transparent;
@@ -484,6 +514,18 @@ svg:not(:root) {
       .proj-info-footer .dd-btn:hover i, .proj-info-footer .dd-btn:focus i, .proj-info-footer .dd-btn:active i {
         margin-left: 0;
         opacity: 1; }
+
+.download-icons {
+  padding: .5em 0; }
+  .download-icons a {
+    -webkit-transition: all 300ms ease 0s;
+    -moz-transition: all 300ms ease 0s;
+    -o-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s;
+    color: #52879C;
+    padding: 0 1em; }
+    .download-icons a:hover, .download-icons a:active, .download-icons a:focus {
+      color: #365a68; }
 
 /* Contact
 ---------------------------------------- */
