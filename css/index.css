@@ -189,6 +189,8 @@ ul {
     -ms-transform: translate(-200%, 0);
     -o-transform: translate(-200%, 0);
     transform: translate(-200%, 0); }
+    .logo h1 span {
+      font-size: 107%; }
   .logo h2 {
     -webkit-transition: all 500ms ease 550ms;
     -moz-transition: all 500ms ease 550ms;
@@ -441,6 +443,8 @@ svg:not(:root) {
     padding: 2em 0; }
     .proj-info .container .row {
       margin-bottom: 2em; }
+      .proj-info .container .row:last-child {
+        margin-bottom: 4em; }
 
 .proj-info-img {
   max-width: 800px;
@@ -492,8 +496,7 @@ svg:not(:root) {
   position: absolute;
   bottom: 1em;
   left: 0;
-  right: 0;
-  margin: 2em 0 0 0; }
+  right: 0; }
   .proj-info-footer .dd-btn {
     background: #52879C;
     border: 3px solid transparent;
@@ -657,7 +660,7 @@ svg:not(:root) {
 
 @media (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 1) {
   .dd-btn {
-    font-size: 40px; }
+    font-size: 33px; }
 
   .logo h1 {
     font-size: 800%; }

@@ -240,6 +240,9 @@ ul {
     padding:0 0 .2em 0;
 
     @include translate(-200%,0);
+    span {
+      font-size:107%;
+    }
   }
   h2 {
     @include transition($dur:500ms ,$del:550ms);
@@ -547,6 +550,9 @@ svg:not(:root) {
     padding:2em 0;
     .row {
       margin-bottom:2em;
+      &:last-child {
+        margin-bottom:4em;
+      }
     }
   }
 }
@@ -575,7 +581,6 @@ svg:not(:root) {
   }
 }
 .proj-info-text {
-  //padding:1em 0;
   h1 {
     font-size:30px;
     color:$body-text-clr;
@@ -612,7 +617,6 @@ svg:not(:root) {
   bottom:1em;
   left:0;
   right:0;
-  margin:2em 0 0 0;
   .dd-btn {
     background:$hero-clr-left;
     border:3px solid transparent;
@@ -809,7 +813,7 @@ svg:not(:root) {
 @media (min-width:1400px) and (-webkit-min-device-pixel-ratio: 1) {
   // Button
   .dd-btn {
-    font-size:40px;
+    font-size:33px;
   }
 
   // Logo
