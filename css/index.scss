@@ -14,6 +14,8 @@ $bar-1-color:#2A454F;
 
 $hero-clr-left:#52879C;
 $hero-clr-right:#5992A9;
+//$hero-clr-left:#AE4B3D; red
+//$hero-clr-right:#BB5142; red
 $body-text-clr:$hero-clr-left/1.5;
 
 $title-stack:"Playfair Display", Georgia, serif;
@@ -31,6 +33,7 @@ $body-stack:"Helvetica Neue Light", Roboto, "Helvetica Neue", Arial, sans-serif;
 @mixin transition($prop: all, $dur: 200ms, $ease: ease, $del: 0s) {
   -webkit-transition:$prop $dur $ease $del;
   -moz-transition:$prop $dur $ease $del;
+  -ms-transition:$prop $dur $ease $del;
   -o-transition:$prop $dur $ease $del;
   transition:$prop $dur $ease $del;
 }
@@ -75,14 +78,14 @@ ul {
   padding:12px 50px;
   border:2px solid #fff;
   border-radius:30px;
-  background:transparent;
-  color:#fff;
+  background:#fff;
+  color:$hero-clr-left;
   font-size:20px;
   letter-spacing:1px;
   &:hover, &:active, &:focus {
-    background:#fff;
+    background:$hero-clr-left;
     text-decoration:none;
-    color:$hero-clr-right;
+    color:#fff;
   }
 }
 .section-title {
@@ -210,20 +213,38 @@ ul {
 ---------------------------------------- */
 .wrapper {
   position:relative;
-  display:flex;
-  display:-webkt-flex;
+  /*
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow:column wrap;
   flex-flow:column wrap;
+  */
+  margin:0 !important;
+  padding:0 !important;
+  width:100%;
 }
 .main-container {
   position:relative;
-  display:flex;
-  display:-webkit-flex;
+  /*
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow:row wrap;
   flex-flow:row wrap;
-  justify-content:flex-start;
+  */
+  display:block;
+  width:100%;
+  margin:0 !important;
+  padding:0 !important;
 }
 .logo {
   position:absolute;
-  top:45%;
+  top:48%;
   transform:translateY(-50%);
   -webkit-transform:translateY(-50%);
   -moz-transform:translateY(-50%);
@@ -233,11 +254,11 @@ ul {
   h1 {
     @include transition($dur:500ms ,$del:450ms);
     font-size:485%;
-    font-weight:200;
+    font-weight:400;
     font-family:$fancy-stack;
     text-transform:uppercase;
     letter-spacing:.1em;
-    padding:0 0 .2em 0;
+    padding:0;
 
     @include translate(-200%,0);
     span {
@@ -248,16 +269,25 @@ ul {
     @include transition($dur:500ms ,$del:550ms);
     font-family:$fancy-stack;
     text-transform:uppercase;
-    font-weight:200;
+    font-weight:400;
     letter-spacing:1px;
-    padding:0 0 1.5em 0;
+    padding:0 0 1.75em 0;
 
     @include translate(-200%,0);
+  }
+  >div {
+    padding:1em 0 0 0;
+  }
+  a[id*="link"] {
+    @include transition();
+    color:#fff;
+    font-size:65%;
+    margin:0 2em;
   }
 }
 .selfie {
   position:absolute;
-  bottom:-15%;
+  bottom:-17%;
   right:0;
   left:0;
   text-align:center;
@@ -266,16 +296,17 @@ ul {
   img {
     padding:.5em;
     border-radius:50%;
-    max-width:230px;
+    max-width:250px;
     height:auto;
     border:7px solid #fff;
   }
 }
 .hero-l, .hero-r {
-  @include transition($dur:500ms, $ease: cubic-bezier(.14, .12, .6, .79));
+  @include transition($prop:width, $dur:500ms, $ease: cubic-bezier(.14, .12, .6, .79));
   content-align:center;
   width:0%;
-  height:85vh;
+  height:91vh;
+  float:left;
 }
 .hero-l {
   background:$hero-clr-left;
@@ -288,9 +319,15 @@ ul {
   background:$hero-clr-right;
 }
 .hero-l-inner, .hero-r-inner {
-  display:flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow:row wrap;
   flex-flow:column nowrap;
   justify-content:center;
+  -webkit-align-items:center;
   align-items:center;
   align-content:center;
 
@@ -357,108 +394,37 @@ ul {
     padding-top:2em;
     padding-bottom:2em;
   }
-  .row:nth-child(2) .skill-section {
-    margin:1em 0;
-  }
 }
-.skill-section {
-  //padding:2em 0;
-  padding:0 0 1em 0;
-  h1 {
-    font-weight:100;
-    font-size:32px;
-    font-family:$body-stack;
-    padding:.3em 0 .3em 0;
-    letter-spacing:2px;
+.skill-box {
+  position:relative;
+  padding:2em 1em;
+  margin:1em 0;
+  box-shadow:1px 1px 3px 1px rgba($body-text-clr,.2);
+  overflow:hidden;
+  color:$hero-clr-left;
+  &:before {
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:3%;
+    background:$hero-clr-left;
+    height:100%;
+  }
+  h2 {
+    padding:0 0 .5em 0;
   }
   ul {
-    padding-top:.3em;
+    list-style:none;
     color:$body-text-clr;
-  }
-  i {
-    @include transition();
-    color:$hero-clr-left;
-  }
-}
-
-// Override Bootstrap's style to show percentage
-svg:not(:root) {
-  overflow:auto;
-}
-.skill-top {
-  position:relative;
-  width:10rem;
-  height:10rem;
-  margin:0 auto;
-  &:after {
-    content:attr(data-rating);
-    position:absolute;
-    top:3.25rem;
-    left:.2rem;
-    z-index:1;
-    color:$hero-clr-left;
-    width:100%;
-    font-size:2.5rem;
-    text-align:center;
-  }
-  svg {
-    position:relative;
-    width:10rem;
-    height:10rem;
-    &:nth-child(2) {
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg);
-      -moz-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-      path {
-        fill: none;
-        stroke-width: 12;
-        stroke-dasharray: 629;
-        stroke: #eee;
-        opacity:1;
-        -webkit-animation: load 3s;
-        -moz-animation: load 3s;
-        -o-animation: load 3s;
-        animation: load 3s;
-      }
+    li {
+      padding-bottom:.25em;
     }
   }
 }
-.load {
-
+.skill-box-inner {
+  padding-left:5%;
 }
-@-webkit-keyframes load {
-  0% {
-    stroke-dashoffset:0;
-  }
-}
-@-moz-keyframes load {
-  0% {
-    stroke-dashoffset:0;
-  }
-}
-@-ms-keyframes load {
-  0% {
-    stroke-dashoffset:0;
-  }
-}
-@-o-keyframes load {
-  0% {
-    stroke-dashoffset:0;
-  }
-}
-@keyframes load {
-  0% {
-    stroke-dashoffset:0;
-  }
-}
-
-
-
-
 
 /* Projects
 ---------------------------------------- */
@@ -618,8 +584,8 @@ svg:not(:root) {
   left:0;
   right:0;
   .dd-btn {
-    background:$hero-clr-left;
-    border:3px solid transparent;
+    background:transparent;
+    border:3px solid $hero-clr-left;
     font-weight:400;
     i {
       @include transition();
@@ -813,16 +779,23 @@ svg:not(:root) {
 @media (min-width:1400px) and (-webkit-min-device-pixel-ratio: 1) {
   // Button
   .dd-btn {
-    font-size:33px;
+    font-size:28px;
   }
 
   // Logo
   .logo {
     h1 {
-      font-size:800%;
+      font-size:575%;
     }
     h2 {
-      font-size:350%;
+      font-size:315%;
+      padding-bottom:1em;
+    }
+    >div {
+      padding:2.75em 0 1em 0;
+    }
+    a[id*="link"] {
+      font-size:75%;
     }
   }
 
@@ -835,13 +808,21 @@ svg:not(:root) {
 
 
 @media (max-width:992px) {
-  // Logo
-  .logo {
-
-  }
   .selfie {
     img {
       width:200px;
+    }
+  }
+
+  // Skills
+  .skill-flip {
+    min-height:15em;
+  }
+  .skill-box-b {
+    ul {
+      &:first-of-type {
+        width:100%;
+      }
     }
   }
 
@@ -995,6 +976,16 @@ svg:not(:root) {
     }
   }
 
+  // Skills 
+  .skill-box-b {
+    ul {
+      &:first-of-type, &:last-of-type {
+        float:none !important;
+        width:100% !important;
+      }
+    }
+  }
+
   /* Contact */
   .social-icons a {
     display:block;
@@ -1007,24 +998,20 @@ svg:not(:root) {
 @media (max-width:480px) {
   // Logo
   .logo {
-    //top:2em;
     top:40%;
     h1, h2 {
       @include transition();
     }
     h1 {
-      font-size:325%;
+      font-size:370%;
       &:first-letter {
-        padding:0 0 0 .3em;
+        padding:0 0 0 .35em;
       }
     }
     h2 {
       text-align:center;
       font-size:110%;
-      padding:.5em 0 1.5em 0;
-    }
-    a {
-      font-size:100%;
+      padding:.5em 0 1em 0;
     }
   }
   .selfie {
@@ -1048,6 +1035,16 @@ svg:not(:root) {
     .col-md-4:nth-child(2) p {
       margin-top:0;
       margin-bottom:0;
+    }
+  }
+
+  /* Skills */
+  .skill-flip {
+    min-height:22em;
+    ul {
+      padding:0 0 0 .85em;
+      list-style:square;
+      list-style-color:$hero-clr-left;
     }
   }
 

@@ -1,3 +1,6 @@
+// Nothing groundbreaking to see here. Sorry, friend.
+//
+//
 $(document).ready(function () {
 
   // Clear the form on page load.
@@ -12,7 +15,6 @@ $(document).ready(function () {
   wow.init();
 
   // Animations
-  $('.circle').addClass('drawCircle');
   $('.hero-l, .hero-r').css('width','50%');
   $('.logo h1').css({
                       '-webkit-transform':'translate(0,0)',

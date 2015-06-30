@@ -29,19 +29,20 @@ ul {
 .dd-btn {
   -webkit-transition: all 200ms ease 0s;
   -moz-transition: all 200ms ease 0s;
+  -ms-transition: all 200ms ease 0s;
   -o-transition: all 200ms ease 0s;
   transition: all 200ms ease 0s;
   padding: 12px 50px;
   border: 2px solid #fff;
   border-radius: 30px;
-  background: transparent;
-  color: #fff;
+  background: #fff;
+  color: #52879C;
   font-size: 20px;
   letter-spacing: 1px; }
   .dd-btn:hover, .dd-btn:active, .dd-btn:focus {
-    background: #fff;
+    background: #52879C;
     text-decoration: none;
-    color: #5992A9; }
+    color: #fff; }
 
 .section-title {
   position: relative; }
@@ -109,6 +110,7 @@ ul {
   border-radius: 5px;
   -webkit-transition: all 300ms ease 0s;
   -moz-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s;
   -o-transition: all 300ms ease 0s;
   transition: all 300ms ease 0s; }
   .spl-focus-vert:before:hover, .spl-focus-vert:before:focus, .spl-focus-vert:before:active {
@@ -153,20 +155,38 @@ ul {
 ---------------------------------------- */
 .wrapper {
   position: relative;
+  /*
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  display: -webkt-flex;
-  flex-flow: column wrap; }
+  -webkit-flex-flow:column wrap;
+  flex-flow:column wrap;
+  */
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%; }
 
 .main-container {
   position: relative;
-  display: flex;
+  /*
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-  flex-flow: row wrap;
-  justify-content: flex-start; }
+  display: flex;
+  -webkit-flex-flow:row wrap;
+  flex-flow:row wrap;
+  */
+  display: block;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important; }
 
 .logo {
   position: absolute;
-  top: 45%;
+  top: 48%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -176,14 +196,15 @@ ul {
   .logo h1 {
     -webkit-transition: all 500ms ease 450ms;
     -moz-transition: all 500ms ease 450ms;
+    -ms-transition: all 500ms ease 450ms;
     -o-transition: all 500ms ease 450ms;
     transition: all 500ms ease 450ms;
     font-size: 485%;
-    font-weight: 200;
+    font-weight: 400;
     font-family: "Josefin Sans", "Helvetica Neue Light", Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: .1em;
-    padding: 0 0 .2em 0;
+    padding: 0;
     -webkit-transform: translate(-200%, 0);
     -moz-transform: translate(-200%, 0);
     -ms-transform: translate(-200%, 0);
@@ -194,22 +215,34 @@ ul {
   .logo h2 {
     -webkit-transition: all 500ms ease 550ms;
     -moz-transition: all 500ms ease 550ms;
+    -ms-transition: all 500ms ease 550ms;
     -o-transition: all 500ms ease 550ms;
     transition: all 500ms ease 550ms;
     font-family: "Josefin Sans", "Helvetica Neue Light", Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 1px;
-    padding: 0 0 1.5em 0;
+    padding: 0 0 1.75em 0;
     -webkit-transform: translate(-200%, 0);
     -moz-transform: translate(-200%, 0);
     -ms-transform: translate(-200%, 0);
     -o-transform: translate(-200%, 0);
     transform: translate(-200%, 0); }
+  .logo > div {
+    padding: 1em 0 0 0; }
+  .logo a[id*="link"] {
+    -webkit-transition: all 200ms ease 0s;
+    -moz-transition: all 200ms ease 0s;
+    -ms-transition: all 200ms ease 0s;
+    -o-transition: all 200ms ease 0s;
+    transition: all 200ms ease 0s;
+    color: #fff;
+    font-size: 65%;
+    margin: 0 2em; }
 
 .selfie {
   position: absolute;
-  bottom: -15%;
+  bottom: -17%;
   right: 0;
   left: 0;
   text-align: center;
@@ -218,18 +251,20 @@ ul {
   .selfie img {
     padding: .5em;
     border-radius: 50%;
-    max-width: 230px;
+    max-width: 250px;
     height: auto;
     border: 7px solid #fff; }
 
 .hero-l, .hero-r {
-  -webkit-transition: all 500ms cubic-bezier(0.14, 0.12, 0.6, 0.79) 0s;
-  -moz-transition: all 500ms cubic-bezier(0.14, 0.12, 0.6, 0.79) 0s;
-  -o-transition: all 500ms cubic-bezier(0.14, 0.12, 0.6, 0.79) 0s;
-  transition: all 500ms cubic-bezier(0.14, 0.12, 0.6, 0.79) 0s;
+  -webkit-transition: width 500ms cubic-bezier(0.14, 0.12, 0.6, 0.79) 0s;
+  -moz-transition: width 500ms cubic-bezier(0.14, 0.12, 0.6, 0.79) 0s;
+  -ms-transition: width 500ms cubic-bezier(0.14, 0.12, 0.6, 0.79) 0s;
+  -o-transition: width 500ms cubic-bezier(0.14, 0.12, 0.6, 0.79) 0s;
+  transition: width 500ms cubic-bezier(0.14, 0.12, 0.6, 0.79) 0s;
   content-align: center;
   width: 0%;
-  height: 85vh; }
+  height: 91vh;
+  float: left; }
 
 .hero-l {
   background: #52879C; }
@@ -238,9 +273,15 @@ ul {
   background: #5992A9; }
 
 .hero-l-inner, .hero-r-inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: row wrap;
   flex-flow: column nowrap;
   justify-content: center;
+  -webkit-align-items: center;
   align-items: center;
   align-content: center;
   height: 100%; }
@@ -271,6 +312,7 @@ ul {
       height: 2px;
       -webkit-transition: all 300ms ease 0s;
       -moz-transition: all 300ms ease 0s;
+      -ms-transition: all 300ms ease 0s;
       -o-transition: all 300ms ease 0s;
       transition: all 300ms ease 0s; }
     .about a:hover, .about a:focus, .about a:active {
@@ -293,83 +335,33 @@ ul {
   .skills .container {
     padding-top: 2em;
     padding-bottom: 2em; }
-  .skills .row:nth-child(2) .skill-section {
-    margin: 1em 0; }
 
-.skill-section {
-  padding: 0 0 1em 0; }
-  .skill-section h1 {
-    font-weight: 100;
-    font-size: 32px;
-    font-family: "Helvetica Neue Light", Roboto, "Helvetica Neue", Arial, sans-serif;
-    padding: .3em 0 .3em 0;
-    letter-spacing: 2px; }
-  .skill-section ul {
-    padding-top: .3em;
-    color: #365a68; }
-  .skill-section i {
-    -webkit-transition: all 200ms ease 0s;
-    -moz-transition: all 200ms ease 0s;
-    -o-transition: all 200ms ease 0s;
-    transition: all 200ms ease 0s;
-    color: #52879C; }
-
-svg:not(:root) {
-  overflow: auto; }
-
-.skill-top {
+.skill-box {
   position: relative;
-  width: 10rem;
-  height: 10rem;
-  margin: 0 auto; }
-  .skill-top:after {
-    content: attr(data-rating);
+  padding: 2em 1em;
+  margin: 1em 0;
+  box-shadow: 1px 1px 3px 1px rgba(54, 90, 104, 0.2);
+  overflow: hidden;
+  color: #52879C; }
+  .skill-box:before {
+    content: "";
     position: absolute;
-    top: 3.25rem;
-    left: .2rem;
-    z-index: 1;
-    color: #52879C;
-    width: 100%;
-    font-size: 2.5rem;
-    text-align: center; }
-  .skill-top svg {
-    position: relative;
-    width: 10rem;
-    height: 10rem; }
-    .skill-top svg:nth-child(2) {
-      position: absolute;
-      left: 0;
-      top: 0;
-      transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg);
-      -moz-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg); }
-      .skill-top svg:nth-child(2) path {
-        fill: none;
-        stroke-width: 12;
-        stroke-dasharray: 629;
-        stroke: #eee;
-        opacity: 1;
-        -webkit-animation: load 3s;
-        -moz-animation: load 3s;
-        -o-animation: load 3s;
-        animation: load 3s; }
+    left: 0;
+    top: 0;
+    width: 3%;
+    background: #52879C;
+    height: 100%; }
+  .skill-box h2 {
+    padding: 0 0 .5em 0; }
+  .skill-box ul {
+    list-style: none;
+    color: #365a68; }
+    .skill-box ul li {
+      padding-bottom: .25em; }
 
-@-webkit-keyframes load {
-  0% {
-    stroke-dashoffset: 0; } }
-@-moz-keyframes load {
-  0% {
-    stroke-dashoffset: 0; } }
-@-ms-keyframes load {
-  0% {
-    stroke-dashoffset: 0; } }
-@-o-keyframes load {
-  0% {
-    stroke-dashoffset: 0; } }
-@keyframes load {
-  0% {
-    stroke-dashoffset: 0; } }
+.skill-box-inner {
+  padding-left: 5%; }
+
 /* Projects
 ---------------------------------------- */
 .projects {
@@ -389,6 +381,7 @@ svg:not(:root) {
 .proj-box {
   -webkit-transition: all 200ms ease 0s;
   -moz-transition: all 200ms ease 0s;
+  -ms-transition: all 200ms ease 0s;
   -o-transition: all 200ms ease 0s;
   transition: all 200ms ease 0s;
   margin: 0 auto;
@@ -400,6 +393,7 @@ svg:not(:root) {
   .proj-box:hover a {
     -webkit-transition: all 300ms ease 0s;
     -moz-transition: all 300ms ease 0s;
+    -ms-transition: all 300ms ease 0s;
     -o-transition: all 300ms ease 0s;
     transition: all 300ms ease 0s;
     border-color: #52879C; }
@@ -486,6 +480,7 @@ svg:not(:root) {
     height: 2px;
     -webkit-transition: all 300ms ease 0s;
     -moz-transition: all 300ms ease 0s;
+    -ms-transition: all 300ms ease 0s;
     -o-transition: all 300ms ease 0s;
     transition: all 300ms ease 0s; }
   .proj-info-text a:hover, .proj-info-text a:focus, .proj-info-text a:active {
@@ -498,12 +493,13 @@ svg:not(:root) {
   left: 0;
   right: 0; }
   .proj-info-footer .dd-btn {
-    background: #52879C;
-    border: 3px solid transparent;
+    background: transparent;
+    border: 3px solid #52879C;
     font-weight: 400; }
     .proj-info-footer .dd-btn i {
       -webkit-transition: all 200ms ease 0s;
       -moz-transition: all 200ms ease 0s;
+      -ms-transition: all 200ms ease 0s;
       -o-transition: all 200ms ease 0s;
       transition: all 200ms ease 0s;
       font-size: 20px;
@@ -523,6 +519,7 @@ svg:not(:root) {
   .download-icons a {
     -webkit-transition: all 300ms ease 0s;
     -moz-transition: all 300ms ease 0s;
+    -ms-transition: all 300ms ease 0s;
     -o-transition: all 300ms ease 0s;
     transition: all 300ms ease 0s;
     color: #52879C;
@@ -572,6 +569,7 @@ svg:not(:root) {
 .btn-default {
   -webkit-transition: all 300ms ease 0s;
   -moz-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s;
   -o-transition: all 300ms ease 0s;
   transition: all 300ms ease 0s;
   background: #5992A9;
@@ -584,6 +582,7 @@ svg:not(:root) {
   .btn-default:before, .btn-default:after {
     -webkit-transition: all 200ms ease 0s;
     -moz-transition: all 200ms ease 0s;
+    -ms-transition: all 200ms ease 0s;
     -o-transition: all 200ms ease 0s;
     transition: all 200ms ease 0s;
     content: "";
@@ -604,6 +603,7 @@ svg:not(:root) {
   .btn-default i {
     -webkit-transition: all 200ms ease 0s;
     -moz-transition: all 200ms ease 0s;
+    -ms-transition: all 200ms ease 0s;
     -o-transition: all 200ms ease 0s;
     transition: all 200ms ease 0s;
     font-size: 20px;
@@ -653,6 +653,7 @@ svg:not(:root) {
       font-size: 4.25em;
       -webkit-transition: all 200ms ease 0s;
       -moz-transition: all 200ms ease 0s;
+      -ms-transition: all 200ms ease 0s;
       -o-transition: all 200ms ease 0s;
       transition: all 200ms ease 0s; }
       .social-icons a i:hover {
@@ -660,18 +661,29 @@ svg:not(:root) {
 
 @media (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 1) {
   .dd-btn {
-    font-size: 33px; }
+    font-size: 28px; }
 
   .logo h1 {
-    font-size: 800%; }
+    font-size: 575%; }
   .logo h2 {
-    font-size: 350%; }
+    font-size: 315%;
+    padding-bottom: 1em; }
+  .logo > div {
+    padding: 2.75em 0 1em 0; }
+  .logo a[id*="link"] {
+    font-size: 75%; }
 
   .selfie img {
     max-width: 350px; } }
 @media (max-width: 992px) {
   .selfie img {
     width: 200px; }
+
+  .skill-flip {
+    min-height: 15em; }
+
+  .skill-box-b ul:first-of-type {
+    width: 100%; }
 
   .project-skill {
     display: inline-block;
@@ -767,6 +779,10 @@ svg:not(:root) {
     margin-top: 2em;
     margin-bottom: 2em; }
 
+  .skill-box-b ul:first-of-type, .skill-box-b ul:last-of-type {
+    float: none !important;
+    width: 100% !important; }
+
   /* Contact */
   .social-icons a {
     display: block; }
@@ -779,18 +795,17 @@ svg:not(:root) {
     .logo h1, .logo h2 {
       -webkit-transition: all 200ms ease 0s;
       -moz-transition: all 200ms ease 0s;
+      -ms-transition: all 200ms ease 0s;
       -o-transition: all 200ms ease 0s;
       transition: all 200ms ease 0s; }
     .logo h1 {
-      font-size: 325%; }
+      font-size: 370%; }
       .logo h1:first-letter {
-        padding: 0 0 0 .3em; }
+        padding: 0 0 0 .35em; }
     .logo h2 {
       text-align: center;
       font-size: 110%;
-      padding: .5em 0 1.5em 0; }
-    .logo a {
-      font-size: 100%; }
+      padding: .5em 0 1em 0; }
 
   .selfie {
     bottom: -17.5%; }
@@ -808,6 +823,14 @@ svg:not(:root) {
   .about .col-md-4:nth-child(2) p {
     margin-top: 0;
     margin-bottom: 0; }
+
+  /* Skills */
+  .skill-flip {
+    min-height: 22em; }
+    .skill-flip ul {
+      padding: 0 0 0 .85em;
+      list-style: square;
+      list-style-color: #52879C; }
 
   /* Projects */
   .project-desc p {

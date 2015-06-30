@@ -19,16 +19,26 @@
   <link rel="canonical" href="http://danieldafoe.com" />
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display|Josefin+Sans' rel='stylesheet' type='text/css'>
 </head>
-<body>
-<div class="wrapper">
-  <div class="main-container">
+<body ontouchstart="">
+<div class="wrapper container-fluid">
+  <div class="main-container row">
     <div class="selfie">
       <img src="res/me-small.jpg" />
     </div>
     <div class="logo">
       <h1>Daniel<br class="visible-xs"/>Dafoe</h1>
       <h2>Front End Web Developer</h2>
-      <a class="dd-btn" href="res/resume-daniel-dafoe.pdf" target="_blank">View Resume</a>
+      <!--
+        Statistics don't lie. Resume button was removed in favour of bringing visibility to social icons.
+        Besides...I have a job now. Perhaps this will make a triumphant return one day.
+
+        <a class="dd-btn" href="res/resume-daniel-dafoe.pdf" target="_blank">View Resume</a>
+      -->
+      <div>
+        <a id="linkedin-link" target="_blank" href="http://ca.linkedin.com/in/danieldafoe"><i class="fa fa-linkedin fa-5x"></i></a>
+        <a id="twitter-link" target="_blank" href="http://twitter.com/danieldafoe"><i class="fa fa-twitter fa-5x"></i></a>
+        <a id="github-link" target="_blank" href="https://github.com/danieldafoe"><i class="fa fa-github fa-5x"></i></a>
+      </div>
     </div>
     <div class="hero-l">
       <div class="hero-l-inner">
@@ -71,7 +81,7 @@
           <div class="col-xs-12">
             <p class="wow fadeInLeft about-inner" data-wow-delay="300ms">
               <i class="fa fa-laptop fa-4x"></i>
-              My passion is building aesthetically pleasing and intuitive experiences for users of the world wide web. I'm constantly absorbed by the possbilities of the web, and I love trying out what's trendy in the realm of front end web development.
+              My passion is building aesthetically pleasing and intuitive experiences for users of the world wide web. I'm constantly absorbed by the possibilities of the web, and I love trying out what's trendy in the realm of front end web development.
               <br/><br/>
               When I'm not reading about web design or mobile trends, you can find me reading literature
               pre 1900s, watching a play, or working on my personal fitness.
@@ -82,186 +92,79 @@
   </section>
 
   <section id="skills" class="skills">
-    <div class="section-title">
+    <div draggable="true" class="section-title">
       <h2>Knowledge</h2>
-    </div>
-    <div class="section-footer">
-      <p class="emphasis">Percentages denote how familiar I am with the items in that category.</p>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-4 text-center">
-          <div class="skill-section">
-            <div class="skill-top" data-rating="95%">
-              <svg viewBox="-10 -10 220 220">
-                <g fill="none" stroke-width="9" transform="translate(100,100)">
-                  <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#5992A9"/>
-                  <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#5992A9"/>
-                  <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#5992A9"/>
-                  <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#5992A9"/>
-                  <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#5992A9"/>
-                  <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#5992A9"/>
-                </g>
-              </svg>
-              <svg viewBox="-10 -10 220 220">
-                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="597.55"></path>
-              </svg>
+        <div class="col-xs-12 col-sm-4">
+          <div class="skill-box">
+            <div class="skill-box-inner">
+              <!--
+                <li>SEO conscious development</li>
+                <li>Responsive web design</li>
+                <li>CSS preprocessors</li>
+                <li>System analysis</li>
+                <li>User experience</li>
+                <li>AJAX requests</li>
+              -->
+              <h2>Web</h2>
+              <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>Bootstrap, SASS, jQuery</li>
+                <li>SQL, PHP, C#, .NET</li>
+                <li>Google Analytics, Git</li>
+                <li>Drupal, Wordpress</li>
+              </ul>
             </div>
-            <!--<h1>Languages</h1>-->
-            <ul class="no-dec">
-              <li>Google Play Store Deployment</li>
-              <li>Apple App Store Deployment</li>
-              <li>Mobile Experience Design</li>
-              <li>Adobe PhoneGap</li>
-              <li>PhoneGap Build</li>
-              <li>PhoneGap CLI</li>
-            </ul>
-          </div> <!-- end of skill section -->
-        </div> <!-- end of col-md-4 -->
-        <div class="col-md-4 col-sm-4 text-center">
-          <div class="skill-section">
-            <div class="skill-top" data-rating="90%">
-              <svg viewBox="-10 -10 220 220">
-                <g fill="none" stroke-width="9" transform="translate(100,100)">
-                  <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#5992A9"/>
-                  <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#5992A9"/>
-                  <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#5992A9"/>
-                  <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#5992A9"/>
-                  <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#5992A9"/>
-                  <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#5992A9"/>
-                </g>
-              </svg>
-              <svg viewBox="-10 -10 220 220">
-                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="566"></path>
-              </svg>
-            </div>
-            <!--<h1>Frameworks</h1>-->
-            <ul class="no-dec">
-              <li>Responsive Design</li>
-              <li>System Analysis</li>
-              <li>Sublime Text 3</li>
-              <li>JavaScript</li>
-              <li>Bootstrap</li>
-              <li>HTML5</li>
-              <li>jQuery</li>
-              <li>CSS3</li>
-            </ul>
-          </div> <!-- end of skill section -->
-        </div> <!-- end of col-md-4 -->
-        <div class="col-md-4 col-sm-4 text-center">
-          <div class="skill-section">
-            <div class="skill-top" data-rating="85%">
-              <svg viewBox="-10 -10 220 220">
-                <g fill="none" stroke-width="9" transform="translate(100,100)">
-                  <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#5992A9"/>
-                  <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#5992A9"/>
-                  <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#5992A9"/>
-                  <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#5992A9"/>
-                  <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#5992A9"/>
-                  <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#5992A9"/>
-                </g>
-              </svg>
-              <svg viewBox="-10 -10 220 220">
-                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="534.65"></path>
-              </svg>
-            </div>
-            <!--<h1>Frameworks</h1>-->
-            <ul class="no-dec">
-              <li>Google Analytics Event Tracking</li>
-              <li>jQuery Mobile</li>
-              <li>Genymotion</li>
-              <li>Ratchet</li>
-              <li>Git</li>
-            </ul>
-          </div> <!-- end of skill section -->
-        </div> <!-- end of col-md-4 -->
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="skill-box">
+            <div class="skill-box-inner">
+              <!--
+                <li>Hybrid mobile app development</li>
+                <li>Object-oriented methodologies</li>
+                <li>Cross-platform app design</li>
+              -->
+              <h2>Mobile</h2>
+              <ul>
+                <li>Google Play Store Deployment</li>
+                <li>Apple App Store Deployment</li>
+                <li>Mobile Experience Design</li>
+                <li>Adobe PhoneGap</li>
+                <li>PhoneGap Build</li>
+                <li>PhoneGap CLI</li>
+                <li>Objective-C</li>
+              </ul>
+          </div>
+        </div>
       </div> <!-- end of row -->
       <div class="row">
-        <div class="col-md-4 col-sm-4 text-center">
-          <div class="skill-section">
-            <div class="skill-top" data-rating="80%">
-              <svg viewBox="-10 -10 220 220">
-                <g fill="none" stroke-width="9" transform="translate(100,100)">
-                  <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#5992A9"/>
-                  <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#5992A9"/>
-                  <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#5992A9"/>
-                  <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#5992A9"/>
-                  <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#5992A9"/>
-                  <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#5992A9"/>
-                </g>
-              </svg>
-              <svg viewBox="-10 -10 220 220">
-                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="503.2"></path>
-              </svg>
+        <div class="col-xs-12 col-sm-4">
+          <div class="skill-box">
+            <div class="skill-box-inner">
+              <!--
+                <li>Information architecture</li>
+                <li>User interaction design</li>
+                <li>User experience design</li>
+                <li>Process analysis</li>
+              -->
+              <h2>System Analysis</h2>
+              <ul>
+                <li>Technical document writing</li>
+                <li>Diagram modelling (UML)</li>
+                <li>Requirements gathering</li>
+                <li>User research</li>
+              </ul>
             </div>
-            <!--<h1>Software</h1>-->
-            <ul class="no-dec">
-              <li>FileZilla</li>
-              <li>Drupal</li>
-            </ul>
-          </div> <!-- end of skill section -->
-        </div> <!-- end of col-md-4 -->
-        <div class="col-md-4 col-sm-4 text-center">
-          <div class="skill-section">
-            <div class="skill-top" data-rating="75%">
-              <svg viewBox="-10 -10 220 220">
-                <g fill="none" stroke-width="9" transform="translate(100,100)">
-                  <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#5992A9"/>
-                  <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#5992A9"/>
-                  <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#5992A9"/>
-                  <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#5992A9"/>
-                  <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#5992A9"/>
-                  <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#5992A9"/>
-                </g>
-              </svg>
-              <svg viewBox="-10 -10 220 220">
-                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="471.75"></path>
-              </svg>
-            </div>
-            <!--<h1>Software</h1>-->
-            <ul class="no-dec">
-              <li>Visual Studio 2013</li>
-              <li>Cocoa Touch</li>
-              <li>Objective-C</li>
-              <li>Xcode 6</li>
-              <li>SQL</li>
-            </ul>
-          </div> <!-- end of skill section -->
-        </div> <!-- end of col-md-4 -->
-        <div class="col-md-4 col-sm-4 text-center">
-          <div class="skill-section">
-            <div class="skill-top" data-rating="70%">
-              <svg viewBox="-10 -10 220 220">
-                <g fill="none" stroke-width="9" transform="translate(100,100)">
-                  <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="#5992A9"/>
-                  <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="#5992A9"/>
-                  <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="#5992A9"/>
-                  <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="#5992A9"/>
-                  <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="#5992A9"/>
-                  <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="#5992A9"/>
-                </g>
-              </svg>
-              <svg viewBox="-10 -10 220 220">
-                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="440.3"></path>
-              </svg>
-            </div>
-            <!--<h1>Software</h1>-->
-            <ul class="no-dec">
-              <li>Wordpress</li>
-              <li>AngularJS</li>
-              <li>.NET</li>
-              <li>PHP</li>
-              <li>C#</li>
-            </ul>
-          </div> <!-- end of skill section -->
-        </div> <!-- end of col-md-4 -->
+          </div>
+        </div>
       </div> <!-- end of row -->
     </div> <!-- end of container -->
   </section>
 
 
-
-  <!-- AngularJS section -->
   <section id="projects" class="projects">
     <div class="section-title">
       <h2>Experience</h2>
@@ -294,7 +197,7 @@
                 Responsive web design, user experience, and even back end development. Projects where I've used web technologies to create great web experiences are listed here.
               </p>
               <p><a href="typographic-portfolio-idea.html">Typographic Portfolio</a></p>
-              <p><a href="kasty-landscaping-website.html">Kasty Landscaping</a></p>
+              <p><a href="kasty-landscaping-website.html">Kasty Landscaping</a></p><br class="hidden-xs"/>
               <p><a href="daniel-dafoe-portfolio.html">danieldafoe.com</a></p>
               <p><a href="blog-design-and-writing.html">Personal Blog</a></p>
             </div>
@@ -341,7 +244,7 @@
     </div>
     <div class="section-footer">
       <p>
-        Get in touch if you need your website updated, you're in need of a complete website redesign, or if you'd simply like to chat about web development.
+        If you think I can assist your company by reimagining its web presence or architecting a mobile app, make my phone vibrate by filling out this short form and I'll get back to you.
       </p>
     </div>
     <form id="form-contact" action="php/send_mail.php" method="post">
