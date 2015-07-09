@@ -1,0 +1,19 @@
+// Utility Classes
+.u-strike {
+  text-decoration: line-through;
+}
+.inner {
+  padding:1em;
+}
+.max-50 {
+  max-width:60%;
+  margin:0 auto;
+  padding:1em 0;
+}
+
+// Media
+@media (max-width:480px) {
+  .max-50 {
+    max-width:90%;
+  }
+}
