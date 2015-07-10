@@ -2,107 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://danieldafoe.com/daniel-dafoe-portfolio.html</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/blog/</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
-    <loc>http://danieldafoe.com/blog/user</loc>
-    <lastmod>2015-06-26</lastmod>
+    <loc>http://danieldafoe.com/blog/biggest-mistake-in-blog-writing.html</loc>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
-    <loc>http://danieldafoe.com/blog/user/register</loc>
-    <lastmod>2015-06-26</lastmod>
+    <loc>http://danieldafoe.com/blog/user-experience-gripes-google-gamespot.html</loc>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
-    <loc>http://danieldafoe.com/blog/biggest-no-no-in-blog-writing</loc>
-    <lastmod>2015-06-26</lastmod>
-    <changefreq>Daily</changefreq>
-  </url>
-  <url>
-    <loc>http://danieldafoe.com/blog/user-experience-gripes-google-gamespot</loc>
-    <lastmod>2015-06-26</lastmod>
-    <changefreq>Daily</changefreq>
-  </url>
-  <url>
-    <loc>http://danieldafoe.com/blog/blog/1</loc>
-    <lastmod>2015-06-26</lastmod>
+    <loc>http://danieldafoe.com/blog/usability-affordances-signifiers.html</loc>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/kasty-landscaping-website.html</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/oakville-shops-mobile-app.html</loc>
-    <lastmod>2015-06-26</lastmod>
-    <changefreq>Daily</changefreq>
-  </url>
-  <url>
-    <loc>http://danieldafoe.com/blog/blog/1/feed</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/res/resume-daniel-dafoe.pdf</loc>
-    <lastmod>2015-01-26</lastmod>
-    <changefreq>Daily</changefreq>
-  </url>
-  <url>
-    <loc>http://danieldafoe.com/blog/rss.xml</loc>
-    <lastmod>2015-06-26</lastmod>
-    <changefreq>Daily</changefreq>
-  </url>
-  <url>
-    <loc>http://danieldafoe.com/blog/blog/feed</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/r5apps-content-writing.html</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/raven5-mobile-app.html</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/sql-injection-sticker.html</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/blog-design-and-writing.html</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/typographic-portfolio-idea.html</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/urban-clothing-design.html</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
   <url>
     <loc>http://danieldafoe.com/css-selector-clothing-design.html</loc>
-    <lastmod>2015-06-26</lastmod>
+    <lastmod>2015-07-09</lastmod>
     <changefreq>Daily</changefreq>
   </url>
 </urlset>

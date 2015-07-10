@@ -122,7 +122,7 @@ ul {
 
 // Blog Title, Desc
 .blog-title {
-  font-family: "PT Serif", serif;
+  font-family: "Playfair Display", "PT Serif", serif;
   font-size:400%;
 }
 
@@ -199,6 +199,18 @@ ul {
   th {
     background:$clr-main;
     color:#fff;
+  }
+}
+
+// Footer
+footer {
+  background:rgba($clr-main, .2);
+  text-align:center;
+  margin:1em 0 0 0;
+  min-height:80px;
+  p {
+    padding:25px 0;
+    margin:0 !important;
   }
 }
 

@@ -108,7 +108,7 @@ ul {
     letter-spacing: 1px; }
 
 .blog-title {
-  font-family: "PT Serif", serif;
+  font-family: "Playfair Display", "PT Serif", serif;
   font-size: 400%; }
 
 .article-title, .article-desc {
@@ -166,6 +166,15 @@ ul {
   .content th {
     background: #52879C;
     color: #fff; }
+
+footer {
+  background: rgba(82, 135, 156, 0.2);
+  text-align: center;
+  margin: 1em 0 0 0;
+  min-height: 80px; }
+  footer p {
+    padding: 25px 0;
+    margin: 0 !important; }
 
 @media (max-width: 480px) {
   .hero {
