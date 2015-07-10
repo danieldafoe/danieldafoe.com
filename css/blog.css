@@ -180,7 +180,18 @@ footer {
   .hero {
     text-align: left; }
     .hero h2 {
-      max-width: 95%; }
+      max-width: 100%; }
+    .hero .article-desc {
+      font-size: 105%; }
+    .hero .inner {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none; }
 
   .blog-title {
     font-size: 230%; }
@@ -193,6 +204,17 @@ footer {
 
   .post-link {
     float: none;
-    font-size: 20px; } }
+    font-size: 18px; }
+
+  .article-title {
+    font-size: 175%; }
+
+  .article-desc {
+    font-size: 80%; }
+
+  .content {
+    font-size: 100%; }
+    .content img {
+      max-width: 95%; } }
 
 /*# sourceMappingURL=blog.css.map */

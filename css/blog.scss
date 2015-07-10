@@ -220,7 +220,16 @@ footer {
   .hero {
     text-align:left;
     h2 {
-      max-width:95%;
+      max-width:100%;
+    }
+    .article-desc {
+      font-size:105%;
+    }
+    .inner {
+      position:relative;
+      top:auto;
+      left:auto;
+      @include transform(none);
     }
   }
 
@@ -240,7 +249,24 @@ footer {
   }
   .post-link {
     float:none;
-    font-size:20px;
+    font-size:18px;
   }
+
+  // Articles
+  .article-title {
+    font-size:175%;
+  }
+  .article-desc {
+    font-size:80%;
+  }
+
+  // Content
+  .content {
+    font-size:100%;
+    img {
+      max-width:95%;
+    }
+  }
+
 
 }
