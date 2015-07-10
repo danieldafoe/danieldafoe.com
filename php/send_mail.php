@@ -12,7 +12,7 @@ $message = $_POST["msg"];
 
 $mail = Mail::factory("mail");
 
-$headers = array("From"=>$name, "Subject"=>"Contact Submission");
+$headers = array("From"=>$email, "Subject"=>"Contact Submission");
 $body = "From: " . $email . "\nMessage: " . $message;
 $mail->send("hello@danieldafoe.com", $headers, $body);
 

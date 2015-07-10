@@ -123,7 +123,7 @@ ul {
 // Blog Title, Desc
 .blog-title {
   font-family: "PT Serif", serif;
-  font-size:350%;
+  font-size:400%;
 }
 
 // Articles
@@ -142,12 +142,18 @@ ul {
 
 // Posting
 .post {
-  padding:.5em 0;
+  padding:.5em;
+  border-radius:6px;
+
+  transition:background-color 250ms 0s ease;
   &:after {
     content:"";
     display:block;
     margin-top:3em;
     border-top:1px solid $clr-main;
+  }
+  &:hover, &:active, &:focus {
+    background-color:#fefefe;
   }
 }
 .post-title {

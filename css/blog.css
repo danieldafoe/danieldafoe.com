@@ -109,7 +109,7 @@ ul {
 
 .blog-title {
   font-family: "PT Serif", serif;
-  font-size: 350%; }
+  font-size: 400%; }
 
 .article-title, .article-desc {
   font-family: "Helvetica Neue Light", Roboto, "Helvetica Neue", Arial, sans-serif; }
@@ -124,12 +124,16 @@ ul {
   letter-spacing: 1px; }
 
 .post {
-  padding: .5em 0; }
+  padding: .5em;
+  border-radius: 6px;
+  transition: background-color 250ms 0s ease; }
   .post:after {
     content: "";
     display: block;
     margin-top: 3em;
     border-top: 1px solid #52879C; }
+  .post:hover, .post:active, .post:focus {
+    background-color: #fefefe; }
 
 .post-title a {
   color: #52879C; }
