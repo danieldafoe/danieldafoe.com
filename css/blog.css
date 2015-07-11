@@ -126,7 +126,10 @@ ul {
 .post {
   padding: .5em;
   border-radius: 6px;
-  transition: background-color 250ms 0s ease; }
+  transition: background-color 250ms 0s ease;
+  -webkit-transition: background-color 250ms 0s ease;
+  -moz-transition: background-color 250ms 0s ease;
+  -ms-transition: background-color 250ms 0s ease; }
   .post:after {
     content: "";
     display: block;

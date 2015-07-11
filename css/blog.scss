@@ -146,6 +146,9 @@ ul {
   border-radius:6px;
 
   transition:background-color 250ms 0s ease;
+  -webkit-transition:background-color 250ms 0s ease;
+  -moz-transition:background-color 250ms 0s ease;
+  -ms-transition:background-color 250ms 0s ease;
   &:after {
     content:"";
     display:block;

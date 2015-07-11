@@ -12,6 +12,8 @@ $message = $_POST["msg"];
 
 $mail = Mail::factory("mail");
 
+// Add an if statement to disregard spam emails
+
 $headers = array("From"=>$email, "Subject"=>"Contact Submission");
 $body = "From: " . $email . "\nMessage: " . $message;
 $mail->send("hello@danieldafoe.com", $headers, $body);
