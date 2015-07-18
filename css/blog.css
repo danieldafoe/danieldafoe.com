@@ -31,12 +31,13 @@ h1, h2, h3, h4 {
   margin: 1em 0 .5em; }
 
 h3 {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: bold; }
 
 h4 {
-  font-size: 26px;
-  font-style: italic; }
+  font-size: 30px;
+  font-weight: 300;
+  color: #999; }
 
 blockquote {
   position: relative;
@@ -61,6 +62,74 @@ ul {
   list-style-type: square; }
   ul li {
     padding-bottom: .5em; }
+
+body {
+  overflow-x: hidden; }
+
+.nav-reveal {
+  position: fixed;
+  top: 1.3em;
+  left: 1em;
+  width: auto;
+  z-index: 3;
+  letter-spacing: 4px;
+  font-size: 130%;
+  -webkit-transition: all 200ms ease 0s;
+  -moz-transition: all 200ms ease 0s;
+  -ms-transition: all 200ms ease 0s;
+  -o-transition: all 200ms ease 0s;
+  transition: all 200ms ease 0s; }
+  .nav-reveal button {
+    color: #74bedc;
+    background: none;
+    border: 0; }
+
+.reveal-out {
+  left: 17%; }
+
+.reveal-in {
+  left: 1em; }
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  z-index: 3;
+  text-align: center;
+  box-shadow: 3px 0 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  -webkit-transition: all 200ms ease 0s;
+  -moz-transition: all 200ms ease 0s;
+  -ms-transition: all 200ms ease 0s;
+  -o-transition: all 200ms ease 0s;
+  transition: all 200ms ease 0s; }
+
+.out {
+  -webkit-transform: translate(-102%, 0);
+  -moz-transform: translate(-102%, 0);
+  -ms-transform: translate(-102%, 0);
+  -o-transform: translate(-102%, 0);
+  transform: translate(-102%, 0); }
+
+.in {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0); }
+
+.nav-inner {
+  font-size: 140%; }
+  .nav-inner a {
+    display: block;
+    padding: 1.25em 0;
+    color: #52879C;
+    letter-spacing: 1px; }
+    .nav-inner a:hover, .nav-inner a:focus, .nav-inner a:active {
+      text-decoration: none;
+      background-color: #f0f0f0; }
 
 .wrapper {
   background-color: #f4f4f4;
@@ -187,14 +256,13 @@ footer {
     .hero .article-desc {
       font-size: 105%; }
     .hero .inner {
-      position: relative;
-      top: auto;
-      left: auto;
-      transform: none;
-      -webkit-transform: none;
-      -moz-transform: none;
-      -ms-transform: none;
-      -o-transform: none; }
+      left: auto; }
+
+  nav {
+    min-width: 7em; }
+
+  .reveal-out {
+    left: 40%; }
 
   .blog-title {
     font-size: 230%; }

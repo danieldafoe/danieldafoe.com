@@ -14,8 +14,10 @@ $bar-1-color:#2A454F;
 
 $hero-clr-left:#52879C;
 $hero-clr-right:#5992A9;
-//$hero-clr-left:#AE4B3D; red
-//$hero-clr-right:#BB5142; red
+//$hero-clr-left:#AE4B3D; //red
+//$hero-clr-right:#BB5142; //red
+//$hero-clr-left:#5C83A7; //purple
+//$hero-clr-right:#5C83A7; //purple
 $body-text-clr:$hero-clr-left/1.5;
 
 $title-stack:"Playfair Display", Georgia, serif;
@@ -168,13 +170,69 @@ ul {
   }
 }
 
-/* Above fold */
-.navbar-fixed-top {
-    visibility:hidden;
-}
-
 /* Nav
 ---------------------------------------- */
+// To make the nav work correctly.
+body {
+  overflow-x:hidden;
+}
+.nav-reveal {
+  position:fixed;
+  top:1.3em;
+  left:1em;
+  width:auto;
+  z-index:3;
+
+  letter-spacing:4px;
+  font-size:130%;
+
+  @include transition();
+  button {
+    color:$hero-clr-right*1.3;
+    background:none;
+    border:0;
+  }
+}
+.reveal-out {
+  left:17%;
+}
+.reveal-in {
+  left:1em;
+}
+nav {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  width:15%;
+  z-index:3;
+  text-align:center;
+
+  box-shadow:3px 0 5px 0px rgba(0,0,0,.2);
+  background-color:#fff;
+
+  @include transition();
+}
+.out {
+  @include translate(-102%, 0);
+}
+.in {
+  @include translate(0, 0);
+}
+.nav-inner {
+  font-size:140%;
+  a {
+    display:block;
+    padding:1.25em 0;
+    color:$hero-clr-left;
+    letter-spacing:1px;
+    &:hover, &:focus, &:active {
+      text-decoration:none;
+      background-color:#f0f0f0;
+    }
+  }
+}
+/* Tab Bar Idea
 .bar {
   position:fixed;
   top:0;
@@ -208,6 +266,7 @@ ul {
     }
   }
 }
+*/
 
 /* Wrapper
 ---------------------------------------- */
@@ -299,6 +358,15 @@ ul {
     max-width:250px;
     height:auto;
     border:7px solid #fff;
+  }
+}
+.rotate-up {
+  animation:rotate-up 300ms forwards;
+}
+@keyframes rotate-up {
+  100% {
+    bottom:35%;
+    transform:rotate(360deg);
   }
 }
 .hero-l, .hero-r {
@@ -844,7 +912,7 @@ ul {
   // Contact
   .contact {
     min-height:450px;
-    height:450px;
+    //height:450px;
   }
 }
 
@@ -976,7 +1044,7 @@ ul {
     }
   }
 
-  // Skills 
+  // Skills
   .skill-box-b {
     ul {
       &:first-of-type, &:last-of-type {
@@ -998,20 +1066,23 @@ ul {
 @media (max-width:480px) {
   // Logo
   .logo {
-    top:40%;
+    top:45%;
     h1, h2 {
       @include transition();
     }
     h1 {
-      font-size:370%;
+      font-size:320%;
       &:first-letter {
         padding:0 0 0 .35em;
       }
     }
     h2 {
       text-align:center;
-      font-size:110%;
+      font-size:90%;
       padding:.5em 0 1em 0;
+    }
+    a[id*="link"] {
+      font-size:55%;
     }
   }
   .selfie {
@@ -1025,9 +1096,12 @@ ul {
     display:none;
   }
 
-  /* Mobile Nav */
-  .mobile-nav {
-    display:block;
+  // Nav
+  nav {
+    min-width:7em;
+  }
+  .reveal-out {
+    left:40%;
   }
 
   /* About */

@@ -16,7 +16,15 @@ $mail = Mail::factory("mail");
 
 $headers = array("From"=>$email, "Subject"=>"Contact Submission");
 $body = "From: " . $email . "\nMessage: " . $message;
-$mail->send("hello@danieldafoe.com", $headers, $body);
+
+if ($email != 'offbeatvalley0yy8@aol.com' &&
+	$email != 'understoodforumu8v@aol.com' &&
+	$email != 'voraciousrat22tju7@aol.com' &&
+	$email != 'elagriesbaumax9424@aol.com' &&
+	$email != 'quietsilhouettequ@aol.com') {
+		$mail->send("hello@danieldafoe.com", $headers, $body);	
+	}
+
 
 header("Location: ../");
 

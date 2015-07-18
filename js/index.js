@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   // Clear the form on page load.
   clearForm();
-  
+
   // Instantiate a wow object
   // Call its init()
   wow = new WOW({
@@ -32,15 +32,39 @@ $(document).ready(function () {
                     });
 
 
+  $('.nav-reveal').on('touchend click', function() {
+    var nav = $('nav');
+    var wrapper = $('.wrapper');
+    var button = $('.nav-reveal button');
+    var navReveal = $('.nav-reveal');
+
+    if (nav.hasClass('out')) {
+      //wrapper.addClass('wrapper-out').removeClass('wrapper-in');
+      navReveal.addClass('reveal-out').removeClass('reveal-in');
+      nav.removeClass('out').addClass('in');
+      button.html('<i class="fa fa-close"></i> CLOSE');
+
+      //$('.logo').css('visibility','none');
+      //$('.selfie').addClass('rotate-up');
+    }
+    else {
+      //wrapper.addClass('wrapper-in').removeClass('wrapper-out');
+      navReveal.addClass('reveal-in').removeClass('reveal-out')
+      nav.removeClass('in').addClass('out');
+      button.html('<i class="fa fa-bars"></i> MENU');
+    }
+  });
+
   // On nav-item click, scroll to div. //
-  /*
-	$('.header a').on('click', function(e) {
+	$('.nav-inner a').on('touchend click', function(e) {
 		var link = $(this).attr('href');
 		$('html, body').animate({
 	            scrollTop: $(link).offset().top
 	        }, 800);
+
+    // Ensure the menu closes after a click or touch.
+    $('.nav-reveal').click();
 	});
-  */
 
   // Submit clicks to Google Analytics.
   // Send a resume click to GA.
