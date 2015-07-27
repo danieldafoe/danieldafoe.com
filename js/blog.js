@@ -31,19 +31,6 @@ $(document).ready(function () {
                       'transform':'translate(0,0)'
                     });
                     
-  // Snap selfie on scroll
-  var stickyOffset = $('.selfie').offset().top;
-
-  $(window).scroll(function(){
-    var sticky = $('.selfie'),
-        scroll = $(window).scrollTop();
-      
-    if (scroll >= stickyOffset) {
-      sticky.addClass('rotate-up');
-      //$('.selfie img').css('max-width', '175px');
-    }
-    else sticky.removeClass('rotate-up');
-  });
 
 
   $('.nav-reveal').on('touch click', function() {

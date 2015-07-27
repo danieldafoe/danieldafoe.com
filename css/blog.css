@@ -21,6 +21,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
+  min-height: 100%;
   color: #fff;
   font-family: "Helvetica Neue Light", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
@@ -42,7 +43,7 @@ h4 {
 blockquote {
   position: relative;
   margin: 1em 0;
-  background-color: #dfeaef;
+  background-color: #f1dbd8;
   font-style: italic;
   border-radius: 0 10px 10px 0; }
   blockquote:before {
@@ -52,7 +53,7 @@ blockquote {
     bottom: 0;
     left: -2%;
     right: auto;
-    background: #5992A9;
+    background: #BB5142;
     height: 100%;
     width: 10px;
     border-radius: 10px 0 0 10px; }
@@ -62,6 +63,22 @@ ul {
   list-style-type: square; }
   ul li {
     padding-bottom: .5em; }
+
+.screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 200ms ease 0s;
+  -moz-transition: all 200ms ease 0s;
+  -ms-transition: all 200ms ease 0s;
+  -o-transition: all 200ms ease 0s;
+  transition: all 200ms ease 0s; }
 
 body {
   overflow-x: hidden; }
@@ -80,7 +97,7 @@ body {
   -o-transition: all 200ms ease 0s;
   transition: all 200ms ease 0s; }
   .nav-reveal button {
-    color: #74bedc;
+    color: #f36956;
     background: none;
     border: 0; }
 
@@ -125,22 +142,22 @@ nav {
   .nav-inner a {
     display: block;
     padding: 1.25em 0;
-    color: #52879C;
+    color: #AE4B3D;
     letter-spacing: 1px; }
     .nav-inner a:hover, .nav-inner a:focus, .nav-inner a:active {
       text-decoration: none;
       background-color: #f0f0f0; }
 
 .wrapper {
+  position: relative;
   background-color: #f4f4f4;
   color: #fff;
-  min-height: 100vh;
-  height: auto; }
+  min-height: 100vh; }
 
 .hero {
   position: relative;
   min-height: 70vh;
-  background-color: #52879C;
+  background-color: #AE4B3D;
   box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.2);
   text-align: center; }
   .hero .inner {
@@ -159,7 +176,7 @@ nav {
     top: auto;
     bottom: 0;
     left: 0;
-    background: #5992A9;
+    background: #BB5142;
     width: 100%;
     height: 50px; }
   .hero h1, .hero h2 {
@@ -203,12 +220,12 @@ nav {
     content: "";
     display: block;
     margin-top: 3em;
-    border-top: 1px solid #52879C; }
+    border-top: 1px solid #AE4B3D; }
   .post:hover, .post:active, .post:focus {
     background-color: #fefefe; }
 
 .post-title a {
-  color: #52879C; }
+  color: #AE4B3D; }
 
 .post-desc {
   font-size: 95%; }
@@ -230,17 +247,17 @@ nav {
     min-width: 100%;
     margin: 1.5em auto; }
   .content tr:nth-child(2n+2) {
-    background: #e3edf0; }
+    background: #f3e0dd; }
   .content table, .content td {
-    border: 1px solid #52879C; }
+    border: 1px solid #AE4B3D; }
   .content th, .content td {
     padding: .5em; }
   .content th {
-    background: #52879C;
+    background: #AE4B3D;
     color: #fff; }
 
 footer {
-  background: rgba(82, 135, 156, 0.2);
+  background: rgba(174, 75, 61, 0.2);
   text-align: center;
   margin: 1em 0 0 0;
   min-height: 80px; }

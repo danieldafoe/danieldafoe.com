@@ -18,7 +18,7 @@ $headers = array("From"=>$email, "Subject"=>"Contact Submission");
 $body = "From: " . $email . "\nMessage: " . $message;
 
 if ($email != 'offbeatvalley0yy8@aol.com' &&
-	$email != 'understoodforumu8v@aol.com' &&
+	$email != 'understoodformu8v@aol.com' &&
 	$email != 'voraciousrat22tju7@aol.com' &&
 	$email != 'elagriesbaumax9424@aol.com' &&
 	$email != 'quietsilhouettequ@aol.com') {
