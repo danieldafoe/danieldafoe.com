@@ -10,7 +10,7 @@
   <meta property="og:url" content="http://danieldafoe.com" />
   <meta property="og:image" content="http://danieldafoe.com/res/og-bg.png" />
   <meta property="og:description" content="Daniel Dafoe is a Mobile and Web Developer based in Burlington, Ontario who is constantly expanding his skills in the areas of Front End Web and Mobile Development." />
-	<title>Typographic Portfolio Idea | Freelance Web Developer in Burlington</title>
+	<title>Inspiragen | Freelance Web Developer in Burlington</title>
   <link rel="favicon" href="favicon.ico"/>
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css" />
@@ -35,7 +35,7 @@
         <img src="res/me-small.jpg" />
       </div>
       <div class="logo proj-info-logo">
-        <h1>Typographic<br/> Portfolio Idea</h1>
+        <h1>Inspiragen</h1>
         <h2>By Daniel Dafoe</h2>
       </div>
       <div class="hero-l">
@@ -54,13 +54,17 @@
         <div class="row">
           <div class="col-sm-push-2 col-sm-8">
             <div class="proj-info-text">
-              <h1>Typographic Portfolio Idea</h1>
+              <h1><a href="">Inspiragen</a></h1>
               <p>
-                When one day I was reading a blog about "choosing the right typeface for your website", I had an intriguing thought. What if I could use typography as a form of design for a web page? It could separate sections of content, lead the user to the next section, and also look visually appealing.
+                After reading about the coder who <a href="">created a simple side project</a> where users could submit their best execuses for working from home, I was inspired to develop something similar. My project would allow me to demonstrate that I can build neat ideas quickly, as well as show that my skills are improving.
               </p>
 
               <p>
-                Evidently, although it was not used as the final design for my portfolio, I considered it for its simplicity, uniqueness, and even the fact that it required no visual assets.
+                So here we are&mdash;I've taken a couple days to put together my first - completed - side project. The initial idea for Inspiragen was a place for copywriters to share taglines, headlines, and copy that would help inspire others to come up with their next copy break-through.
+              </p>
+
+              <p>
+                As I developed out the functionality to submit and generate using AngularJS, my mind started forming new ideas of its own. I wanted this to instead become a place where <em>anyone</em> could post <em>any</em> type of text. The text could be a sentence that motivates, a poem that inspires emotion, or even a haiku that embodies the creative spirit. 
               </p>
             </div>
           </div>
@@ -68,18 +72,18 @@
         <div class="row">
           <div class="col-sm-7">
             <div class="proj-info-img">
-              <img src="res/tp-1.png" />
+              <img src="res/inspiragen-landing-screen.png" />
             </div>
           </div>
           <div class="col-sm-5">
             <div class="proj-info-text">
-              <h3>Rationale</h3>
+              <h3>Design</h3>
               <p>
-                Letters that were chosen were not done so by accident. I chose them based on their curvature, harsh edges, and even for their fit for the content. For instance, choosing an uppercase 'W' as the starting letter allowed me to have a letter that took up enough real estate to make good use of white space, and also because of the way it displayed my initial header and tagline.
+                Inspiragen had to allow visitors to get information quickly and submit it just as effectively. Equally important, I wanted visitors to be able to generate and submit without having to scroll or go to any other page.
               </p>
 
               <p>
-                By choosing the uppercase 'W', I am also able to give the idea that my name and tagline are hoisted up on some sort of pedestal. The long lines of the letter give off the idea (at least to me) that the words above it are sitting on an invisible table.
+                With my criteria for a simple, one screen application, I began. I wanted to have an appealing, professional feel to the page, so I opted for a darker background colour. The headline sports a sans-serif font for quick reading, and is large enough that it's the focal point.
               </p>
             </div>
           </div>
@@ -87,66 +91,57 @@
         <div class="row">
           <div class="col-sm-5">
             <div class="proj-info-text">
+              <h3>Submit</h3>
               <p>
-                You may be asking yourself: "What's with the 'W'? Why not its reverse&mdash;the 'M'?" I would say to you that that was a simple design choice. If I had cut an 'M' at the fold, would it have formed two down arrows? This inclusion is not obvious at first, but I felt that it may subconsciously tell the user that there is more content below.
+                Allowing visitors to submit new content was paramount. I wanted content to be created by the community, for the benefit of the community. There are 3 fields to fill out in the submit form: text, creator, and URL.
               </p>
 
               <p>
-                In order to better suit the minimalistic design, I needed to skim my content. By doing so I found that I really stripped away all of the unnecessary verbage and filler words. As a result I was able to keep the message concise and even be a little cheeky.
+                All are basically self-explanatory, but in case the URL field confuses you, I'll explain. As a "thank you" to the visitor for helping keep Inspiragen alive, I've given them the opportunity for a linkback to their own wesite, Twitter page, or wherever they wish to be found. Other visitors can click on the submitter's name (under the headline) to be taken to whatever URL was entered.
               </p>
             </div>
           </div>
           <div class="col-sm-7">
             <div class="proj-info-img">
-              <img src="res/tp-2.png" />
+              <img src="res/inspiragen-submit-screen.png" />
             </div>
           </div>
         </div> <!-- end of row -->
         <div class="row">
           <div class="col-sm-7">
             <div class="proj-info-img">
-              <img src="res/tp-3.png" />
+              <img src="res/inspiragen-generate-screen.png" />
             </div>
           </div>
           <div class="col-sm-5">
             <div class="proj-info-text">
-              <h3>"What did you spell?"</h3>
+              <h3>Generate</h3>
               <p>
-                As you can imagine, including letters sparked a lot of questions related to what word I was trying to spell or what the acronym I used stood for. While it may seem like an obvious choice to spell something related to my message with my chosen letters, this wasn't my focus.
+                To ensure that generating headlines was as smooth a process as possible, I wanted to use a JS library that would allow me to dynamically insert results without a page refresh. Having a little experience with AngularJS, I opted to visit it once again.
+              </p>
+
+              <p>
+                Users have the abiity to generate as many ideas as they like, and can vote on equally as much. You'll see that I haven't quite worked in the functionality to allow a user to only vote once per idea, but this is something I would like to visit next.
               </p>
             </div>
           </div>
         </div> <!-- end of row -->
 
         <div class="row">
-          <div class="col-sm-5">
+          <div class="col-sm-6 col-sm-push-3">
             <div class="proj-info-text">
               <h3>Improvements</h3>
               <p>
-                If I were to tackle this page again now that I have more experience with web development and design, I would select a better font family for the section titles&mdash;something more visually appealing. At the very least I would change the font-weight to match that of my name in the first section.
+                Although Inspiragen is now included in my portfolio as a "finished" side project, I will be improving it. I would like to create an algorithm that will show higher rated ideas more often so that, if visitors are coming back to generate more ideas, they'll get better quality content.
               </p>
 
               <p>
-                Aside from font I would spend more time making the portfolio responsive. The major drawback to using this type of design was the fact that it didn't translate well to smaller screens.
+                The algorithm won't be as straightforward as I just put it, since I will also need to account for both new and lower rated ideas. Further, each idea will still get its opportunity to be on the "big stage", but focus should be made on display great ideas that have helped others.
               </p>
-            </div>
-          </div>
-          <div class="col-sm-7">
-            <div class="proj-info-img">
-              <img src="res/tp-4.png" />
-            </div>
-          </div>
-        </div> <!-- end of row -->
 
-        <div class="row">
-          <div class="col-sm-7">
-            <div class="proj-info-img">
-              <img src="res/tp-5.png" />
-            </div>
-          </div>
-          <div class="col-sm-5">
-            <div class="proj-info-text">
-
+              <p>
+                As noted in the previous section, I need to restrict to users to only vote once per idea. Currently, users can vote as many times as they want.
+              </p>
             </div>
           </div>
         </div> <!-- end of row -->

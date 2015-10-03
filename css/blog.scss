@@ -217,7 +217,7 @@ nav {
 
 // Blog Title, Desc
 .blog-title {
-  font-family: "Playfair Display", "PT Serif", serif;
+  font-family: "Playfair Display", Georgia, "PT Serif", serif;
   font-size:400%;
 }
 
@@ -312,6 +312,22 @@ footer {
   }
 }
 
+@media (min-width:1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  // Nav
+  .nav-reveal, .nav-inner {
+    font-size:150%;
+  }
+
+  .blog-title {
+    font-size:485%;
+  }
+  .hero {
+    h2 {
+      font-size:150%;
+    }
+  }
+}
+
 // Media
 @media (max-width:480px) {
   // Hero
@@ -373,6 +389,4 @@ footer {
       max-width:95%;
     }
   }
-
-
 }

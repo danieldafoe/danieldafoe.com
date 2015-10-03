@@ -194,7 +194,7 @@ nav {
     letter-spacing: 1px; }
 
 .blog-title {
-  font-family: "Playfair Display", "PT Serif", serif;
+  font-family: "Playfair Display", Georgia, "PT Serif", serif;
   font-size: 400%; }
 
 .article-title, .article-desc {
@@ -265,6 +265,15 @@ footer {
     padding: 25px 0;
     margin: 0 !important; }
 
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  .nav-reveal, .nav-inner {
+    font-size: 150%; }
+
+  .blog-title {
+    font-size: 485%; }
+
+  .hero h2 {
+    font-size: 150%; } }
 @media (max-width: 480px) {
   .hero {
     text-align: left; }

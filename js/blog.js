@@ -44,7 +44,7 @@ $(document).ready(function () {
       navReveal.addClass('reveal-out').removeClass('reveal-in');
       nav.removeClass('out').addClass('in');
       button.html('<i class="fa fa-close"></i> CLOSE');
-      screen.css('opacity', '1');
+      screen.css({'opacity':'1', 'pointer-events':'all'});
     }
     else {
       //wrapper.addClass('wrapper-in').removeClass('wrapper-out');
@@ -53,6 +53,19 @@ $(document).ready(function () {
       button.html('<i class="fa fa-bars"></i> MENU');
       screen.css('opacity', '0');
     }
+  });
+  
+  // Allow users to click or touch the screen in order to close the menu.
+  $('.screen').on('touch click', function() {
+    var nav = $('nav');
+    var screen = $('.screen');
+    var button = $('.nav-reveal button');
+    var navReveal = $('.nav-reveal');
+
+    navReveal.addClass('reveal-in').removeClass('reveal-out')
+    nav.removeClass('in').addClass('out');
+    button.html('<i class="fa fa-bars"></i> MENU');
+    screen.css({'opacity':'0', 'pointer-events':'none'});
   });
 
   // On nav-item click, scroll to div. //
