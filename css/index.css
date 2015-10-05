@@ -37,6 +37,7 @@ p {
   transition: all 200ms ease 0s;
   padding: 12px 50px;
   border: 2px solid #fff;
+  -webkit-border-radius: 30px;
   border-radius: 30px;
   background: #fff;
   color: #AE4B3D;
@@ -78,8 +79,7 @@ p {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #AE4B3D;
-    border: 3px solid #AE4B3D; }
+    color: #AE4B3D; }
 
 .section-footer {
   max-width: 60%;
@@ -504,7 +504,7 @@ nav {
   background-color: #fff; }
 
 .projects-container {
-  padding: 2em 0; }
+  padding: 2em 0 0 0; }
   .projects-container h1 {
     font-weight: 300; }
 
@@ -707,6 +707,7 @@ nav {
   background: #BB5142;
   color: #fff;
   border: 0;
+  -webkit-border-radius: 30px;
   border-radius: 30px;
   padding: 12px 60px;
   position: relative;
