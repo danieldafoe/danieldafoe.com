@@ -187,13 +187,17 @@ body {
 }
 .nav-reveal {
   position:fixed;
-  top:1.3em;
-  left:1em;
-  width:auto;
+  top:0;
+  left:0;
+  width:100%;
   z-index:3;
+	padding:.25rem 0;
 
+	text-align:center;
   letter-spacing:4px;
   font-size:130%;
+	font-weight:400;
+	background-color:rgba(255,255,255,.9);
 
   @include transition();
   button {
@@ -202,23 +206,17 @@ body {
     border:0;
   }
 }
-.reveal-out {
-  left:17%;
-}
-.reveal-in {
-  left:1em;
-}
 nav {
   position:fixed;
   top:0;
   bottom:0;
   left:0;
   width:15%;
-  z-index:3;
+  z-index:4;
   text-align:center;
 
   box-shadow:3px 0 5px 0px rgba(0,0,0,.2);
-  background-color:#fff;
+  background-color:rgba(255,255,255,.9);
 
   @include transition();
 }
@@ -293,6 +291,7 @@ nav {
   margin:0 !important;
   padding:0 !important;
   width:100%;
+  background-color:#fafafa;
 }
 .screen {
   position:absolute;
@@ -330,7 +329,6 @@ nav {
   -webkit-transform:translateY(-50%);
   -moz-transform:translateY(-50%);
   left:0;
-  //left:2rem;
   right:0;
   max-width:60%;
   margin:0 auto;
@@ -362,11 +360,6 @@ nav {
 
     @include translate(-200%,0);
   }
-  /*
-  >div {
-    padding:1em 0 0 0;
-  }
-  */
   a[id*="link"] {
     @include transition();
     color:#fff;
@@ -391,7 +384,7 @@ nav {
     //max-width:250px;
     max-width:200px;
     height:auto;
-    border:7px solid #fff;
+    border:7px solid #fafafa;
     
     @include transition();
   }
@@ -461,7 +454,7 @@ nav {
 .about {
   width:100%;
 
-  background-color:$about-color;
+  background-color:#fafafa;
   color:#222;
   .container {
     max-width:70%;
@@ -510,7 +503,7 @@ nav {
 .skills {
   width:100%;
   padding:2rem 0 0 0;
-  background-color:#f8f8f8;
+  background-color:#fff;
   color:$skills-color;
   .container {
     padding-top:3rem;
@@ -555,7 +548,7 @@ nav {
   position:relative;
   width:100%;
 
-  background-color:$projects-color;
+  background-color:#fafafa;
 }
 .projects-container {
   padding:2em 0 0 0;
@@ -888,9 +881,6 @@ nav {
 
 
 
-//@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-//}
-
 @media (min-width:1200px) and (-webkit-min-device-pixel-ratio: 1) {
   // Button
   .dd-btn {
@@ -899,7 +889,7 @@ nav {
 
   // Nav
   .nav-reveal, .nav-inner {
-    font-size:175%;
+    font-size:150%;
   }
 
   // Logo
@@ -910,9 +900,6 @@ nav {
     h2 {
       font-size:250%;
       //padding-bottom:1em;
-    }
-    >div {
-      //padding:2.75em 0 1em 0;
     }
     a[id*="link"] {
       font-size:75%;
@@ -927,7 +914,7 @@ nav {
       }
     }
     img {
-      max-width:350px;
+      max-width:300px;
     }
   }
 }
@@ -986,11 +973,9 @@ nav {
     max-width:95%;
   }
 
+	// Nav
   nav {
     width:25%;
-  }
-  .reveal-out {
-    left:30%;
   }
 
   // Logo
@@ -1165,18 +1150,11 @@ nav {
       @include transition();
     }
     h1 {
-      //font-size:320%;
       font-size:300%;
-      /*
-      &:first-letter {
-        padding:0 0 0 .35em;
-      }
-      */
     }
     h2 {
       text-align:center;
       font-size:105%;
-      //padding:.5em 0 1em 0;
     }
     a[id*="link"] {
       font-size:55%;
@@ -1184,11 +1162,9 @@ nav {
     }
   }
   .selfie {
-    //bottom:-17.5%;
     bottom:-20%;
     img {
       max-width:175px;
-      //max-width:90px;
     }
   }
   .rotate-up {
@@ -1214,14 +1190,8 @@ nav {
   }
 
   // Nav
-  .nav-reveal {
-    top:1em;
-  }
   nav {
     min-width:7em;
-  }
-  .reveal-out {
-    left:40%;
   }
 
   /* About */
@@ -1265,7 +1235,6 @@ nav {
   /* Social */
   .social {
     min-height:450px;
-    //height:450px;
   }
   .social-icons {
     a {
@@ -1282,7 +1251,6 @@ nav {
   }
 
   .logo {
-    //top:30%;
     h1 {
       font-size:500%;
     }
@@ -1295,4 +1263,17 @@ nav {
       width:250px;
     }
   }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	// Selfie
+	.selfie {
+		&.rotate-up {
+			img {
+				max-width:100px;
+			}
+		}
+		img {
+			max-width:200px;
+		}
+	}
 }

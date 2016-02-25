@@ -134,12 +134,16 @@ body {
 
 .nav-reveal {
   position: fixed;
-  top: 1.3em;
-  left: 1em;
-  width: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 3;
+  padding: .25rem 0;
+  text-align: center;
   letter-spacing: 4px;
   font-size: 130%;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: all 200ms ease 0s;
   -moz-transition: all 200ms ease 0s;
   -ms-transition: all 200ms ease 0s;
@@ -150,22 +154,16 @@ body {
     background: none;
     border: 0; }
 
-.reveal-out {
-  left: 17%; }
-
-.reveal-in {
-  left: 1em; }
-
 nav {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   width: 15%;
-  z-index: 3;
+  z-index: 4;
   text-align: center;
   box-shadow: 3px 0 5px 0px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: all 200ms ease 0s;
   -moz-transition: all 200ms ease 0s;
   -ms-transition: all 200ms ease 0s;
@@ -247,7 +245,8 @@ nav {
   */
   margin: 0 !important;
   padding: 0 !important;
-  width: 100%; }
+  width: 100%;
+  background-color: #fafafa; }
 
 .screen {
   position: absolute;
@@ -293,12 +292,7 @@ nav {
   margin: 0 auto;
   padding: 2rem 1rem;
   border: 3px solid #fff;
-  text-align: center;
-  /*
-  >div {
-    padding:1em 0 0 0;
-  }
-  */ }
+  text-align: center; }
   .logo h1 {
     -webkit-transition: all 500ms ease 450ms;
     -moz-transition: all 500ms ease 450ms;
@@ -355,7 +349,7 @@ nav {
     border-radius: 50%;
     max-width: 200px;
     height: auto;
-    border: 7px solid #fff;
+    border: 7px solid #fafafa;
     -webkit-transition: all 200ms ease 0s;
     -moz-transition: all 200ms ease 0s;
     -ms-transition: all 200ms ease 0s;
@@ -421,7 +415,7 @@ nav {
 ---------------------------------------- */
 .about {
   width: 100%;
-  background-color: #fff;
+  background-color: #fafafa;
   color: #222; }
   .about .container {
     max-width: 70%;
@@ -463,7 +457,7 @@ nav {
 .skills {
   width: 100%;
   padding: 2rem 0 0 0;
-  background-color: #f8f8f8;
+  background-color: #fff;
   color: #52879C; }
   .skills .container {
     padding-top: 3rem;
@@ -501,7 +495,7 @@ nav {
 .projects {
   position: relative;
   width: 100%;
-  background-color: #fff; }
+  background-color: #fafafa; }
 
 .projects-container {
   padding: 2em 0 0 0; }
@@ -797,7 +791,7 @@ nav {
     font-size: 28px; }
 
   .nav-reveal, .nav-inner {
-    font-size: 175%; }
+    font-size: 150%; }
 
   .logo h1 {
     font-size: 575%; }
@@ -811,7 +805,7 @@ nav {
     .selfie.rotate-up img {
       max-width: 130px; }
     .selfie img {
-      max-width: 350px; } }
+      max-width: 300px; } }
 @media (max-width: 992px) {
   .section-title {
     max-width: 60%; }
@@ -846,9 +840,6 @@ nav {
 
   nav {
     width: 25%; }
-
-  .reveal-out {
-    left: 30%; }
 
   .logo {
     text-align: center;
@@ -965,12 +956,7 @@ nav {
       -o-transition: all 200ms ease 0s;
       transition: all 200ms ease 0s; }
     .logo h1 {
-      font-size: 300%;
-      /*
-      &:first-letter {
-        padding:0 0 0 .35em;
-      }
-      */ }
+      font-size: 300%; }
     .logo h2 {
       text-align: center;
       font-size: 105%; }
@@ -1002,14 +988,8 @@ nav {
   .main-container .header {
     display: none; }
 
-  .nav-reveal {
-    top: 1em; }
-
   nav {
     min-width: 7em; }
-
-  .reveal-out {
-    left: 40%; }
 
   /* About */
   .about .col-md-4:nth-child(2) p {
@@ -1054,5 +1034,10 @@ nav {
 
   .selfie img {
     width: 250px; } }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .selfie.rotate-up img {
+    max-width: 100px; }
+  .selfie img {
+    max-width: 200px; } }
 
 /*# sourceMappingURL=index.css.map */
