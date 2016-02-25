@@ -1,3 +1,4 @@
+/* global wow */
 // Nothing groundbreaking to see here. Sorry, friend.
 //
 //
@@ -39,10 +40,13 @@ $(document).ready(function () {
         scroll = $(window).scrollTop();
       
     if (scroll >= stickyOffset) {
-      sticky.addClass('rotate-up');
-      //$('.selfie img').css('max-width', '175px');
+      //sticky.addClass('rotate-up');
+      //sticky.css('visibility', 'hidden');
     }
-    else sticky.removeClass('rotate-up');
+    else {
+			//sticky.removeClass('rotate-up');
+			//sticky.css('visibility', 'visible');
+		} 
   });
 
 
@@ -53,15 +57,13 @@ $(document).ready(function () {
     var navReveal = $('.nav-reveal');
 
     if (nav.hasClass('out')) {
-      //wrapper.addClass('wrapper-out').removeClass('wrapper-in');
-      navReveal.addClass('reveal-out').removeClass('reveal-in');
+      //navReveal.addClass('reveal-out').removeClass('reveal-in');
       nav.removeClass('out').addClass('in');
       button.html('<i class="fa fa-close"></i> CLOSE');
       screen.css({'opacity':'1', 'pointer-events':'all'});
     }
     else {
-      //wrapper.addClass('wrapper-in').removeClass('wrapper-out');
-      navReveal.addClass('reveal-in').removeClass('reveal-out')
+      //navReveal.addClass('reveal-in').removeClass('reveal-out')
       nav.removeClass('in').addClass('out');
       button.html('<i class="fa fa-bars"></i> MENU');
       screen.css('opacity', '0');
