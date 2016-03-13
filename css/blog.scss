@@ -9,6 +9,9 @@ $hero-clr-right:#BB5142; //red
 $title-stack:Georgia, serif;
 $body-stack:"Helvetica Neue Light", Roboto, "Helvetica Neue", Arial, sans-serif;
 
+$bounce:cubic-bezier(.66,-.048,.41,1.76);
+$slide:cubic-bezier(.5,1,.5,1);
+
 // Mixins
 @mixin transform($args) {
   transform:$args;
@@ -107,13 +110,17 @@ body {
 }
 .nav-reveal {
   position:fixed;
-  top:1.3em;
-  left:1em;
-  width:auto;
+  top:0;
+  left:0;
+  width:100%;
   z-index:3;
-
+	padding:.25rem 0;
+	background-color:rgba(255,255,255,.9);
+	
+	text-align:center;
   letter-spacing:4px;
   font-size:130%;
+	font-weight:400;
 
   @include transition();
   button {
@@ -122,28 +129,20 @@ body {
     border:0;
   }
 }
-.reveal-out {
-  left:17%;
-}
-.reveal-in {
-  left:1em;
-}
 nav {
+	@include transition($dur:300ms, $ease:$slide);
   position:fixed;
-  top:0;
-  bottom:0;
+  top:52px;
   left:0;
-  width:15%;
-  z-index:3;
+  width:100%;
+  z-index:2;
+	
   text-align:center;
-
   box-shadow:3px 0 5px 0px rgba(0,0,0,.2);
-  background-color:#fff;
-
-  @include transition();
+  background-color:rgba(255,255,255,.9);
 }
 .out {
-  @include translate(-102%, 0);
+  @include translate(0, -200%);
 }
 .in {
   @include translate(0, 0);
@@ -152,13 +151,14 @@ nav {
   font-size:140%;
   a {
     display:block;
-    padding:1.25em 0;
+    padding:1em 0;
     color:$hero-clr-left;
     letter-spacing:1px;
     &:hover, &:focus, &:active {
       text-decoration:none;
-      background-color:#f0f0f0;
-    }
+			color:#fff;
+      background-color:rgba($hero-clr-left, .5);
+		}
   }
 }
 
@@ -350,9 +350,6 @@ footer {
   // Nav
   nav {
     min-width:7em;
-  }
-  .reveal-out {
-    left:40%;
   }
 
   // Blog title
