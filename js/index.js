@@ -1,7 +1,7 @@
+/* global $ */
 /* global wow */
-// Nothing groundbreaking to see here. Sorry, friend.
-//
-//
+// Nothing groundbreaking to see here. Sorry.
+
 $(document).ready(function () {
 
   // Clear the form on page load.
@@ -54,16 +54,13 @@ $(document).ready(function () {
     var nav = $('nav');
     var screen = $('.screen');
     var button = $('.nav-reveal button');
-    var navReveal = $('.nav-reveal');
 
     if (nav.hasClass('out')) {
-      //navReveal.addClass('reveal-out').removeClass('reveal-in');
       nav.removeClass('out').addClass('in');
       button.html('<i class="fa fa-close"></i> CLOSE');
       screen.css({'opacity':'1', 'pointer-events':'all'});
     }
     else {
-      //navReveal.addClass('reveal-in').removeClass('reveal-out')
       nav.removeClass('in').addClass('out');
       button.html('<i class="fa fa-bars"></i> MENU');
       screen.css('opacity', '0');
@@ -75,9 +72,7 @@ $(document).ready(function () {
     var nav = $('nav');
     var screen = $('.screen');
     var button = $('.nav-reveal button');
-    var navReveal = $('.nav-reveal');
 
-    navReveal.addClass('reveal-in').removeClass('reveal-out')
     nav.removeClass('in').addClass('out');
     button.html('<i class="fa fa-bars"></i> MENU');
     screen.css({'opacity':'0', 'pointer-events':'none'});
