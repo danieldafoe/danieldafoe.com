@@ -1,0 +1,17 @@
+{
+  "name": "Portfolio",
+  "version": "2.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Dafoe",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.1.1",
+    "uglifyjs": "^2.4.10"
+  }
+}
