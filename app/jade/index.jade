@@ -1,0 +1,283 @@
+//
+  =====
+  Welcome, visitor. I couldn't help but notice you're inspecting my source code. If you have any questions or want to learn about my process, feel free to fill out the contact form and I will be in touch. Thank you.
+
+  P.S. As this code is all publicly available on my github, feel free to take and modify as you please.
+  =====
+
+doctype html
+html(lang='en')
+head
+  include common/_meta.jade
+  meta(name="description" content="Daniel Dafoe is a Web Developer and Creative Writer in Burlington, Ontario.")
+  meta(property="og:title" content="A Portfolio of Web, Mobile, Content, and Creative")
+  title Daniel Dafoe - Freelance Web Developer and Creative Writer in Burlington
+  link(rel="favicon" href="favicon.ico")
+  link(rel="canonical" href="http://danieldafoe.com")
+  link(href="css/vendor/bootstrap.min.css" rel="stylesheet")
+  link(href="css/vendor/animate.css" rel="stylesheet")
+  link(href="css/vendor/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet")
+  link(href="css/index.css" rel="stylesheet")
+  link(href='http://fonts.googleapis.com/css?family=Playfair+Display|Josefin+Sans' rel='stylesheet' type='text/css')
+
+body(ontouchstart='')
+  button.accessible Skip to Main Content
+  nav.out(role='navigation')
+    div.nav-inner
+      a(href="http://danieldafoe.com/blog") Blog
+      a(href="#skills") Skills
+      a(href="#projects") Projects
+      a(href="#contact") Contact
+
+  div.wrapper.container-fluid(id="top")
+    div.screen
+    div.nav-reveal
+      button(tabindex='-1' role='button' aria-expanded='false') #[i.fa.fa-bars] MENU
+    
+    div.main-container.row
+      div.selfie
+        a(tabindex='-1' href="#top" title="Back to top") #[img(src='res/me-express.jpg' alt='Image of Daniel Dafoe')]
+      
+      div.logo(role='banner')
+        h1 Daniel Dafoe
+        h2 Front End Developer
+        hr
+        //
+          Statistics don't lie; resumé button was removed in favour of bringing visibility to social icons.
+          Besides...I have a job now. Maybe one day this will make a triumphant return.
+
+          a.dd-btn" href="res/resume-daniel-dafoe.pdf" target="_blank")View Resume
+          
+        div.top-social
+          a(id="linkedin-link" target="_blank" href="http://ca.linkedin.com/in/danieldafoe" aria-labelledby='icon-label-linkedin') #[i.fa.fa-linkedin.fa-5x] #[span.accessible(id='icon-label-linkedin') LinkedIn profile]
+          a(id="twitter-link" target="_blank" href="http://twitter.com/danieldafoe" aria-labelledby='icon-label-twitter') #[i.fa.fa-twitter.fa-5x] #[span.accessible(id='icon-label-twitter') Twitter profile]
+          a(id="github-link" target="_blank" href="https://github.com/danieldafoe" aria-labelledby='icon-label-github') #[i.fa.fa-github.fa-5x] #[span.accessible(id='icon-label-github') Github profile]
+          //
+            a(id="medium-link" target="_blank" href="https://medium.com/@danieldafoe") #[i.fa.fa-medium.fa-4x]
+            
+      div.hero-l
+        div.hero-l-inner 
+      div.hero-r
+        div.hero-r-inner
+
+    section.about(id="about" role='main')
+      div.container.text-center
+          div.row
+            div.col-xs-12
+              p.wow.fadeInLeft.about-inner(data-wow-delay="300ms" aria-hidden='false').
+                #[i.fa.fa-user.fa-3x(role='presentation' alt='User icon')]
+                I'm Daniel Dafoe. I'm honest, determined, enthusiastic, optimistic, hard-working and quick-witted.
+                Adjectives aside, I am someone who gets excited talking about web development and design,
+                and is fascinated by the technology surrounding mobile application development.
+                <br/><br/>
+                Fun facts: I 
+                #[a(href="http://medium.com/@danieldafoe") write articles and stories on Medium]; 
+                I #[a(href="http://github.com/danieldafoe/splendid" target="_blank") contributed an open source CSS library]; 
+                designed, developed and began 
+                #[a(href="http://danieldafoe.com/blog/" target="_blank") writing&nbsp;a&nbsp;blog]; 
+                I even made some money selling an 
+                #[a(href="http://www.redbubble.com/people/danieldafoe/works/9557864-hello-my-name-is-or-1-1?p=sticker" target="_blank") SQL&nbsp;inspired&nbsp;sticker] 
+                I designed.
+                            
+          div.row
+            div.col-xs-12
+              p.wow.fadeInRight.about-inner(data-wow-delay="300ms" aria-hidden='false').
+                #[i.fa.fa-briefcase.fa-3x(role='presentation' alt='Briefcase icon')]
+                From Canada's largest bank to small marketing companies, I've been a part of a radically diverse set of teams which have given me a well-rounded perspective of designing and developing web experiences that meet business goals and objectives.<br/><br/>
+                Furthermore, with education in Advertising and Systems Analysis, I've been exposed to a fantastic array of disciplines such as creative copywriting, software development, business analysis, and interactive user interface design.
+
+          div.row
+            div.col-xs-12
+              p.wow.fadeInLeft.about-inner(data-wow-delay="300ms" aria-hidden='false').
+                #[i.fa.fa-laptop.fa-3x(role='presentation' alt='Laptop icon')]
+                My passion is building aesthetically pleasing and intuitive experiences for users of the world wide web. I'm constantly absorbed by the possibilities of the web, and I love trying out what's trendy in the realm of front end web development.
+                <br/><br/>
+                When I'm not reading about web design or mobile trends, you can find me reading literature
+                pre 1900s, writing short stories, watching a play, or working on my personal fitness.
+
+    section.skills(id="skills" role='section')
+      div.section-title
+        h2 Knowledge
+      
+      div.container
+        div.row
+          div.col-xs-12.col-md-4
+            div.skill-box
+              div.skill-box-inner
+                //
+                  li SEO conscious development
+                  li Responsive web design
+                  li CSS preprocessors
+                  li System analysis
+                  li User experience
+                  li AJAX requests
+                h3 Web
+                ul
+                  li HTML5, CSS3, JavaScript
+                  li Bootstrap, SASS, jQuery
+                  li SQL, PHP, C#, .NET
+                  li Google Analytics, Git
+                  li Drupal, Wordpress
+                
+          div.col-xs-12.col-md-4
+            div.skill-box
+              div.skill-box-inner
+                //
+                  li Hybrid mobile app development
+                  li Object-oriented methodologies
+                  li Cross-platform app design
+                h3 Mobile
+                ul
+                  li Google Play Store Deployment
+                  li Apple App Store Deployment
+                  li Mobile Experience Design
+                  li Adobe PhoneGap
+                  li PhoneGap Build
+                  li PhoneGap CLI
+                  li Objective-C
+                  
+          div.col-xs-12.col-md-4
+            div.skill-box
+              div.skill-box-inner
+                //
+                  li Information architecture
+                  li User interaction design
+                  li User experience design
+                  li Process analysis
+                h3 System Analysis
+                ul
+                  li Technical document writing
+                  li Diagram modelling (UML)
+                  li Requirements gathering
+                  li Usability engineering
+                  li User research
+
+    section.projects(id="projects" role='section')
+      div.section-title
+        h2 Experience
+      
+      div.container.projects-container
+        div.row
+          div.col-xs-12.col-sm-6
+            div.wow.fadeInRight.proj-box(data-wow-delay="300ms")
+              div.proj-icon-box
+                h3 Mobile
+              
+              div.proj-body
+                p.
+                  Developed using Adobe PhoneGap and PhoneGap Build, 
+                  these mobile apps are the culmination of my efforts while working for RAVEN5 Boutique.
+                
+                p #[a(href="oakville-shops-mobile-app.html") Oakville Shops]
+                p #[a(href="raven5-mobile-app.html") RAVEN5]
+          
+          div.col-xs-12.col-sm-6
+            div.wow.fadeInLeft.proj-box(data-wow-delay="300ms")
+              div.proj-icon-box
+                h3 Web
+              
+              div.proj-body
+                p.
+                  Responsive web design, user experience, and even back end development. 
+                  Projects where I've used web technologies to create great web experiences are listed here.
+                
+                p #[a(href="idea-generator-web-app.html") Idea Generator Web App]
+                p #[a(href="typographic-portfolio-design.html") Typographic Portfolio #[br.hidden-xs]]
+                p #[a(href="kasty-landscaping-website.html") Kasty Landscaping]
+                p #[a(href="original-portfolio-design.html") danieldafoe.com]
+
+          div.col-xs-12.col-sm-6
+            div.wow.fadeInRight.proj-box(data-wow-delay="300ms")
+              div.proj-icon-box
+                h3 Content
+              
+              div.proj-body
+                p.
+                  Blogs, taglines, and even pricing strategies&mdash;I let my ideas 
+                  take me to any type of medium when it comes to content delivery.
+                
+                p #[a(href="http://medium.com/danieldafoe") Medium Articles]
+                p #[a(href="blog-design-and-content-writing.html") Personal Blog #[br.hidden-xs]]
+                p #[a(href="content-writing-r5apps.html") R5APPS]
+
+          div.col-xs-12.col-sm-6
+            div.wow.fadeInLeft.proj-box(data-wow-delay="300ms")
+              div.proj-icon-box
+                h3 Creative
+              
+              div.proj-body
+                p.
+                  From web-centric clothing and stickers to nifty typographical clothing designs, 
+                  things which don't involve less than and greater than signs are here. (No&nbsp;promises.)
+                
+                p #[a(href="logo-design-urban.html") Branded Clothing Design]
+                p #[a(href="css-selector-clothing-design.html") CSS Clothing Design]
+                p #[a(href="sql-injection-sticker-design.html") Sticker Design]
+
+    section.contact(id="contact" role='section')
+      div.section-title
+        h2 Contact
+      
+      div.section-footer
+        p.
+          If you think I can assist your company by reimagining its web presence or 
+          architecting a mobile app, make my phone vibrate by filling out this short 
+          form and I'll get back to you.
+      
+      form(id="form-contact" action="php/send_mail.php" method="post" role='form')
+        div.container
+          div.row
+            div.col-xs-12
+              div
+                label(for="email") Email
+                input.form-control(type="email" id="email" name="email")
+            
+            div.col-xs-12
+              div
+                label(for="msg") Message
+                textarea.form-control(type="text" id="msg" name="msg")
+              
+            div.col-xs-12
+              div
+                button.btn.btn-lg.btn-default(form="form-contact" type="submit" value="Submit" name="submit").
+                  Contact #[i.fa.fa-check]
+
+    section.social(id="social")
+      div.container
+        div.row
+          div.col-sm-12
+            div.row.social-icons.text-center
+              div.col-sm-3.col-xs-12
+                a(id="linkedin-link" target="_blank" href="http://ca.linkedin.com/in/danieldafoe" aria-labelledby='icon-label-linkedin-2') #[i.fa.fa-linkedin.fa-5x] #[span.accessible(id='icon-label-linkedin-2') LinkedIn profile]
+              
+              div.col-sm-3.col-xs-12
+                a(id="twitter-link" target="_blank" href="http://twitter.com/danieldafoe" aria-labelledby='icon-label-twitter-2') #[i.fa.fa-twitter.fa-5x] #[span.accessible(id='icon-label-twitter-2') Twitter profile]
+              
+              div.col-sm-3.col-xs-12
+                a(id="github-link" target="_blank" href="https://github.com/danieldafoe" aria-labelledby='icon-label-github-2') #[i.fa.fa-github.fa-5x] #[span.accessible(id='icon-label-github-2') Github profile]
+              
+              div.col-sm-3.col-xs-12
+                a(id="medium-link" target="_blank" href="https://medium.com/@danieldafoe" aria-labelledby='icon-label-medium-2') #[i.fa.fa-medium.fa-5x] #[span.accessible(id='icon-label-medium-2') Medium profile]
+  //
+    nav.bar.hidden
+      a.bar-item(href="")
+        span.bar-icon i.fa fa-home
+        span.bar-text Home
+      
+      a.bar-item(href="#about")
+        span.bar-icon i.fa fa-edit
+        span.bar-text About
+      
+      a.bar-item(href="#skills")
+        span.bar-icon i.fa fa-certificate
+        span.bar-text Skills
+      
+      a.bar-item(href="#projects")
+        span.bar-icon i.fa fa-database
+        span.bar-text Projects
+      
+      a.bar-item(href="#contact")
+        span.bar-icon i.fa fa-bullhorn
+        span.bar-text Contact
+
+  include common/_scripts.jade

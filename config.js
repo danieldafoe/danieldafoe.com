@@ -4,7 +4,17 @@
 module.exports = {
   jade: {
     settings: {
-      pretty:true
+  		pretty: true
+    }
+  },
+  rename: {
+  	settings: {
+		  suffix: '.min'
+  	}
+  },
+  imagemin: {
+    settings: {
+      progressive: true
     }
   }
 };

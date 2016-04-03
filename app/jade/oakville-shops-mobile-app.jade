@@ -1,0 +1,32 @@
+extends common/_layout.jade
+
+block append meta
+  meta(name="description" content="The Oakville Shops mobile application for Android and iOS, developed by Daniel Dafoe for RAVEN5 in Oakville, Ontario.")
+  meta(property="og:title" content="Oakville Shops Mobile App")
+
+block title
+  title PhoneGap Mobile App for Oakville Shops | Mobile &amp; Front End Web Developer in Burlington, Ontario
+
+block headline
+  h1 Oakville Shops#[br]Mobile App
+
+block img
+  img(src="res/app-uosc.png" alt="Oakville Shops PhoneGap mobile app")
+
+  div.download-icons
+    a(href="https://itunes.apple.com/us/app/upper-oakville-shopping-centre/id885842497?ls=1&mt=8" target="_blank") #[i.fa.fa-apple.fa-3x]
+    a(href="https://play.google.com/store/apps/details?id=com.raven5.uosc" target="_blank") #[i.fa.fa-android.fa-3x]
+
+block desc
+  h1 Oakville Shops Mobile App
+  p.
+    The Oakville Shops mobile app allows users to get store information, upcoming news and events, view - and redeem - coupons, check out a mall map, and get directions from their current location to the shopping centre.
+  p.
+    I was the lead mobile developer for this project, and the mobile app design was based on an already finalized Photoshop mockup. I incorporated subtle pop-up messages to inform users of actions they could take within the app in order to improve their experience.
+
+  h3 Technologies
+  p.
+    This hybrid mobile application was my <em>first</em> production attempt at using PhoneGap Build. For this project I used HTML, CSS, and JavaScript in order to get the job done. DOM manipulation was accomplished with jQuery, and jQuery Mobile was used as the framework for handling page navigation, hashing, etc. A couple other JavaScript libraries were used to benefit the app's usability. Development was done on a 27" Mac, and I used Sublime Text 2 as my editor of choice.
+
+  p.
+    While testing (which was done in tandem with development) I used the Ripple Google Chrome Extension, Chrome's emulation tools, and physical devices.

@@ -1,0 +1,52 @@
+doctype html
+html(lang='en')
+  head
+    block meta
+      include _meta.jade
+      include _styles.jade
+      block title
+
+block body
+  body
+    nav.out(role='navigation')
+      div.nav-inner
+        a(href="http://danieldafoe.com/blog") Blog
+        a(href="#skills") Skills
+        a(href="#projects") Projects
+        a(href="#contact") Contact
+
+    div.wrapper.container-fluid(id="top")
+      div.screen
+      div.nav-reveal
+        button(tabindex='-1' role='button' aria-expanded='false') #[i.fa.fa-bars] MENU
+      
+      div.main-container.row
+        div.selfie
+          img(src="res/me-small.jpg")
+
+        div.logo.proj-info-logo
+          block headline
+          h2 By Daniel Dafoe
+
+        div.hero-l
+          div.hero-l-inner
+        div.hero-r
+          div.hero-r-inner
+
+      div.proj-info
+        div.container
+          div.row
+            div.col-sm-12
+              div.proj-info-img.urban
+                block img
+          block desc-layout
+            div.row
+              div.col-sm-push-2.col-sm-8
+                div.proj-info-text
+                  block desc
+
+      div.proj-info-footer
+          a.dd-btn(href="http://danieldafoe.com/#projects") Back #[i.fa.fa-arrow-left]
+
+block scripts
+  include _scripts.jade

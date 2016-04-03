@@ -3,3 +3,16 @@
 
 # Text files
 old-skills.txt
+
+# Entire node_modules folder
+/node_modules
+
+# Any mapping files ending in .scssc
+*.scssc
+
+# Entire blog folder
+/app/blog
+
+# Entire res folders
+/dev/res
+/prod/res
