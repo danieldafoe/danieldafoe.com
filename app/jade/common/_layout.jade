@@ -21,32 +21,24 @@ block body
         button(tabindex='-1' role='button' aria-expanded='false') #[i.fa.fa-bars] MENU
       
       div.main-container.row
-        div.selfie
-          img(src="res/me-small.jpg")
-
-        div.logo.proj-info-logo
+        div.logo.exp-info-logo
           block headline
           h2 By Daniel Dafoe
 
-        div.hero-l
-          div.hero-l-inner
-        div.hero-r
-          div.hero-r-inner
-
-      div.proj-info
+      div.exp-info
         div.container
           div.row
             div.col-sm-12
-              div.proj-info-img.urban
+              div.exp-info-img.urban
                 block img
           block desc-layout
             div.row
               div.col-sm-push-2.col-sm-8
-                div.proj-info-text
+                div.exp-info-text
                   block desc
 
-      div.proj-info-footer
-          a.dd-btn(href="http://danieldafoe.com/#projects") Back #[i.fa.fa-arrow-left]
+      div.exp-info-footer
+          a.dd-btn(href="http://danieldafoe.com/#projects") Back
 
 block scripts
   include _scripts.jade
