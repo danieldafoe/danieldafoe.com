@@ -22,10 +22,13 @@ if ($email != 'offbeatvalley0yy8@aol.com' &&
 	$email != 'voraciousrat22tju7@aol.com' &&
 	$email != 'elagriesbaumax9424@aol.com' &&
 	$email != 'quietsilhouettequ@aol.com') {
-		$mail->send("hello@danieldafoe.com", $headers, $body);	
+		$mail->send("hello@danieldafoe.com", $headers, $body);
+        return true;
 	}
+else {
+    return false;
+}
 
-
-header("Location: ../");
+//header("Location: ../");
 
 ?>
