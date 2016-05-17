@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 
 // Variables
 var srcSass = './app/sass/*.scss',
-	srcJade = './app/jade/*.jade',
+	srcJade = './app/jade/**/*.jade',
 	srcJs   = './app/js/*.js',
 	srcImgs = ['./app/res/*.png','./app/res/*.jpg'];
 
@@ -25,6 +25,10 @@ gulp.task('jade', function() {
 	.pipe(jade(config.jade.settings))
 	.pipe(gulp.dest('./dev/'))
 	.pipe(gulp.dest('./prod/'));
+});
+gulp.task('js', function() {
+	return gulp.src(srcJs)
+	.pipe(gulp.dest('./dev/js'));
 });
 gulp.task('images', function() {
 	return gulp.src(srcImgs)
@@ -57,6 +61,7 @@ gulp.task('build',['min-css', 'min-js', 'min-images']);
 gulp.task('watch', function() {
 	gulp.watch(srcSass, ['sass']);
 	gulp.watch(srcJade, ['jade']);
+	gulp.watch(srcJs, ['js']);
 });
 
 // Default task
