@@ -1,12 +1,13 @@
 'use strict';
 var gulp = require('gulp'),
-		sass     = require('gulp-sass'),
-		jade     = require('gulp-jade'),
-		cssmin   = require('gulp-cssmin'),
-		rename   = require('gulp-rename'),
-		uglify   = require('gulp-uglifyjs'),
-		imagemin = require('gulp-imagemin'),
-		config   = require('./config');
+	browserSync = require('browser-sync'),
+	config   = require('./config'),
+	cssmin   = require('gulp-cssmin'),
+	imagemin = require('gulp-imagemin'),
+	jade     = require('gulp-jade'),
+	rename   = require('gulp-rename'),
+	sass     = require('gulp-sass'),
+	uglify   = require('gulp-uglifyjs');
 
 // Variables
 var srcSass = './app/sass/*.scss',
@@ -18,17 +19,19 @@ var srcSass = './app/sass/*.scss',
 gulp.task('sass', function() {
 	return gulp.src(srcSass)
 	.pipe(sass())
-	.pipe(gulp.dest('./dev/css/'));
+	.pipe(gulp.dest('./dev/css/'))
+	.pipe(browserSync.stream());
 });
-gulp.task('jade', function() {
+gulp.task('jade', function(done) {
 	return gulp.src(srcJade)
 	.pipe(jade(config.jade.settings))
 	.pipe(gulp.dest('./dev/'))
 	.pipe(gulp.dest('./prod/'));
+	done();
 });
 gulp.task('js', function() {
 	return gulp.src(srcJs)
-	.pipe(gulp.dest('./dev/js'));
+	.pipe(gulp.dest('./dev/js/'));
 });
 gulp.task('images', function() {
 	return gulp.src(srcImgs)
@@ -54,14 +57,31 @@ gulp.task('min-images', function() {
 	.pipe(gulp.dest('./prod/res/'));
 });
 
+// Reload
+gulp.task('reload', function(done) {
+	browserSync.reload();
+	done();
+});
+gulp.task('reload:jade', ['jade'], function() {
+	browserSync.reload();
+});
+
 // Build task
 gulp.task('build',['min-css', 'min-js', 'min-images']);
 
 // Watch tasks
 gulp.task('watch', function() {
-	gulp.watch(srcSass, ['sass']);
-	gulp.watch(srcJade, ['jade']);
-	gulp.watch(srcJs, ['js']);
+	// Start browser sync
+	browserSync.init({
+		server: './dev/',
+		port: 3000,
+		notify: false,
+		tunnel: true
+	});
+
+	gulp.watch(srcSass, ['sass', 'reload']);
+	gulp.watch(srcJade, ['reload:jade']);
+	gulp.watch(srcJs, ['js', 'reload']);
 });
 
 // Default task
