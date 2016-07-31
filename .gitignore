@@ -14,5 +14,5 @@ old-skills.txt
 /app/blog
 
 # Entire res folders
-/dev/res
-/prod/res
+/dev
+/prod
