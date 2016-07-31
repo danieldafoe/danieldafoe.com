@@ -1,9 +1,12 @@
-/* global $ */
-/* global wow */
 // Nothing groundbreaking to see here. Sorry.
+
+// Avoid naming collisions
 'use strict';
 
-$(document).ready(function () {
+$(document).ready(function() {
+  // Adding some flair to my URL--with pizza!
+  window.location.hash = "🍕";
+
   // Clear the form on page load.
   clearForm();
 
