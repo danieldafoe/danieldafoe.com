@@ -7,73 +7,73 @@ html, html a {
 }
 
 html, body {
-  margin:0;
-  padding:0;
-  width:100%;
-  height:100%;
-  color:#fff;
-  font-family:$ff-sans;
-  font-weight:normal;
-  font-size:18px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: $ff-sans;
+  font-weight: normal;
+  font-size: 18px;
 }
 h1, h2, h3 {
-  margin:0;
+  margin: 0;
 }
 a {
-  position:relative;
+  position: relative;
   
-  color:$clr-alt;
+  color: $clr-alt;
 
   // &::after {
   //   @include transition(all 200ms ease-in 0s);
   //   content:'';
-  //   position:absolute;
+  //   position: absolute;
   //   bottom:-10%;
   //   left:0;
-  //   height:2px;
-  //   width:100%;
+  //   height: 2px;
+  //   width: 100%;
 
   //   background:$clr-main;
   // }
   &:hover {
-    text-decoration:line-through;
+    text-decoration: line-through;
 
-    color:$clr-main;
+    color: $clr-main;
   }
 }
 ul {
-  padding:0;
+  padding: 0;
 }
 p {
-  letter-spacing:0;
+  letter-spacing: 0;
 }
 label {
-  display:block;
+  display: block;
 
-  font-weight:400;
-  font-family:$ff-sans;
+  font-weight: 400;
+  font-family: $ff-sans;
 
-  color:$clr-main;
+  color: $clr-main;
 }
 textarea {
   &.form-control {
-    padding:10px 12px 45px 12px;
+    padding: 10px 12px 45px 12px;
   }
 }
 address {
-  font-style:inherit;
-  line-height:inherit;
-  margin:0;
+  font-style: inherit;
+  line-height:  inherit;
+  margin: 0;
 }
 
 // Sections
 section {
-  padding:0 0 2.5rem;
+  padding: 0 0 2.5rem;
 }
 
 // Emojis
 .emoji {
-  position:relative;
-  top:3px;
-  font-size:110%;
+  position: relative;
+  top: 3px;
+  font-size: 109%;
 }
