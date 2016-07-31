@@ -45,6 +45,57 @@ $(document).ready(function() {
   // EVENT LISTENERS
   //
   //
+  $(document).on('keydown', function(e) {
+    var key = e.keyCode || e.which;
+
+    if (key === 27) {
+      // ESC key pressed
+      if ($('nav').hasClass('in')) {
+        // Nav is open
+        $('nav').removeClass('in').addClass('out');
+
+        // Accessibility behaviour
+        button.attr('aria-expanded', 'false');
+
+        // Change nav-reveal button colour
+        button.css({color:"#fff"});
+
+        // Change button text
+        button.html('<i class="fa fa-bars"></i> MENU');
+
+        // Bring focus back to button
+        button.focus();
+      }
+    }
+    else if (key === 9) {
+      // Tab key pressed
+      if ($('nav').hasClass('in')) {
+        if (e.target.hash === '#contact') {
+          console.log('Quick, tab back to CLOSE');
+        }
+      }
+    }
+    else if (key === 13) {
+      // Enter key pressed
+      if ((document.activeElement.parentElement.classList).contains('nav-reveal')) {
+        button.focus();
+        // Change tabindex of each nav link
+        navLinks.each(function(e) {
+          $(this).attr('tabindex', -1);
+        });
+      }
+    }
+    else if (key === 38) {
+      if ($('nav').hasClass('in')) {
+        $(document.activeElement).prev('a[tabindex]').focus();
+      }
+    }
+    else if (key === 40) {
+      if ($('nav').hasClass('in')) {
+        $(document.activeElement).next('a[tabindex]').focus();
+      }
+    }
+  });
   $('.nav-reveal').on('touch click', function() {
     var nav = $('nav');
     var screen = $('.screen');
