@@ -38,6 +38,17 @@ gulp.task('images', function() {
 	.pipe(gulp.dest('./dev/res/'));
 });
 
+// Move tasks
+gulp.task('move:css', function() {
+	return gulp.src('./app/sass/vendor/**')
+	.pipe(gulp.dest('./dev/css/vendor/'))
+});
+// Move tasks
+gulp.task('move:js', function() {
+	return gulp.src('./app/js/vendor/**')
+	.pipe(gulp.dest('./dev/js/vendor/'))
+});
+
 // Minify tasks
 gulp.task('min-css', function() {
 	return gulp.src('./dev/css/*.css')
@@ -67,7 +78,10 @@ gulp.task('reload:jade', ['jade'], function() {
 });
 
 // Build task
-gulp.task('build',['min-css', 'min-js', 'min-images']);
+gulp.task('build',['jade', 'sass', 'js', 'move:css', 'move:js']);
+
+// Deploy task
+gulp.task('deploy',['min-css', 'min-js', 'min-images']);
 
 // Watch tasks
 gulp.task('watch', function() {
