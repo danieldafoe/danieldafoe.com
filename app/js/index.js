@@ -10,19 +10,26 @@ $(document).ready(function() {
   // Clear the form on page load.
   clearForm();
 
-  // Instantiate a wow object
-  // Call its init()
-  var wow = new WOW({
-    offset:-20,
-    mobile:false,
+  // Globally declare frequent element retrievals
+  var navLinks = $('.nav-inner > a');
+  var button = $('.nav-reveal button');
+
+  // Test adding success class to submit button
+  $('.btn-default').on('click', function(e) {
+    e.preventDefault();
+    $(this).blur();
+    $('.btn-default').addClass('submitting');
+
+    setTimeout(function() {
+      $('.btn-default').removeClass('submitting').addClass('submitted');
+    }, 3000);
   });
-  wow.init();
 
   // ANIMATION
   //
   //
-  // Animation - Slide in curtain
-  $('.hero-l, .hero-r').css('width','50%');
+  // Animation - Navigation
+  $('.nav-reveal').addClass('nav-reveal--in');
 
   // Animation - Logo - Name
   $('.logo h1').css({
