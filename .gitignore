@@ -12,6 +12,7 @@ old-skills.txt
 
 # Entire blog folder
 /app/blog
+/app/jade/blog
 
 # Entire res folders
 /dev
