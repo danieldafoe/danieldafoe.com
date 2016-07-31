@@ -1,0 +1,76 @@
+section.section--skills(id="skills" ng-app='skills-app' ng-controller='SkillSectionController as sectionList')
+  .section-title
+    h2 Knowledge
+
+  .skill-search
+    label(for='skill-search-input')
+    input.skill-search-input.form-control(type='text' id='skill-search-input' placeholder='Enter a phrase or word to filter skills' ng-model='sectionList.searchTerm' aria-hidden='true')
+
+  .card-container
+    .card(ng-repeat='section in sectionList.sections | filter:sectionList.searchTerm')
+      .card-top
+        h3 {{section.title}}
+      .card-bottom
+        .skill--items
+          ul
+            li(ng-repeat='item in section.items | filter:sectionList.searchTerm') {{item.item}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //- .card
+    //-   .card-top
+    //-     h3 Use infrequently
+    //-   .card-bottom
+    //-     .skill--items
+    //-       ul
+    //-         li Apple App Store Deployment
+    //-         li Google Play Store Deployment
+    //-         li Wireframing Tools
+    //-         li Adobe PhoneGap
+    //-         li PhoneGap Build
+    //-         li PhoneGap CLI
+    //-         li SQL, PHP
+
+    //- .card
+    //-   .card-top
+    //-     h3 Always using
+    //-   .card-bottom
+    //-     .skill--items
+    //-       ul
+    //-         li HTML5, CSS3, JavaScript
+    //-         li Google Analytics, Git
+    //-         li Jade, Sass, jQuery
+    //-         li Responsive Design
+    //-         li Web Accessibility
+    //-         li Gulp, Node.js
+    //-         li Bootstrap
+
+    //- .card
+    //-   .card-top
+    //-     h3 Once upon a time
+    //-   .card-bottom
+    //-     .skill--items
+    //-       ul
+    //-         li Technical document writing
+    //-         li Diagram modelling (UML)
+    //-         li Requirements gathering
+    //-         li Drupal, WordPress
+    //-         li Objective-C
+    //-         li C#, .NET
+    //-         li Java
