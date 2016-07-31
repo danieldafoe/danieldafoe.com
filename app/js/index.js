@@ -181,8 +181,8 @@ $(document).ready(function() {
     var email = $('#email').val();
     var msg = $('#msg').val();
     
-    if (email == "" ||
-        msg == "") {
+    if (email === "" ||
+        msg === "") {
           return false;
         }
     else {
