@@ -150,10 +150,36 @@ $(document).ready(function() {
 	});
 
   // CONTACT
-  $('#form-contact').on('submit', function(e) {
-    e.preventDefault();
-    return checkForm();
-  });
+
+  // $('#form-contact').on('submit', function(e) {
+  //   var e = $('#email').val();
+  //   var m = $('#msg').val();
+
+  //   var ajaxData = {
+  //     email: e,
+  //     msg: m
+  //   }
+
+  //   e.preventDefault();
+  //   //return checkForm();
+
+  //   // If checkForm() returns true, the form can be
+  //   // submitted for an ajax call
+  //   if (checkForm) {
+  //     // Make ajax call to php script
+  //     $.ajax({
+  //       url: '../php/send_mail.php',
+  //       data: ajaxData,
+  //       success: function(data) {
+  //         console.log(data);
+  //       },
+  //       error: function(jXHR, textStatus) {
+  //         console.log(jXHR);
+  //         console.log(textStatus);
+  //       }
+  //     })
+  //   }
+  // });
 
   // SOCIAL
   // Submit clicks to Google Analytics for tracking
