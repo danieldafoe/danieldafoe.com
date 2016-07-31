@@ -96,44 +96,46 @@ $(document).ready(function() {
       }
     }
   });
+
   $('.nav-reveal').on('touch click', function() {
     var nav = $('nav');
-    var screen = $('.screen');
-    var button = $('.nav-reveal button');
 
     if (nav.hasClass('out')) {
       nav.removeClass('out').addClass('in');
       button.html('<i class="fa fa-close"></i> CLOSE');
-      screen.css({'opacity':'1', 'pointer-events':'all'});
       
       // Accessibility behaviour
       button.attr('aria-expanded', 'true');
+
+      // Change nav-reveal button colour
+      button.css({color:"#1663c7"});
+
+      // Change tabindex of each nav link
+      navLinks.each(function(e) {
+        $(this).attr('tabindex', 0);
+      });
+
+      // Set focus to the first item in the menu
+      $('.nav-inner > a:first-child').focus();
     }
     else {
       nav.removeClass('in').addClass('out');
       button.html('<i class="fa fa-bars"></i> MENU');
-      screen.css('opacity', '0');
       
       // Accessibility behaviour
       button.attr('aria-expanded', 'false');
-    }
-    
-    // Set focus to the first item in the menu
-    $('.nav-inner > a:first-child').focus();
-  });
-  
-  // Allow users to click or touch the screen in order to close the menu.
-  $('.screen').on('touch click', function() {
-    var nav = $('nav');
-    var screen = $('.screen');
-    var button = $('.nav-reveal button');
 
-    nav.removeClass('in').addClass('out');
-    button.html('<i class="fa fa-bars"></i> MENU');
-    screen.css({'opacity':'0', 'pointer-events':'none'});
-    
-    // Accessibility behaviour
-    button.attr('aria-expanded', 'false');
+      // Change nav-reveal button colour
+      button.css({color:"#fff"});
+
+      // Change tabindex of each nav link
+      navLinks.each(function(e) {
+        $(this).attr('tabindex', -1);
+      });
+
+      // Bring focus back to button
+      button.focus();
+    }
   });
 
   // On nav-item click, scroll to div. //
