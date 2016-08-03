@@ -20,8 +20,8 @@ html(lang='en')
     link(href='http://fonts.googleapis.com/css?family=Playfair+Display|Comfortaa' rel='stylesheet' type='text/css')
 
   body(ontouchstart='')
-    button.accessible Skip to Main Content
-    nav.out
+    button.accessible(role='button' alt='Skip to main content') Skip to Main Content
+    nav.out(role='navigation')
       nav.nav-inner
         a(href="http://danieldafoe.com/blog" tabindex='-1') Blog
         a(href="#skills" tabindex='-1') Skills
@@ -30,7 +30,7 @@ html(lang='en')
 
     .wrapper.container-fluid(id="top")
       .nav-reveal
-        button(tabindex='0' role='button' aria-expanded='false') #[i.fa.fa-bars] MENU
+        button(tabindex='0' role='button' aria-expanded='false' alt='Open main menu') #[i.fa.fa-bars] MENU
       
       .main-container.row
         .logo(role='banner')
@@ -97,220 +97,7 @@ html(lang='en')
 
       include parts/_skills
 
-      section.section--projects(id="projects")
-        .section-title
-          h2 Experience
-
-        .container-fluid
-          .row
-            .col-sm-6
-              .project-section-container
-                .project-title
-                  h4 Web
-                .project-list
-                  table
-                      tbody
-                        tr
-                          td 2016
-                          td #[a(href="sass-sublime-text-package.html" aria-label='Web Project - Sassy Comments Sublime Text package ').link--plain Sassy Comments]
-                        tr
-                          td 2016
-                          td #[a(href="professional-portfolio-design.html" aria-label='Web Project - Ashleighgraden.com portfolio').link--plain ashleighgraden.com]
-                        tr
-                          td 2016
-                          td #[a(href="idea-generator-web-app.html" aria-label='Web Project - Inspiragen - Web App').link--plain Idea Generator Web App]
-                        tr
-                          td 2016
-                          td #[a(href="typographic-portfolio-design.html" aria-label='Web Project - Typography centric portfolio - proof of concept').link--plain Typographic Portfolio]
-                        tr
-                          td 2016
-                          td #[a(href="kasty-landscaping-website.html" aria-label='Web Project - Kasty Landscaping business website').link--plain Kasty Landscaping] 
-                        tr
-                          td 2016
-                          td #[a(href="original-portfolio-design.html" aria-label='Web Project - Old danieldafoe.com portfolio').link--plain danieldafoe.com]
-
-            .col-sm-6
-              .project-section-container
-                .project-title
-                  h4 Mobile
-                .project-list
-                  table
-                      tbody
-                          tr
-                            td 2013
-                            td #[a(href="oakville-shops-mobile-app.html").link--plain Oakville Shops]
-                          tr
-                            td 2013
-                            td #[a(href="raven5-mobile-app.html").link--plain RAVEN5]
-
-          .row
-            .col-sm-6
-              .project-section-container
-                .project-title
-                  h4 Content
-                .project-list
-                  table
-                      tbody
-                          tr
-                            td 2016
-                            td #[a(href="http://medium.com/@danieldafoe").link--plain Medium Articles]
-                          tr
-                            td 2016
-                            td #[a(href="blog-design-and-content-writing.html").link--plain Personal Blog]
-                          tr
-                            td 2013
-                            td #[a(href="content-writing-r5apps.html").link--plain R5APPS]
-
-            .col-sm-6
-              .project-section-container
-                .project-title
-                  h4 Creative
-                .project-list
-                  table
-                      tbody
-                          tr
-                            td 2015
-                            td #[a(href="logo-design-urban.html").link--plain Branded Clothing Design]
-                          tr
-                            td 2015
-                            td #[a(href="css-selector-clothing-design.html").link--plain CSS Clothing Design]
-                          tr
-                            td 2015
-                            td #[a(href="sql-injection-sticker-design.html").link--plain Sticker Design]
-
-
-
-        //- .p-container
-        //-   .p
-        //-       h4 Web
-        //-       .project-container
-        //-         table
-        //-           tbody
-        //-             tr
-        //-               td 2016
-        //-               td #[a(href="sass-sublime-text-package.html" aria-label='Web Project - Sassy Comments Sublime Text package ').link--plain Sassy Comments]
-        //-             tr
-        //-               td 2016
-        //-               td #[a(href="professional-portfolio-design.html" aria-label='Web Project - Ashleighgraden.com portfolio').link--plain ashleighgraden.com]
-        //-             tr
-        //-               td 2016
-        //-               td #[a(href="idea-generator-web-app.html" aria-label='Web Project - Inspiragen - Web App').link--plain Idea Generator Web App]
-        //-             tr
-        //-               td 2016
-        //-               td #[a(href="typographic-portfolio-design.html" aria-label='Web Project - Typography centric portfolio - proof of concept').link--plain Typographic Portfolio]
-        //-             tr
-        //-               td 2016
-        //-               td #[a(href="kasty-landscaping-website.html" aria-label='Web Project - Kasty Landscaping business website').link--plain Kasty Landscaping] 
-        //-             tr
-        //-               td 2016
-        //-               td #[a(href="original-portfolio-design.html" aria-label='Web Project - Old danieldafoe.com portfolio').link--plain danieldafoe.com] 
-
-        //-   .p
-        //-       h4 Mobile
-        //-       .project-container
-        //-         table
-        //-           tbody
-        //-             tr
-        //-               td 2013
-        //-               td #[a(href="oakville-shops-mobile-app.html").link--plain Oakville Shops]
-        //-             tr
-        //-               td 2013
-        //-               td #[a(href="raven5-mobile-app.html").link--plain RAVEN5]
-
-        //-   .p
-        //-       h4 Content
-        //-       .project-container
-        //-         table
-        //-           tbody
-        //-             tr
-        //-               td 2016
-        //-               td #[a(href="http://medium.com/@danieldafoe").link--plain Medium Articles]
-        //-             tr
-        //-               td 2016
-        //-               td #[a(href="blog-design-and-content-writing.html").link--plain Personal Blog]
-        //-             tr
-        //-               td 2013
-        //-               td #[a(href="content-writing-r5apps.html").link--plain R5APPS]
-
-        //-   .p
-        //-       h4 Creative
-        //-       .project-container
-        //-         table
-        //-           tbody
-        //-             tr
-        //-               td 2015
-        //-               td #[a(href="logo-design-urban.html").link--plain Branded Clothing Design]
-        //-             tr
-        //-               td 2015
-        //-               td #[a(href="css-selector-clothing-design.html").link--plain CSS Clothing Design]
-        //-             tr
-        //-               td 2015
-        //-               td #[a(href="sql-injection-sticker-design.html").link--plain Sticker Design]
-        
-        //- .projects
-        //-   .project-container
-        //-     .project-col
-        //-       h3 Web
-        //-     .project-col
-        //-       ul
-        //-         li: a(href="sass-sublime-text-package.html" aria-label='Web Project - Sassy Comments Sublime Text package ').link--plain Sassy Comments
-        //-         li: a(href="professional-portfolio-design.html" aria-label='Web Project - Ashleighgraden.com portfolio').link--plain ashleighgraden.com
-        //-         li: a(href="idea-generator-web-app.html" aria-label='Web Project - Inspiragen - Web App').link--plain Idea Generator Web App
-        //-         li: a(href="typographic-portfolio-design.html" aria-label='Web Project - Typography centric portfolio - proof of concept').link--plain Typographic Portfolio
-        //-         li: a(href="kasty-landscaping-website.html" aria-label='Web Project - Kasty Landscaping business website').link--plain Kasty Landscaping
-        //-         li: a(href="original-portfolio-design.html" aria-label='Web Project - Old danieldafoe.com portfolio').link--plain danieldafoe.com
-        //-     .project-col.project-col--year
-        //-       ul
-        //-         li 2016
-        //-         li 2015
-        //-         li 2015
-        //-         li 2014
-        //-         li 2012
-        //-         li 2012
-
-        //-   .project-container
-        //-     .project-col
-        //-       h3 Mobile
-        //-     .project-col
-        //-       ul
-        //-         li: a(href="oakville-shops-mobile-app.html").link--plain Oakville Shops
-        //-         li: a(href="raven5-mobile-app.html").link--plain RAVEN5
-        //-     .project-col.project-col--year
-        //-       ul
-        //-         li 2014
-        //-         li 2014
-
-        //- .projects
-        //-   .project-container
-        //-     .project-col
-        //-       h3 Content
-        //-     .project-col
-        //-       ul
-        //-         li: a(href="http://medium.com/danieldafoe").link--plain Medium Articles
-        //-         li: a(href="blog-design-and-content-writing.html").link--plain Personal Blog
-        //-         li: a(href="content-writing-r5apps.html").link--plain R5APPS
-        //-     .project-col.project-col--year
-        //-       ul
-        //-         li 2016
-        //-         li 2016
-        //-         li 2013
-
-        //-   .project-container
-        //-     .project-col
-        //-       h3 Creative
-        //-     .project-col
-        //-       ul
-        //-         li: a(href="logo-design-urban.html").link--plain Branded Clothing Design
-        //-         li: a(href="css-selector-clothing-design.html").link--plain CSS Clothing Design
-        //-         li: a(href="sql-injection-sticker-design.html").link--plain Sticker Design
-        //-     .project-col.project-col--year
-        //-       ul
-        //-         li 2015
-        //-         li 2015
-        //-         li 2015
-
-      section
-        
+      include parts/_projects
 
       section.section--contact(id="contact")
         .section-title
@@ -350,7 +137,7 @@ html(lang='en')
                       type="button"
                       value="Submit"
                       name="submit"
-                      aria-labelledby="btn-submit-name")
+                      title='Submit contact form')
                       | #[span#btn-submit-name Contact]
                       | #[span #[i.fa.fa-cog.fa-spin]]
                       | #[span #[i.fa.fa-remove]]
