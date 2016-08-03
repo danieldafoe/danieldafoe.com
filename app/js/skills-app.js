@@ -8,6 +8,7 @@ angular.module('skills-app', [])
 // --------------------------------------------------------------------------
 .controller('SkillSectionController', function() {
     var skills = this;
+    
     skills.sections = [
         {
             title: "Infrequent use",
@@ -30,6 +31,7 @@ angular.module('skills-app', [])
                 {item: 'Responsive Design'},
                 {item: 'Web Accessibility'},
                 {item: 'Gulp, Node.js'},
+                {item: 'AngularJS'},
                 {item: 'Bootstrap'}
             ]
         },
