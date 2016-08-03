@@ -540,12 +540,29 @@ nav {
 .section--skills {
   width:100%;
 
-  color:$clr-gray-light;
+  // color:$clr-gray-light;
   background-color:#fff;
 }
 .skill-search {
   margin: 1rem auto 5rem;
   max-width: 50%;
+
+  @media (max-width: 480px) {
+    max-width: 75%;
+  }
+}
+.skill-search-input-label {
+  padding-bottom: 1rem;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+.skill-search-input-result {
+  font-size: 14px;
+  color: $body-text-clr;
+}
+.skill-search-input-error {
+  color: $head-color;
 }
 .skill-container {
   @include flex();
