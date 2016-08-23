@@ -1073,11 +1073,12 @@ nav {
     @include transition();
     margin:0 1.5rem 0 0;
 
-    color:$clr-alt;
+    color: $clr-alt;
 
     &:hover {
       @include transform(rotate(7deg));
       text-decoration:none;
+      color: $clr-main;
     }
     @media (max-width:768px) {
       margin:0 1.5rem 0 0;
