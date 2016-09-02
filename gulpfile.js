@@ -19,6 +19,7 @@ var srcSass = './app/sass/*.scss',
 gulp.task('sass', function() {
 	return gulp.src(srcSass)
 	.pipe(sass())
+	.pipe(gulp.dest('./css/'))
 	.pipe(gulp.dest('./dev/css/'))
 	.pipe(browserSync.stream());
 });
@@ -32,10 +33,12 @@ gulp.task('jade', function(done) {
 });
 gulp.task('js', function() {
 	return gulp.src(srcJs)
+	.pipe(gulp.dest('./js/'))
 	.pipe(gulp.dest('./dev/js/'));
 });
 gulp.task('images', function() {
 	return gulp.src(srcImgs)
+	.pipe(gulp.dest('./res/'))
 	.pipe(gulp.dest('./dev/res/'));
 });
 
