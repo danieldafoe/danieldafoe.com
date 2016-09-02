@@ -25,6 +25,7 @@ gulp.task('sass', function() {
 gulp.task('jade', function(done) {
 	return gulp.src(srcJade)
 	.pipe(jade(config.jade.settings))
+	.pipe(gulp.dest('./'))
 	.pipe(gulp.dest('./dev/'))
 	.pipe(gulp.dest('./prod/'));
 	done();
