@@ -45,11 +45,13 @@ gulp.task('images', function() {
 // Move tasks
 gulp.task('move:css', function() {
 	return gulp.src('./app/sass/vendor/**')
+	.pipe(gulp.dest('./css/vendor/'))
 	.pipe(gulp.dest('./dev/css/vendor/'))
 });
 // Move tasks
 gulp.task('move:js', function() {
 	return gulp.src('./app/js/vendor/**')
+	.pipe(gulp.dest('./js/vendor/'))
 	.pipe(gulp.dest('./dev/js/vendor/'))
 });
 
