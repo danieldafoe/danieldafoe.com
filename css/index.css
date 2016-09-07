@@ -42,6 +42,7 @@ address {
   line-height: inherit;
   margin: 0; }
 
+main,
 section {
   padding: 0 0 2.5rem; }
 
@@ -337,7 +338,6 @@ nav {
   justify-content: space-around;
   height: 95px;
   padding: 0;
-  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.2);
   background-color: #fff; }
 
 .top-social {
@@ -377,6 +377,8 @@ nav {
   .section--about:hover, .section--about:focus, .section--about:active {
     text-decoration: none; }
   .section--about > .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0;
     text-align: left; }
   .section--about .col-sm-6 {
@@ -501,7 +503,8 @@ nav {
   max-width: 50%; }
   @media (max-width: 480px) {
     .skill-search {
-      max-width: 75%; } }
+      max-width: 75%;
+      margin-bottom: 2rem; } }
 
 .skill-search-input-label {
   padding-bottom: 1rem;
@@ -538,11 +541,17 @@ nav {
   border-bottom: 3px solid #06C696;
   color: #1663c7; }
 
-.skill--items > ul {
-  list-style-type: none; }
+.skill--items {
+  font-size: 16px; }
+  .skill--items > ul {
+    list-style-type: none; }
 
 .section--projects {
   background-color: #f9fbfb; }
+
+.section--projects > .container-fluid {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .section--projects .row > .col-sm-12 {
   max-width: 75%;
@@ -571,12 +580,10 @@ nav {
 
 .project-title {
   margin: 0;
-  border-bottom: 2px solid #3C4045;
   color: #1663c7; }
   .project-title > h4 {
-    margin: 0 0 1rem;
-    letter-spacing: 1px;
     font-size: 150%;
+    letter-spacing: 1px;
     text-transform: uppercase; }
 
 .project-list {
@@ -762,7 +769,7 @@ nav {
   max-width: 85%; }
   @media (max-width: 480px) {
     #form-contact > .container {
-      max-width: 90%; } }
+      max-width: 100%; } }
 
 #form-contact .col-xs-12 > div {
   margin: 0 auto 2em auto; }
