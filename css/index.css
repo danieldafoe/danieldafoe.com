@@ -703,6 +703,8 @@ nav {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
   color: #3C4045; }
   .section-footer > .footer-text,
   .section-footer > form {

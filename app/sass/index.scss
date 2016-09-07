@@ -1036,6 +1036,8 @@ nav {
 }
 .section-footer {
   @include flex();
+  max-width: 1200px;
+  margin: 0 auto;
 
   color:$clr-gray-dark;
 
