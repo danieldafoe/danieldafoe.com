@@ -13,11 +13,13 @@
 * {
   box-sizing: border-box; }
 
-html, html a {
+html,
+html a {
   -webkit-font-smoothing: antialiased !important;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -80,6 +82,21 @@ nav {
   text-align: center;
   box-shadow: 3px 0 5px 0px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9); }
+  .nav-inner {
+    font-size: 140%; }
+    .nav-inner a {
+      display: block;
+      padding: 1em 0;
+      color: #990000;
+      letter-spacing: 1px; }
+      .nav-inner a:hover, .nav-inner a:focus, .nav-inner a:active {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(153, 0, 0, 0.5);
+        outline: 0; }
+    @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+      .nav-inner {
+        font-size: 150%; } }
 
 .out {
   -webkit-transform: translate(0, -200%);
@@ -94,22 +111,6 @@ nav {
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0); }
-
-.nav-inner {
-  font-size: 140%; }
-  .nav-inner a {
-    display: block;
-    padding: 1em 0;
-    color: #990000;
-    letter-spacing: 1px; }
-    .nav-inner a:hover, .nav-inner a:focus, .nav-inner a:active {
-      text-decoration: none;
-      color: #fff;
-      background-color: rgba(153, 0, 0, 0.5);
-      outline: 0; }
-  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-    .nav-inner {
-      font-size: 150%; } }
 
 .wrapper {
   display: -webkit-box;
