@@ -59,13 +59,11 @@ gulp.task('move:js', function() {
 gulp.task('min-css', function() {
 	return gulp.src('./dev/css/*.css')
 	.pipe(cssmin())
-	//.pipe(rename(config.rename.settings))
 	.pipe(gulp.dest('./prod/css/'));
 });
 gulp.task('min-js', function() {
 	return gulp.src(srcJs)
 	.pipe(uglify())
-	//.pipe(rename(config.rename.settings))
 	.pipe(gulp.dest('./prod/js/'));
 });
 gulp.task('min-images', function() {
