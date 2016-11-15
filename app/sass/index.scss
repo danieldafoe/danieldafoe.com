@@ -1,36 +1,37 @@
 //
 // Variables
 // --------------------------------------------------------------------------
-$clr-main:#1663c7;
-$clr-main-dark:#073B7D;
-$clr-gray-dark:#3C4045;
-$clr-gray-light:#f9fbfb;
-$clr-alt:#06C696;
+$clr-main: #1663c7;
+$clr-main-dark: #073B7D;
+$clr-gray-dark: #3C4045;
+$clr-gray-light: #f9fbfb;
+$clr-alt: #06C696;
+$clr-text-body: #222;
 
-$body-text-clr:#222;
-$bg-color:#DAEAEF;
-$head-color:#FF3D2E;
-$bottom-color:#252426;
-$about-color:#fff;
-$about-icon-clr:$clr-main;
-$skills-color:#555;
-$experience-color:#fff;
-$contact-color:#fff;
-$social-color:$skills-color;
+$clr-error: #FF3D2E;
 
-$ff-serif:'Libre Baskerville', Georgia, serif;
-$ff-fancy:'Josefin Sans', 'Helvetica Neue Light', Arial, sans-serif;
-$ff-body:'Times New Roman', Times, Garamond, serif;
-$ff-sans:'Roboto', 'Helvetica Neue', Arial, sans-serif;
-$ff-comfortaa:'Comfortaa', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$clr-section-about: #f9fbfb;
+$clr-section-contact: #fff;
+$clr-section-skills: #fff;
+$clr-section-social: #555;
+$clr-section-colophon: #fff;
 
-$bounce:cubic-bezier(.66,-.048,.41,1.76);
-$slide:cubic-bezier(.8,1.5,.9,1);
-$mdCurve:cubic-bezier(0.4, 0.0, 0.2, 1);
-$mdOut:cubic-bezier(0.0, 0.0, 0.2, 1);
-$mdIn:cubic-bezier(0.4, 0.0, 1, 1);
+$content-max-width: 80%;
+$content-padding: 1rem;
 
-$project-circle-length:185px;
+$ff-body: 'Times New Roman', Times, Garamond, serif;
+$ff-comfortaa: 'Comfortaa', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$ff-fancy: 'Josefin Sans', 'Helvetica Neue Light', Arial, sans-serif;
+$ff-sans: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+$ff-serif: 'Libre Baskerville', Georgia, serif;
+
+$bounce: cubic-bezier(.66,-.048,.41,1.76);
+$mdCurve: cubic-bezier(0.4, 0.0, 0.2, 1);
+$mdOut: cubic-bezier(0.0, 0.0, 0.2, 1);
+$mdIn: cubic-bezier(0.4, 0.0, 1, 1);
+$slide: cubic-bezier(.8,1.5,.9,1);
+
+$project-circle-length: 185px;
 
 @import '_mixins.scss';
 
