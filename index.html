@@ -36,33 +36,24 @@ P.S. As this code is all publicly available on my github, feel free to take and 
     <link href="css/index.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Playfair+Display|Comfortaa" rel="stylesheet" type="text/css">
   </head>
-  <body ontouchstart="">
-    <button role="button" alt="Skip to main content" class="accessible">Skip to Main Content</button>
-    <nav role="navigation" class="out">
-      <nav class="nav-inner"><a href="http://danieldafoe.com/blog" tabindex="-1">Blog</a><a href="#skills" tabindex="-1">Skills</a><a href="#projects" tabindex="-1">Experience</a><a href="#contact" tabindex="-1">Contact</a></nav>
+  <body ontouchstart=""><a href="#about" class="accessible">Skip to Main Content</a>
+    <nav aria-label="Primary" class="out">
+      <div class="nav-inner"><a href="http://danieldafoe.com/blog" tabindex="-1">Blog</a><a href="#skills" tabindex="-1">Skills</a><a href="#projects" tabindex="-1">Experience</a><a href="#contact" tabindex="-1">Contact</a></div>
     </nav>
     <div id="top" class="wrapper container-fluid">
       <div class="nav-reveal">
-        <button tabindex="0" role="button" aria-expanded="false" alt="Open main menu"><i class="fa fa-bars"></i> MENU</button>
+        <button type="button" aria-expanded="false" alt="Open main menu"><i class="fa fa-bars"></i> MENU</button>
       </div>
-      <div class="main-container row">
-        <div role="banner" class="logo">
+      <div role="banner" aria-label="Menu and page info" class="main-container row">
+        <div class="logo">
           <h1>Daniel R. Dafoe</h1>
-          <h2>Front End Developer</h2>
-          <!--
-          =====
-          Statistics don't lie. Résumé button was removed in favour of bringing visibility to social icons.
-          Besides...I now have a job that I am quite pleased with; perhaps one day this will make a triumphant return.
-          =====
-          
-          -->
+          <p>Inclusive Developer</p>
         </div>
       </div>
       <section class="section--social-bar">
-        <div class="top-social"><a id="linkedin-link" target="_blank" title="LinkedIn" href="http://ca.linkedin.com/in/danieldafoe" aria-labelledby="icon-label-linkedin" class="link--plain"><i class="fa fa-linkedin fa-5x"></i> <span id="icon-label-linkedin" class="accessible">LinkedIn profile</span></a><a id="twitter-link" target="_blank" title="Twitter" href="http://twitter.com/danieldafoe" aria-labelledby="icon-label-twitter" class="link--plain"><i class="fa fa-twitter fa-5x"></i> <span id="icon-label-twitter" class="accessible">Twitter profile</span></a><a id="github-link" target="_blank" title="Github" href="https://github.com/danieldafoe" aria-labelledby="icon-label-github" class="link--plain"><i class="fa fa-github fa-5x"></i> <span id="icon-label-github" class="accessible">Github profile</span></a><a id="codepen-link" target="_blank" title="Codepen" href="https://codepen.io/danieldafoe" aria-labelledby="icon-label-codepen" class="link--plain"><i class="fa fa-codepen fa-5x"></i> <span id="icon-label-codepen" class="accessible">Codepen profile</span></a>
-        </div>
+        <div class="top-social"><a id="linkedin-link" target="_blank" title="LinkedIn" href="http://ca.linkedin.com/in/danieldafoe" class="link--plain"><i class="fa fa-linkedin fa-5x"></i> <span class="accessible">LinkedIn profile</span></a><a id="twitter-link" target="_blank" title="Twitter" href="http://twitter.com/danieldafoe" class="link--plain"><i class="fa fa-twitter fa-5x"></i> <span class="accessible">Twitter profile</span></a><a id="github-link" target="_blank" title="Github" href="https://github.com/danieldafoe" class="link--plain"><i class="fa fa-github fa-5x"></i> <span class="accessible">Github profile</span></a><a id="codepen-link" target="_blank" title="Codepen" href="https://codepen.io/danieldafoe" class="link--plain"><i class="fa fa-codepen fa-5x"></i> <span class="accessible">Codepen profile</span></a></div>
       </section>
-      <main id="about" class="section--about">
+      <main id="about" aria-label="Introductory content" class="section--about">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12 col-sm-6">
@@ -70,13 +61,9 @@ P.S. As this code is all publicly available on my github, feel free to take and 
                 <h3>Introduction</h3>
                 <p>
                   I'm Daniel Dafoe. I'm honest, enthusiastic, optimistic, hard-working, and quick-witted.
-                  Adjectives aside, what you'll notice first about me is that my ears perk up when I discuss web development, usability, and the English language&mdash;and even higher if there's pizza involved.
-                  <br><br>
-                  Fun facts: I 
-                  <a href="http://medium.com/@danieldafoe">write stories</a>, 
-                  <a href="http://github.com/danieldafoe" target="_blank">contribute to open source</a>, 
-                  and make some money 
-                  <a href="http://www.redbubble.com/people/danieldafoe/works/9557864-hello-my-name-is-or-1-1?p=sticker" target="_blank">selling stickers and clothing</a> I design.
+                  Adjectives aside, what you'll first notice about me is that my ears perk up when I discuss web development, usability, and the English language&mdash;and even higher if there's pizza involved.
+                </p>
+                <p>On the internet you will find <a href="http://medium.com/@danieldafoe">write stories</a>, <a href="http://github.com/danieldafoe" target="_blank">contribute to open source</a>, and make some money <a href="http://www.redbubble.com/people/danieldafoe/works/9557864-hello-my-name-is-or-1-1?p=sticker" target="_blank">selling stickers and clothing</a> I design.
                             
                 </p>
               </div>
@@ -108,7 +95,7 @@ P.S. As this code is all publicly available on my github, feel free to take and 
           </div>
         </div>
       </main>
-      <section id="skills" ng-app="skills-app" ng-controller="SkillSectionController as sectionList" class="section--skills">
+      <section id="skills" ng-app="skills-app" ng-controller="SkillSectionController as sectionList" aria-label="Skills" class="section--skills">
         <div class="section-title">
           <h2>Knowledge</h2>
         </div>
@@ -135,144 +122,20 @@ P.S. As this code is all publicly available on my github, feel free to take and 
           </div>
         </div>
       </section>
-      <section id="projects" class="section--projects">
-        <div class="section-title">
-          <h2>Experience</h2>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-6 col-xs-12">
-              <div class="project-section-container">
-                <div class="project-title">
-                  <h4>Web</h4>
-                </div>
-                <div class="project-list">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>2016</td>
-                        <td><a href="sass-sublime-text-package.html" aria-label="Web Project - Sassy Comments Sublime Text package " class="link--plain">Sassy Comments</a></td>
-                      </tr>
-                      <tr>
-                        <td>2016</td>
-                        <td><a href="bolt-email-web-app.html" aria-label="Web Project - Bolt email web application" class="link--plain">Bolt: Email Web App</a></td>
-                      </tr>
-                      <tr>
-                        <td>2015</td>
-                        <td><a href="professional-portfolio-design.html" aria-label="Web Project - Ashleighgraden.com portfolio" class="link--plain">ashleighgraden.com</a></td>
-                      </tr>
-                      <tr>
-                        <td>2015</td>
-                        <td><a href="idea-generator-web-app.html" aria-label="Web Project - Inspiragen - Web App" class="link--plain">Inspiragen: Ideas Web App</a></td>
-                      </tr>
-                      <tr>
-                        <td>2015</td>
-                        <td><a href="typographic-portfolio-design.html" aria-label="Web Project - Typography centric portfolio - proof of concept" class="link--plain">Typographic Portfolio</a></td>
-                      </tr>
-                      <tr>
-                        <td>2014</td>
-                        <td><a href="kasty-landscaping-website.html" aria-label="Web Project - Kasty Landscaping business website" class="link--plain">Kasty Landscaping</a> </td>
-                      </tr>
-                      <tr>
-                        <td>2013</td>
-                        <td><a href="original-portfolio-design.html" aria-label="Web Project - Old danieldafoe.com portfolio" class="link--plain">danieldafoe.com</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xs-12">
-              <div class="project-section-container">
-                <div class="project-title">
-                  <h4>Mobile</h4>
-                </div>
-                <div class="project-list">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>2013</td>
-                        <td><a href="oakville-shops-mobile-app.html" class="link--plain">Oakville Shops</a></td>
-                      </tr>
-                      <tr>
-                        <td>2013</td>
-                        <td><a href="raven5-mobile-app.html" class="link--plain">RAVEN5</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-xs-12">
-              <div class="project-section-container">
-                <div class="project-title">
-                  <h4>Content</h4>
-                </div>
-                <div class="project-list">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>2016</td>
-                        <td><a href="http://medium.com/@danieldafoe" class="link--plain">Medium Articles</a></td>
-                      </tr>
-                      <tr>
-                        <td>2015</td>
-                        <td><a href="blog-design-and-content-writing.html" class="link--plain">Personal Blog</a></td>
-                      </tr>
-                      <tr>
-                        <td>2013</td>
-                        <td><a href="content-writing-r5apps.html" class="link--plain">R5APPS</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xs-12">
-              <div class="project-section-container">
-                <div class="project-title">
-                  <h4>Creative</h4>
-                </div>
-                <div class="project-list">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>2015</td>
-                        <td><a href="logo-design-urban.html" class="link--plain">Branded Clothing Design</a></td>
-                      </tr>
-                      <tr>
-                        <td>2015</td>
-                        <td><a href="css-selector-clothing-design.html" class="link--plain">CSS Clothing Design</a></td>
-                      </tr>
-                      <tr>
-                        <td>2015</td>
-                        <td><a href="sql-injection-sticker-design.html" class="link--plain">Sticker Design</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="section--contact">
+      <section id="contact" aria-label="Contact information" class="section--contact">
         <div class="section-title">
           <h2>Contact</h2>
         </div>
         <div class="section-footer">
           <div class="footer-text">
             <p>
-              I'm available for freelance work as a developer or writer. Or, if you're looking for a front-end developer to help you code up an open source project, I'd love to hear about that too. Besides, what would the web be without open source?
+              I'm available for freelance work as a developer or writer. Or, if you're looking for a front-end developer to help you code an open source project, I'd love to hear about that too. Besides, what would the web be without open source?
               
             </p>
             <p>
-              Use the icons below or the contact form to reach out. No more carrier pidgeons.
+              Use the icons below or the contact form to reach out. No more telegrams, please.
               
             </p>
-            <div class="footer_social"><a id="linkedin-link" target="_blank" href="http://ca.linkedin.com/in/danieldafoe" aria-labelledby="icon-label-linkedin-2" class="link--plain"><i class="fa fa-4x fa-linkedin"></i> <span id="icon-label-linkedin-2" class="accessible">LinkedIn profile</span></a><a id="twitter-link" target="_blank" href="http://twitter.com/danieldafoe" aria-labelledby="icon-label-twitter-2" class="link--plain"><i class="fa fa-4x fa-twitter"></i> <span id="icon-label-twitter-2" class="accessible">Twitter profile</span></a><a id="github-link" target="_blank" href="https://github.com/danieldafoe" aria-labelledby="icon-label-github-2" class="link--plain"><i class="fa fa-4x fa-github"></i> <span id="icon-label-github-2" class="accessible">Github profile</span></a><a id="medium-link" target="_blank" href="https://medium.com/@danieldafoe" aria-labelledby="icon-label-medium-2" class="link--plain"><i class="fa fa-4x fa-medium"></i> <span id="icon-label-medium-2" class="accessible">Medium profile</span></a></div>
           </div>
           <form id="form-contact" action="php/send_mail.php" method="post" role="form">
             <div class="container">
@@ -312,9 +175,9 @@ P.S. As this code is all publicly available on my github, feel free to take and 
       ga('send', 'pageview');
     </script>
     <!-- End Google Analytics-->
-    <script type="text/javascript" src="js/vendor/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/vendor/angular.min.js"></script>
-    <script type="text/javascript" src="js/skills-app.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/skills-app.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
