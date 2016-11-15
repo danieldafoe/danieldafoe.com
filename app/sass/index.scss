@@ -66,9 +66,9 @@ $project-circle-length: 185px;
   letter-spacing: 1px;
 
   border: 2px solid #fff;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   color: $clr-main;
   background: #fff;
 
@@ -1080,17 +1080,14 @@ nav {
 .btn-default {
   @include transition(all 200ms ease 0s);
   position: relative;
-  padding: 12px 60px;
+  padding: 12px 40px;
   margin: 1rem 0 0;
   overflow: hidden;
-
   border: 0;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   font-family: $ff-sans;
-
   color: $clr-gray-light;
   background-color: $clr-main;
 
