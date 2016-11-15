@@ -74,9 +74,9 @@ section {
   font-size: 20px;
   letter-spacing: 1px;
   border: 2px solid #fff;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   color: #1663c7;
   background: #fff; }
   .dd-btn:hover, .dd-btn:active, .dd-btn:focus {
@@ -858,13 +858,13 @@ nav {
   -o-transition: all 200ms ease 0s;
   transition: all 200ms ease 0s;
   position: relative;
-  padding: 12px 60px;
+  padding: 12px 40px;
   margin: 1rem 0 0;
   overflow: hidden;
   border: 0;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   color: #f9fbfb;
   background-color: #1663c7; }
