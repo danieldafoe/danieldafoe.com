@@ -20,9 +20,9 @@ html(lang='en')
     link(href='http://fonts.googleapis.com/css?family=Playfair+Display|Comfortaa' rel='stylesheet' type='text/css')
 
   body(ontouchstart='')
-    button.accessible(role='button' alt='Skip to main content') Skip to Main Content
-    nav.out(role='navigation')
-      nav.nav-inner
+    a(href='#about').accessible Skip to Main Content
+    nav.out(aria-label='Primary')
+      .nav-inner
         a(href="http://danieldafoe.com/blog" tabindex='-1') Blog
         a(href="#skills" tabindex='-1') Skills
         a(href="#projects" tabindex='-1') Experience
