@@ -21,12 +21,7 @@ html(lang='en')
 
   body(ontouchstart='')
     a(href='#about').accessible Skip to Main Content
-    nav.out(aria-label='Primary')
-      .nav-inner
-        a(href="http://danieldafoe.com/blog" tabindex='-1') Blog
-        a(href="#skills" tabindex='-1') Skills
-        a(href="#projects" tabindex='-1') Experience
-        a(href="#contact" tabindex='-1') Contact
+    include common/_navigation
 
     .wrapper.container-fluid(id="top")
       .nav-reveal
