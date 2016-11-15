@@ -1,45 +1,50 @@
-// VARIABLES
+// ==========================================================================
+// Styles for danieldafoe.github.io
+// ==========================================================================
+
 //
-$clr-main:darken(red, 20%);
-$clr-main-light:rgba(red, .65);
-$clr-wrapper:#f8f8f8;
-$clr-body:#222;
-$clr-link:lighten($clr-main, 15%);
-$clr-link-visited:darken($clr-link, 30%);
+// Variables
+// --------------------------------------------------------------------------
+$clr-body: #222;
+$clr-container-title: #fff;
+$clr-link: lighten(darken(red, 20%), 15%);
+$clr-link-visited: darken($clr-link, 30%);
+$clr-main: darken(red, 20%);
+$clr-main-light: rgba(red, .65);
+$clr-wrapper: #f8f8f8;
 
-$clr-container-title:#fff;
+$ff-body: sans-serif;
+$ff-heading: Roboto, 'Helvetica Neue', Arial, sans-serif;
 
-$ff-body:sans-serif;
-$ff-heading:Roboto, 'Helvetica Neue', Arial, sans-serif;
+$bounce: cubic-bezier(.66,-.048,.41,1.76);
+$slide: cubic-bezier(.8,1.5,.9,1);
 
-$bounce:cubic-bezier(.66,-.048,.41,1.76);
-$slide:cubic-bezier(.8,1.5,.9,1);
+$box-height: 120px;
+$box-width: 250px;
 
-$box-height:120px;
-$box-width:250px;
-
-// MIXINS
 //
-@mixin flex() {
+// Mixins
+// --------------------------------------------------------------------------
+@mixin flexbox() {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 }
-@mixin transition($args:all 150ms ease-out 0s) {
-  -webkit-transition:$args;
-  -moz-transition:$args;
-  -ms-transition:$args;
-  -o-transition:$args;
-  transition:$args;
+@mixin transition( $args:all 150ms ease-out 0s ) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
 }
-@mixin transform($args) {
-  -webkit-transform:$args;
-  -moz-transform:$args;
-  -ms-transform:$args;
-  -o-transform:$args;
-  transform:$args;
+@mixin transform( $args ) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
 }
 
 // OPTIONAL
@@ -52,80 +57,106 @@ $box-width:250px;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$clr-main', endColorstr='$clr-main-light',GradientType=1 ); /* IE6-9 */
 }
 
-// GLOBAL
 //
+// Globals
+// --------------------------------------------------------------------------
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
-html, html a {
+html,
+html a {
   -webkit-font-smoothing: antialiased !important;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
-html, body {
-  margin:0;
-  padding:0;
-  height:100%;
-  width:100%;
-  color:$clr-body;
-  font-family:$ff-body;
-  font-size:16px;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: $clr-body;
+  font-family: $ff-body;
+  font-size: 16px;
 }
 ul {
   padding:0;
 }
 
-// ACCESSIBILITY
 //
+// Helpers
+// --------------------------------------------------------------------------
 .accessible {
-  position:absolute;
-  height:1px;
-  width:1px;
-  margin:-1px;
-  visibility:hidden;
-  clip-path:9999px;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  visibility: hidden;
+  clip-path: 9999px;
 }
 
-// NAV
 //
-// To make the nav work correctly.
+// Navigation
+// --------------------------------------------------------------------------
 body {
-  overflow-x:hidden;
+  // To make the nav work correctly.
+  overflow-x: hidden;
 }
 .nav-reveal {
   @include transition();
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:3;
-  padding:.25rem 0;
-  text-align:center;
-  letter-spacing:4px;
-  font-size:130%;
-  font-weight:400;
-  font-family:$ff-body;
-  background-color:rgba(255,255,255,.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding: .25rem 0;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 130%;
+  font-weight: 400;
+  font-family: $ff-body;
+  background-color: rgba(255,255,255,.9);
 
   button {
-    color:$clr-main;
-    background:none;
-    border:0;
+    color: $clr-main;
+    background: none;
+    border: 0;
   }
-  @media (min-width:1200px) and (-webkit-min-device-pixel-ratio: 1) {
-    font-size:150%;
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    font-size: 150%;
   }
 }
 nav {
   @include transition();
-  position:fixed;
-  top:52px;
-  left:0;
-  width:100%;
-  z-index:2;
+  position: fixed;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
     
-  text-align:center;
-  box-shadow:3px 0 5px 0px rgba(0,0,0,.2);
-  background-color:rgba(255,255,255,.9);
+  text-align: center;
+  box-shadow: 3px 0 5px 0px rgba(0,0,0,.2);
+  background-color: rgba(255,255,255,.9);
+
+  @at-root .nav-inner {
+    font-size: 140%;
+
+    a {
+      display: block;
+      padding: 1em 0;
+      color: $clr-main;
+      letter-spacing: 1px;
+      
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba($clr-main, .5);
+        outline: 0;
+      }
+    }
+    @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+      font-size: 150%;
+    }
+  }
 }
 .out {
   @include transform(translate(0,-200%));
@@ -133,131 +164,105 @@ nav {
 .in {
   @include transform(translate(0,0));
 }
-.nav-inner {
-  font-size:140%;
-  a {
-    display:block;
-    padding:1em 0;
-    color:$clr-main;
-    letter-spacing:1px;
-    &:hover, &:focus, &:active {
-      text-decoration:none;
-            color:#fff;
-      background-color:rgba($clr-main, .5);
-      outline:0;
-    }
-  }
-  @media (min-width:1200px) and (-webkit-min-device-pixel-ratio: 1) {
-    font-size:150%;
-  }
-}
 
 // WRAPPER
 //
 .wrapper {
-  @include flex();
-  flex-direction:column;
-  position:relative;
-  margin:0 !important;
-  padding:0 !important;
-  width:100%;
-  min-height:100vh;
-  background-color:$clr-wrapper;
+  @include flexbox();
+  flex-direction: column;
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $clr-wrapper;
 }
 .screen {
   @include transition();
-  position:absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  background-color:rgba(0,0,0,.5);
-  z-index:1;
-  opacity:0;
-  pointer-events:none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
 }
 
 // CONTAINERS
 //
 .container {
-  @include flex();
-  align-items:stretch;
-  //justify-content:space-around;
+  @include flexbox();
+  align-items: stretch;
 }
 .container--row {
   &:first-child {
-    padding:10rem 0 0;
+    padding: 10rem 0 0;
   }
-  flex:1 1 0;
-  position:relative;
-  //@include flex();
-  //position:relative;
-  //align-items:center;
-  //justify-content:center;
-  //height:100vh;
-  //min-height:350px;
-  //padding:1rem;
+  flex: 1 1 0;
+  position: relative;
 }
 .container--col {
-  flex:1 1 0;
-  margin:0 5rem;
-  border-radius:6px 6px 0 0;
-  color:#222;
-  background-color:rgba(red, .2);
-  font-size:110%;
+  flex: 1 1 0;
+  margin: 0 5rem;
+  border-radius: 6px 6px 0 0;
+  color: #222;
+  background-color: rgba(red, .2);
+  font-size: 110%;
 }
 .container--col__inner {
-  padding:1.25rem;
+  padding: 1.25rem;
 }
 .container--red {
-  background-color:$clr-main;
+  background-color: $clr-main;
 }
 .container__title {
-  color:#222;
-  background-color:rgba(255,255,255,.9);
-  padding:.15rem .5rem;
-  font-size:400%;
-  font-weight:600;
-  letter-spacing:1px;
+  color: #222;
+  background-color: rgba(255,255,255,.9);
+  padding: .15rem .5rem;
+  font-size: 400%;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .container__layer {
   @include transform(translateY(-50%));
-  @include flex();
-  align-items:stretch;
-  position:absolute;
-  top:50%;
-  left:0;
-  right:0;
-  margin:0 auto;
-  min-height:200px;
-  max-width:50%;
-  background-color:#e6e6e6;
+  @include flexbox();
+  align-items: stretch;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  min-height: 200px;
+  max-width: 50%;
+  background-color: #e6e6e6;
   &::before, &::after {
     content:' ';
     background-color:rgba(red, .3);
-    position:absolute;
-    height:$box-height;
-    width:$box-width;
+    position: absolute;
+    height: $box-height;
+    width: $box-width;
   }
   &::before {
-    bottom:-($box-height/4);
-    left:-($box-width/5);
+    bottom: -($box-height/4);
+    left: -($box-width/5);
   }
   &::after {
-    top:-($box-height/4);
-    right:-($box-width/5);
+    top: -($box-height/4);
+    right: -($box-width/5);
   }
   p {
-    z-index:3;
-    position:relative;
-    flex:1 1 auto;
-    margin:1rem;
-    padding:1.25rem 1rem;
-    background-color:rgba(255,255,255,.85);
-    font-size:350%;
+    z-index: 3;
+    position: relative;
+    flex: 1 1 auto;
+    margin: 1rem;
+    padding: 1.25rem 1rem;
+    background-color: rgba(255,255,255,.85);
+    font-size: 350%;
   }
   a {
-    color:$clr-main;
+    color: $clr-main;
   }
 }
 
