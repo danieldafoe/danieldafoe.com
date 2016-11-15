@@ -1,12 +1,14 @@
 //
 // Globals
 // --------------------------------------------------------------------------
-html, html a {
+html,
+html a {
   -webkit-font-smoothing: antialiased !important;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -16,28 +18,17 @@ html, body {
   font-weight: normal;
   font-size: 18px;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 a {
   position: relative;
-  
   color: $clr-alt;
 
-  // &::after {
-  //   @include transition(all 200ms ease-in 0s);
-  //   content:'';
-  //   position: absolute;
-  //   bottom:-10%;
-  //   left:0;
-  //   height: 2px;
-  //   width: 100%;
-
-  //   background:$clr-main;
-  // }
   &:hover {
     text-decoration: line-through;
-
     color: $clr-main;
   }
 }
@@ -49,10 +40,8 @@ p {
 }
 label {
   display: block;
-
   font-weight: 400;
   font-family: $ff-sans;
-
   color: $clr-main;
 }
 textarea {
