@@ -13,7 +13,7 @@ $black-600: #353636;
 $grey-100: #f3f4f5;
 $white: #fff;
 
-$clr-link: #56558F;
+$clr-link: #56558f;
 
 // Styles
 
@@ -32,8 +32,13 @@ main {
 }
 
 h1 {
+  @media (min-width: 600px) {
+    margin-top: 0;
+  }
+
   font-size: 4rem;
   font-weight: 300;
+  margin-top: 5rem;
 }
 
 a {
@@ -115,5 +120,5 @@ a {
   }
 
   font-size: 1.8rem;
-  max-width: 250px;
+  max-width: 260px;
 }
