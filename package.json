@@ -1,22 +1,26 @@
 {
-  "name": "Portfolio",
-  "version": "2.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "name": "dd-portfolio",
+  "version": "4.0.0",
+  "description": "Personal website for he who is known as Daniel Dafoe.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieldafoe/danieldafoe.github.io.git"
+  },
   "author": "Daniel Dafoe",
-  "license": "MIT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieldafoe/danieldafoe.github.io/issues"
+  },
+  "homepage": "https://github.com/danieldafoe/danieldafoe.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.13.0",
-    "gulp": "^3.9.0",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-imagemin": "^2.4.0",
-    "gulp-jade": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.1",
-    "gulp-uglifyjs": "^0.6.2",
-    "uglifyjs": "^2.4.10"
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-sass": "^4.0.1",
+    "source-map": "^0.7.3"
   }
 }

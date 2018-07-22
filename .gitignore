@@ -1,22 +1,5 @@
-# Desktop Service File
+# OS
 .DS_Store
 
-# Text files
-old-skills.txt
-
-# Entire node_modules folder
-/node_modules
-
-# Any mapping files ending in .scssc
-*.scssc
-
-# Entire blog folder
-/app/blog
-/app/jade/blog
-
-# Entire res folders
-/dev
-/prod
-/_site
-/parts
-/common
+# npm
+node_modules/
