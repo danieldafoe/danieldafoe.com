@@ -1,0 +1,2 @@
+# Personal Website of Daniel Dafoe
+Here lay committed the files that build the personal website of Daniel Dafoe. The website follows a minimalistic approach, involving little more than a paragraph and 1 link.
