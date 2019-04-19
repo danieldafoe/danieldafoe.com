@@ -4,6 +4,7 @@
   "description": "Personal website for he who is known as Daniel Dafoe.",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
