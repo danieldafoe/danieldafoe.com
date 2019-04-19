@@ -36,9 +36,15 @@ h1 {
     margin-top: 0;
   }
 
-  font-size: 4rem;
+  @media (min-width: 350px) {
+    font-size: 4rem;
+    margin-top: 5rem;
+  }
+
+  font-size: 3.5rem;
   font-weight: 300;
-  margin-top: 5rem;
+  line-height: 1.2;
+  margin-top: 17rem;
 }
 
 a {
@@ -112,13 +118,29 @@ a {
 
 .intro {
   @media(min-width: 425px) {
-    max-width: 280px;
+    max-width: 340px;
   }
 
   @media(min-width: 600px) {
-    max-width: 400px;
+    max-width: 450px;
   }
 
   font-size: 1.8rem;
   max-width: 260px;
+  padding: 2rem 2rem 5rem;
+}
+
+.📝 {
+  margin: 1.75rem 0;
+}
+
+
+// Pages - More
+
+.more {
+  .inner-square {
+    background-color: rgba(royalblue, .1);
+    border-color: rgba(royalblue, .1);
+    transform: rotate(45deg);
+  }
 }
