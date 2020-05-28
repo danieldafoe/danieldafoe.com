@@ -1,0 +1,10 @@
+@use 'variables' as vars;
+
+@function breakpoint($bp) {
+  @if map-get($map: vars.$breakpoints, $key: $bp) {
+    @return map-get($map: vars.$breakpoints, $key: $bp);
+  }
+  @else {
+    @error '#{$bp} does not exist in map $breakpoints.';
+  }
+}

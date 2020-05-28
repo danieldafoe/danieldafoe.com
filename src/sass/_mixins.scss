@@ -1,0 +1,7 @@
+@use 'functions' as func;
+
+@mixin media-bp-up($bp) {
+  @media (min-width: func.breakpoint($bp)) {
+    @content;
+  }
+}
