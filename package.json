@@ -1,26 +1,27 @@
 {
-  "name": "dd-portfolio",
-  "version": "4.0.0",
-  "description": "Personal website for he who is known as Daniel Dafoe.",
+  "name": "danieldafoe.github.io",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "browserSync": "browser-sync start -s ./ --files src",
+    "start": "npm run browserSync && npm run sass",
+    "sass": "sass --watch src/sass/main.scss dist/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danieldafoe/danieldafoe.github.io.git"
   },
-  "author": "Daniel Dafoe",
-  "license": "ISC",
+  "keywords": [],
+  "author": "Daniel Dafoe <dannydafoe@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/danieldafoe/danieldafoe.github.io/issues"
   },
-  "homepage": "https://github.com/danieldafoe/danieldafoe.github.io#readme",
+  "homepage": "https://danieldafoe.github.io",
+  "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.24.5",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.4",
-    "gulp-sass": "^4.0.1",
-    "source-map": "^0.7.3"
+    "browser-sync": "^2.26.7"
   }
 }
