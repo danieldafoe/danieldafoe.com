@@ -1,4 +1,4 @@
-# Welcome, traveller.
+# Welcome, traveller. 👋
 
 This GitHub repository represents all the code that displays [https://danieldafoe.com](danieldafoe.com).
 
