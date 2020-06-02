@@ -40,7 +40,7 @@ h1 {
 @media (min-width: 768px) {
   .title {
     font-size: 40rem;
-    line-height: 20rem;
+    line-height: 10rem;
   }
 }
 .title__first-name {

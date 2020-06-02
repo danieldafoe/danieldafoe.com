@@ -45,7 +45,7 @@ h1 {
 
   @include media-bp-up('md') {
     font-size: 40rem;
-    line-height: 20rem;
+    line-height: 10rem;
   }
 
   &__first-name {
