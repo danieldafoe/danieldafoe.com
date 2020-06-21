@@ -1,0 +1,61 @@
+.about {
+  h1 {
+    text-transform: lowercase;
+  }
+
+  .title {
+    font-size: 12rem;
+    height: 100%;
+    left: 0;
+    letter-spacing: .5rem;
+    line-height: 8rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    @include media-bp-up('sm') {
+      font-size: 18rem;
+      line-height: 10rem;
+    }
+
+    @include media-bp-up('md') {
+      font-size: 38rem;
+      line-height: 22rem;
+    }
+
+    @media (min-width: 325px) and (max-width: 750px) and (max-height: 420px) and (orientation: landscape) {
+      font-size: 17rem;
+      line-height: 0;
+    }
+  }
+  
+  .middle-area {
+    top: 25%;
+    transform: translate(-50%, 0);
+
+    @include media-bp-up('md') {
+      top: 45%;
+      max-width: 70%;
+    }
+
+    @include media-bp-up('lg') {
+      max-width: 42%;
+    }
+
+    hr {
+      border: 0;
+      margin: 3rem 0;
+    }
+
+    p {
+      margin-bottom: 3rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 3rem;
+    }
+  }
+}

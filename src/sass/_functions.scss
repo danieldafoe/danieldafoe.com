@@ -8,3 +8,12 @@
     @error '#{$bp} does not exist in map $breakpoints.';
   }
 }
+
+@function color($clr) {
+  @if map-get($map: vars.$colors, $key: $clr) {
+    @return map-get($map: vars.$colors, $key: $clr);
+  }
+  @else {
+    @error '#{$clr} does not exist in map $colors.';
+  }
+}
