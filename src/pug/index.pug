@@ -1,0 +1,20 @@
+- var pageTitle = 'Daniel Dafoe | Inclusive Web Developer in Toronto, Canada';
+- var ctaText = 'Care for an introduction?';
+
+doctype html
+html(lang='en')
+
+  include _head
+
+  body
+    h1.title
+      span.title__first-name Daniel
+      span.title__last-name Dafoe
+
+    div.middle-area
+      div.intro
+        p.intro__greeting Welcome, traveller.
+        p.intro__tldr I'm Daniel, an inclusive web developer and linguist. 
+          a(href='about.pug' data-hover='#{ctaText}')= ctaText
+
+  include _analytics
