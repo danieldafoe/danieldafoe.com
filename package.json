@@ -1,13 +1,10 @@
 {
-  "name": "danieldafoe.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "danieldafoe.com",
+  "version": "1.1.0",
+  "description": "The personal website of Daniel Dafoe. Created using Pug, Sass, and Parcel.",
   "scripts": {
-    "browserSync": "browser-sync start -s ./ --files src",
-    "start": "npm run browserSync && npm run sass",
-    "sass": "sass --watch src/sass/main.scss dist/css/main.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build src/pug/index.pug -d ./",
+    "start": "parcel serve src/pug/index.pug"
   },
   "repository": {
     "type": "git",
@@ -22,6 +19,8 @@
   "homepage": "https://danieldafoe.github.io",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "parcel": "^1.12.4",
+    "pug": "^3.0.0",
+    "sass": "^1.26.8"
   }
 }

@@ -1,8 +1,18 @@
 # OS
 .DS_Store
 
-# Sass
-.sass-cache/
+# Parcel
+.cache/
+dist/
 
 # npm
 node_modules/
+
+# Sass
+.sass-cache/
+
+# VS Code
+.vscode/
+
+# Yarn
+yarn-error.log

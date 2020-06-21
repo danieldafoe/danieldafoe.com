@@ -1,0 +1,5 @@
+{
+  transformers: {
+    'src/sass/*.scss': ['@parcel/transformer-sass']
+  }
+}
