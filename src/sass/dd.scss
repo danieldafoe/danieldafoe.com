@@ -1,0 +1,13 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'functions' as func;
+
+@import 'globals';
+
+// Pages
+
+@import 'pages/index';
+
+// Components
+
+@import 'components/index';
