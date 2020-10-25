@@ -12,6 +12,16 @@
   color: var(--#{$color}, func.color($color));
 }
 
+// Buttons
+
+@mixin set-btn-states {
+  &:active,
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
 // Responsiveness
 
 @mixin media-bp-up($bp) {

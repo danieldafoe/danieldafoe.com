@@ -7,58 +7,47 @@
 
 html {
   font-size: 62.5%;
-  height: -webkit-fill-available;
 }
 
 body {
-  @include background-color(brand-primary);
-  @include color(white);
+  background-color: var(--body-bg);
+  color: var(--body-clr);
   font-family: $font;
   font-size: 1.6em;
   line-height: 1.5;
-  margin: 0;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-  min-height: fill-available;
   padding: 0;
   position: relative;
 }
 
-h1 {
-  font-family: $font;
-  margin: 0;
-  text-transform: uppercase;
+a[href^='#'] {
+  background-color: var(--skip-link-bg);
+  color: var(--skip-link-clr);
+  left: 50%;
+  padding: 1rem;
+  position: absolute;
+  top: 2rem;
+  transform: translateY(-1000%);
+
+  &:focus {
+    transform: translateX(-50%);
+  }
 }
 
-h2 {
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin: 4rem 0 1rem;
+p {
+  font: 300 2rem /1.5 $font;
+  letter-spacing: .4px;
+
+  @include media-bp-up(lg) {
+    font-size: 3rem;
+  }
 }
 
-a {
-  @include color(link);
-  font-weight: 400;
+section {
+  min-height: 400px;
+  padding: 7rem 0;
   position: relative;
-  transition: color 200ms;
 
-  &:active,
-  &:focus,
-  &:hover {
-    @include color(link-hover);
-
-    &::after {
-      @include background-color(link-hover);
-    }
+  @include media-bp-up(lg) {
+    min-height: 790px;
   }
-}
-
-li {
-  &:not(:last-child) {
-    margin-bottom: 1.5rem;
-  }
-}
-
-strong {
-  font-weight: 600;
 }
