@@ -66,6 +66,12 @@
       margin-top: 0;
     }
 
+    &:last-child {
+      @include media-bp-up(lg) {
+        margin-top: 0;
+      }
+    }
+
     &:nth-child(2n) {
       page-break-inside: avoid;
     }
