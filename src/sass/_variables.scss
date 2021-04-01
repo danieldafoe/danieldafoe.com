@@ -1,12 +1,14 @@
-$font: Roboto, Cantarell, 'Segoe UI', 'Helvetica Neue', sans-serif;
+$font: Roboto, 'Roboto Condensed', Cantarell, 'Segoe UI', 'Helvetica Neue', sans-serif;
 
 :root {
-  --brand-dark: #111;
+  --brand-dark: #002395;
   --brand-light: #e3e3e3;
   --brand-primary: var(--brand-dark);
 
   --black: #111;
   --white: #fff;
+
+  --action-primary: #3fa;
   
   --body-bg: var(--brand-dark);
   --body-clr: var(--brand-light);
@@ -33,5 +35,8 @@ $breakpoints: (
   sm: 385px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1120px,
+  xxl: 1240px,
+  xxxl: 1340px,
+  huge: 1500px
 );

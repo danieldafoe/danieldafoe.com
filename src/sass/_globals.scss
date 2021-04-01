@@ -33,21 +33,57 @@ a[href^='#'] {
   }
 }
 
-p {
-  font: 300 2rem /1.5 $font;
-  letter-spacing: .4px;
+h1 {
+  font-size: 7rem;
+}
 
-  @include media-bp-up(lg) {
-    font-size: 3rem;
+button {
+  border: 0;
+  display: block;
+  padding: 1.6rem 3.2rem;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.primary {
+    background-color: var(--brand-dark);
+    color: var(--white);
+  }
+
+  &.secondary {
+    background-color: var(--white);
+    color: var(--brand-dark);
   }
 }
 
-section {
-  min-height: 400px;
-  padding: 7rem 0;
-  position: relative;
+// Helpers
 
-  @include media-bp-up(lg) {
-    min-height: 790px;
+.btn {
+  background-color: var(--brand-dark);
+  color: var(--white);
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    background-color: lighten(#002395, 10%);
   }
+
+  &.secondary {
+    background-color: var(--white);
+    color: var(--brand-dark);
+    
+    &:focus,
+    &:hover {
+      background-color: darken(#fff, 10%);
+    }
+  }
+
+}
+
+.strike {
+  text-decoration: line-through;
 }

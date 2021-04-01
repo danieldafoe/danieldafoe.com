@@ -1,0 +1,10 @@
+.booking {
+  a {
+    font-size: 8rem;
+    word-break: break-word;
+
+    @include media-bp-up(sm) {
+      
+    }
+  }
+}
