@@ -19,6 +19,16 @@ body {
   position: relative;
 }
 
+main {
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    // text-align: center;
+    margin: 1rem 0 2rem;
+    text-transform: uppercase;
+  }
+}
+
 a[href^='#'] {
   background-color: var(--skip-link-bg);
   color: var(--skip-link-clr);
@@ -30,6 +40,12 @@ a[href^='#'] {
 
   &:focus {
     transform: translateX(-50%);
+  }
+}
+
+a {
+  &:visited {
+    color: var(--white);
   }
 }
 
@@ -55,6 +71,20 @@ button {
   &.secondary {
     background-color: var(--white);
     color: var(--brand-dark);
+  }
+}
+
+.link--home {
+  background-color: var(--body-bg);
+  bottom: 1.5rem;
+  color: var(--white);
+  font-size: 3rem;
+  right: 1.5rem;
+  padding: .5rem;
+  position: fixed;
+
+  @include media-bp-up(xl) {
+    font-size: 4rem;
   }
 }
 

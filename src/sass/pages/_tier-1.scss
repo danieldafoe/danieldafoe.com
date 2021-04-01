@@ -1,0 +1,21 @@
+.tier-1 {
+  &__inner {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4.5rem;
+    letter-spacing: -1.5px;
+    line-height: 1.2;
+    max-width: 70%;
+
+    @include media-bp-up(sm) {
+      font-size: 6rem;
+    }
+
+    a {
+      color: var(--white);
+    }
+
+    p {
+      margin-bottom: 5rem;
+    }
+  }
+}

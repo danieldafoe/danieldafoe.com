@@ -1,10 +1,71 @@
 .booking {
-  a {
-    font-size: 8rem;
-    word-break: break-word;
+  background: url('../assets/daniel-defoe.jpg') center no-repeat;
+  height: 100vh;
+  padding: 0;
+  width: 100vw;
+
+  @include media-bp-up(lg) {
+    background-position: bottom;
+    background-size: 135%;
+  }
+
+  &__inner {
+    font-size: 4rem;
+    left: 5%;
+    max-width: 90%;
+    position: absolute;
+    top: 10%;
 
     @include media-bp-up(sm) {
-      
+      font-size: 6rem;
+      max-width: 65%;
     }
+
+    @include media-bp-up(md) {
+      bottom: 50%;
+      font-size: 7rem;
+      left: 2%;
+      max-width: 575px;
+      padding: 0;
+      top: auto;
+      transform: translateY(50%);
+    }
+
+    @include media-bp-up(xl) {
+      max-width: 550px;
+    }
+
+    @include media-bp-up(huge) {
+      font-size: 8rem;
+      max-width: 600px;
+    }
+  }
+
+  .link--home {
+    background-color: var(--white);
+    color: var(--white);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: var(--black);
+    }
+  }
+
+  a {
+    background-color: var(--black);
+    color: var(--black);
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: var(--white);
+    }
+  }
+
+  img {
+    border: 5px dashed var(--white);
+    height: auto;
+    width: 100%;
   }
 }

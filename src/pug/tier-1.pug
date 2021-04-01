@@ -5,9 +5,20 @@ html(lang='en')
 
 include _head
 
-body.tier-2
+body
   
-  main
-    a(href='../assets/daniel-dafoe-resume.pdf' download) Peek My Resumé
+  main.tier-1
+    h1 Autobiography
+
+    .tier-1__inner
+      p.
+        It was a dark and stormy night...
+
+      p.
+        ...and as you can probably guess, I don't have a memoir. That said, if you want 
+        to see some writing, #[a(href='https://medium.com/danieldafoe') peruse my Medium profile].
+          
+    a.link--home(href='./index.pug') Home
+    
 
   include _analytics

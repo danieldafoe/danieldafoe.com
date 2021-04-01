@@ -16,7 +16,7 @@
     text-align: center;
     width: 100%;
 
-    @include media-bp-up(sm) {
+    @include media-bp-up(md) {
       flex-direction: row;
       font-size: 3rem;
     }
@@ -44,9 +44,9 @@
 
   nav {
     flex: 0 1 0;
-    padding: 1rem 0;
+    padding: 3rem 0;
 
-    @include media-bp-up(sm) {
+    @include media-bp-up(md) {
       padding: 0;
     }
 
@@ -55,7 +55,7 @@
       margin: 0 1rem;
       padding: 0 1rem;
 
-      @include media-bp-up(sm) {
+      @include media-bp-up(md) {
         margin: 0;
         padding: 0;
       }

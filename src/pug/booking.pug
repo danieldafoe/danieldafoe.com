@@ -10,8 +10,12 @@ html(lang='en')
     a(href='#about') Skip to About section
 
     main.booking
-      a(href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/danieldafoe?text_color=111111&primary_color=111111'});return false;").
-        Schedule time with me
+      .booking__inner
+        a(href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/danieldafoe?text_color=111111&primary_color=111111'});return false;").
+          Schedule time with me
+        //- img(src='../assets/daniel-defoe.jpg' alt="Daniel Defoe (spelled with an 'e')")
+
+      a.link--home(href='index.pug') Home
 
   script(src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async)
   include _analytics

@@ -3,6 +3,7 @@
 
   .link-farm {
     font-size: 5rem;
+    max-width: 50%;
 
     @include media-bp-up(sm) {
       font-size: 6rem;
@@ -10,6 +11,7 @@
 
     @include media-bp-up(md) {
       font-size: 10rem;
+      max-width: 65%;
     }
 
     @include media-bp-up(lg) {
@@ -27,15 +29,8 @@
       &:focus,
       &:hover {
         color: darken(#fff, 30%);
+        transform: skew(0deg, 5deg);
       }
     }
-  }
-
-  > a {
-    bottom: 2rem;
-    color: var(--white);
-    font-size: 3rem;
-    right: 2rem;
-    position: fixed;
   }
 }

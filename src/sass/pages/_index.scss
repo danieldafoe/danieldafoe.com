@@ -16,11 +16,8 @@ main {
   padding: 0 2rem 5rem;
   width: 100%;
 
-  > a {
-    color: var(--white);
-    display: block;
-    margin-top: 3rem;
-    text-align: center;
+  @include media-bp-up(md) {
+    padding: 0 0 5rem;
   }
 }
 
@@ -41,111 +38,9 @@ main {
   }
 }
 
-.products {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: auto;
-  place-items: center;
-  width: 100%;
-
-  @include media-bp-up(sm) {
-    padding: 0;
-  }
-
-  .product {
-    &:not(:last-child) {
-      margin-bottom: 3rem;
-
-      @include media-bp-up(lg) {
-        margin-bottom: 0;
-        margin-right: 2rem;
-      }
-    }
-
-    &__popular {
-      right: -8%;
-      top: -8%;
-
-      @include media-bp-up(lg) {
-
-      }
-    }
-  }
-
-  @include media-bp-up(lg) {
-    flex-direction: row;
-    padding: 0 2rem;
-    width: 100%;
-  }
-
-  @include media-bp-up(xl) {
-    width: 100%;
-  }
-
-  @include media-bp-up(xxl) {
-    width: 95%;
-  }
-
-  @include media-bp-up(xxxl) {
-    width: 85%;
-  }
-
-  @include media-bp-up(huge) {
-    width: 70%;
-  }
-
-  .product:nth-child(1) {
-    flex: 0 0 auto;
-  }
-
-  .product:nth-child(2) {
-    flex: 1 0 auto;
-  }
-
-  .product:nth-child(3) {
-    flex: 0 0 auto;
-  }
-}
-
-.banner {
-  align-items: center;
-  animation: slide-in 1.5s 300ms;
-  background-color: var(--white);
-  border-radius: 8px 8px 0 0;
-  bottom: 0;
-  color: var(--black);
-  display: flex;
-  font-size: 2rem;
-  justify-content: center;
-  left: 4rem;
-  right: 4rem;
-  padding: 2rem;
-  position: fixed;
-
-  &.hide {
-    display: none;
-  }
-
-  button {
-    margin-left: 4rem;
-  }
-
-  span {
-    font-size: 2.5rem;
-  }
-}
-
-@keyframes slide-in {
-  0% {
-    bottom: -1000%;
-  }
-
-  100% {
-    bottom: 0;
-  }
-}
 
 @import 'booking';
 @import 'boring';
+@import 'home';
+@import 'tier-1';
 @import 'tier-2';
