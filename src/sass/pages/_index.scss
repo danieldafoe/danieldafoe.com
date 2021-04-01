@@ -1,128 +1,151 @@
-.greeting {
-  padding-top: 5rem;
+header {
+  margin-bottom: 12rem;
   text-align: center;
 
-  @include media-bp-up(lg) {
-    padding-top: 17rem;
+  @include media-bp-up(md) {
+    margin-bottom: 7rem;
+    text-align: left;
   }
-}
-
-.title {
-  font: 400 5rem 'Playfair Display', serif;
 
   @include media-bp-up(lg) {
-    font-size: 9rem;
-  }
-
-  @include media-bp-up(xl) {
-    font-size: 10rem;
+    margin-bottom: 12rem;
   }
 }
 
-.subtitle {
-  font: italic 300 3rem 'Dancing Script', cursive;
-  margin-top: 2rem;
+main {
+  padding: 0 2rem 5rem;
+  width: 100%;
 
-  @include media-bp-up(lg) {
-    font-size: 5rem;
+  > a {
+    color: var(--white);
+    display: block;
+    margin-top: 3rem;
+    text-align: center;
   }
 }
 
-.intro {
-  &:after {
-    background-color: var(--intro-bg);
-    border-radius: 50%;
-    bottom: 3rem;
-    content: '';
-    height: 15px;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 15px;
+.logo {
+  border-bottom: 10px solid var(--white);
+  border-left: 10px solid var(--white);
+  border-right: 10px solid var(--white);
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 600;
+  padding: 0 1rem 0 1rem;
 
-    @include media-bp-up(lg) {
-      bottom: 14rem;
-    }
+  @include media-bp-up(md) {
+    border-left: 0;
+    border-width: 15px;
+    font-size: 7rem;
+    padding: 0 2rem 0 1rem;
   }
 }
 
-.about {
-  .inner {
-    column-count: 2;
-    column-gap: 3.5em;
-    column-width: 23em;
-    margin: auto;
-    max-width: 85%;
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  place-items: center;
+  width: 100%;
 
-    @include media-bp-up(lg) {
-      max-width: 70%;
-    }
+  @include media-bp-up(sm) {
+    padding: 0;
   }
 
-  p {
-    margin-top: 4rem;
+  .product {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
 
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
       @include media-bp-up(lg) {
-        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 2rem;
       }
     }
 
-    &:nth-child(2n) {
-      page-break-inside: avoid;
+    &__popular {
+      right: -8%;
+      top: -8%;
+
+      @include media-bp-up(lg) {
+
+      }
     }
   }
-}
 
-footer {
-  padding: 5rem 0;
-  text-align: center;
-  
-  p {
-    font-size: 2rem;
+  @include media-bp-up(lg) {
+    flex-direction: row;
+    padding: 0 2rem;
+    width: 100%;
+  }
+
+  @include media-bp-up(xl) {
+    width: 100%;
+  }
+
+  @include media-bp-up(xxl) {
+    width: 95%;
+  }
+
+  @include media-bp-up(xxxl) {
+    width: 85%;
+  }
+
+  @include media-bp-up(huge) {
+    width: 70%;
+  }
+
+  .product:nth-child(1) {
+    flex: 0 0 auto;
+  }
+
+  .product:nth-child(2) {
+    flex: 1 0 auto;
+  }
+
+  .product:nth-child(3) {
+    flex: 0 0 auto;
   }
 }
 
-// .secret {
-//   @include background-color(section-secret);
+.banner {
+  align-items: center;
+  animation: slide-in 1.5s 300ms;
+  background-color: var(--white);
+  border-radius: 8px 8px 0 0;
+  bottom: 0;
+  color: var(--black);
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  left: 4rem;
+  right: 4rem;
+  padding: 2rem;
+  position: fixed;
 
-//   [draggable] {
-//     font-size: 5rem;
+  &.hide {
+    display: none;
+  }
 
-//     &:focus,
-//     &:hover {
-//       cursor: move;
-//     }
-//   }
+  button {
+    margin-left: 4rem;
+  }
 
-//   .drop-area {
-//     align-items: center;
-//     background-color: pink;
-//     border: 1rem outset #fff;
-//     border-radius: 8px;
-//     display: flex;
-//     height: 100px;
-//     justify-content: center;
-//     width: 100px;
-//   }
+  span {
+    font-size: 2.5rem;
+  }
+}
 
-//   &__puzzle {
-//     margin: 5rem 0;
+@keyframes slide-in {
+  0% {
+    bottom: -1000%;
+  }
 
-//     &__items,
-//     &__areas {
-//       display: flex;
-//       justify-content: space-around;
-//       margin: auto;
-//       width: 500px;
-//     }
+  100% {
+    bottom: 0;
+  }
+}
 
-//     &__items {
-//       margin-bottom: 5rem;
-//     }
-//   }
-// }
+@import 'booking';
+@import 'boring';
+@import 'tier-2';

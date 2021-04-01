@@ -1,0 +1,41 @@
+.boring {
+  padding: 0 2rem;
+
+  .link-farm {
+    font-size: 5rem;
+
+    @include media-bp-up(sm) {
+      font-size: 6rem;
+    }
+
+    @include media-bp-up(md) {
+      font-size: 10rem;
+    }
+
+    @include media-bp-up(lg) {
+      font-size: 12rem;
+    }
+
+    a {
+      color: var(--white);
+      display: inline-block;
+      font-family: Inter, 'Helvetica Neue', Roboto, sans-serif;
+      font-weight: 700;
+      letter-spacing: -3px;
+      transform: skew(10deg, 5deg);
+  
+      &:focus,
+      &:hover {
+        color: darken(#fff, 30%);
+      }
+    }
+  }
+
+  > a {
+    bottom: 2rem;
+    color: var(--white);
+    font-size: 3rem;
+    right: 2rem;
+    position: fixed;
+  }
+}
