@@ -10,12 +10,17 @@
       font-size: 6rem;
     }
 
+    @include media-bp-up(xl) {
+      margin: 10% auto 0;
+      max-width: 55%;
+    }
+
     a {
       color: var(--white);
     }
 
     p {
-      margin-bottom: 5rem;
+      margin-bottom: 10rem;
     }
   }
 }

@@ -20,6 +20,13 @@ body {
 }
 
 main {
+  padding: 0 2rem 5rem;
+  width: 100%;
+
+  @include media-bp-up(md) {
+    // padding: 0 0 5rem;
+  }
+
   h1 {
     font-size: 1.6rem;
     font-weight: 900;
@@ -55,6 +62,7 @@ h1 {
 
 button {
   border: 0;
+  border-radius: 4px;
   display: block;
   padding: 1.6rem 3.2rem;
 

@@ -12,15 +12,6 @@ header {
   }
 }
 
-main {
-  padding: 0 2rem 5rem;
-  width: 100%;
-
-  @include media-bp-up(md) {
-    padding: 0 0 5rem;
-  }
-}
-
 .logo {
   border-bottom: 10px solid var(--white);
   border-left: 10px solid var(--white);
