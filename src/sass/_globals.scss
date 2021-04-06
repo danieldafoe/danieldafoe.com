@@ -10,22 +10,30 @@ html {
 }
 
 body {
-  background-color: var(--body-bg);
-  color: var(--body-clr);
+  background-color: var(--dd-body-clr-bg);
+  color: var(--dd-body-clr-txt);
   font-family: $font;
   font-size: 1.6em;
+  min-height: 100vh;
   line-height: 1.5;
   padding: 0;
   position: relative;
+
+  // &:before {
+  //   background-color: #131313;
+  //   content: '';
+  //   left: 0;
+  //   position: fixed;
+  //   top: 0;
+  //   height: 15px;
+  //   width: 100%;
+  // }
 }
 
 main {
+  height: 100%;
   padding: 0 2rem 5rem;
   width: 100%;
-
-  @include media-bp-up(md) {
-    // padding: 0 0 5rem;
-  }
 
   h1 {
     font-size: 1.6rem;
@@ -36,23 +44,9 @@ main {
   }
 }
 
-a[href^='#'] {
-  background-color: var(--skip-link-bg);
-  color: var(--skip-link-clr);
-  left: 50%;
-  padding: 1rem;
-  position: absolute;
-  top: 2rem;
-  transform: translateY(-1000%);
-
-  &:focus {
-    transform: translateX(-50%);
-  }
-}
-
 a {
   &:visited {
-    color: var(--white);
+    color: var(--dd-white);
   }
 }
 
@@ -61,31 +55,33 @@ h1 {
 }
 
 button {
-  border: 0;
+  border: 2px dashed transparent;
   border-radius: 4px;
   display: block;
   padding: 1.6rem 3.2rem;
 
+  &:active,
   &:focus,
   &:hover {
     cursor: pointer;
+    border: 2px dashed var(--dd-white);
   }
 
   &.primary {
-    background-color: var(--brand-dark);
-    color: var(--white);
+    background-color: var(--dd-btn-primary-clr-bg);
+    color: var(--dd-btn-primary-clr-txt);
   }
 
   &.secondary {
-    background-color: var(--white);
-    color: var(--brand-dark);
+    background-color: var(--dd-white);
+    color: var(--dd-brand-primary);
   }
 }
 
 .link--home {
-  background-color: var(--body-bg);
+  background-color: var(--dd-body-clr-bg);
   bottom: 1.5rem;
-  color: var(--white);
+  color: var(--dd-white);
   font-size: 3rem;
   right: 1.5rem;
   padding: .5rem;
@@ -96,31 +92,35 @@ button {
   }
 }
 
-// Helpers
-
-.btn {
-  background-color: var(--brand-dark);
-  color: var(--white);
+.link--btn {
+  background-color: var(--dd-btn-link-clr-bg);
+  border: 2px dashed transparent;
+  color: var(--dd-btn-link-clr-txt);
   display: inline-block;
+  outline-offset: -4px;
   padding: 1.6rem 3.2rem;
   text-decoration: none;
 
+  &:active,
   &:focus,
   &:hover {
-    background-color: lighten(#002395, 10%);
+    border: 2px dashed var(--dd-white);
   }
 
   &.secondary {
-    background-color: var(--white);
-    color: var(--brand-dark);
+    background-color: var(--dd-white);
+    color: var(--dd-brand-primary);
     
+    &:active,
     &:focus,
     &:hover {
-      background-color: darken(#fff, 10%);
+      border: 2px dashed var(--dd-white);
     }
   }
 
 }
+
+// Helpers
 
 .strike {
   text-decoration: line-through;

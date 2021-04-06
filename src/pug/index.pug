@@ -1,5 +1,4 @@
 - var pageTitle = 'Daniel Dafoe | Inclusive Web Developer in Toronto, Canada';
-- var ctaTitle = "Test";
 
 doctype html
 html(lang='en')
@@ -7,15 +6,9 @@ html(lang='en')
   include _head
 
   body
-    a(href='#about') Skip to About section
-
     main.home
       header
-        p.logo dd
-
-      //- p.
-      //-   Please select your preferred package below to continue.
-
+        p.logo daniel #[br]d#[span a]foe
 
       .products
         .product
@@ -26,7 +19,7 @@ html(lang='en')
             li My 20,000 word memoir
             li 30 minute chat with my parents
             li Copy of my Grade 3 report card
-          a.product__action.btn(href='./tier-1.pug') Claim Tier 1
+          a.product__action.link--btn(href='./tier-1.pug') Claim Tier 1
 
         .product.product--best
           h2.product__title Tier 2: #[br]Prudent
@@ -37,22 +30,31 @@ html(lang='en')
             li Download my resumé
             li Connect with me on LinkedIn
             li Schedule some time with me
-          a.product__action.btn(href='./tier-2.pug') Claim Tier 2
+          a.product__action.link--btn(href='./tier-2.pug') Claim Tier 2
 
         .product
           h2.product__title Tier 3: #[br]High Risk
           p.product__price FREE
           h3.product__features-title What's included
           ul.product__features
-            li You blindly send me an offer letter
-            li 
-          a.product__action.btn(href='./tier-3.pug') Claim Tier 3
+            li You hire me immediately
+            li An experienced developer with 7 years experience in the banking industry 
+          a.product__action.link--btn(href='./tier-3.pug') Claim Tier 3
 
       a(href='./boring.pug') Creep my social media
 
       aside.banner
         p This website #[strong doesn't] use cookies, but here's one for you: #[span 🍪]
         button.primary(type='button') Thanks!
+
+      footer
+        - var today = new Date();
+        - var d = today.getDate();
+        - var y = today.getFullYear();
+        - var h = today.getHours();
+        - var m = today.getMinutes();
+        p.
+          last update: #[date #{ today.getMonth()+1 }-#{ d }-#{ y }] at #[time #{ h }:#{ m }] 
 
   script(type='text/javascript' src='../js/main.js')
   include partials/_analytics

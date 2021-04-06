@@ -1,6 +1,6 @@
 .home {
   > a {
-    color: var(--white);
+    color: var(--dd-white);
     display: block;
     margin-top: 3rem;
     text-align: center;
@@ -26,15 +26,6 @@
       @include media-bp-up(lg) {
         margin-bottom: 0;
         margin-right: 2rem;
-      }
-    }
-
-    &__popular {
-      right: -8%;
-      top: -8%;
-
-      @include media-bp-up(lg) {
-
       }
     }
   }

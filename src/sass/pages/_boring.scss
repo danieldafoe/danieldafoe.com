@@ -24,9 +24,9 @@
     }
 
     a {
-      color: var(--white);
+      color: var(--dd-white);
       display: inline-block;
-      font-family: Inter, 'Helvetica Neue', Roboto, sans-serif;
+      font-family: var(--dd-font-primary);
       font-weight: 700;
       letter-spacing: -3px;
       transform: skew(10deg, 5deg);

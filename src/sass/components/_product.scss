@@ -1,8 +1,8 @@
 .product {
-  background-color: #fff;
+  background-color: var(--dd-product-clr-bg);
   border-radius: 10px;
-  border: 8px double var(--brand-dark);
-  color: var(--black);
+  border: 8px double var(--dd-brand-primary);
+  color: var(--dd-product-clr-txt);
   height: 450px;
   max-width: 100%;
   padding: 2rem;
@@ -24,44 +24,44 @@
   }
 
   &__popular {
-    background-color: var(--brand-dark);
-    background-color: #3fa;
+    background-color: var(--dd-product-popular-clr-bg);
     border-radius: 50%;
-    // border: 10px double var(--white);
+    // border: 10px double var(--dd-white);
     // border: 10px solid darken(#3fa, 30%);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    color: var(--black);
+    color: var(--dd-product-popular-clr-txt);
     display: flex;
     font-size: 1.4rem;
     font-weight: bold;
     height: 100px;
-    right: 5%;
+    right: 2%;
     padding: .5rem;
     place-items: center;
     position: absolute;
     text-align: center;
-    top: -10%;
+    top: -7%;
     transform: rotate(5deg);
     width: 100px;
     z-index: 2;
 
     @include media-bp-up(md) {
-      height: 120px;
+      height: 110px;
+      right: -4%;
       padding: 1rem;
-      width: 120px;
+      width: 110px;
     }
   }
 
   &__title {
-    font-family: Inter, 'Helvetica Neue', Roboto, sans-serif;
+    font-family: var(--dd-font-primary);
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1;
   }
 
   &__price {
-    color: var(--brand-dark);
-    font-family: Inter, 'Helvetica Neue', Roboto, sans-serif;
+    color: var(--dd-product-price-clr-txt);
+    font-family: var(--dd-font-primary);
     font-size: 7.5rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -71,13 +71,12 @@
     font-size: 2rem;
     font-weight: 700;
     // font-family: 'PT Sans Narrow', sans-serif;
-    font-family: Inter, 'Helvetica Neue', Roboto, sans-serif;
+    font-family: var(--dd-font-primary);
     text-transform: uppercase;
   }
 
   &__features {
-    list-style: none;
-    padding: 0;
+    padding: 0 0 0 2rem;
   }
 
   &__action {

@@ -42,29 +42,29 @@
   }
 
   .link--home {
-    background-color: var(--white);
-    color: var(--white);
+    background-color: var(--dd-white);
+    color: var(--dd-black);
 
-    &:active,
-    &:focus,
-    &:hover {
-      color: var(--black);
-    }
+    // &:active,
+    // &:focus,
+    // &:hover {
+    //   color: var(--dd-black);
+    // }
   }
 
   a {
-    background-color: var(--black);
-    color: var(--black);
+    background-color: var(--dd-black);
+    color: var(--dd-white);
 
     &:active,
     &:focus,
     &:hover {
-      color: var(--white);
+      color: var(--dd-white);
     }
   }
 
   img {
-    border: 5px dashed var(--white);
+    border: 5px dashed var(--dd-white);
     height: auto;
     width: 100%;
   }

@@ -28,6 +28,10 @@
 
     a {
       transition: letter-spacing 100ms ease;
+      
+      @media (prefers-reduced-motion: reduce) {
+        transition: none;
+      }
 
       &:focus,
       &:hover {
@@ -63,7 +67,7 @@
   }
 
   a {
-    color: var(--white);
+    color: var(--dd-white);
     display: block;
   }
 }

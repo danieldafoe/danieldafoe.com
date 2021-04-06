@@ -1,5 +1,4 @@
-- var pageTitle = 'Daniel Dafoe | Inclusive Web Developer in Toronto, Canada';
-- var ctaTitle = "Test";
+- var pageTitle = 'About Daniel Dafoe | Inclusive Web Developer in Toronto, Canada';
 
 doctype html
 html(lang='en')
@@ -7,13 +6,51 @@ html(lang='en')
   include _head
 
   body
-    a(href='#about') Skip to About section
-
-    main
-      header
-        p.logo dd
-
+    main.about
       h1 About
 
-  script(type='text/javascript' src='../js/main.js')
+      .about__inner
+        h2 Introduction
+        p. 
+          Hi! I'm Daniel. I like pop punk music, reading novels written in the late 1800s, 
+          and I get upset with myself when I don't exercise every day. #[a(href='https://en.wikipedia.org/wiki/Serial_comma') Oxford commas] 
+          are of crucial importance to me. 
+
+        h2 Education
+        p.
+          I once pursued education in Advertising, then Systems Analysis, and now English. It was always 
+          an aspiration of mine to study English, and in 2019 I decided to get on with it.
+
+        h2 Experience
+        p.
+          Experience is a broad term. If we're discussing work experience solely, I had humble beginnings 
+          as a front desk worker at a pizza and video store in a town of 800 people. Beyond that I've worked 
+          at McDonald's, IKEA, and the Hudson's Bay Company.
+
+        p.
+          Professionally, I've worked at small marketing agencies and large corporations alike. The Royal Bank 
+          of Canada is where I've spent the last #{ new Date().getFullYear() - 2015 } years of my life working as a 
+          Front-End Developer (#[acronym(title='Also Known As') AKA,] Web Developer, #[acronym(title='User Experience') UX] Developer).
+
+        h2 Testimonials
+        p.
+          Below are some quotes#[super *] I've pulled from various Slack conversations I've had 
+          while working from home. Hopefully this gives you an idea of what I'm like.
+
+        p.quote.
+          &ldquo;Your concern for user experience is really admiring&rdquo;
+
+        p.quote.
+          &ldquo;thank goodness we have you to ask about accessibility questions :)&rdquo;
+
+        p.quote.
+
+        p.quote.
+          &ldquo;#[acronym(title='Laugh Out Loud') lol] you're like the perfect blend of funny and smarts&rdquo;
+
+        p.quote.
+          &ldquo;your (#[em sic]) really good at developing&rdquo;
+      
+    include partials/_home-navigation
+
   include partials/_analytics
