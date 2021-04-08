@@ -1,39 +1,3 @@
-header {
-  margin-bottom: 12rem;
-
-  @include media-bp-up(md) {
-    margin-bottom: 7rem;
-  }
-
-  @include media-bp-up(lg) {
-    margin-bottom: 12rem;
-  }
-}
-
-.logo {
-  display: inline-block;
-  font-family: var(--dd-font-primary);
-  font-size: 5rem;
-  font-weight: 900;
-  letter-spacing: -2px;
-  line-height: 1;
-  padding: 2rem 1rem 0 1rem;
-  text-transform: uppercase;
-  // text-shadow: 2px 2px 1px rgb(255 255 255 / 35%), 5px 5px 1px rgb(255 255 255 / 20%);
-
-  span {
-    color: var(--dd-logo-accent);
-    text-decoration: underline;
-  }
-}
-
-footer {
-  bottom: 0;
-  padding-bottom: 2rem;
-  position: absolute;
-}
-
-
 @import 'booking';
 @import 'boring';
 @import 'home';

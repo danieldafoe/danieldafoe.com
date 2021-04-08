@@ -2,8 +2,12 @@
   > a {
     color: var(--dd-white);
     display: block;
-    margin-top: 3rem;
+    margin: 3rem 0 6rem;
     text-align: center;
+
+    @include media-bp-up(md) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -72,5 +76,34 @@
 
   100% {
     bottom: 0;
+  }
+}
+
+header {
+  margin-bottom: 12rem;
+
+  @include media-bp-up(md) {
+    margin-bottom: 7rem;
+  }
+
+  @include media-bp-up(lg) {
+    margin-bottom: 12rem;
+  }
+}
+
+footer {
+  bottom: 0;
+  left: 50%;
+  padding-bottom: 2rem;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 75%;
+
+  @include media-bp-up(md) {
+    left: auto;
+    text-align: left;
+    transform: none;
+    width: auto;
   }
 }

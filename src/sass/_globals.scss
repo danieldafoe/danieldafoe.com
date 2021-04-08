@@ -36,10 +36,9 @@ main {
   width: 100%;
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 900;
-    // text-align: center;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 4rem;
     text-transform: uppercase;
   }
 }
@@ -78,17 +77,22 @@ button {
   }
 }
 
-.link--home {
-  background-color: var(--dd-body-clr-bg);
-  bottom: 1.5rem;
-  color: var(--dd-white);
-  font-size: 3rem;
-  right: 1.5rem;
-  padding: .5rem;
-  position: fixed;
+// Classes
 
-  @include media-bp-up(xl) {
-    font-size: 4rem;
+.logo {
+  display: inline-block;
+  font-family: var(--dd-font-primary);
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1;
+  padding: 2rem 1rem 0 1rem;
+  text-transform: uppercase;
+  // text-shadow: 2px 2px 1px rgb(255 255 255 / 35%), 5px 5px 1px rgb(255 255 255 / 20%);
+
+  span {
+    color: var(--dd-logo-accent);
+    text-decoration: underline;
   }
 }
 
