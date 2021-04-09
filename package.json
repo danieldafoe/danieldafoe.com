@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "description": "The personal website of Daniel Dafoe. Created using Pug, Sass, and Parcel.",
   "scripts": {
-    "build": "parcel build src/pug/index.pug -d ./",
+    "build": "parcel build src/pug/index.pug -d ./dist",
     "start": "parcel serve src/pug/index.pug"
   },
   "repository": {
