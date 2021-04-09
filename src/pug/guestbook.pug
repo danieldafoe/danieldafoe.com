@@ -1,0 +1,13 @@
+- var pageTitle = 'Daniel Dafoe | Inclusive Web Developer in Toronto, Canada';
+
+doctype html
+html(lang='en')
+
+  include partials/_head
+
+  main.guestbook
+    h1 Guestbook
+    form(name='guestbook' netlify)
+      label(for='comment') Leave a comment
+      input(type='text' id='comment' name='comment')
+      button(type='submit') Submit
