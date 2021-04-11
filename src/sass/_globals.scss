@@ -90,9 +90,18 @@ button {
   text-transform: uppercase;
   // text-shadow: 2px 2px 1px rgb(255 255 255 / 35%), 5px 5px 1px rgb(255 255 255 / 20%);
 
+  &:hover {
+    cursor: pointer;
+
+    span {
+      transform: rotateY(180deg);
+    }
+  }
+
   span {
     color: var(--dd-logo-accent);
     text-decoration: underline;
+    transition: all 200ms ease;
   }
 }
 
@@ -128,4 +137,12 @@ button {
 
 .strike {
   text-decoration: line-through;
+}
+
+// Forms
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }

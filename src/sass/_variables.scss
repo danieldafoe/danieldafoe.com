@@ -34,6 +34,12 @@ $font: Roboto, 'Roboto Condensed', Cantarell, 'Segoe UI', 'Helvetica Neue', sans
   --dd-btn-link-clr-bg: var(--dd-brand-primary);
   --dd-btn-link-clr-txt: var(--dd-white);
 
+  // Guestbook
+
+  --dd-guestbook-btn-clr-bg: var(--dd-brand-dark-tertiary);
+  --dd-guestbook-btn-clr-outline: var(--dd-brand-dark-tertiary);
+  --dd-guestbook-btn-clr-txt: var(--dd-black);
+
   // Link
 
   --dd-link-clr: var(--dd-white);
@@ -59,6 +65,7 @@ $font: Roboto, 'Roboto Condensed', Cantarell, 'Segoe UI', 'Helvetica Neue', sans
 
   --dd-font-primary: Inter, 'Helvetica Neue', Roboto, sans-serif;
   --dd-font-secondary: Roboto, 'Helvetica Neue', sans-serif;
+  --dd-font-body: var(--dd-font-secondary);
 
   @media (prefers-color-scheme: light) {
     --dd-white: #fff;
