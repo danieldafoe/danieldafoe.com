@@ -44,6 +44,8 @@ main {
 }
 
 a {
+  color: var(--dd-link-clr);
+
   &:visited {
     color: var(--dd-white);
   }
@@ -144,5 +146,9 @@ button {
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+::placeholder {
+  color: var(--dd-placeholder-clr);
 }

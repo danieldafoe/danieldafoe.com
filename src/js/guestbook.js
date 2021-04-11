@@ -29,6 +29,7 @@ function renderSubmissions(submissions) {
     const commentNameEl = document.createElement('p');
     const commentName = submission['data']['name'] || 'Anonymous';
     commentNameEl.classList.add('guestbook__comment__name');
+    commentNameEl.innerText =  commentName;
 
     const commentDate = formatNetlifyDate(submission['created_at']);
 

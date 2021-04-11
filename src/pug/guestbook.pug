@@ -10,13 +10,13 @@ html(lang='en')
     include partials/_home-navigation
     .guestbook__inner
       section.guestbook__comments
+        a(href='#comment-form') Leave a comment
         #comments
 
-      form.guestbook__form(name='guestbook' action='/guestbook' netlify)
-        h2 Leave your own comment
+      form.guestbook__form(id='comment-form' name='guestbook' action='/guestbook' netlify)
         .form-field 
           label(for='comment') Comment
-          textarea(rows='15' id='comment' name='comment' maxlength='500' placeholder='It is a truth universally acknowledged, that a person who visits this site be in want of nothing further in life.')
+          textarea(rows='10' id='comment' name='comment' maxlength='500' placeholder='It is a truth universally acknowledged, that a person who visits this site be in want of nothing further in life.')
         .form-field
           label(for='name') Name (optional)
           input(type='text' id='name' name='name' placeholder='Jane Austen')
