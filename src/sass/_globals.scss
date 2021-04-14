@@ -88,19 +88,11 @@ button {
   font-weight: 900;
   letter-spacing: -2px;
   line-height: 1;
-  padding: 2rem 1rem 0 1rem;
+  padding: 2rem 0 0;
   text-transform: uppercase;
   // text-shadow: 2px 2px 1px rgb(255 255 255 / 35%), 5px 5px 1px rgb(255 255 255 / 20%);
 
-  &:hover {
-    cursor: pointer;
-
-    span {
-      transform: rotateY(180deg);
-    }
-  }
-
-  span {
+  a {
     color: var(--dd-logo-accent);
     text-decoration: underline;
     transition: all 200ms ease;

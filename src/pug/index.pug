@@ -8,11 +8,15 @@ html(lang='en')
   body
     main.home
       header
-        p.logo daniel #[br]d#[span a]foe
+        p(aria-label='Daniel Dafoe').logo daniel #[br]d#[a(href='with-an-a.pug' aria-label="Dafoe with an 'a'") a]foe
+
+        .home__links
+          a(href='./boring.pug') Link Farm
+          a(href='./guestbook.pug') Guestbook
 
       .products
         .product
-          h2.product__title Tier 1: #[br]Detailed 
+          h2.product__title Tier 1: #[br]Detailed
           p.product__price FREE
           h3.product__features-title What's included
           ul.product__features
@@ -39,10 +43,6 @@ html(lang='en')
           ul.product__features
             li Send me an interview booking
           a.product__action.link--btn(href='./tier-3.pug') Claim Tier 3
-
-      a(href='./boring.pug') Creep my social media
-
-      a(href='./guestbook.pug') Sign the guestbook
 
       aside.banner
         p This website #[strong doesn't] use cookies, but here's one for you: #[span 🍪]

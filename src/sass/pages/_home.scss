@@ -1,12 +1,11 @@
 .home {
-  > a {
-    color: var(--dd-white);
-    display: block;
-    margin: 3rem 0 6rem;
-    text-align: center;
+  &__links {
+    a {
+      font-size: 2rem;
 
-    @include media-bp-up(md) {
-      margin-bottom: 0;
+      &:first-child {
+        margin-right: 2rem;
+      }
     }
   }
 }
@@ -80,9 +79,14 @@
 }
 
 header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 12rem;
 
   @include media-bp-up(md) {
+    flex-direction: row;
     margin-bottom: 7rem;
   }
 
