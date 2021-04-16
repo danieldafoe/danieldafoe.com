@@ -8,11 +8,15 @@ html(lang='en')
   body
     main.home
       header
-        p(aria-label='Daniel Dafoe').logo daniel #[br]d#[a(href='with-an-a.pug' aria-label="Dafoe with an 'a'") a]foe
+        p(aria-label='Daniel Dafoe').logo daniel #[br]d#[a(href='defoe-vs-dafoe.pug' aria-label="Dafoe with an 'a'") a]foe
 
         .home__links
           a(href='./boring.pug') Link Farm
           a(href='./guestbook.pug') Guestbook
+
+      aside.banner
+        p This website #[strong doesn't] use cookies, but here's one for you: #[span 🍪]
+        button.primary(type='button') Thanks!
 
       .products
         .product
@@ -20,10 +24,10 @@ html(lang='en')
           p.product__price FREE
           h3.product__features-title What's included
           ul.product__features
-            li My 20,000 word memoir
-            li 30 minute chat with my parents
-            li Copy of my Grade 3 report card
-          a.product__action.link--btn(href='./tier-1.pug') Claim Tier 1
+            li Read my 20,000 word memoir
+            li Chat for 30 minutes with my parents
+            li Review my Grade 3 report card
+          a.product__action.link--btn(href='./tier-1.pug') Redeem Tier 1
 
         .product.product--best
           h2.product__title Tier 2: #[br]Prudent
@@ -34,19 +38,18 @@ html(lang='en')
             li Download my resumé
             li Connect with me on LinkedIn
             li Schedule some time with me
-          a.product__action.link--btn(href='./tier-2.pug') Claim Tier 2
+          a.product__action.link--btn(href='./tier-2.pug') Redeem Tier 2
 
         .product
           h2.product__title Tier 3: #[br]Confident
           p.product__price FREE
           h3.product__features-title What's included
           ul.product__features
-            li Send me an interview booking
-          a.product__action.link--btn(href='./tier-3.pug') Claim Tier 3
-
-      aside.banner
-        p This website #[strong doesn't] use cookies, but here's one for you: #[span 🍪]
-        button.primary(type='button') Thanks!
+            //- li Hit your candidate quota
+            li Book me a tour of your company
+            li Introduce me to the team
+            li Interview me
+          a.product__action.link--btn(href='./tier-3.pug') Redeem Tier 3
 
       footer
         - var today = new Date();

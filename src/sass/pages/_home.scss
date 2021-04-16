@@ -1,5 +1,7 @@
 .home {
   &__links {
+    margin-top: 2rem;
+
     a {
       font-size: 2rem;
 
@@ -83,7 +85,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 12rem;
+  margin-bottom: 8rem;
 
   @include media-bp-up(md) {
     flex-direction: row;

@@ -3,8 +3,8 @@
   border-radius: 10px;
   border: 8px double var(--dd-brand-primary);
   color: var(--dd-product-clr-txt);
-  height: 450px;
   max-width: 100%;
+  min-height: 450px;
   padding: 2rem;
   position: relative;
   width: 100%;
@@ -76,7 +76,7 @@
   }
 
   &__features {
-    padding: 0 0 0 2rem;
+    padding: 0 0 7rem 2rem;
   }
 
   &__action {
