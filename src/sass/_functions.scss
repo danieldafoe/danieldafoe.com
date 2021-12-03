@@ -8,3 +8,12 @@
     @error '#{$bp} does not exist in map $breakpoints.';
   }
 }
+
+@function z-index($str) {
+  @if map-get($map: vars.$z-indices, $key: $str) {
+    @return map-get($map: vars.$z-indices, $key: $str);
+  }
+  @else {
+    @error '#{str} does not exist in map $z-indices.';
+  }
+}

@@ -1,0 +1,29 @@
+- var pageTitle = 'What Daniel Dafoe is doing now | Inclusive Web Developer in Toronto, Canada';
+
+doctype html
+html(lang='en')
+
+  include _head
+
+  body
+    include _ellipses
+    a(href='#main') Skip to main content
+
+    main(id='main')
+      h1 Now#[span .]
+      ul
+        //- li #[strong Teaching DESN3037 - Front End Architecture] at George Brown College for the Winter 2022 semester.
+
+        li Crafting a curriculum for DESN3037 - Front End Application Architecture for George Brown College's inaugural #[a(href='https://www.georgebrown.ca/programs/web-development-front-end-design-program-g418') Front End Design program].
+
+        li Studying English, Linguistics, and Philosophy at the University of Toronto part-time.
+
+        li Learning #[abbr(title='American Sign Language') ASL]–American Sign Language. I'm up to 75 words/phrases!
+        
+        li Writing Medium articles dissecting poor web accessibility practices on websites of large, well-known brands.
+
+      p
+        nav
+          a(href='/') Go back home.
+
+  include _analytics
