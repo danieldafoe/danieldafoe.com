@@ -1,5 +1,4 @@
 - var pageTitle = 'Daniel Dafoe | Inclusive Web Developer in Toronto, Canada';
-- var ctaTitle = "Test";
 
 doctype html
 html(lang='en')
@@ -7,47 +6,19 @@ html(lang='en')
   include _head
 
   body
-    a(href='#about') Skip to About section
+    include _ellipses
+    a(href='#main') Skip to main content
 
-    main.wrapper
-      section.intro
-        div.greeting
-          h1.title Leave no user behind.
-          p.subtitle Daniel Dafoe
+    main(id='main')
+      h1 Hello#[span .]
+      p.
+        Hey, it’s me. Daniel. I'm that fella who cares deeply about web accessibility and inclusive design.
+        
+      p.
+        Yup, I'm that same Daniel that works as a #[strong Senior Design Technologist at RBC]. You know, that big bank in Canada.
 
-      section.about(id='about')
-        .inner
-          p.
-            Inclusiveness and accessibility matter most to me when designing and building web experiences.
+      p
+        nav
+          a(href='now.pug') Curious to know what else I'm doing?
 
-          p. 
-            My introduction to the world of web accessibility was in 2013 when tasked with testing internal 
-            applications at RBC with a screen reader, JAWS. Since then it has been a principle of mine that 
-            everything I produce is usable by everyone.
-
-          p.
-            Since becoming enlightened about the impact my choices have on the experience of users, 
-            I have given talks about accessibility to developers and designers at RBC, 
-            and even presented at a11yTO Conf 2015 about the future of web accessibility.
-
-      //- section.secret
-      //-   //- h2 Secret Area
-      //-   p Welcome to my secret area. To gain access to more information about me,
-      //-     please complete the puzzle below.
-
-        //- .secret__puzzle
-        //-   .secret__puzzle__items
-        //-     span(id='broccoli' draggable='true' ondragstart='dragstart_handler(event)') 🥦
-        //-     span(id='apple' draggable='true' ondragstart='dragstart_handler(event)') 🍎
-        //-     span(id='avocado' draggable='true' ondragstart='dragstart_handler(event)') 🥑
-
-        //-   .secret__puzzle__areas
-        //-     .drop-area(ondragover='dragover_handler(event)' ondrop='drop_handler(event)')
-        //-     .drop-area(ondragover='dragover_handler(event)' ondrop='drop_handler(event)')
-        //-     .drop-area(ondragover='dragover_handler(event)' ondrop='drop_handler(event)')
-
-      footer
-        p Made with HTML & CSS in #{ new Date().getFullYear() }
-
-  //- script(src='../js/main.ts')
   include _analytics

@@ -10,18 +10,92 @@ html {
 }
 
 body {
-  background-color: var(--body-bg);
-  color: var(--body-clr);
-  font-family: $font;
-  font-size: 1.6em;
+  background-image: url('../assets/grid-2.png');
+  background-attachment: scroll;
+  color: #222;
+  font: 300 2.25rem / 1.5 $font;
+  letter-spacing: .4px;
   line-height: 1.5;
+  min-height: 100vh;
   padding: 0;
   position: relative;
+
+  @include media-bp-up(md) {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}
+
+main {
+  margin: auto;
+  max-width: 85%;
+  padding: 19% 0;
+  position: relative;
+  z-index: func.z-index(main);
+
+  @include media-bp-up(md) {
+    max-width: 60%;
+    padding: 13% 0;
+  }
+
+  @include media-bp-up(lg) {
+    padding: 10% 0;
+  }
+}
+
+h1 {
+  background-image: url('../assets/pizzaz.svg');
+  background-position: 102% 0;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  display: inline-block;
+  font-size: 6.5rem;
+  margin-bottom: 1rem;
+
+  @include media-bp-up(lg) {
+    font-size: 7.5rem;
+  }
+
+  span {
+    color: #2D7CF3;
+  }
+}
+
+a {
+  color: #2D7CF3;
+  position: relative;
+
+  @include media-bp-up(md) {
+    text-decoration: none;
+
+    &:not([href^='#']):after {
+      background-color: #2D7CF3;
+      bottom: -6px;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &:focus {
+    outline: #2D7CF3 solid 2px;
+    outline-offset: 5px;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    &:not([href^='#']):after {
+      // opacity: 1;
+    }
+  }
 }
 
 a[href^='#'] {
-  background-color: var(--skip-link-bg);
-  color: var(--skip-link-clr);
+  background-color: #222;
+  color: #fff;
   left: 50%;
   padding: 1rem;
   position: absolute;
@@ -34,20 +108,23 @@ a[href^='#'] {
 }
 
 p {
-  font: 300 2rem /1.5 $font;
-  letter-spacing: .4px;
+  margin-bottom: 2rem;
+}
 
-  @include media-bp-up(lg) {
-    font-size: 3rem;
+li {
+  margin-bottom: 2rem;
+
+  a {
+    &:not([href^='#']) {
+      text-decoration: underline;
+
+      &:after {
+        content: unset;
+      }
+    }
   }
 }
 
-section {
-  min-height: 400px;
-  padding: 7rem 0;
-  position: relative;
-
-  @include media-bp-up(lg) {
-    min-height: 790px;
-  }
+strong {
+  font-weight: 500;
 }
