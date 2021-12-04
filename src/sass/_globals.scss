@@ -12,7 +12,7 @@ html {
 body {
   background-attachment: scroll;
   background-image: url('../assets/grid-2.png');
-  color: #222;
+  color: var(--black);
   font: 300 2.25rem / 1.5 var(--font);
   letter-spacing: .4px;
   min-height: 100vh;
