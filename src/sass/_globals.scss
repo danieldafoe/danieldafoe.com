@@ -10,12 +10,11 @@ html {
 }
 
 body {
-  background-image: url('../assets/grid-2.png');
   background-attachment: scroll;
+  background-image: url('../assets/grid-2.png');
   color: #222;
-  font: 300 2.25rem / 1.5 $font;
+  font: 300 2.25rem / 1.5 var(--font);
   letter-spacing: .4px;
-  line-height: 1.5;
   min-height: 100vh;
   padding: 0;
   position: relative;
@@ -57,19 +56,19 @@ h1 {
   }
 
   span {
-    color: #2D7CF3;
+    color: var(--brand-secondary);
   }
 }
 
 a {
-  color: #2D7CF3;
+  color: var(--brand-secondary);
   position: relative;
 
   @include media-bp-up(md) {
     text-decoration: none;
 
     &:not([href^='#']):after {
-      background-color: #2D7CF3;
+      background-color: var(--brand-secondary);
       bottom: -6px;
       content: '';
       height: 2px;
@@ -80,23 +79,16 @@ a {
   }
 
   &:focus {
-    outline: #2D7CF3 solid 2px;
+    outline: var(--brand-secondary) solid 2px;
     outline-offset: 5px;
-  }
-
-  &:active,
-  &:focus,
-  &:hover {
-    &:not([href^='#']):after {
-      // opacity: 1;
-    }
   }
 }
 
 a[href^='#'] {
-  background-color: #222;
-  color: #fff;
+  background-color: var(--skip-link-bg);
+  color: var(--skip-link-clr);
   left: 50%;
+  font-size: 2rem;
   padding: 1rem;
   position: absolute;
   top: 2rem;

@@ -1,14 +1,14 @@
 {
   "name": "danieldafoe.com",
-  "version": "1.2.0",
-  "description": "The personal website of Daniel Dafoe. Created using Pug, Sass, and Parcel.",
+  "version": "16.0",
+  "description": "The personal website of Daniel Dafoe. Created using Pug, Sass, and Parcel. Deployment brought to you by Netlify.",
   "scripts": {
     "build": "parcel build src/pug/index.pug -d ./dist",
     "start": "parcel serve src/pug/index.pug"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danieldafoe/danieldafoe.github.io.git"
+    "url": "git+https://github.com/danieldafoe/danieldafoe.com.git"
   },
   "keywords": [],
   "author": "Daniel Dafoe <dannydafoe@gmail.com>",
@@ -16,10 +16,11 @@
   "bugs": {
     "url": "https://github.com/danieldafoe/danieldafoe.github.io/issues"
   },
-  "homepage": "https://danieldafoe.github.io",
+  "homepage": "https://danieldafoe.com",
   "dependencies": {},
   "devDependencies": {
     "parcel": "^1.12.4",
+    "prettier": "2.5.0",
     "pug": "^3.0.1",
     "sass": "^1.26.8",
     "typescript": "^4.0.3"
