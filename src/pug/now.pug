@@ -3,10 +3,10 @@
 doctype html
 html(lang='en')
 
-  include _head
+  include partials/_head
 
   body
-    include _ellipses
+    include partials/_ellipses
     a(href='#main') Skip to main content
 
     main#main.now
@@ -16,9 +16,11 @@ html(lang='en')
 
         //- li Crafting a curriculum for DESN3037 - Front End Application Architecture for George Brown College's inaugural #[a(href='https://www.georgebrown.ca/programs/web-development-front-end-design-program-g418') Front End Design program].
 
+        li Contributing code to fix a bug in Firefox's core codebase related to an accessibility mapping.
+
         li Studying English, Linguistics, and Philosophy at the University of Toronto part-time.
 
-        li Learning #[abbr(title='American Sign Language') ASL]–American Sign Language. I'm up to 100 words/phrases!
+        li Learning #[abbr(title='American Sign Language') ASL]–American Sign Language. I know over 100 words and phrases!
         
         li Writing Medium articles dissecting poor web accessibility practices on websites of large, well-known brands.
 
@@ -26,4 +28,4 @@ html(lang='en')
         nav
           a(href='/') Go back home.
 
-  include _analytics
+  include partials/_analytics
