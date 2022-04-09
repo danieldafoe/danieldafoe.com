@@ -1,0 +1,13 @@
+@use '../mixins' as *;
+@use '../utilities' as *;
+
+.theme-toggle {
+  @extend %btn--blank;
+  display: block;
+  font-size: 1.6rem;
+  padding: 1.45rem 1rem 0 0;
+
+  @include media-bp-up(lg) {
+    margin-left: auto;
+  }
+}

@@ -5,10 +5,12 @@ html(lang='en')
   include partials/_head
 
   body
-    include partials/_ellipses
     a(href='#main') Skip to main content
+    include partials/_ellipses
 
     main(id='main')
+      include partials/_theme-toggle
+
       //- Include aria-label since nested HTML in <h1> throws off screen readers
       h1(aria-label='Who is Daniel Dafoe?').
         Who is #[br] Daniel Dafoe#[span ?]
@@ -28,4 +30,5 @@ html(lang='en')
       a(href='https://medium.com/danieldafoe') Medium
       a(href='https://linkedin.com/in/danieldafoe') LinkedIn
 
+  include partials/_js
   include partials/_analytics

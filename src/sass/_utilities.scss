@@ -1,0 +1,12 @@
+%btn--blank {
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  color: var(--clr-text); // iOS sets it to blue
+  font-weight: 500;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

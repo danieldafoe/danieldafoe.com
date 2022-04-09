@@ -2,7 +2,7 @@
   --font: Roboto, Cantarell, 'Segoe UI', 'Helvetica Neue', sans-serif;
   --font-heading: Poppins, Roboto, Inter, Cantarell, sans-serif;
 
-  --brand-dark: #222;
+  --brand-dark: #111;
   --brand-light: #fff;
   --brand-primary: var(--brand-light);
   --brand-secondary: #2D7CF3;
@@ -10,7 +10,10 @@
 
   --black: #222;
   --white: #fff;
-  
+
+  --clr-background: var(--brand-light);
+  --clr-text: var(--brand-dark);
+
   --body-bg: var(--brand-dark);
   --body-clr: var(--brand-light);
 

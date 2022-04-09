@@ -6,10 +6,12 @@ html(lang='en')
   include partials/_head
 
   body
-    include partials/_ellipses
     a(href='#main') Skip to main content
+    include partials/_ellipses
 
     main#main.now
+      include partials/_theme-toggle
+
       h1 Now#[span .]
       ul
         li Teaching a course on front-end application architecture I was invited to create for George Brown College's inaugural #[a(href='https://www.georgebrown.ca/programs/web-development-front-end-design-program-g418') Front End Design program].
@@ -26,4 +28,5 @@ html(lang='en')
         nav
           a.heavy(href='/') Go back home.
 
+  include partials/_js
   include partials/_analytics
