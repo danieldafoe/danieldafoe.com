@@ -1,3 +1,6 @@
+@use 'mixins' as *;
+@use 'functions' as func;
+
 *,
 :after,
 :before {
@@ -11,11 +14,11 @@ html {
 
 body {
   background-attachment: scroll;
-  background-image: url('../assets/grid-2.png');
+  background-image: url('../assets/grid-3.png');
   color: var(--black);
   font: 300 2.25rem / 1.5 var(--font);
   letter-spacing: .4px;
-  min-height: 100vh;
+  min-height: 85vh;
   padding: 0;
   position: relative;
 
@@ -26,42 +29,77 @@ body {
 }
 
 main {
-  margin: auto;
+  margin: 19% auto 0;
   max-width: 85%;
-  padding: 19% 0;
   position: relative;
   z-index: func.z-index(main);
 
+  .ellipse {
+    bottom: 8rem;
+    position: absolute;
+    right: -3rem;
+    width: 80px;
+  }
+
   @include media-bp-up(md) {
     max-width: 60%;
-    padding: 13% 0;
+    margin-top: 13%;
   }
 
   @include media-bp-up(lg) {
-    padding: 10% 0;
+    margin-top: 9%;
   }
 }
 
 h1 {
-  background-image: url('../assets/pizzaz.svg');
-  background-position: 102% 0;
-  background-repeat: no-repeat;
-  background-size: 20%;
+  // background-image: url('../assets/pizzaz.svg');
+  // background-position: 102% 0;
+  // background-repeat: no-repeat;
+  // background-size: 7%;
   display: inline-block;
-  font-size: 6.5rem;
-  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-size: 5.5rem;
+  line-height: 1.05;
+  margin-bottom: 2rem;
+
+  @include media-bp-up(md) {
+    font-size: 5.5rem;
+  }
 
   @include media-bp-up(lg) {
     font-size: 7.5rem;
+    line-height: 1.1;
+    margin-bottom: 3rem;
   }
 
   span {
     color: var(--brand-secondary);
+    font-size: 110%;
   }
 }
 
 a {
   color: var(--brand-secondary);
+  font-weight: 400;
+  outline-offset: 3px;
+
+  &[href^='#'] {
+    background-color: var(--skip-link-bg);
+    color: var(--skip-link-clr);
+    left: 50%;
+    font-size: 2rem;
+    padding: 1rem;
+    position: fixed;
+    top: 2rem;
+    transform: translateY(-1000%);
+  
+    &:focus {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+a.heavy {
   position: relative;
 
   @include media-bp-up(md) {
@@ -69,9 +107,9 @@ a {
 
     &:not([href^='#']):after {
       background-color: var(--brand-secondary);
-      bottom: -6px;
+      bottom: -8px;
       content: '';
-      height: 2px;
+      height: 6px;
       left: 0;
       position: absolute;
       width: 100%;
@@ -81,21 +119,6 @@ a {
   &:focus {
     outline: var(--brand-secondary) solid 2px;
     outline-offset: 5px;
-  }
-}
-
-a[href^='#'] {
-  background-color: var(--skip-link-bg);
-  color: var(--skip-link-clr);
-  left: 50%;
-  font-size: 2rem;
-  padding: 1rem;
-  position: absolute;
-  top: 2rem;
-  transform: translateY(-1000%);
-
-  &:focus {
-    transform: translateX(-50%);
   }
 }
 

@@ -1,8 +1,7 @@
-- var pageTitle = 'Daniel Dafoe, Design Technologist | Inclusive Web Developer in Toronto, Canada';
+- var pageTitle = 'Daniel Dafoe, Design Technologist | Web Designer and Developer in Toronto, Canada';
 
 doctype html
 html(lang='en')
-
   include partials/_head
 
   body
@@ -10,15 +9,23 @@ html(lang='en')
     a(href='#main') Skip to main content
 
     main(id='main')
-      h1 Hello#[span .]
+      //- Include aria-label since nested HTML in <h1> throws off screen readers
+      h1(aria-label='Who is Daniel Dafoe?').
+        Who is #[br] Daniel Dafoe#[span ?]
       p.
-        Hey, it's me—Daniel. I'm that fella who cares deeply about web accessibility and inclusive design.
+        He's an inclusive web designer and developer living in Canada who advocates for accessibile web experiences and strives for well-structured content.
 
       p.
-        Yup, I'm that same Daniel who's a #[strong Senior Design Technologist] at RBC. You know, someone who connects the worlds of design and development.
+         Daniel is a #[strong Senior Design Technologist] at RBC—Canada's largest bank. In his role, he works on connecting the worlds of design and development in a world-class design system.
 
       p
-        nav
-          a(href='now.pug') Curious to know what else I'm doing?
+        nav(aria-label='Primary')
+          a.heavy(href='now.pug') Curious what I'm up to?
+
+    nav.nav--socials(aria-label='Socials')
+      a(href='https://twitter.com/danieldafoe') Twitter
+      a(href='https://github.com/danieldafoe') GitHub
+      a(href='https://medium.com/danieldafoe') Medium
+      a(href='https://linkedin.com/in/danieldafoe') LinkedIn
 
   include partials/_analytics

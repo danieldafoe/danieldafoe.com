@@ -2,8 +2,19 @@ head
   title= pageTitle
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+  //- Share stuffs
+  meta(property="og:title" content=pageTitle)
+  meta(property="og:type" content="website")
+  meta(property="og:url" content="https://danieldafoe.com")
+
+  //- Stylesheet stuffs
   link(rel='stylesheet' href='../sass/dd.scss')
-  link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet")
-  link(rel='apple-touch-icon' sizes='180x180' href='apple-touch-icon.png')
-  link(rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png')
-  link(rel='icon' type='image/png' sizes='16x16' href='favicon-16x16.png')
+
+  //- Google Font stuffs
+  link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&family=Poppins:wght@700&display=swap" rel="stylesheet")
+
+  //- Favicon stuffs
+  link(rel='apple-touch-icon' sizes='180x180' href='../assets/apple-touch-icon.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='../assets/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='../assets/favicon-16x16.png')

@@ -1,38 +1,14 @@
+@use 'mixins' as *;
+@use 'functions' as func;
+
 .ellipse {
-  opacity: .8;
+  opacity: .85;
   position: absolute;
   transition: width cubic-bezier(0.6, -0.28, 0.735, 0.045) 200ms;
   width: 65px;
 
   @include media-bp-up(sm) {
     position: fixed;
-  }
-
-  &.yellow {
-    top: 0;
-    right: 0;
-    width: 85px;
-
-    @include media-bp-up(md) {
-      width: 150px;
-    }
-
-    @include media-bp-up(lg) {
-      width: 200px;
-    }
-  }
-
-  &.blue {
-    bottom: 0;
-    left: 0;
-
-    @include media-bp-up(md) {
-      width: 130px;
-    }
-
-    @include media-bp-up(lg) {
-      width: 180px;
-    }
   }
 
   @include media-bp-up(md) {
@@ -42,11 +18,22 @@
     &:hover {
       width: 230px;
     }
+  }
 
-    &.yellow {
-      &:hover {
-        width: 250px;
-      }
+  &.blue {
+    top: -3rem;
+    right: -2rem;
+    width: 120px;
+    transform: rotate(346deg);
+
+    @include media-bp-up(md) {
+      right: -3rem;
+      top: -4rem;
+      width: 180px;
+    }
+
+    @include media-bp-up(lg) {
+      width: 230px;
     }
   }
 }
