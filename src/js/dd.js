@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', initPage);
-const themeToggle = document.querySelector('.js-theme-toggle');
-themeToggle.addEventListener('click', toggleTheme);
-
 const THEMES = {
   DARK: 'dark',
   LIGHT: 'light'
 };
+const themeToggle = document.querySelector('.js-theme-toggle');
+
+document.addEventListener('DOMContentLoaded', initPage);
+themeToggle.addEventListener('click', toggleTheme);
 
 function initPage() {
   const theme = getThemeFromLocalStorage();
@@ -20,11 +20,13 @@ function toggleTheme(event) {
   if (bodyClasses.contains(THEMES.DARK)) {
     bodyClasses.remove('dark');
     setThemeInLocalStorage('light');
+
     // Change button text
     themeToggle.innerText = '🌙 Use dark theme';
   } else {
     bodyClasses.add('dark');
     setThemeInLocalStorage('dark');
+
     // Change button text
     themeToggle.innerText = '☀️ Use light theme';
   }
@@ -66,16 +68,4 @@ function setTheme(theme) {
     // Change button text
     themeToggle.innerText = '🌙 Use dark theme';
   }
-
-  // if (bodyClasses.contains('dark')) {
-  //   bodyClasses.remove('dark');
-  //   setThemeInLocalStorage('light');
-  //   // Change button text
-  //   themeToggle.innerText = 'Turn on dark mode';
-  // } else {
-  //   bodyClasses.add('dark');
-  //   setThemeInLocalStorage('dark');
-  //   // Change button text
-  //   themeToggle.innerText = 'Turn on light mode';
-  // }
 }

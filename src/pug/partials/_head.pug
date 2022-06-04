@@ -8,6 +8,11 @@ head
   meta(property="og:type" content="website")
   meta(property="og:url" content="https://danieldafoe.com")
 
+  //- Blocking JS
+  //- This will avoid a flash of light theme if
+  //- someone has selected to use the dark theme
+  include _load-theme
+
   //- Stylesheet stuffs
   link(rel='stylesheet' href='../sass/dd.scss')
 

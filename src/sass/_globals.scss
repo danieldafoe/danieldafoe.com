@@ -51,10 +51,6 @@ main {
 }
 
 h1 {
-  // background-image: url('../assets/pizzaz.svg');
-  // background-position: 102% 0;
-  // background-repeat: no-repeat;
-  // background-size: 7%;
   display: inline-block;
   font-family: var(--font-heading);
   font-size: 5rem;
@@ -68,7 +64,7 @@ h1 {
 
   @include media-bp-up(lg) {
     font-size: 7.5rem;
-    line-height: 1.1;
+    line-height: 1;
     margin-bottom: 3rem;
     margin-top: 9%;
   }
