@@ -1,21 +1,31 @@
 :root {
   --font: Roboto, Cantarell, 'Segoe UI', 'Helvetica Neue', sans-serif;
-  --font-heading: Poppins, Roboto, Inter, Cantarell, sans-serif;
+  --font-heading: Vollkorn, Georgia, serif;
 
-  --brand-dark: #111;
+  --typo-sm: .8em;
+  --typo-base: 1em;
+  --typo-lg: 1.414em;
+  --typo-xl: 1.999em;
+  --typo-xxl: 2.827em;
+  --typo-xxxl: 3.998em;
+  --typo-xxxxl: 5.653em;
+
+  --black: #262626;
+  --white: #fff;
+
+  --brand-dark: #262626;
   --brand-light: #fff;
   --brand-primary: var(--brand-light);
   --brand-secondary: #2D7CF3;
   --brand-tertiary: #F3EB2D;
-
-  --black: #222;
-  --white: #fff;
 
   --clr-background: var(--brand-light);
   --clr-text: var(--brand-dark);
 
   --body-bg: var(--brand-dark);
   --body-clr: var(--brand-light);
+
+  --pride-gradient: linear-gradient(90deg, rgba(229,1,1,1) 0%, rgba(255,141,1,1) 20%, rgba(255,237,0,1) 40%, rgba(2,129,33,1) 60%, rgba(0,76,255,1) 80%, rgba(117,2,136,1) 100%);
 
   --skip-link-bg: var(--brand-dark);
   --skip-link-clr: var(--brand-light);
@@ -26,7 +36,8 @@ $breakpoints: (
   sm: 385px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1200px,
+  xxl: 1400px
 );
 
 $z-indices: (

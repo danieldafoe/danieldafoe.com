@@ -1,0 +1,46 @@
+@use 'mixins' as *;
+@use 'functions' as func;
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 85%;
+  min-height: 95vh;
+  position: relative;
+  z-index: func.z-index(main);
+
+  @include media-bp-up(md) {
+    max-width: 60%;
+  }
+
+  @include media-bp-up(xl) {
+    max-width: 60%;
+  }
+
+  @include media-bp-up(xxl) {
+    max-width: 55%;
+  }
+
+  &__inner {
+    @include media-bp-up(xl) {
+      display: flex;
+      gap: 6rem;
+      margin-top: 20rem;
+    }
+  }
+}
+
+main {
+  margin-top: 8rem;
+
+  @include media-bp-up(md) {
+    margin-top: 6rem;
+  }
+
+  @include media-bp-up(lg) {
+    margin-top: 6rem;
+  }
+
+  @include media-bp-up(xl) {
+    margin-top: 0;
+  }
+}

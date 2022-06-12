@@ -1,32 +1,21 @@
-- var pageTitle = 'What Daniel Dafoe is doing now | Inclusive Web Developer in Toronto, Canada';
+extends partials/_layout
 
-doctype html
-html(lang='en')
+block prepend head
+  - var pageTitle = 'What I\'m Doing Now | Daniel Dafoe | Front-End Accessibility Engineer';
+  - var pageDescription = 'Learn what an expert in web accessibility is up to in his spare time—when he can find it.';
 
-  include partials/_head
+block main
+  h1 Now
 
-  body
-    a(href='#main') Skip to main content
-    include partials/_ellipses
+  p.intro Having a job is great and I love what I do, but your job isn't everything. Here are some other things I'm doing with my time on this planet.
 
-    main#main.now
-      include partials/_theme-toggle
+  ul
+    li Preparing to give a talk on how I weave accessibility considerations into RBC's design system for #[a(href='https://digita11yaccessible.io' target='_blank') Digita11y Accessible]'s Insurance and Finance event.
 
-      h1 Now#[span .]
-      ul
-        li Teaching a course on front-end application architecture I was invited to create for George Brown College's inaugural #[a(href='https://www.georgebrown.ca/programs/web-development-front-end-design-program-g418') Front End Design program].
+    li Pursuing a Bachelor of Arts degree in English at the University of Toronto part-time. My minors are Linguistics and Philosophy.
 
-        //- li Contributing code to fix a bug in Firefox's core codebase related to an accessibility mapping.
+    li Learning #[abbr(title='American Sign Language') ASL]–American Sign Language. I know over 110 words and phrases!
 
-        li Studying English, Linguistics, and Philosophy at the University of Toronto part-time.
+    li #[a(href='https://danieldafoe.medium.com' target='_blank') Writing on Medium] about poor accessibility experiences on websites of large, well-known brands. #[strong (Coming Soon)]
 
-        li Learning #[abbr(title='American Sign Language') ASL]–American Sign Language. I know over 100 words and phrases!
-        
-        li #[a(href='https://medium.com/danieldafoe') Writing on Medium] about poor web accessibility practices on websites of large, well-known brands.
-
-      p
-        nav
-          a.heavy(href='/') Go back home.
-
-  include partials/_js
-  include partials/_analytics
+  include partials/_go-home

@@ -1,0 +1,64 @@
+@use 'mixins' as *;
+
+body {
+  font: 300 2rem / 1.5 var(--font);
+  letter-spacing: .2px;
+  text-rendering: optimizeSpeed;
+
+  @include media-bp-up(md) {
+    font-size: 2.25rem;
+    font-weight: 300;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+h1 {
+  font-size: 5.25rem;
+  font-size: var(--typo-xxl);
+  line-height: 1;
+
+  @include media-bp-up(md) {
+    font-size: 5.75rem;
+  }
+
+  @include media-bp-up(lg) {
+    font-size: 8rem;
+  }
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.intro {
+  font-size: var(--typo-lg);
+  line-height: 1.4;
+}
+
+a {
+  font-size: var(--typo-sm);
+  font-weight: 400;
+
+  &[href^='#'] {
+    font-size: var(--typo-base);
+  }
+
+  &.heavy {
+    font-size: var(--typo-base);
+  }
+}
+
+li {
+  a {
+    font-size: var(--typo-base);
+  }
+}
+
+strong {
+  font-weight: 500;
+}

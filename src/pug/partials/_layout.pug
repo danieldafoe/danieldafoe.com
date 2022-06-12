@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  block head
+    include ../partials/_head
+
+  body
+    a(href='#main') Skip to main content
+    include ../partials/_ellipses
+
+    .wrapper
+      include ../partials/_theme-toggle
+
+      .wrapper__inner
+        block nav
+          include ../partials/_nav
+
+        main(id='main')
+          block main
+            p test
+
+      include ../partials/_footer
+
+  block scripts
+    include ../partials/_js
+    include ../partials/_analytics

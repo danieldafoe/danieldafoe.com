@@ -1,34 +1,57 @@
-- var pageTitle = 'Daniel Dafoe, Design Technologist | Web Designer and Developer in Toronto, Canada';
+extends partials/_layout
 
-doctype html
-html(lang='en')
-  include partials/_head
+block prepend head
+  - var pageTitle = 'Daniel Dafoe | Front-End Accessibility Engineer';
+  - var pageDescription = 'Expert in web accessibility who\'s passionate about designing and developing inclusive and responsive web experiences.';
 
-  body
-    a(href='#main') Skip to main content
-    include partials/_ellipses
+block main
+  //- Include aria-label since nested HTML in <h1> throws off assistive technology
+  h1(aria-label='Daniel Dafoe') Daniel #[span Dafoe]
 
-    main(id='main')
-      include partials/_theme-toggle
+  p.intro Inclusive designer and software engineer with an optimistic, collaborative, and curious lens on the world.
 
-      //- Include aria-label since nested HTML in <h1> throws off screen readers
-      h1(aria-label='Who is Daniel Dafoe?').
-        Who is #[br] Daniel Dafoe#[span ?]
-      p.
-        He's an inclusive web designer and developer living in Canada who advocates for accessibile web experiences and strives for well-structured content.
+  p Currently, I work on a design system team as a #[strong Senior Design Technologist] at Canada's largest bank. I spend the majority of my time helping designers and engineers understand how to create inclusive and accessible experiences.
 
-      p.
-         Daniel is a #[strong Senior Design Technologist] at RBC—Canada's largest bank. In his role, he works on connecting the worlds of design and development in a world-class design system.
+  p In 2022, I became a contract professor and taught a front-end development course on application architecture.
 
-      p
-        nav(aria-label='Primary')
-          a.heavy(href='now.pug') Curious what I'm up to?
+  p Besides work, I'm pursuing a Bachelor of Arts degree at the University of Toronto. I'm also working on a side project using React and NextJS.
 
-    nav.nav--socials(aria-label='Socials')
-      a(href='https://twitter.com/danieldafoe') Twitter
-      a(href='https://github.com/danieldafoe') GitHub
-      a(href='https://medium.com/danieldafoe') Medium
-      a(href='https://linkedin.com/in/danieldafoe') LinkedIn
+  p
+    a.heavy(href='now.pug') Curious what else I do?
 
-  include partials/_js
-  include partials/_analytics
+//- - var pageTitle = 'Daniel Dafoe | Front-End Accessibility Engineer';
+//- - var pageDescription = 'Expert in web accessibility who\'s passionate about designing and developing inclusive and responsive web experiences.';
+
+//- doctype html
+//- html(lang='en')
+//-   include partials/_head
+
+//-   body
+//-     a(href='#main') Skip to main content
+//-     include partials/_ellipses
+
+//-     .wrapper
+//-       include partials/_theme-toggle
+
+//-       .wrapper__inner
+//-         include partials/_nav
+
+//-         main(id='main')
+//-           //- Include aria-label since nested HTML in <h1> throws off assistive technology
+//-           h1(aria-label='Daniel Dafoe') Daniel #[span Dafoe]
+
+//-           p.intro Inclusive designer and software engineer with an optimistic, collaborative, and curious lens on the world.
+
+//-           p Currently, I work as a #[strong Senior Design Technologist] on a design system at Canada's largest bank. I spend the majority of my time helping designers and engineers understand how to create accessible, delightful experiences.
+
+//-           p In 2022, I became a contract professor and taught a front-end development course on application architecture.
+
+//-           p Besides work, I'm pursuing a Bachelor of Arts degree at the University of Toronto. I'm also working on a side project using React and NextJS.
+
+//-           p
+//-             a.heavy(href='now.pug') Curious what else I do?
+
+//-       include partials/_footer
+
+//-   include partials/_js
+//-   include partials/_analytics

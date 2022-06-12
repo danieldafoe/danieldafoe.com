@@ -1,0 +1,25 @@
+@use '../mixins' as *;
+
+footer {
+  // border-top: 2px dashed var(--brand-secondary);
+  left: 50%;
+  padding: 8rem 0 2rem;
+  position: relative;
+  text-align: center;
+  top: 4rem;
+  transform: translateX(-50%);
+
+  @include media-bp-up(md) {
+    left: 0;
+    text-align: left;
+    transform: none;
+  }
+
+  a {
+    color: var(--clr-text);
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}

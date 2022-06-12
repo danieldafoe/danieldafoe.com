@@ -1,0 +1,18 @@
+extends partials/_layout
+
+block prepend head
+  - var pageTitle = 'Resources | Daniel Dafoe | Front-End Accessibility Engineer';
+  - var pageDescription = 'Recommended resources for designers and developers. Items on this list are websites and materials I\'ve found interesting, helpful, or inspiring.';
+
+block main
+  h1 Resources
+
+  p.intro Links to resources I've found interesting, helpful, or inspiring.
+
+  h2 For Designers
+
+  ul
+    li
+      a(href='https://airbnb.design/anotherlens') Airbnb and News Deeply's #[em Another Lens]
+
+  include partials/_go-home

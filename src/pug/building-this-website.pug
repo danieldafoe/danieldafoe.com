@@ -1,0 +1,32 @@
+extends partials/_layout
+
+block prepend head
+  - var pageTitle = 'How I Built This Website | Daniel Dafoe | Front-End Accessibility Engineer';
+  - var pageDescription = 'Sharing the tools and decisions I made when creating this personal website.';
+
+block main
+  h1 How I Built This Website
+
+  p.intro Sharing the tools and decisions I made when creating this personal website.
+
+  p The design and code are handcrafted by me. I use Figma as my design tool of choice; I use Visual Studio Code as my editor.
+
+  p Like any web engineer, I like to use my personal website as a way to experiment and learn. Over they years, this site has had numerous redesigns. I've built it in Angular and React, and used static site generators like Jekyll.
+
+  h2 Tech Stack
+
+  p For the local development process, I use #[a(href='https://parceljs.org') Parcel]. The front-end code is written in #[a(href='https://pugjs.org') Pug] and #[a(href='https://sass-lang.com') Sass]. The (minimal) JavaScript is pure vanilla JavaScript. The website itself is hosted on #[a(href='https://netflify.com') Netlify].
+
+  h2 Deployment Process
+
+  p The deployment process kicks off with me pushing changes to GitHub. A build then gets triggered on Netlify.
+
+  h3 Main Branch
+
+  p For new commits on my main branch, a production build runs where it runs an build script in my package.json and uses the output of that for my production site.
+
+  h3 Feature Branches
+
+  p For feature branches, I configured Netlify to spin up a non-prod deployment so I can test my changes. This also runs the build script in my package.json.
+
+  include partials/_go-home

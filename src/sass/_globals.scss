@@ -14,17 +14,13 @@ html {
 
 body {
   background-attachment: scroll;
-  background-image: url('../assets/grid-3.png');
+  background-image: url('../assets/grid--light-theme.png');
   color: var(--clr-text);
-  font: 300 2.25rem / 1.5 var(--font);
-  letter-spacing: .4px;
   min-height: 85vh;
   padding: 0;
   position: relative;
 
   @include media-bp-up(md) {
-    font-size: 3rem;
-    font-weight: 300;
     padding-bottom: 4rem;
   }
 
@@ -34,62 +30,76 @@ body {
     --clr-text: var(--brand-light);
 
     background-color: var(--clr-background);
-    background-image: url('../assets/grid-2.png');
+    background-image: url('../assets/grid--dark-theme.png');
   }
 }
 
-main {
-  margin: 0 auto;
-  max-width: 85%;
-  min-height: 95vh;
-  position: relative;
-  z-index: func.z-index(main);
+p {
+  margin-bottom: 2.25rem;
+}
 
-  @include media-bp-up(md) {
-    max-width: 60%;
-  }
+li {
+  margin-bottom: 2rem;
 }
 
 h1 {
   display: inline-block;
-  font-family: var(--font-heading);
-  font-size: 5rem;
-  line-height: 1.05;
-  margin: 17% 0 2rem;
+}
 
-  @include media-bp-up(md) {
-    font-size: 5.5rem;
-    margin-top: 13%;
-  }
+.intro {
+  margin: 2rem 0 4rem;
+}
 
-  @include media-bp-up(lg) {
-    font-size: 7.5rem;
-    line-height: 1;
-    margin-bottom: 3rem;
-    margin-top: 9%;
-  }
-
-  span {
-    color: var(--brand-secondary);
-    font-size: 110%;
-  }
+h2,
+h3 {
+  margin: 4rem 0 1rem;
 }
 
 a {
+  border-bottom: 2px solid var(--brand-secondary);
   color: var(--brand-secondary);
-  font-weight: 400;
   outline-offset: 3px;
+  padding-bottom: .15rem;
+  position: relative;
+  text-decoration: none;
+  transition: 150ms ease-out;
+
+  &:after {
+    background-image: var(--pride-gradient);
+    background-repeat: no-repeat;
+    bottom: -.15rem;
+    content: '';
+    left: 0;
+    height: 2px;
+    opacity: 0;
+    position: absolute;
+    transition: 250ms ease;
+    width: 100%;
+  }
+
+  &:focus {
+    outline: var(--brand-secondary) solid 2px;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: transparent;
+
+    &:after {
+      opacity: 1;
+    }
+  }
 
   &[href^='#'] {
     background-color: var(--skip-link-bg);
     color: var(--skip-link-clr);
     left: 50%;
-    font-size: 2rem;
     padding: 1rem;
     position: fixed;
     top: 2rem;
     transform: translateY(-1000%);
-  
+
     &:focus {
       transform: translateX(-50%);
     }
@@ -97,46 +107,11 @@ a {
 }
 
 a.heavy {
-  position: relative;
+  border-bottom-width: 4px;
+  padding-bottom: .5rem;
 
-  @include media-bp-up(md) {
-    text-decoration: none;
-
-    &:not([href^='#']):after {
-      background-color: var(--brand-secondary);
-      bottom: -8px;
-      content: '';
-      height: 6px;
-      left: 0;
-      position: absolute;
-      width: 100%;
-    }
+  &:after {
+    bottom: -.4rem;
+    height: 4px;
   }
-
-  &:focus {
-    outline: var(--brand-secondary) solid 2px;
-    outline-offset: 5px;
-  }
-}
-
-p {
-  margin-bottom: 2rem;
-}
-
-li {
-  margin-bottom: 2rem;
-
-  a {
-    &:not([href^='#']) {
-      text-decoration: underline;
-
-      &:after {
-        content: unset;
-      }
-    }
-  }
-}
-
-strong {
-  font-weight: 500;
 }

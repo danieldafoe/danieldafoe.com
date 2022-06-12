@@ -33,7 +33,46 @@
     }
 
     @include media-bp-up(lg) {
-      width: 230px;
+      width: 200px;
+    }
+
+    @include media-bp-up(xl) {
+      right: -5rem;
+      top: -6rem;
+      width: 260px;
+    }
+
+    @include media-bp-up(xxl) {
+      width: 300px;
+    }
+  }
+
+  &.pink {
+    bottom: -3rem;
+    display: none;
+    left: -2rem;
+    width: 120px;
+    transform: rotate(24deg);
+
+    @include media-bp-up(md) {
+      bottom: -4rem;
+      display: block;
+      left: -3rem;
+      width: 140px;
+    }
+
+    @include media-bp-up(lg) {
+      width: 160px;
+    }
+
+    @include media-bp-up(xl) {
+      bottom: -6rem;
+      left: -5rem;
+      width: 220px;
+    }
+
+    @include media-bp-up(xxl) {
+      width: 260px;
     }
   }
 }
