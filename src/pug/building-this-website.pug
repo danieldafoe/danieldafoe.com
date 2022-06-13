@@ -21,6 +21,8 @@ block main
 
   p The deployment process kicks off with me pushing changes to GitHub. A build then gets triggered on Netlify.
 
+  p I have 2 plugins enabled for my site: one for checking the accessibility of my pages in case I missed anything silly, and another for checking that I don't have any dead links.
+
   h3 Main Branch
 
   p For new commits on my main branch, a production build runs where it runs an build script in my package.json and uses the output of that for my production site.
@@ -28,5 +30,7 @@ block main
   h3 Feature Branches
 
   p For feature branches, I configured Netlify to spin up a non-prod deployment so I can test my changes. This also runs the build script in my package.json.
+
+  h2 Considerations
 
   include partials/_go-home
