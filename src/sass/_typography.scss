@@ -20,6 +20,8 @@ h3 {
 h1 {
   font-size: 5.25rem;
   font-size: var(--typo-xxl);
+  font-weight: 500;
+  letter-spacing: -3px;
   line-height: 1;
 
   @include media-bp-up(md) {
