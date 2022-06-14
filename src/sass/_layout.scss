@@ -33,7 +33,7 @@ main {
   margin-top: 8rem;
 
   @include media-bp-up(md) {
-    margin-top: 6rem;
+    margin-top: 8rem;
   }
 
   @include media-bp-up(lg) {

@@ -8,6 +8,7 @@
 
   a {
     color: var(--clr-text);
+    letter-spacing: -.5px;
 
     &:not(:first-of-type) {
       margin-top: .75rem;
@@ -20,12 +21,12 @@
   }
 
   @include media-bp-up(md) {
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 
   @include media-bp-up(xl) {
     flex: 1 0 auto;
     flex-direction: column;
-    margin-top: 9.5rem;
+    margin-top: 13rem;
   }
 }
