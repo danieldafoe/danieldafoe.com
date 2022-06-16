@@ -27,6 +27,6 @@
   @include media-bp-up(xl) {
     flex: 1 0 auto;
     flex-direction: column;
-    margin-top: 13rem;
+    margin-top: calc(var(--typo-xxxl) + 4rem);
   }
 }
