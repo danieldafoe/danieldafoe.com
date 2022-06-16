@@ -7,11 +7,11 @@ block prepend head
 block main
   h1 How I Built This Website
 
-  p.intro Sharing decisions I made and tools I used to create this website.
+  p.intro Sharing the decisions I made and the tools I used to create this website.
 
   p The design and code are handcrafted by me. I use Figma as my design tool of choice; I use Visual Studio Code as my editor.
 
-  p Like any web engineer, I like to use my personal website as a way to experiment and learn. Over they years, this site has had numerous redesigns. I've built it in Angular and React, and used static site generators like Jekyll.
+  p Like any web engineer, I like to use my personal website as a way to experiment and learn. Over the years, I've redesigned it numerous times. I've built it in Angular and React, and used static site generators like Jekyll.
 
   h2 Tech Stack
 
@@ -25,12 +25,16 @@ block main
 
   h3 Main Branch
 
-  p For new commits on my main branch, a production build runs where it runs an build script in my package.json and uses the output of that for my production site.
+  p For new commits on my main branch, a production build is triggered. This runs a build script in my package.json that turns my pre-compiled code into compiled code that I can serve in the browser.
 
   h3 Feature Branches
 
-  p For feature branches, I configured Netlify to spin up a non-prod deployment so I can test my changes. This also runs the build script in my package.json.
+  p For feature branches, I configured Netlify to spin up a non-production deployment so I can test my changes. This runs the same build script in my package.json as for the #[code main] branch.
 
   h2 Considerations
+
+  p Although I've built the site with a JavaScript framework before, sometimes I like to go back to simpler ways of creating websites.
+
+  p I decided to stick to an HTML templating language
 
   include partials/_go-home
