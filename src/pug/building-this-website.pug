@@ -33,8 +33,18 @@ block main
 
   h2 Considerations
 
+  h3 Framework vs. Frameworkless
+
   p Although I've built the site with a JavaScript framework before, sometimes I like to go back to simpler ways of creating websites.
 
-  p I decided to stick to an HTML templating language
+  p Since this iteration of my personal site has very little functionality, I decided to stick to an HTML templating language instead of inflating my bundle size with a framework. The templating language compiles into pure HTML, so there's no increase in the HTML sent to the client.
+
+  h3 CSS vs. Sass
+
+  p Although I could have gone with pure CSS for styling, I still opted for Sass. The convenience of nesting styles and creating mixins still edged out CSS. It's not all about variables, after all. In terms of bundle size, Sass doesn't—though it can—increase the size of the CSS delivered to the browser.
+
+  h3 JavaScript vs. TypeScript
+
+  p Since I knew I'd write pretty minimal JavaScript, this was an easier decision. I decided to stick with vanilla JS since there was really no reason to take advantage of types or interfaces.
 
   include partials/_go-home
