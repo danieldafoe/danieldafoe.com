@@ -17,6 +17,11 @@
     "url": "https://github.com/danieldafoe/danieldafoe.github.io/issues"
   },
   "homepage": "https://danieldafoe.com",
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
   "dependencies": {},
   "devDependencies": {
     "parcel": "^1.12.4",

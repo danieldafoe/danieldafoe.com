@@ -69,7 +69,7 @@ a {
     height: 2px;
     opacity: 0;
     position: absolute;
-    transition: 250ms ease;
+    transition: all 250ms ease;
     width: 100%;
   }
 
@@ -87,6 +87,7 @@ a {
     }
   }
 
+  // For skip links
   &[href^='#'] {
     background-color: var(--skip-link-bg);
     color: var(--skip-link-clr);
@@ -100,14 +101,14 @@ a {
       transform: translateX(-50%);
     }
   }
-}
 
-a.heavy {
-  border-bottom-width: 4px;
-  padding-bottom: .5rem;
-
-  &:after {
-    bottom: -.4rem;
-    height: 4px;
+  &.heavy {
+    border-bottom-width: 4px;
+    padding-bottom: .5rem;
+  
+    &:after {
+      bottom: -.4rem;
+      height: 4px;
+    }
   }
 }
