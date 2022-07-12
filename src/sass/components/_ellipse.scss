@@ -2,9 +2,13 @@
 @use 'functions' as func;
 
 .ellipse {
-  opacity: .85;
+  height: auto;
+  opacity: .75;
   position: absolute;
-  transition: width cubic-bezier(0.6, -0.28, 0.735, 0.045) 200ms;
+  transition:
+    width cubic-bezier(0.6, -0.28, 0.735, 0.045) 200ms,
+    top cubic-bezier(0.6, -0.28, 0.735, 0.045) 200ms,
+    left cubic-bezier(0.6, -0.28, 0.735, 0.045) 200ms;
   width: 65px;
 
   @include media-bp-up(sm) {
@@ -12,67 +16,56 @@
   }
 
   @include media-bp-up(md) {
-    opacity: 1;
-    width: 170px;
-
-    &:hover {
-      width: 230px;
-    }
+    opacity: .95;
   }
 
   &.blue {
-    top: -3rem;
     right: -2rem;
-    width: 120px;
+    top: -2rem;
     transform: rotate(346deg);
+    width: 120px;
 
     @include media-bp-up(md) {
       right: -3rem;
       top: -4rem;
-      width: 160px;
+      width: 150px;
     }
 
     @include media-bp-up(lg) {
+      right: -4rem;
+      top: -5rem;
       width: 200px;
     }
 
     @include media-bp-up(xl) {
-      right: -5rem;
-      top: -6rem;
-      width: 260px;
-    }
-
-    @include media-bp-up(xxl) {
-      width: 280px;
+      right: -7rem;
+      top: -5rem;
+      width: 250px;
     }
   }
 
   &.pink {
-    bottom: -3rem;
+    bottom: -2.5rem;
     display: none;
-    left: -2rem;
-    width: 120px;
+    left: -4rem;
     transform: rotate(24deg);
+    width: 140px;
 
     @include media-bp-up(md) {
-      bottom: -4rem;
       display: block;
-      left: -3rem;
-      width: 120px;
+      // width: 160px;
     }
 
     @include media-bp-up(lg) {
+      bottom: -3rem;
+      left: -5rem;
       width: 160px;
     }
 
     @include media-bp-up(xl) {
-      bottom: -6rem;
-      left: -5rem;
+      bottom: -7rem;
+      left: -4rem;
       width: 220px;
-    }
-
-    @include media-bp-up(xxl) {
-      width: 240px;
     }
   }
 }
