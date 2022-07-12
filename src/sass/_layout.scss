@@ -9,14 +9,6 @@
   z-index: func.z-index(main);
 
   @include media-bp-up(md) {
-    max-width: 60%;
-  }
-
-  @include media-bp-up(xl) {
-    max-width: 60%;
-  }
-
-  @include media-bp-up(xxl) {
     max-width: 55%;
   }
 
