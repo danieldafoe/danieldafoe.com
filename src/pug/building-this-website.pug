@@ -5,7 +5,7 @@ block prepend head
   - var pageDescription = 'Sharing the tools and decisions I made when creating this personal website.';
 
 block main
-  h1 How I Built This Website
+  h1 How I built this website
 
   p.intro Sharing the decisions I made and the tools I used to create this website.
 
@@ -71,7 +71,7 @@ block main
 
   h2 Performance
 
-  p I decided to pay a bit more attention to performance of my website this redesign. It's an odd time to since it's all pretty minimal, straightforward code, but I wanted to dive deeper into performance both perceived and actual. Specifically, I wanted to look into everything to do with compositing.
+  p I decided to pay a bit more attention to the performance of my website this time around. It's an odd to start caring when it's pretty minimal code, but I wanted to dive deeper into performance—both perceived and actual. Specifically, I wanted to look into everything to do with compositing.
 
   h3 JavaScript
 
@@ -81,16 +81,22 @@ block main
 
   p I've always used Google Analytics on my personal websites. Since paying more attention to performance and realizing I never check my analytics, I determined it was a waste and removed it. Although this wasn't render-blocking JavaScript, I still saved a network request.
 
+  //- p I recently watched #[a(href='' target='_blank') a video about DOMContentLoaded] where someone described the drawbacks to setting up an event listener for it.
+
   h3 CSS
 
-  p I have two different grid images for the background: one for light theme and one for dark theme. These are set as the body's background image and get requested once the browser starts parsing CSS.
+  p I have two different grid images for the background: one for light theme and one for dark theme. These are set as the body's #[code background-image]. Only the background image that's used in the initial render will get requested once the browser starts parsing CSS, which is a boon for performance.
 
-  p To improve initial page load, I decided to get and set the background images after page load via Javascript.
+  p Since the #[code background-image] is set differently depending on the theme, only one image is requested at a time. If I toggle on the dark theme, the second image is requested right away. This seemed ideal and so I left it as-is.
 
   h3 Assets
 
   p Although they're SVGs, I originally used my blob images with an #[code img] tag and pointed to their asset path, meaning I was making additional requests for images.
 
   p Since I want to improve my first contentful paint, I instead inlined the SVGs in my HTML to increase load speed #[em and] save ~1KB (50%) in network requests.
+
+  p Related to this improvement, I encountered a strange bug with Pug not allowing attributes I set on #[code svg] elements to get passed through to the generated HTML. Because of this, my blobs looked odd on some devices since the #[code viewBox] wasn't getting set on the SVG.
+
+  p Since this was a problem with the templating engine I was using, I decided to use #[code overflow: hidden] on my SVGs instead of switching back to the #[code img] tag approach.
 
   include partials/_go-home
