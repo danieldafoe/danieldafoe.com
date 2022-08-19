@@ -12,6 +12,7 @@
 
   --black: #262626;
   --white: #fff;
+  --gray: #ccc;
 
   --brand-dark: #262626;
   --brand-light: #fff;
@@ -26,6 +27,9 @@
   --body-clr: var(--brand-light);
 
   --pride-gradient: linear-gradient(90deg, rgba(229,1,1,1) 0%, rgba(255,141,1,1) 20%, rgba(255,237,0,1) 40%, rgba(2,129,33,1) 60%, rgba(0,76,255,1) 80%, rgba(117,2,136,1) 100%);
+
+  --code-background: var(--gray);
+  --code-text: var(--brand-dark);
 
   --skip-link-bg: var(--brand-dark);
   --skip-link-clr: var(--brand-light);

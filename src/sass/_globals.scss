@@ -24,6 +24,7 @@ body {
     --brand-primary: var(--brand-dark);
     --clr-background: var(--brand-dark);
     --clr-text: var(--brand-light);
+    --code-text: var(--brand-dark);
 
     background-color: var(--clr-background);
     background-image: url('../assets/grid--dark-theme.png');
@@ -49,6 +50,13 @@ h1 {
 h2,
 h3 {
   margin: 4rem 0 1rem;
+}
+
+code {
+  background-color: var(--code-background);
+  border-radius: 4px;
+  color: var(--code-text);
+  padding: .35rem .5rem;
 }
 
 a {
