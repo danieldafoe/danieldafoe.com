@@ -1,0 +1,17 @@
+extends partials/_layout
+
+block prepend head
+  - var pageTitle = 'Testing @font-face';
+  - var pageDescription = 'Testing whether browsers will fall back to a locally installed font when the one declared in @font-face with the same family name is NOT found.';
+  style.
+    @font-face {
+      font-family: Raleway;
+      src: url("../assets/ellipse.svg");
+    }
+
+    .raleway {
+      font-family: Raleway !important;
+    }
+
+block main
+  h1.raleway Testing @font-face
