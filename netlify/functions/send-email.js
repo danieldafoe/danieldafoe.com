@@ -9,11 +9,24 @@ const msg = {
   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
 };
 
-sgMail
-  .send(msg)
-  .then(() => {
-    console.log('Email sent')
-  })
-  .catch((error) => {
-    console.error(error)
-  });
+exports.handler = async event => {
+  try {
+    const data = JSON.parse(event.body);
+
+    await sgMail.send(msg);
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: "Let's become serverless conductors!!!"
+      })
+    };
+  } catch (e) {
+    console.log(e);
+    
+    return {
+      statusCode: 500,
+      body: e.mssage
+    };
+  }
+};
