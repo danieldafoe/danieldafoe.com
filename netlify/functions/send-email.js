@@ -11,8 +11,6 @@ const msg = {
 
 exports.handler = async event => {
   try {
-    const data = JSON.parse(event.body);
-
     await sgMail.send(msg);
 
     return {
@@ -23,7 +21,7 @@ exports.handler = async event => {
     };
   } catch (e) {
     console.log(e);
-    
+
     return {
       statusCode: 500,
       body: e.mssage
