@@ -22,7 +22,9 @@
     "not IE 11",
     "maintained node versions"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0"
+  },
   "devDependencies": {
     "parcel": "^1.12.4",
     "prettier": "2.5.0",
