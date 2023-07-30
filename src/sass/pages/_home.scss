@@ -1,0 +1,12 @@
+@use '../utilities';
+
+.intro {
+  margin: 3rem 0 4rem;
+  text-wrap: balance;
+}
+
+.outro {
+  // Will override margin collapse
+  // with generic `p {}` selector
+  margin-block-start: 4rem;
+}

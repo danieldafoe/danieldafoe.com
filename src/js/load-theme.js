@@ -1,4 +1,4 @@
 // Get theme from LocalStorage to see if it's dark
 if (window.localStorage) {
-  if (localStorage.getItem('theme') === 'dark') document.body.classList.add('dark');
+  if (localStorage.getItem('theme') === 'light') document.body.classList.add('light');
 }

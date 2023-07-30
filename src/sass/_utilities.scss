@@ -1,3 +1,12 @@
+// Collapsing Margins
+
+%no-margin-collapse {
+  border-bottom: .5px solid transparent;
+  border-top: .5px solid transparent;
+}
+
+// Forms
+
 %btn--blank {
   appearance: none;
   background-color: transparent;
@@ -10,3 +19,29 @@
     cursor: pointer;
   }
 }
+
+// Layout
+
+%cols {
+  &--two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12rem;
+  }
+
+  &--three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4.8rem;
+  }
+
+  &--four {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4.8rem;
+  }
+}
+
+// Accessibility
+
+@import 'utilities/accessibility';
