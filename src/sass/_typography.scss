@@ -7,7 +7,7 @@ html {
 body {
   font: 300 2rem / 1.6 var(--font);
   letter-spacing: .2px;
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
 
   @include media-bp-up(md) {
     font-size: 2.25rem;

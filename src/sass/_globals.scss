@@ -61,43 +61,51 @@ code {
 }
 
 a {
-  border-bottom: 2px solid var(--brand-secondary);
+  border-radius: 6px;
   color: var(--brand-secondary);
   outline-offset: 4px;
-  padding-bottom: .15rem;
+  padding: .16rem .24rem;
   position: relative;
-  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-underline-offset: .1em;
+  text-decoration-thickness: 2px;
   transition: 150ms ease-out;
 
-  &:after {
-    background-image: var(--pride-gradient);
-    background-repeat: no-repeat;
-    bottom: -.15rem;
-    content: '';
-    left: 0;
-    height: 2px;
-    opacity: 0;
-    position: absolute;
-    transition: all 250ms ease;
-    width: 100%;
+  @media (prefers-reduced-motion) {
+    transition-duration: 1s;
   }
 
   &:focus {
     outline: var(--brand-secondary) solid 2px;
   }
 
+  &:after {
+    background-color: oklch(84% 0.16 302 / .48);
+    border-radius: 4px;
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    height: 0;
+    opacity: 0;
+  }
+
   &:active,
   &:focus,
   &:hover {
-    border-color: transparent;
+    transform: scale(1.1);
 
     &:after {
-      opacity: 1;
+      height: 100%;
+      opacity: .8;
     }
   }
 
   // For skip links
-  &[href^='#'] {
+  &[href^='#main'] {
     background-color: var(--skip-link-bg);
     color: var(--skip-link-clr);
     left: 50%;
@@ -111,17 +119,28 @@ a {
     }
   }
 
-  &.heavy {
+  &.btn {
     background-color: var(--brand-secondary);
     border: 2px solid var(--brand-secondary);
     border-radius: 6px;
     color: var(--clr-background);
     display: inline-block;
     padding: 1.24rem 1.64rem;
-
+    text-decoration: none;
 
     &:after {
       content: initial;
+    }
+  }
+}
+
+main {
+  a {
+    &:focus,
+    &:hover {
+      &:after {
+        display: none;
+      }
     }
   }
 }
