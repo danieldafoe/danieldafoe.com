@@ -3,6 +3,7 @@
 
 # Parcel
 .cache/
+.parcel-cache/
 dist/
 
 # npm

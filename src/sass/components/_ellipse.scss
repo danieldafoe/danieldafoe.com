@@ -1,5 +1,5 @@
-@use 'mixins' as *;
-@use 'functions' as func;
+@use '../mixins' as *;
+@use '../functions' as func;
 
 .ellipse {
   height: auto;

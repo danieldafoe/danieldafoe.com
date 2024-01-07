@@ -3,7 +3,7 @@
   "version": "16.0.0",
   "description": "The personal website of Daniel Dafoe. Created using Pug, Sass, and Parcel. Deployment brought to you by Netlify.",
   "scripts": {
-    "build": "parcel build src/pug/index.pug -d ./dist",
+    "build": "parcel build src/pug/index.pug --dist-dir ./dist",
     "start": "parcel serve src/pug/index.pug"
   },
   "repository": {
@@ -26,7 +26,11 @@
     "@sendgrid/mail": "^7.7.0"
   },
   "devDependencies": {
-    "parcel": "1.12.3",
+    "@parcel/config-default": "^2.11.0",
+    "@parcel/transformer-pug": "^2.11.0",
+    "@parcel/transformer-sass": "^2.11.0",
+    "htmlnano": "2.0.3",
+    "parcel": "2.11.0",
     "prettier": "2.5.0",
     "pug": "^3.0.1",
     "sass": "^1.26.8",
