@@ -1,4 +1,20 @@
 :root {
+  // From blog
+  
+  --semi-dark: hsl(0, 0%, 20%);
+  --dark: hsl(0, 0%, 15%);
+  --darker: hsl(0, 0%, 12%);
+  --darkest: hsl(0, 0%, 8%);
+
+  --light: hsl(0, 0%, 85%);
+  --lighter: hsl(0, 0%, 88%);
+  --lightest: hsl(0, 0%, 92%);
+
+  --primary: hsl(327, 100%, 83%);
+  --secondary: hsl(216, 89%, 56%);
+
+  // danieldafoe.com
+
   --font: Roboto, Cantarell, 'Segoe UI', 'Helvetica Neue', sans-serif;
   --font-heading: Vollkorn, Georgia, serif;
 
@@ -11,11 +27,11 @@
   --typo-xxxxl: 5.653em;
 
   --black: #262626;
-  --white: #fff;
+  --white: #ffffff;
   --gray: #ccc;
 
-  --brand-dark: #262626;
-  --brand-light: #fff;
+  --brand-dark: var(--darkest);
+  --brand-light: var(--lightest);
   --brand-primary: var(--brand-light);
   --brand-secondary: #6290C8;
   --brand-tertiary: #F3EB2D;
@@ -26,7 +42,7 @@
   --body-bg: var(--brand-dark);
   --body-clr: var(--brand-light);
 
-  --pride-gradient: linear-gradient(90deg, rgba(229,1,1,1) 0%, rgba(255,141,1,1) 20%, rgba(255,237,0,1) 40%, rgba(2,129,33,1) 60%, rgba(0,76,255,1) 80%, rgba(117,2,136,1) 100%);
+  // --pride-gradient: linear-gradient(90deg, rgba(229,1,1,1) 0%, rgba(255,141,1,1) 20%, rgba(255,237,0,1) 40%, rgba(2,129,33,1) 60%, rgba(0,76,255,1) 80%, rgba(117,2,136,1) 100%);
 
   --code-background: var(--gray);
   --code-text: var(--brand-dark);
