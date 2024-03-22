@@ -74,6 +74,16 @@ a {
     color: var(--darkest);
   }
 
+  &:visited {
+    color: var(--lightest);
+
+    &:focus,
+    &:hover {
+      background-color: var(--lightest);
+      color: var(--darkest);
+    }
+  }
+
   // For skip links
   &[href^='#main'] {
     background-color: var(--skip-link-bg);
