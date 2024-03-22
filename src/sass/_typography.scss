@@ -15,13 +15,8 @@ body {
   }
 }
 
-h1,
-h2,
-h3 {
-  font-family: var(--font-heading);
-}
-
 h1 {
+  font-family: var(--font-heading);
   font-size: var(--typo-xxl);
   font-weight: 500;
   letter-spacing: -3px;
@@ -49,10 +44,8 @@ a {
   font-size: var(--typo-sm);
   font-weight: 400;
 
-  &[href^='#'] {
-    font-size: var(--typo-base);
-  }
-
+  &[href^='#'],
+  &.btn,
   &.heavy {
     font-size: var(--typo-base);
   }
