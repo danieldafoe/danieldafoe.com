@@ -4,7 +4,7 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin-top: 8rem;
+  margin-block-start: 8rem;
 
   a {
     color: var(--clr-text);
@@ -14,23 +14,30 @@
       color: var(--darkest);
     }
 
+    &:visited {
+      &:focus,
+      &:hover {
+        color: var(--link-visited-focus-fg);
+      }
+    }
+
     &:not(:first-of-type) {
-      margin-top: .75rem;
+      margin-block-start: .75rem;
 
       @include media-bp-up(xl) {
-        margin-left: 0;
-        margin-top: 1.75rem;
+        margin-inline-start: 0;
+        margin-block-start: 1.75rem;
       }
     }
   }
 
   @include media-bp-up(md) {
-    margin-top: 6rem;
+    margin-block-start: 6rem;
   }
 
   @include media-bp-up(xl) {
     flex: 1 0 auto;
     flex-direction: column;
-    margin-top: calc(var(--typo-xxxl) + 4rem);
+    margin-block-start: calc(var(--typo-xxxl) + 4rem);
   }
 }

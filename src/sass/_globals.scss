@@ -1,5 +1,5 @@
-@use 'mixins' as *;
-@use 'functions' as func;
+@use './mixins' as *;
+@use './functions' as func;
 
 *,
 :after,
@@ -18,7 +18,7 @@ body {
   position: relative;
 
   @include media-bp-up(md) {
-    padding-bottom: 4rem;
+    padding-block-end: 4rem;
   }
 
   &.light {
@@ -26,6 +26,12 @@ body {
     --clr-background: var(--brand-light);
     --clr-text: var(--brand-dark);
     --code-text: var(--darkest);
+    --link-decoration: var(--darkest);
+    --link-fg: var(--darkest);
+    --link-visited-decoration-clr: var(--darkest);
+    --link-visited-fg: var(--darkest);
+    --link-visited-focus-bg: var(--darkest);
+    --link-visited-focus-fg: var(--lightest);
 
     background-color: var(--clr-background);
     background-image: url('../assets/grid--light-theme.png');
@@ -33,7 +39,7 @@ body {
 }
 
 p {
-  margin-bottom: 2.84rem;
+  margin-block-end: 2.84rem;
 }
 
 ul {
@@ -41,7 +47,7 @@ ul {
 }
 
 li {
-  margin-bottom: 2.84rem;
+  margin-block-end: 2.84rem;
 }
 
 h1 {
@@ -75,12 +81,12 @@ a {
   }
 
   &:visited {
-    color: var(--lightest);
+    color: var(--link-visited-fg);
 
     &:focus,
     &:hover {
-      background-color: var(--lightest);
-      color: var(--darkest);
+      background-color: var(--link-visited-focus-bg);
+      color: var(--link-visited-focus-fg);
     }
   }
 

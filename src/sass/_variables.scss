@@ -47,6 +47,12 @@
   --code-background: var(--gray);
   --code-text: var(--brand-dark);
 
+  --link-fg: var(--lightest);
+  --link-visited-decoration-clr: var(--lightest);
+  --link-visited-fg: var(--lightest);
+  --link-visited-focus-bg: var(--lightest);
+  --link-visited-focus-fg: var(--darkest);
+
   --skip-link-bg: var(--brand-dark);
   --skip-link-clr: var(--brand-light);
 }

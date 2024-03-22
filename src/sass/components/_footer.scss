@@ -16,10 +16,10 @@ footer {
   }
 
   a {
-    color: var(--clr-text);
+    color: var(--link-fg);
 
     &:not(:last-child) {
-      margin-right: 2rem;
+      margin-inline-end: 2rem;
     }
   }
 }

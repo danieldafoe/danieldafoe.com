@@ -16,23 +16,23 @@
     @include media-bp-up(xl) {
       display: flex;
       gap: 6rem;
-      margin-top: 16rem;
+      margin-block-start: 16rem;
     }
   }
 }
 
 main {
-  margin-top: 8rem;
+  margin-block-start: 8rem;
 
   @include media-bp-up(md) {
-    margin-top: 8rem;
+    margin-block-start: 8rem;
   }
 
   @include media-bp-up(lg) {
-    margin-top: 6rem;
+    margin-block-start: 6rem;
   }
 
   @include media-bp-up(xl) {
-    margin-top: 0;
+    margin-block-start: 0;
   }
 }

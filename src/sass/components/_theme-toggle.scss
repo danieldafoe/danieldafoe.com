@@ -10,6 +10,6 @@
   padding: .16rem .24rem;
 
   @include media-bp-up(lg) {
-    margin-left: auto;
+    margin-inline-start: auto;
   }
 }
