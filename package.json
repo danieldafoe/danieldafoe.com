@@ -23,17 +23,18 @@
     "maintained node versions"
   ],
   "dependencies": {
+    "@parcel/transformer-posthtml": "2.11.0",
     "@sendgrid/mail": "^7.7.0"
   },
   "devDependencies": {
-    "@parcel/config-default": "^2.11.0",
-    "@parcel/transformer-pug": "^2.11.0",
-    "@parcel/transformer-sass": "^2.11.0",
+    "@parcel/config-default": "2.11.0",
+    "@parcel/transformer-pug": "2.11.0",
+    "@parcel/transformer-sass": "2.11.0",
     "htmlnano": "2.0.3",
     "parcel": "2.11.0",
     "prettier": "2.5.0",
-    "pug": "^3.0.1",
-    "sass": "^1.26.8",
-    "typescript": "^4.0.3"
+    "pug": "3.0.1",
+    "sass": "1.26.8",
+    "typescript": "4.0.3"
   }
 }
