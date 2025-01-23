@@ -2,13 +2,13 @@ main {
   /* font-size: clamp(1rem, 1.6dvw + 1rem, 1.5rem); */
   font-size: clamp(1.5rem, 1.6dvw + 1rem, 2rem);
   margin-block-start: 25dvh;
+  padding-block-end: 25dvh;
 
   @media (width >= 540px) {
     max-width: 48ch;
   }
 
   @media (width >= 768px) {
-    /* max-width: 62ch; */
     max-width: 42ch;
   }
 }
