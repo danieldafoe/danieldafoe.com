@@ -106,19 +106,19 @@
   }
 
   .post-footer {
-    background-color: var(--post-footer-bg);
+    background-color: var(--post-footer-bg-clr);
     border-radius: 2px;
-    border: 8px solid color-mix(
+    /* border: 8px solid color-mix(
       in hsl, 
       var(--darkest) 92%, 
       var(--darkest)
-    );
+    ); */
     /* box-shadow: 2px 2px 16px -2px color-mix(
       in hsl, 
       var(--darkest) 80%, 
       var(--lightest)
     ); */
-    color: var(--post-footer-fg);
+    color: var(--post-footer-fg-clr);
     padding: 2.5rem 2.5rem;
     margin: 0 1rem 6rem;
 

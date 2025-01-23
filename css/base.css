@@ -19,6 +19,8 @@
 
   --post-intro-border-clr: var(--darkest);
   --post-nav-border-clr: var(--darkest);
+  --post-footer-bg-clr: var(--darkest);
+  --post-footer-fg-clr: var(--lightest);
 
   --selection-bg-clr: var(--darkest);
   --selection-fg-clr: var(--lightest);
@@ -32,6 +34,8 @@
     --outline-clr: var(--lightest);
     --post-intro-border-clr: var(--lightest);
     --post-nav-border-clr: var(--lightest);
+    --post-footer-bg-clr: var(--lightest);
+    --post-footer-fg-clr: var(--darkest);
     --selection-bg-clr: var(--lightest);
     --selection-fg-clr: var(--darkest);
   }
