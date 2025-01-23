@@ -1,40 +1,16 @@
 {
-  "name": "danieldafoe.com",
-  "version": "16.0.0",
-  "description": "The personal website of Daniel Dafoe. Created using Pug, Sass, and Parcel. Deployment brought to you by Netlify.",
+  "name": "blog-11ty",
   "scripts": {
-    "build": "parcel build src/pug/index.pug --dist-dir ./dist",
-    "start": "parcel serve src/pug/index.pug"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danieldafoe/danieldafoe.com.git"
-  },
-  "keywords": [],
-  "author": "Daniel Dafoe <dannydafoe@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/danieldafoe/danieldafoe.github.io/issues"
-  },
-  "homepage": "https://danieldafoe.com",
-  "browserslist": [
-    "defaults",
-    "not IE 11",
-    "maintained node versions"
-  ],
-  "dependencies": {
-    "@parcel/transformer-posthtml": "2.11.0",
-    "@sendgrid/mail": "^7.7.0"
+    "build": "bun x @11ty/eleventy --output=_site",
+    "start": "bun x @11ty/eleventy --serve"
   },
   "devDependencies": {
-    "@parcel/config-default": "2.11.0",
-    "@parcel/transformer-pug": "2.11.0",
-    "@parcel/transformer-sass": "2.11.0",
-    "htmlnano": "2.0.3",
-    "parcel": "2.11.0",
-    "prettier": "2.5.0",
-    "pug": "3.0.1",
-    "sass": "1.26.8",
-    "typescript": "4.0.3"
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }

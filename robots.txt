@@ -1,0 +1,4 @@
+Sitemap: https://danieldafoe.com/blog/sitemap.xml
+
+User-agent: *
+Disallow:

@@ -1,0 +1,69 @@
+---
+title: 'No title'
+shareTitle: 'No share title'
+teaser: 'No teaser'
+summary: 'No summary'
+---
+<!DOCTYPE html>
+<html lang="en-CA">
+<!--
+  Looking for something? Check out the code repository: https://github.com/danieldafoe/blog.
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name='title' content="{{shareTitle}}">
+  <meta name='description' content="{{teaser}}">
+  <meta name='author' content='Daniel Dafoe'>
+
+  <meta property='og:type' content='article'>
+  <meta property='og:title' content="{{shareTitle}}">
+  <meta property='og:description' content="{{teaser}}">
+  <meta property='og:image' content='https://danieldafoe.com/blog/assets/og.jpg'>
+  <meta property='og:url' content='https://danieldafoe.com/blog'>
+  <meta property='og:site_name' content='perspectives: a daniel dafoe blog'>
+  <meta property='og:locale' content='en_CA'>
+
+  <meta name='twitter:card' content='summary_large_image'>
+  <meta name='twitter:site' content='@danieldafoe'>
+  <meta name='twitter:creator' content='@danieldafoe'>
+  <meta name='twitter:img' content='https://danieldafoe.com/blog/assets/og.jpg'>
+  <meta name='twitter:img:alt' content='perspectives: a daniel dafoe blog'>
+
+  <link rel='canonical' href='https://danieldafoe.com/blog'>
+  <link rel="stylesheet" href="/css.css">
+  <link rel="icon" href="https://danieldafoe.com/blog/assets/favicon.svg">
+
+  <title>{{ shareTitle }} - a daniel dafoe perspective</title>
+</head>
+<body class='post'>
+  <article>
+    <h1>
+      {{ title }}
+    </h1>
+
+    <div class="post-content">
+      {{ content | safe }}
+    </div>
+
+    {# <ul class="tags" aria-label="Blog post categories">
+      {% for tag in tags %} <li>{{ tag }}</li> {% endfor %}
+    </ul> #}
+    
+    <div class="post-footer">
+      The impressive thoughtpiece you just read was written by none other than <a href='https://danieldafoe.com'>Daniel Dafoe</a>—a web engineer, designer, and accessibility expert living in California.
+    </div>
+  </article>
+
+  <nav>
+    <a href="/">
+      Home
+    </a>
+    {% set randomPost = collections.posts | random %}
+    <a href="{{ randomPost.url }}">
+      Next:&nbsp;{{- randomPost.data.title -}}
+    </a>
+  </nav>
+</body>
+</html>

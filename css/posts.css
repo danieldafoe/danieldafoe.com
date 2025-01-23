@@ -1,0 +1,50 @@
+.posts {
+  background-image: url('../assets/gradient-line.svg');
+  background-size: 100%;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  min-height: 100dvh;
+  padding-block-end: 20rem;
+
+  @media (width >= 768px) {
+    background-size: 68%;
+  }
+
+  h1 {
+    color: var(--light);
+    border-block-start: 4px solid;
+    border-image: linear-gradient(
+      to top, 
+      var(--primary), 
+      var(--secondary)
+    ) 10;
+    text-align: right;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-inline-start: 1rem;
+
+    li + li {
+      margin-block-start: .8lh;
+    }
+
+    a {
+      color: var(--link-fg);
+    }
+  }
+}
+
+.posts-inner {
+  display: flex;
+  margin: auto;
+  max-width: 50ch;
+  padding-block-start: 6rem;
+
+  @media (width >= 768px) {
+    padding-block-start: 10rem;
+    padding-inline-start: 6dvw;
+  }
+}

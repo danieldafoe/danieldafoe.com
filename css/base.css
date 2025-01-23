@@ -1,0 +1,113 @@
+:root {
+  --font-body: '👹', serif;
+
+  --semi-dark: hsl(0, 0%, 20%);
+  --dark: hsl(0, 0%, 15%);
+  --darker: hsl(0, 0%, 12%);
+  --darkest: #181818;
+
+  --light: #F0EFEB;
+  --lighter: hsl(0, 0%, 88%);
+  --lightest: hsl(0, 0%, 92%);
+
+  --body-bg-clr: var(--light);
+  --body-fg-clr: var(--darkest);
+
+  --link-fg-clr: #283618;
+
+  --outline-clr: var(--darkest);
+
+  --post-intro-border-clr: var(--darkest);
+  --post-nav-border-clr: var(--darkest);
+
+  --selection-bg-clr: var(--darkest);
+  --selection-fg-clr: var(--lightest);
+
+  color-scheme: light dark;
+
+  @media (prefers-color-scheme: dark) {
+    --body-bg-clr: var(--darkest);
+    --body-fg-clr: var(--light);
+    --link-fg-clr: var(--lightest);
+    --outline-clr: var(--lightest);
+    --post-intro-border-clr: var(--lightest);
+    --post-nav-border-clr: var(--lightest);
+    --selection-bg-clr: var(--lightest);
+    --selection-fg-clr: var(--darkest);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:focus-visible {
+  outline-color: var(--outline-clr);
+  outline-offset: 8px;
+}
+
+::selection {
+  background-color: var(--selection-bg-clr);
+  color: var(--selection-fg-clr);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-body);
+  font-size: 100%;
+  hanging-punctuation: first last;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--body-bg-clr);
+  color: var(--body-fg-clr);
+  display: grid;
+  justify-content: center;
+  padding-inline: 1rem;
+  font-size: clamp(1.5rem, 1.6dvw + 1rem, 2rem);
+  font-weight: 300;
+  line-height: 1.5;
+  min-height: 100dvh;
+}
+
+h1 {
+  line-height: 1;
+}
+
+a {
+  color: var(--link-fg-clr);
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    background-color: var(--link-fg-clr);
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 96%;
+    width: 100%;
+  }
+}
+
+p {
+  margin-block-end: 1em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  padding-inline-start: 1.6em;
+
+  li {
+    margin-block-end: .65em;
+  }
+}

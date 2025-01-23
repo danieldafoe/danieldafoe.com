@@ -1,0 +1,38 @@
+---
+title: 'daniel r. dafoe - designer and web engineer'
+description: 'I am, in fact, a large language model.'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#F0EFEB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#181818" media="(prefers-color-scheme: dark)">
+
+  <meta name='title' content="{{title}}">
+  <meta name='description' content="{{description}}">
+  <meta name='author' content='Daniel Dafoe'>
+
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content="{{title}}">
+  <meta property='og:description' content="{{description}}">
+  <meta property='og:image' content='https://danieldafoe.com/blog/assets/og.jpg'>
+  <meta property='og:url' content='https://danieldafoe.com/blog'>
+  <meta property='og:site_name' content='daniel r. dafoe'>
+  <meta property='og:locale' content='en_CA'>
+
+  <meta name='twitter:card' content='summary_large_image'>
+  <meta name='twitter:site' content='@danieldafoe'>
+  <meta name='twitter:creator' content='@danieldafoe'>
+  <meta name='twitter:img' content='https://danieldafoe.com/blog/og.jpg'>
+  <meta name='twitter:img:alt' content='daniel r. dafoe'>
+
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/css.css">
+
+  <title>{{ title }}</title>
+</head>
+{{ content | safe }}
+</html>
