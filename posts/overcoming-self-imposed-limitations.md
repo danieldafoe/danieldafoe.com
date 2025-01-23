@@ -33,7 +33,7 @@ Using the writing of others as a starting point to form your own opinions or com
 
 To then give kudos or recognition to the other person or people for being the catalyst for your blog post, while not required, is an honourable thing to do.
 
-Why is it honourable? For starters, [backlinks are great for SEO](#backlinks-seo). So, in a way, you're thanking them by helping improve their SEO.
+Why is it honourable? For starters, [backlinks are great for SEO][#backlinks-seo]. So, in a way, you're thanking them by helping improve their SEO.
 
 See how cool it was that I referenced an article? I'm sure MailChimp's SEO ranking will probably skyrocket now that I've backlinked them.
 
