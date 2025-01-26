@@ -4,6 +4,7 @@
 
 /* Fonts */
 @font-face {
+  font-display: swap;
   font-family: "👹";
   src: url('assets/Vollkorn-VariableFont_wght.ttf');
 }
