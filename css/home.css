@@ -22,7 +22,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.succinct-bio {
+.bio {
   font-size: clamp(1.75rem, 1.6dvw + 1rem, 2rem);
   line-height: 1.84;
   margin-block-end: 1em;

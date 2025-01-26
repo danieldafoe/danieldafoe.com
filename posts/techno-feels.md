@@ -8,26 +8,26 @@ tags: ['philosophy', 'technology']
 ---
 
 <p class='intro'>
-  I'm having feelings for technology. Yes, I should marry it.
+  I'm having feelings for technology, and it may be helping me have more empathy for humans.
 </p>
 
 I got a digital food scale for Christmas. Black. Sleek. Zwilling. I've wanted one ever since I started meticulously tracking my food intake each day.
 
 After using the scale for a few days, I noticed a feeling stirring in me—a feeling of compassion.
 
-You see, my intelligent little scale has an auto-shutoff feature—it will shut off after 3 minutes of inactivity. In spite of this, I feel evil thinking of the prospect of it sitting there, turned on, doing nothing for 3 whole minutes while I go about the rest of meal preparation. Why must it lay ever-attentive for 3 minutes in case I beckon it again to do my metrical bidding? Does it not also deserve rest? Why should I put strain on its wee little battery for no apparent reason by leaving it on when it's just as easy to turn it off?
+You see, my intelligent little scale has an auto-shutoff feature: it will shut off after 3 minutes of inactivity. Despite this feature, I feel evil thinking of the prospect of it sitting there, turned on, doing nothing for 3 whole minutes while not being used. Why should it sit there for 3 minutes? In case I beckon it again to do my metrical bidding? Does it not also deserve rest? Why should I put strain on its wee little battery for no apparent reason by leaving it on when it's just as easy to turn it off?
 
 Due to these questions and my feeling of sympathy, I haven't once left it on.
 
 ## Technology and compassion
 
-The combination of compassion and technology are not new. People have been calling for more compassionate technology for a while now, hoping it can "restore, humanize and strengthen our relationships with one another as well as ourselves" (<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8155300/' target='_blank'>Day et al., 2021</a>). 
+The confluence of compassion and technology are not new. People have been calling for more compassionate technology for a while now, hoping it can "restore, humanize and strengthen our relationships with one another as well as ourselves" (<a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8155300/' target='_blank'>Day et al., 2021</a>). 
 
-But that's not what I'm talking about. What I felt was compassion <em>toward</em> technology—a far less familiar concept.
+But that's not exactly what I'm talking about here. What I felt was compassion <em>toward</em> technology—a far less familiar concept.
 
-While it's typical to feel sympathy or concern for another person's suffering and misfortune, this is not typical for inanimate objects like a technology product. For instance: when a friend mentions they dropped their phone and it shattered into a million pieces, you don't think about how the phone suffered as it disintegrated.
+While it's typical to feel sympathy or concern for another person's suffering and misfortune, this is not typical for inanimate objects like a technology product. For instance: when a friend mentions they dropped their phone and it shattered into a million pieces, you don't think about how the phone suffered as it disintegrated. Instead, you understand the other person's plight because you've likely also shattered something meaningful to you before.
 
-And yet this is the feeling that emerged in me. At least I think it was.
+And yet, in my scenario, there was no other person to sympathize with—only the technology itself. And so I did. I think.
 
 ## Skepticism
 

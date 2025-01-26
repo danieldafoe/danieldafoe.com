@@ -127,9 +127,13 @@
     }
     
     a {
-      color: var(--post-footer-fg);
-      text-decoration-color: var(--post-footer-link-underline);
+      color: var(--post-footer-link-fg-clr);
+      text-decoration-color: var(--post-footer-link-fg-clr);
       padding-inline: 2px;
+
+      &:after {
+        background-color: var(--post-footer-link-fg-clr);
+      }
     }
   }
 
