@@ -110,13 +110,13 @@
     border-radius: 2px;
     /* border: 8px solid color-mix(
       in hsl, 
-      var(--darkest) 92%, 
-      var(--darkest)
+      var(--dark) 92%, 
+      var(--dark)
     ); */
     /* box-shadow: 2px 2px 16px -2px color-mix(
       in hsl, 
-      var(--darkest) 80%, 
-      var(--lightest)
+      var(--dark) 80%, 
+      var(--light)
     ); */
     color: var(--post-footer-fg-clr);
     padding: 2.5rem 2.5rem;
