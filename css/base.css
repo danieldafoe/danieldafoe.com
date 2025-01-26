@@ -64,7 +64,7 @@ html {
   font-family: var(--font-body);
   font-size: 100%;
   hanging-punctuation: first last;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeSpeed;
 }
 
 body {
