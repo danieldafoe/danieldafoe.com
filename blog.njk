@@ -17,7 +17,7 @@ eleventyExcludeFromCollections: true
       due to using `list-style-type: none` 😢
       #}
     <ul class="latest-perspectives" role="list">
-      {% for post in sortedPosts | limit(5) %}
+      {% for post in sortedPosts  %}
         <li role="listitem">
           <a href="{{ post.url }}">
             <span>
