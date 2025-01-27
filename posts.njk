@@ -1,47 +1,15 @@
 ---
-title: 'all posts - perspectives - a daniel dafoe blog'
+layout: page.njk
+title: 'all posts - DANIEL R. DAFOE'
 eleventyExcludeFromCollections: true
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-  <meta name='title' content="{{title}}">
-  <meta name='description' content="Web accessibility, front-end engineering, and design.">
-  <meta name='author' content='Daniel Dafoe'>
-
-  <meta property='og:type' content='website'>
-  <meta property='og:title' content="{{title}}">
-  <meta property='og:description' content="Web accessibility, front-end engineering, and design.">
-  <meta property='og:image' content='https://danieldafoe.com/blog/assets/og.jpg'>
-  <meta property='og:url' content='https://danieldafoe.com/blog'>
-  <meta property='og:site_name' content='perspectives: a daniel dafoe blog'>
-  <meta property='og:locale' content='en_CA'>
-
-  <meta name='twitter:card' content='summary_large_image'>
-  <meta name='twitter:site' content='@danieldafoe'>
-  <meta name='twitter:creator' content='@danieldafoe'>
-  <meta name='twitter:img' content='https://danieldafoe.com/blog/assets/og.jpg'>
-  <meta name='twitter:img:alt' content='perspectives: a daniel dafoe blog'>
-
-  {% include '_fonts.njk' %}
-
-  <link rel="icon" href="/assets/favicon.svg">
-  <link rel="stylesheet" href="/css.css">
-
-  <title>{{ title }}</title>
-</head>
-<body class="posts">
+<body class="zen posts">
   <main>
-
-    <div class="posts-inner">
-
+    <div class="wrapper">
       <h1>
         Posts
       </h1>
-  
       {% set sortedPosts = collections.posts | sortCollection %}
       <ul>
         {% for post in sortedPosts %}
@@ -57,9 +25,7 @@ eleventyExcludeFromCollections: true
           </li>
         {% endfor %}
       </ul>
-
     </div>
-
   </main>
 </body>
 </html>
