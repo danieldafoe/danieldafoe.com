@@ -16,6 +16,7 @@
   --post-footer-bg-clr: var(--dark);
   --post-footer-fg-clr: var(--light);
   --post-footer-link-fg-clr: var(--light);
+  --post-img-border-clr: var(--dark);
 
   --selection-bg-clr: var(--dark);
   --selection-fg-clr: var(--light);
@@ -32,6 +33,7 @@
     --post-footer-bg-clr: var(--light);
     --post-footer-fg-clr: var(--dark);
     --post-footer-link-fg-clr: var(--dark);
+    --post-img-border-clr: var(--light);
     --selection-bg-clr: var(--light);
     --selection-fg-clr: var(--dark);
   }
@@ -68,12 +70,13 @@ body {
   color: var(--body-fg-clr);
   display: grid;
   justify-content: center;
-  padding-inline: 1rem;
   font-display: swap;
   font-size: clamp(1.5rem, 1.6dvw + 1rem, 2rem);
   font-weight: 300;
   line-height: 1.5;
   min-height: 100dvh;
+  overflow-x: hidden;
+  padding-inline: 2rem;
 }
 
 main {
@@ -91,8 +94,8 @@ main {
 }
 
 h1 {
-  font-weight: 500;
   font-size: clamp(.875rem, 1dvw + .5rem, 1rem);
+  font-weight: 500;
   letter-spacing: 2px;
   line-height: 1;
   margin-block-end: 5.6rem;
@@ -126,6 +129,7 @@ strong {
 }
 
 ul {
+  list-style-type: square;
   padding-inline-start: 1.6em;
 
   li {
