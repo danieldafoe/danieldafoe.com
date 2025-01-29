@@ -24,11 +24,8 @@ To put this back into context, we should never assume someone is familiar with w
 
 ## Which phrase is best?
 
-<figure>
   <img src='https://preview.redd.it/in-snow-white-and-the-seven-dwarves-1937-the-symbols-v0-8a5gsqw2n7y91.jpg?auto=webp&s=4692986f0b131b490231df39a19ce6181f8ba2f0' alt='Evil Queen in black robe and gold crown standing before a large mirror' />
-  <figcaption>Evil Sorceress from Snow White standing in front of the Magic Mirror.</figcaption>
-</figure>
-
+  
 <p><em>Mirror, Mirror, on the wall, which is the clearest phrase of all?</em></p>
 
 ### Skip to main content
