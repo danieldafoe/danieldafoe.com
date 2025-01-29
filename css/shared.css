@@ -31,3 +31,14 @@
 ::view-transition-new(root) {
   animation: 300ms ease-in both move-in;
 }
+
+/* Animations */
+@keyframes reveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes grow {
+  from { font-weight: 300; }
+  to { font-weight: 900; font-size: 200%; }
+}
