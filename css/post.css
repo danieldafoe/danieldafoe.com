@@ -5,6 +5,19 @@
 .post {
   font-size: clamp(1rem, 1dvw + 1rem, 1.5rem);
 
+  .emphasize {
+    margin-block: 1rem 3rem;
+    position: relative;
+
+    animation: grow ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 125% exit -100%;
+
+    @media (prefers-reduced-motion) {
+      animation: none;
+    }
+  }
+
   article {
     display: flex;
     flex-direction: column;
@@ -21,7 +34,6 @@
   h2,
   h3 {
     font-weight: 500;
-    /* line-height: 1.1; */
     margin-block: 1lh .667lh;
   }
 
@@ -49,13 +61,9 @@
     padding: 2px;
   }
 
+  img,
   figure {
     margin-block-end: 2rem;
-  }
-
-  figcaption {
-    font-size: .65rem;
-    text-align: center;
   }
 
   .intro,
@@ -65,7 +73,7 @@
 
   .post-content,
   .post-footer {
-    padding: 2rem 1rem 0;
+    padding: 2rem 0 0;
     max-width: 48ch;
     
     @media (width >= 768px) {
@@ -80,7 +88,6 @@
     > .intro {
       border-block: 1px solid var(--post-intro-border-clr);
       padding-block: 1em;
-      /* font-size: larger; */
       font-weight: bolder;
       display: grid;
       gap: .25em;
@@ -96,11 +103,32 @@
 
     ol,
     ul {
-      margin-block-end: .5lh;
+      margin-block-end: 1.6em;
       padding: revert;
 
       & li + li {
         margin-block-start: .2lh;
+      }
+    }
+
+    img {
+      margin-left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+      max-width: 100%;
+      width: 100dvw;
+
+      animation: reveal ease-in-out both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 100%;
+
+      @media (prefers-reduced-motion) {
+        animation: none;
+      }
+
+      @media (width >= 768px) {
+        padding: 2rem;
+        max-width: 80dvw;
       }
     }
   }
