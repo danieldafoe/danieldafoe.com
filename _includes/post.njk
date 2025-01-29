@@ -1,8 +1,5 @@
 ---
 title: 'No title'
-shareTitle: 'No share title'
-teaser: 'No teaser'
-summary: 'No summary'
 ---
 <!DOCTYPE html>
 <html lang="en-CA">
@@ -10,35 +7,33 @@ summary: 'No summary'
   Looking for something? Check out the code repository: https://github.com/danieldafoe/blog.
 -->
 <head>
+  <link rel="preload" as="font" href="/assets/Vollkorn-VariableFont_wght.ttf" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/css.css">
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel='canonical' href='https://danieldafoe.com'>
+
+  <title>{{ shareTitle if shareTitle else title }} - {{ site.name }}</title>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name='title' content="{{shareTitle}}">
+  <meta name='title' content="{{shareTitle if shareTitle else title}}">
   <meta name='description' content="{{teaser}}">
   <meta name='author' content='Daniel Dafoe'>
 
   <meta property='og:type' content='article'>
-  <meta property='og:title' content="{{shareTitle}}">
+  <meta property='og:title' content="{{shareTitle if shareTitle else title}}">
   <meta property='og:description' content="{{teaser}}">
   <meta property='og:image' content='https://danieldafoe.com/assets/og.jpg'>
   <meta property='og:url' content='https://danieldafoe.com/blog'>
-  <meta property='og:site_name' content='perspectives: a daniel dafoe blog'>
+  <meta property='og:site_name' content='{{site.name}}'>
   <meta property='og:locale' content='en_CA'>
 
   <meta name='twitter:card' content='summary_large_image'>
   <meta name='twitter:site' content='@danieldafoe'>
   <meta name='twitter:creator' content='@danieldafoe'>
   <meta name='twitter:img' content='https://danieldafoe.com/assets/og.jpg'>
-  <meta name='twitter:img:alt' content='perspectives: a daniel dafoe blog'>
-
-  
-  <link rel="preload" as="font" href="/assets/Vollkorn-VariableFont_wght.ttf" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="/css.css">
-  
-  <link rel="icon" href="/assets/favicon.svg">
-  <link rel='canonical' href='https://danieldafoe.com'>
-
-  <title>{{ shareTitle }} - a daniel dafoe perspective</title>
+  <meta name='twitter:img:alt' content='{{site.name}}'>
 </head>
 <body class='post'>
   <article>

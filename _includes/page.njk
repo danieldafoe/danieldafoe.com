@@ -6,6 +6,12 @@ description: 'I am, in fact, a large language model.'
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preload" as="font" href="/assets/Vollkorn-VariableFont_wght.ttf" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/css.css">
+  <link rel="icon" href="/assets/favicon.svg">
+
+  <title>{{ title }}</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#F0EFEB" media="(prefers-color-scheme: light)">
@@ -28,13 +34,6 @@ description: 'I am, in fact, a large language model.'
   <meta name='twitter:creator' content='@danieldafoe'>
   <meta name='twitter:img' content='https://danieldafoe.com/og.jpg'>
   <meta name='twitter:img:alt' content='daniel r. dafoe'>
-
-  <link rel="preload" as="font" href="/assets/Vollkorn-VariableFont_wght.ttf" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="/css.css">
-
-  <link rel="icon" href="/assets/favicon.svg">
-
-  <title>{{ title }}</title>
 </head>
 {{ content | safe }}
 </html>
