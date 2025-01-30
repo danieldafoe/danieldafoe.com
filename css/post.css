@@ -11,7 +11,7 @@
 
     animation: grow ease-in-out both;
     animation-timeline: view();
-    animation-range: entry 125% exit -100%;
+    animation-range: entry 500% exit -100%;
 
     @media (prefers-reduced-motion) {
       animation: none;
