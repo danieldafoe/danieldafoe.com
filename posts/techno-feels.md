@@ -7,7 +7,7 @@ date: 2024-12-29
 tags: ['philosophy', 'technology']
 ---
 
-<p class='intro'>
+<p class='summary'>
   I'm having feelings for technology, and it may be helping me have more empathy for humans.
 </p>
 

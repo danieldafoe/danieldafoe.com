@@ -9,7 +9,7 @@ tags: ['writing', 'blogging']
 
 [backlinks-seo]: https://mailchimp.com/resources/what-is-backlinking-and-why-is-it-important-for-seo#section-why-are-backlinks-important
 
-<p class='intro'>
+<p class='summary'>
   What I dislike about blogging is not something to do with the idea of blogging itself, but self-imposed requirements I place on my own blogging endeavours.
 </p>
 

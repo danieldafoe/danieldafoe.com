@@ -36,4 +36,4 @@ With transcriptions for sign language, if I wanted to search for a word we learn
 
 Despite the excitement I have for this idea, my optimism is cautious.
 
-If this functionality ever came to pass, I have a funny feeling the applications that introduce this will be sure to bugger it up. Not majorly, but just enough of that it's difficult to get the gist of the conversation—just as it is for transcripts and spoken language. Now that's an equitable experience!
+If this functionality ever came to pass, I have a funny feeling the applications that summaryduce this will be sure to bugger it up. Not majorly, but just enough of that it's difficult to get the gist of the conversation—just as it is for transcripts and spoken language. Now that's an equitable experience!
