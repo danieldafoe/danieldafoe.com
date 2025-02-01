@@ -1,15 +1,16 @@
 ---
 layout: page.njk
-title: 'all posts - DANIEL R. DAFOE'
+title: 'All Posts - Daniel R. Dafoe'
 eleventyExcludeFromCollections: true
 ---
 
 <body class="zen posts">
-  <main>
-    <div class="wrapper">
+  <main class="wrapper">
+    <div>
       <h1>
         Posts
       </h1>
+
       {% set sortedPosts = collections.posts | sortCollection %}
       <ul>
         {% for post in sortedPosts %}
