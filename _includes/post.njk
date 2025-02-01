@@ -36,32 +36,34 @@ title: 'No title'
   <meta name='twitter:img:alt' content='{{site.name}}'>
 </head>
 <body class='post'>
-  <article>
-    <h1>
-      {{ title }}
-    </h1>
-
-    <div class="post-content">
-      {{ content | safe }}
-    </div>
-
-    {# <ul class="tags" aria-label="Blog post categories">
-      {% for tag in tags %} <li>{{ tag }}</li> {% endfor %}
-    </ul> #}
-    
-    <div class="post-footer">
-      The impressive thoughtpiece you just read was written by none other than <a href='https://danieldafoe.com'>Daniel Dafoe</a>—a web engineer, designer, and accessibility expert living in California.
-    </div>
-  </article>
-
-  <nav>
-    <a href="/">
-      Home
-    </a>
-    {% set randomPost = collections.posts | random %}
-    <a href="{{ randomPost.url }}">
-      Next:&nbsp;{{- randomPost.data.title -}}
-    </a>
-  </nav>
+  <main>
+    <article>
+      <h1>
+        {{ title }}
+      </h1>
+  
+      <div class="post-content">
+        {{ content | safe }}
+      </div>
+  
+      {# <ul class="tags" aria-label="Blog post categories">
+        {% for tag in tags %} <li>{{ tag }}</li> {% endfor %}
+      </ul> #}
+      
+      <div class="post-footer">
+        The impressive thoughtpiece you just read was written by none other than <a href='https://danieldafoe.com'>Daniel Dafoe</a>—a web engineer, designer, and accessibility expert living in California.
+      </div>
+    </article>
+  
+    <nav>
+      <a href="/">
+        Home
+      </a>
+      {% set randomPost = collections.posts | random %}
+      <a href="{{ randomPost.url }}">
+        Next:&nbsp;{{- randomPost.data.title -}}
+      </a>
+    </nav>
+  </main>
 </body>
 </html>
