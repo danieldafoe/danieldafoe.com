@@ -6,32 +6,35 @@ eleventyExcludeFromCollections: true
 ---
 
 <body class="zen blog">
-  <main>
-    <h1>
-      perspectives
-    </h1>
+  <main class="wrapper">
+    <div>
 
-    {% set sortedPosts = collections.posts | sortCollection %}
-    {# 
-      Need to add roles since Safari will remove semantics
-      due to using `list-style-type: none` 😢
-      #}
-    <ul class="latest-perspectives" role="list">
-      {% for post in sortedPosts  %}
-        <li role="listitem">
-          <a href="{{ post.url }}">
-            <span>
-              {{- post.data.title -}}
-            </span>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    {# <div class="all-perspectives">
-      <a href="/posts/">
-        all posts
-      </a>
-    </div> #}
+      <h1>
+        perspectives
+      </h1>
+  
+      {% set sortedPosts = collections.posts | sortCollection %}
+      {# 
+        Need to add roles since Safari will remove semantics
+        due to using `list-style-type: none` 😢
+        #}
+      <ul class="latest-perspectives" role="list">
+        {% for post in sortedPosts  %}
+          <li role="listitem">
+            <a href="{{ post.url }}">
+              <span>
+                {{- post.data.title -}}
+              </span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+  
+      {# <div class="all-perspectives">
+        <a href="/posts/">
+          all posts
+        </a>
+      </div> #}
+    </div>
   </main>
 </body>
