@@ -2,16 +2,13 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 
 module.exports = function(eleventyConfig) {
-  // Copypasta
-  // eleventyConfig.addPassthroughCopy("js.js");
-
   // Copypasta assets
   eleventyConfig.addPassthroughCopy("assets/**.*");
 
-  // Watchers
+  // Add watchers for non template stuff
   eleventyConfig.addWatchTarget("./css/");
 
-  // Collections
+  // Add collection excluding drafts
   eleventyConfig.addCollection('posts', collection => {
     return collection.getFilteredByGlob('./posts/*.md')
     .filter(draftPosts)
@@ -40,8 +37,26 @@ module.exports = function(eleventyConfig) {
   });
 
   // Plugins
-  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
+
+  // RSS feed generation
+  eleventyConfig.addPlugin(pluginRss, {
+		type: "atom", 
+		outputPath: "/feed.xml",
+		collection: {
+			name: "posts",
+			limit: 0
+		},
+		metadata: {
+			language: "en",
+			title: "Daniel R. Dafoe",
+			subtitle: "Musings on usability, philosophy, and anything else that grips me.",
+			base: "https://danieldafoe.com/",
+			author: {
+				name: "Daniel R. Dafoe"
+			}
+		}
+	});
 };
 
 function draftPosts(post) {
