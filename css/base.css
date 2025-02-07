@@ -112,19 +112,8 @@ code {
 
 a {
   color: var(--link-fg-clr);
-  position: relative;
-  text-decoration: none;
-
-  &::after {
-    background-color: var(--link-fg-clr);
-    content: '';
-    display: block;
-    height: 1px;
-    left: 0;
-    position: absolute;
-    top: 96%;
-    width: 100%;
-  }
+  text-decoration-thickness: 1px;
+  text-underline-offset: .4em;
 }
 
 p {
