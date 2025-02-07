@@ -1,4 +1,4 @@
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 
 module.exports = function(eleventyConfig) {
@@ -40,9 +40,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(inclusiveLangPlugin);
 
   // RSS feed generation
-  eleventyConfig.addPlugin(pluginRss, {
+  eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", 
-		outputPath: "/feed.xml",
+		outputPath: "feed.xml",
 		collection: {
 			name: "posts",
 			limit: 0

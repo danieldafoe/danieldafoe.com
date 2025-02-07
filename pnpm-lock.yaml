@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^1.0.3
     version: 1.0.3
   '@11ty/eleventy-plugin-rss':
-    specifier: ^1.2.0
-    version: 1.2.0
+    specifier: ^2.0.3
+    version: 2.0.3
   bun-types:
     specifier: latest
     version: 1.2.2
@@ -76,12 +76,13 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@11ty/eleventy-plugin-rss@1.2.0:
-    resolution: {integrity: sha512-YzFnSH/5pObcFnqZ2sAQ782WmpOZHj1+xB9ydY/0j7BZ2jUNahn53VmwCB/sBRwXA/Fbwwj90q1MLo01Ru0UaQ==}
+  /@11ty/eleventy-plugin-rss@2.0.3:
+    resolution: {integrity: sha512-ubK97uahCLpKhORLfblgxLcoaNqTcKde1cH8CeRKNTFoUuuDSEjWZtodV9fKrg+uOp5X74dO43z1/io6hhs5Bw==}
     dependencies:
+      '@11ty/eleventy-utils': 2.0.1
+      '@11ty/posthtml-urls': 1.0.1
       debug: 4.4.0
       posthtml: 0.16.6
-      posthtml-urls: 1.0.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -280,10 +281,6 @@ packages:
   /ansi-styles@6.2.1:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
-    dev: true
-
-  /any-promise@0.1.0:
-    resolution: {integrity: sha512-lqzY9o+BbeGHRCOyxQkt/Tgvz0IZhTmQiA+LxQW8wSNpcTbj8K+0cZiSEvbpNZZP9/11Gy7dnLO3GNWUXO4d1g==}
     dev: true
 
   /anymatch@3.1.3:
@@ -714,11 +711,6 @@ packages:
       entities: 3.0.1
     dev: true
 
-  /http-equiv-refresh@1.0.0:
-    resolution: {integrity: sha512-TScO04soylRN9i/QdOdgZyhydXg9z6XdaGzEyOgDKycePeDeTT4KvigjBcI+tgfTlieLWauGORMq5F1eIDa+1w==}
-    engines: {node: '>= 0.10'}
-    dev: true
-
   /http-equiv-refresh@2.0.1:
     resolution: {integrity: sha512-XJpDL/MLkV3dKwLzHwr2dY05dYNfBNlyPu4STQ8WvKCFdc6vC5tPXuq28of663+gHVg03C+16pHHs/+FmmDjcw==}
     engines: {node: '>= 6'}
@@ -1068,28 +1060,12 @@ packages:
       is-json: 2.0.1
     dev: true
 
-  /posthtml-urls@1.0.0:
-    resolution: {integrity: sha512-CMJ0L009sGQVUuYM/g6WJdscsq6ooAwhUuF6CDlYPMLxKp2rmCYVebEU+wZGxnQstGJhZPMvXsRhtqekILd5/w==}
-    engines: {node: '>= 4'}
-    dependencies:
-      http-equiv-refresh: 1.0.0
-      list-to-array: 1.1.0
-      parse-srcset: 1.0.2
-      promise-each: 2.2.0
-    dev: true
-
   /posthtml@0.16.6:
     resolution: {integrity: sha512-JcEmHlyLK/o0uGAlj65vgg+7LIms0xKXe60lcDOTU7oVX/3LuEuLwrQpW3VJ7de5TaFKiW4kWkaIpJL42FEgxQ==}
     engines: {node: '>=12.0.0'}
     dependencies:
       posthtml-parser: 0.11.0
       posthtml-render: 3.0.0
-    dev: true
-
-  /promise-each@2.2.0:
-    resolution: {integrity: sha512-67roqt1k3QDA41DZ8xi0V+rF3GoaMiX7QilbXu0vXimut+9RcKBNZ/t60xCRgcsihmNUsEjh48xLfNqOrKblUg==}
-    dependencies:
-      any-promise: 0.1.0
     dev: true
 
   /promise@7.3.1:
