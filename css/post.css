@@ -104,6 +104,10 @@
       margin-block-end: 1.6em;
       padding: revert;
 
+      li {
+        margin-block-end: 1em;
+      }
+
       & li + li {
         margin-block-start: .2lh;
       }
