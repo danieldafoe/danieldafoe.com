@@ -36,15 +36,3 @@
     }
   }
 }
-
-.posts-inner {
-  display: flex;
-  margin: auto;
-  max-width: 50ch;
-  padding-block-start: 6rem;
-
-  @media (width >= 768px) {
-    padding-block-start: 10rem;
-    padding-inline-start: 6dvw;
-  }
-}
