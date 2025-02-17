@@ -21,7 +21,7 @@
   article {
     display: flex;
     flex-direction: column;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-block-start: 25dvh;
   }
 
@@ -111,6 +111,10 @@
       & li + li {
         margin-block-start: .2lh;
       }
+    }
+
+    ol {
+      list-style-type: lower-roman;
     }
 
     img {
