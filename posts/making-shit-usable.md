@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: making shit usable
+date: 2025-02-15
 tags: ['ux', 'accessibility', 'usability']
 ---
 
