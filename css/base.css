@@ -11,6 +11,7 @@
   --body-fg-clr: var(--light);
   --link-fg-clr: var(--light);
   --outline-clr: var(--light);
+  --blog-tag-fg-clr: var(--dark);
   --post-summary-border-clr: var(--light);
   --post-nav-border-clr: var(--light);
   --post-footer-bg-clr: var(--light);
@@ -28,6 +29,7 @@
     --body-fg-clr: var(--dark);
     --link-fg-clr: #283618;
     --outline-clr: var(--dark);
+    --blog-tag-fg-clr: var(--light);
     --post-code-clr: var(--blue);
     --post-footer-bg-clr: var(--dark);
     --post-footer-fg-clr: var(--light);

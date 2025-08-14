@@ -13,18 +13,16 @@ eleventyExcludeFromCollections: true
         Perspectives
       </h1>
   
-      {% set sortedPosts = collections.posts | sortCollection %}
+      {% set allPosts = collections.posts | sortCollection %}
       {# 
-        Need to add roles since Safari will remove semantics
+        Need to add roles since Safari will remove semantics 
         due to using `list-style-type: none` 😢
-        #}
+      #}
       <ul class="latest-perspectives" role="list">
-        {% for post in sortedPosts  %}
+        {% for post in allPosts  %}
           <li role="listitem">
             <a href="{{ post.url }}">
-              <span>
-                {{- post.data.title -}}
-              </span>
+              {{- post.data.title -}}
             </a>
           </li>
         {% endfor %}

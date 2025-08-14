@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: automated tests aren't human
+tags: ['accessibility']
 ---
 
 <p class='summary'>

@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: i walked across the street
-tags: ['poem']
+tags: ['poetry']
 ---
 
 I walked across the street
