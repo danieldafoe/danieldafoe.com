@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: automated tests aren't human
+date: 2025-02-06
 tags: ['accessibility']
 ---
 

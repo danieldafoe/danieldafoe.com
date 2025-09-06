@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: i walked across the street
+date: 2025-02-01
 tags: ['poetry']
 ---
 
