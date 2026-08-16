@@ -40,6 +40,8 @@
   h1 {
     font-family: var(--font-body);
     letter-spacing: 2px;
+    margin-block-end: 5.6rem;
+    text-align: center;
   }
 
   blockquote {

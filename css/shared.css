@@ -4,12 +4,17 @@
 
 /* Fonts */
 @font-face {
-  font-display: swap;
-  font-family: "👹";
   src: url('assets/Vollkorn-VariableFont_wght.ttf');
+  font-family: "👹";
+  font-display: swap;
 }
 
-/* View Transition */
+@font-face {
+  src: url('assets/ZalandoSansExpanded-VariableFont_wght.ttf');
+  font-family: '🥦';
+  font-display: swap;
+}
+
 @view-transition {
   navigation: auto;
 }
@@ -39,6 +44,11 @@
 }
 
 @keyframes grow {
-  from { font-weight: 300; }
-  to { font-weight: 900; font-size: 200%; }
+  from { font-size: 100%;}
+  to { font-size: 120%;}
+}
+
+@keyframes unskew {
+  from { transform: translate(10%, 15%) skewY(16deg); }
+  to { transform: translate(0, 0) skewY(0deg);}
 }

@@ -1,0 +1,47 @@
+.zen {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 20vh;
+
+    > div {
+      @media (min-width: 540px) {
+        max-width: 36ch;
+      }
+    }
+  }
+
+  nav {
+    position: absolute;
+    top: 2rem;
+
+    ul {
+      list-style-type: none;
+      padding-inline-start: 0;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 76px;
+      width: 100%;
+    }
+
+    svg {
+      path {
+        stroke: var(--chunky-blob-stroke-clr);
+        stroke-width: 5;
+      }
+    }
+  }
+
+  h1 {
+    font-family: '🥦';
+    margin-block-end: 4em;
+  }
+}

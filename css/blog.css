@@ -1,0 +1,27 @@
+.blog {
+  padding-block-end: 50vh;
+  position: relative;
+
+  .latest-perspectives {
+    li {
+      @media (prefers-reduced-motion: no-preference) {
+        animation-name: unskew;
+        animation-timeline: view();
+        animation-fill-mode: both;
+        animation-range: entry 0% cover 50%;
+        /* 
+          iOS Safari doesn't seem to place nice with view transitions and animation-range. Causes an abrupt CSS paint when transitioning,
+          showing you a flash of the initial state before the keyframes of the animation.
+        */
+        /* prevent jank? */
+        /* transform: translate(10%, 15%) skewY(16deg); */
+        /* end prevent jank */
+    
+      }
+  
+      @media (min-width: 540px) {
+        animation-range: entry 0 cover 70%;
+      }
+    }
+  }
+}
