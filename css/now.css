@@ -1,0 +1,44 @@
+.now {
+    overflow-x: hidden;
+    width:100%;
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* position: relative; */
+        width: 100%;
+    }
+
+    div {
+        position: relative;
+    }
+
+    h1 {
+        font-size: clamp(2rem, 2rem + 6dvw, 16dvw);
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 8px var(--dark);
+        /* z-index: 1; */
+    }
+
+    p {
+        margin-block-start: 1rem;
+        max-width: 550px;
+    }
+
+    img {
+        max-width: 100%;
+        mix-blend-mode: hard-light;
+        width: 550px;
+
+        @media (max-width: 768px) {
+            max-width: none;
+            width: 100dvw;
+        }
+    }
+}

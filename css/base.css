@@ -1,8 +1,9 @@
 :root {
-  --font-body: '👹', serif;
+  --font-display: '👹', serif;
+  --font-body: '🐟', serif;
 
   --dark: #181818;
-  --light: #F0EFEB;
+  --light: #F6F2DF;
   --accent: var(--accent-pink);
   --accent-pink: #EF74FF;
   --accent-purple: #8A079A;
@@ -12,6 +13,7 @@
   --link-fg-clr: var(--light);
   --outline-clr: var(--light);
   --blog-tag-fg-clr: var(--dark);
+  --post-content-hr-border-clr: var(--dark);
   --post-summary-border-clr: var(--light);
   --post-nav-border-clr: var(--light);
   --post-footer-bg-clr: var(--light);
@@ -70,39 +72,22 @@ html {
 
 body {
   background-color: var(--body-bg-clr);
+  display: flex;
   color: var(--body-fg-clr);
-  display: grid;
-  justify-content: center;
   font-display: swap;
   font-size: clamp(1.5rem, 1.6dvw + 1rem, 2rem);
-  font-weight: 300;
   line-height: 1.5;
   min-height: 100dvh;
   overflow-x: hidden;
   padding-inline: 2rem;
 }
 
-.wrapper {
-  font-size: clamp(1.5rem, 1.6dvw + 1rem, 2rem);
-  margin-block-start: 25dvh;
-  padding-block-end: 25dvh;
-
-  @media (width >= 540px) {
-    max-width: 48ch;
-  }
-
-  @media (width >= 768px) {
-    max-width: 42ch;
-  }
-}
-
-h1 {
-  font-size: clamp(.875rem, 1dvw + .5rem, 1rem);
-  font-weight: 500;
-  letter-spacing: 2px;
+h1,
+.heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8.75rem + 2dvw, 12dvw);
   line-height: 1;
-  margin-block-end: 5.6rem;
-  text-align: center;
+  /* margin-block-end: 5.6rem; */
   text-transform: uppercase;
 }
 
@@ -133,4 +118,8 @@ ul {
   li {
     margin-block-end: .65em;
   }
+}
+
+img {
+  height: auto;
 }

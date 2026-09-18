@@ -7,7 +7,8 @@ title: 'No title'
   Looking for something? Check out the code repository: https://github.com/danieldafoe/danieldafoe.com.
 -->
 <head>
-  <link rel="preload" as="font" href="/assets/Vollkorn-VariableFont_wght.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="/assets/BBHBartle-Regular.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="/assets/Besley-VariableFont_wght.ttf" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="/css.css">
   <link rel="icon" href="/assets/favicon.svg">
   <link rel='canonical' href='https://danieldafoe.com'>
@@ -41,18 +42,16 @@ title: 'No title'
       <h1>
         {{ title }}
       </h1>
-  
+
+      
       <div class="post-content">
+        <hr/>
         {{ content | safe }}
       </div>
   
       {# <ul class="tags" aria-label="Blog post categories">
         {% for tag in tags %} <li>{{ tag }}</li> {% endfor %}
       </ul> #}
-      
-      <div class="post-footer">
-        The impressive thoughtpiece you just read was written by none other than <a href='https://danieldafoe.com'>Daniel Dafoe</a>—a web engineer, designer, and accessibility expert living in California.
-      </div>
     </article>
   
     <nav>

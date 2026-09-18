@@ -1,6 +1,65 @@
-.bio {
-  font-size: clamp(1.75rem, 1.6dvw + 1rem, 2rem);
-  line-height: 1.84;
-  margin-block-end: 1em;
-  text-wrap: pretty;
+.home {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 95%;
+    position: relative;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-block-start: 8vh;
+      margin-inline: auto;
+      max-width: initial;
+    }
+  }
+
+  h1 {
+    font-size: clamp(2rem, 8.75rem + 2dvw, 12dvw);
+    margin: 0;
+    position: absolute;
+    top: .64rem;
+    z-index: 1;
+  
+    @media (max-width: 768px) {
+      top: auto;
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    mix-blend-mode: color-burn;
+    width: 620px;
+  
+    @media (max-width: 768px) {
+      margin-block-start: 8dvh;
+      transform: skewY(16deg);
+    }
+  }
+  
+  nav {
+    font-size: clamp(.75rem, 1.25rem + .5dvw, 1.15rem);
+    margin: auto 0 0 auto;
+    text-align: right;
+  
+    @media (max-width: 768px) {
+      margin-inline: 0 auto;
+      text-align: left;
+    }
+  
+    ul {
+      list-style: none;
+      padding-inline-start: 0;
+      margin-block-end: 2rem;
+
+      @media (max-width: 768px) {
+        margin-block-end: 1rem;
+      }
+    }
+  
+    li {
+      margin-block-end: .45em;
+    }
+  }
 }

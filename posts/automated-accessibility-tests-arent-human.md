@@ -5,9 +5,7 @@ date: 2025-02-06
 tags: ['accessibility']
 ---
 
-<p class='summary'>
-  In the world of accessibility, automated testing is helpful, but unfeeling. It doesn't experience things—humans do.
-</p>
+In the world of accessibility, automated testing is helpful, but unfeeling. It doesn't experience things—humans do.
 
 Automated testing doesn't experience the following:
 
