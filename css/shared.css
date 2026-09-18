@@ -6,7 +6,13 @@
 @font-face {
   font-display: swap;
   font-family: "👹";
-  src: url('assets/Vollkorn-VariableFont_wght.ttf');
+  src: url('assets/BBHBartle-Regular.ttf');
+}
+@font-face {
+  font-display: swap;
+  font-family: "🐟";
+  src: url('assets/Besley-VariableFont_wght.ttf');
+  font-weight: 300 400 500 600 700 800 900;
 }
 
 /* View Transition */

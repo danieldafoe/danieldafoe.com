@@ -8,9 +8,7 @@ tags: ['ux', 'accessibility', 'usability']
 [apple-hover-text]: https://support.apple.com/guide/mac-help/view-a-larger-version-text-reading-typing-mchlb203bc78/mac
 [automated-tests-arent-human]: https://danieldafoe.com/posts/automated-accessibility-tests-arent-human
 
-<p class='summary'>
-  Turn on accessibility settings, use assistive technology, and test your damn experience.
-</p>
+Turn on accessibility settings, use assistive technology, and test your damn experience.
 
 I tried testing out my new home page with VoiceOver and it was weird—a 6 out of 10 score at best.
 

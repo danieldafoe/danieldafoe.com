@@ -10,9 +10,7 @@ tags: ['technology', 'sustainability']
 [facebook-users]: https://www.statista.com/statistics/264810/number-of-monthly-active-facebook-users-worldwide/
 [data-replication]: https://www.ibm.com/topics/data-replication
 
-<p class='summary'>
-  All hail the distributed era of the web that's coming—an era where data sticks to a user like gum on their shoe and they carry it where they go.
-</p>
+All hail the distributed era of the web that's coming. An era where data sticks to a user like gum on their shoe and they carry it where they go.
 
 Why am I excited for this? Well, a shower thought this morning went like so:
 

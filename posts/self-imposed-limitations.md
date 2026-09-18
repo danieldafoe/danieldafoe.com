@@ -9,9 +9,8 @@ tags: ['writing', 'blogging']
 
 [backlinks-seo]: https://mailchimp.com/resources/what-is-backlinking-and-why-is-it-important-for-seo#section-why-are-backlinks-important
 
-<p class='summary'>
-  What I dislike about blogging is not something to do with the idea of blogging itself, but self-imposed requirements I place on my own blogging endeavours.
-</p>
+
+What I dislike about blogging is not something to do with the idea of blogging itself, but self-imposed requirements I place on my own blogging endeavours.
 
 These self-imposed requirements I have are nothing more than firmly held beliefs I have somewhere inside me that posts need to be of the highest quality—that they need to be well-researched, reference relevant other writing on the topic, and that I should add something to the human consciousness by publishing the post.
 

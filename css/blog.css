@@ -1,0 +1,40 @@
+.blog {
+    align-items: center;
+
+    main {
+        display: flex;
+        align-items: center;
+        max-width: 95%;
+    }
+    h1 {
+        flex: 0 1 50%;
+        font-size: clamp(2rem, 6.75rem + 2dvw, 12dvw);
+        margin: 0;
+        position: sticky;
+        top: 20%;
+        text-align: center;
+        word-break: break-all;
+
+        @media (max-width: 768px) {
+            position: sticky;
+            top: 20%;
+        }
+    }
+    ul {
+        flex: 1 1 auto;
+        font-size: clamp(1rem, 1rem + .5dvw, 1.25rem);
+        margin-inline-start: 7rem;
+        
+        @media (max-width: 768px) {
+            margin-inline-start: 1rem;
+        }
+    }
+    a {
+        transition: transform .1s ease;
+
+        &:focus,
+        &:hover {
+            transform: skewX(5deg);
+        }
+    }
+}

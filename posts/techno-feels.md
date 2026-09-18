@@ -7,9 +7,7 @@ date: 2024-12-29
 tags: ['philosophy', 'technology']
 ---
 
-<p class='summary'>
-  I'm having feelings for technology, and it may be helping me have more empathy for humans.
-</p>
+I'm having feelings for technology. And it may be helping me have more empathy for humans.
 
 I got a digital food scale for Christmas. Black. Sleek. Zwilling. I've wanted one ever since I started meticulously tracking my food intake each day.
 
