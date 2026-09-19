@@ -99,7 +99,7 @@
 
     hr {
       background:
-        linear-gradient(var(--dark), var(--dark))
+        linear-gradient(var(--post-content-hr-border-clr), var(--post-content-hr-border-clr))
           left center / 100% 1px no-repeat,
         linear-gradient(#dbc32d, #dbc32d)
           16% center / 48px 12px no-repeat;

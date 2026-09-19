@@ -15,30 +15,50 @@
   --blog-tag-fg-clr: var(--dark);
   --post-content-hr-border-clr: var(--dark);
   --post-summary-border-clr: var(--light);
-  --post-nav-border-clr: var(--light);
   --post-footer-bg-clr: var(--light);
   --post-footer-fg-clr: var(--dark);
   --post-footer-link-fg-clr: var(--dark);
   --post-img-border-clr: var(--light);
+  --post-nav-border-clr: var(--light);
   --selection-bg-clr: var(--light);
   --selection-fg-clr: var(--dark);
 
-  color-scheme: dark light;
+  --accent: var(--accent-purple);
+  --body-bg-clr: var(--light);
+  --body-fg-clr: var(--dark);
+  --link-fg-clr: #283618;
+  --outline-clr: var(--dark);
+  --blog-tag-fg-clr: var(--light);
+  --post-content-hr-border-clr: var(--light);
+  --post-summary-border-clr: var(--dark);
+  --post-code-clr: var(--blue);
+  --post-footer-bg-clr: var(--dark);
+  --post-footer-fg-clr: var(--light);
+  --post-footer-link-fg-clr: var(--light);
+  --post-img-border-clr: var(--dark);
+  --post-summary-border-clr: var(--dark);
+  --post-nav-border-clr: var(--dark);
+  --selection-bg-clr: var(--dark);
+  --selection-fg-clr: var(--light);
 
-  @media (prefers-color-scheme: light) {
-    --accent: var(--accent-purple);
-    --body-bg-clr: var(--light);
-    --body-fg-clr: var(--dark);
-    --link-fg-clr: #283618;
-    --outline-clr: var(--dark);
+  color-scheme: light dark;
+
+  @media (prefers-color-scheme: dark) {
+    --accent: var(--accent-pink);
+    --body-bg-clr: var(--dark);
+    --body-fg-clr: var(--light);
+    --link-fg-clr: var(--light);
+    --outline-clr: var(--light);
     --blog-tag-fg-clr: var(--light);
+    --post-content-hr-border-clr: var(--light);
+    --post-summary-border-clr: var(--light);
     --post-code-clr: var(--blue);
     --post-footer-bg-clr: var(--dark);
     --post-footer-fg-clr: var(--light);
     --post-footer-link-fg-clr: var(--light);
-    --post-img-border-clr: var(--dark);
-    --post-summary-border-clr: var(--dark);
-    --post-nav-border-clr: var(--dark);
+    --post-img-border-clr: var(--light);
+    --post-summary-border-clr: var(--light);
+    --post-nav-border-clr: var(--light);
     --selection-bg-clr: var(--dark);
     --selection-fg-clr: var(--light);
   }

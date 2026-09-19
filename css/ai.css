@@ -6,6 +6,11 @@
     background-size: cover;
     overflow-x: hidden;
     width: 100%;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--dark);
+      background-blend-mode: color;
+    }
     
     main {
         display: flex;
@@ -21,6 +26,10 @@
         mix-blend-mode: color-burn;
         word-break: break-all;
         z-index: 1;
+
+        @media (prefers-color-scheme: dark) {
+          mix-blend-mode: color-dodge;
+        }
     }
 
     p {
@@ -28,6 +37,10 @@
         letter-spacing: -1px;
         mix-blend-mode: darken;
         flex: 1 1 60%;
+
+        @media (prefers-color-scheme: dark) {
+          mix-blend-mode: color-dodge;
+        }
     }
 }
 

@@ -31,6 +31,10 @@
     max-width: 100%;
     mix-blend-mode: color-burn;
     width: 620px;
+
+    @media (prefers-color-scheme: dark) {
+      mix-blend-mode: color;
+    }
   
     @media (max-width: 768px) {
       margin-block-start: 8dvh;
