@@ -106,6 +106,7 @@ h1,
 .heading {
   font-family: var(--font-display);
   font-size: clamp(2rem, 8.75rem + 2dvw, 12dvw);
+  font-weight: 400;
   line-height: 1;
   /* margin-block-end: 5.6rem; */
   text-transform: uppercase;
