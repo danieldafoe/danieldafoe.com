@@ -51,3 +51,16 @@
   from { font-weight: 300; }
   to { font-weight: 900; font-size: 200%; }
 }
+
+/* Helpers */
+.sr {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

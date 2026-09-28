@@ -28,13 +28,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-shadow: 0 0 8px var(--dark);
-        /* z-index: 1; */
     }
 
     p {
+        font-size: clamp(1.3rem, 1.6dvw + .8rem, 1.3rem);
+        flex: 1 1 50%;
         margin-block-start: 1rem;
         max-width: 550px;
-        flex: 1 1 50%;
     }
 
     img {

@@ -1,6 +1,6 @@
 .ai {
     background-color: var(--light);
-    background-blend-mode: soft-light;
+    background-blend-mode: color-burn;
     background-image: url(/assets/dune.jpeg);
     background-position: center;
     background-size: cover;
@@ -19,6 +19,11 @@
         width: 100%;
     }
 
+    .c {
+        max-width: 50dvw;
+        padding-block-start: 10dvh;
+    }
+
     .heading {
         font-size: clamp(1.8rem, 2rem + 5dvw, 6dvw);
         flex: 1 1 20%;
@@ -27,12 +32,17 @@
         word-break: break-all;
         z-index: 1;
 
+        &:last-of-type {
+            text-align: right;
+        }
+
         @media (prefers-color-scheme: dark) {
           mix-blend-mode: color-dodge;
         }
     }
 
     p {
+        font-size: clamp(1.3rem, 1.6dvw + .8rem, 1.5rem);
         font-weight: 400;
         letter-spacing: -1px;
         mix-blend-mode: darken;
@@ -43,35 +53,3 @@
         }
     }
 }
-
-/* .ai {
-    background-image: url(/assets/spiral.jpeg);
-    background-blend-mode: soft-light;
-    background-size: 1%;
-    background-color: var(--light);
-    overflow-x: hidden;
-    width: 100%;
-    
-    main {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        width: 100%;
-    }
-
-    .heading {
-        font-size: clamp(1.8rem, 2rem + 5dvw, 6dvw);
-        flex: 1 1 20%;
-        margin-block-end: 1rem;
-        mix-blend-mode: color-burn;
-        word-break: break-all;
-        z-index: 1;
-    }
-
-    p {
-        font-weight: 400;
-        letter-spacing: -1px;
-        mix-blend-mode: darken;
-        flex: 1 1 60%;
-    }
-} */

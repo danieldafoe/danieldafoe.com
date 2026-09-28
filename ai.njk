@@ -6,17 +6,25 @@ eleventyExcludeFromCollections: true
 
 <body class="zen ai">
   <main>
-    {# use visually hidden class for this #}
-    {# <h1 >
+    {# Wonky design means hacky AX #}
+    <h1 class='sr' id='h1'>
       Artificial Intelligence
-    </h1> #}
-    <span class="heading">
+    </h1>
+    <span class="heading" aria-hidden="true" aria-labelledby="h1">
       Artificial
     </span>
-    <p>
-      I use no AI on this website. Every bit of code and every character of content is human-written.
-    </p>
-    <span class="heading">
+    <div class="c">
+      <p>
+        I use no AI on this website. Every bit of code and every character of content is human-written.
+      </p>
+      <p>
+        I believe to maintain your craft you need repetitions. Call it 10,000 hours, call it whatever you want. You will never remain on top if you let an LLM do the nitty-gritty one-hundred percent of the time.
+      </p>
+      <p>
+        My website has always been a place to experiment with technology, design, and the written word, and that will not change.
+      </p>
+    </div>
+    <span class="heading" aria-hidden="true" aria-labelledby="h1">
       Intelligence
     </span>
   </main>
