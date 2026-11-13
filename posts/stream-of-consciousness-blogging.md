@@ -2,7 +2,7 @@
 layout: post.njk
 title: "stream of consciousness blogging"
 shareTitle: "stream of consciousness blogging"
-teaser: "I like the idea of blog posts where someone writes (or dictates) it in one sitting with few, if any, revisions."
+teaser: "What if blogs were messier and therefore more authentic?"
 date: 2024-07-21
 tags: ['summaryspection', 'exploration']
 ---

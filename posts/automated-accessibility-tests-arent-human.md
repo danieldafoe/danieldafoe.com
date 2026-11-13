@@ -1,6 +1,7 @@
 ---
 layout: post.njk
-title: automated tests aren't human
+title: "automated tests aren't human"
+teaser: "Test your user experiences with actual users."
 date: 2025-02-06
 tags: ['accessibility']
 ---

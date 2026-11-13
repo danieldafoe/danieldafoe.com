@@ -1,6 +1,7 @@
 ---
 layout: post.njk
-title: making shit usable
+title: "making shit usable"
+teaser: "Static site checkers are not enough."
 date: 2025-02-15
 tags: ['ux', 'accessibility', 'usability']
 ---

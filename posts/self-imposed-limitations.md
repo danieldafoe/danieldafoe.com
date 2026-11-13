@@ -2,7 +2,7 @@
 layout: post.njk
 title: "self-imposed limitations"
 shareTitle: "self-imposed limitations"
-teaser: "Why don't I write more? Ask my harsh editor—me."
+teaser: "Why don't I write more? Ask my editor."
 date: 2024-08-09
 tags: ['writing', 'blogging']
 ---

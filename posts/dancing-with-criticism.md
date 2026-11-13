@@ -1,6 +1,7 @@
 ---
 layout: 'post.njk'
 title: 'dancing with criticism'
+teaser: "Challenging myself when I'm challenged."
 date: 2025-09-06
 tags: ['growth', 'mindset', 'psychology']
 ---
