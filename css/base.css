@@ -29,7 +29,7 @@
   --link-fg-clr: #283618;
   --outline-clr: var(--dark);
   --blog-tag-fg-clr: var(--light);
-  --post-content-hr-border-clr: var(--light);
+  --post-content-hr-border-clr: var(--dark);
   --post-summary-border-clr: var(--dark);
   --post-code-clr: var(--blue);
   --post-footer-bg-clr: var(--dark);
