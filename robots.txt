@@ -1,4 +1,4 @@
-Sitemap: https://danieldafoe.com/blog/sitemap.xml
+Sitemap: https://danieldafoe.com/sitemap.xml
 
 User-agent: *
 Disallow:
